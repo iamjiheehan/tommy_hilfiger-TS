@@ -1,8 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
+const fonts = {
+    KoPubWorld: "KoPubWorld",
+    SourceCodePro : "SourceCodePro"
+}
+
 export const GlobalStyle = createGlobalStyle`
     * {
-        font-family: 'Roboto', sans-serif;
+        font-family: ${fonts.KoPubWorld}, arial, sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -29,10 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         color: #00174f;
-    }
-
-    span {
-        color: #00174f;
+        cursor: pointer;
     }
 
     img {

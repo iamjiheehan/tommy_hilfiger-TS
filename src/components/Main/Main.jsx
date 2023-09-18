@@ -15,16 +15,14 @@ function Main() {
                             <img src={MainBanner1} alt="MainBanner1" />
                         </a>
                     </Styles.Banner>
-                    <Styles.TextStr className="str">
-                        <a href="#!">
-                            <span className="etc">
-                                <span>TOMMY HILFIGER X TOMMY JEANS</span>
-                            </span>
-                            <strong className="tit">가을 니트 맛집, 타미힐피거</strong>
-                            <span className="sub">ALL-TIME ESSENTIALS</span>
-                            <a className="txt-viewmore"><span>VIEW MORE</span></a>
-                        </a>
-                    </Styles.TextStr>
+                    <Styles.Text className="str" href="#!">
+                        <span className="etc">
+                            TOMMY HILFIGER X TOMMY JEANS
+                        </span>
+                        <strong className="title">가을 니트 맛집, 타미힐피거</strong>
+                        <span className="sub">ALL-TIME ESSENTIALS</span>
+                        <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
+                    </Styles.Text>
                 </Styles.Box>
             </section>
         </>

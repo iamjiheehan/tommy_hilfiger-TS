@@ -9,20 +9,14 @@ export const Banner = styled.div`
 export const Box= styled.div`
     position: relative;
     padding-top: 0;
+
 `;
 
-export const TextStr = styled.div`
-    height: 100%;
+export const Text = styled.div`
     position: absolute;
     left: 0;
-    top: 0;
-`;
+    bottom: 0;
 
-export const ViewMore = styled.a`
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
@@ -32,5 +26,64 @@ export const ViewMore = styled.a`
     padding: 0 80px 80px;
     color: #fff;
     z-index: 5;
+
+    .etc {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .title {
+        display: block;
+    margin: 8px 0 16px;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    height: 88px;
+    max-height: 88px;
+    line-height: 44px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: auto;
+}
+
+    .sub {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        overflow: hidden;
+        height: 48px;
+        max-height: 48px;
+        line-height: 24px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
+    }
 `;
-    
+
+export const ViewMore = styled.p`
+    padding: 12px;
+    background: #fff;
+    text-align: center;
+    color: #00174f;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-top: 24px;
+    min-width: 256px;
+    line-height: 20px;
+
+    .view-text{
+        font-weight: 900;
+        height: 44px;
+    }
+`;

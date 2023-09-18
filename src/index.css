@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "KoPubWorld";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/KoPubWorld/KoPubWorld\ Dotum\ Medium.ttf") format("truetype");
+}

@@ -9,6 +9,7 @@ export const Banner = styled.div`
 export const Box= styled.div`
     position: relative;
     padding-top: 0;
+    overflow: hidden;
 
 `;
 
@@ -35,22 +36,22 @@ export const Text = styled.div`
 
     .title {
         display: block;
-    margin: 8px 0 16px;
-    font-size: 34px;
-    line-height: 44px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    overflow: hidden;
-    height: 88px;
-    max-height: 88px;
-    line-height: 44px;
-    display: block;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
-    white-space: normal;
-    height: auto;
+        margin: 8px 0 16px;
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        overflow: hidden;
+        height: 88px;
+        max-height: 88px;
+        line-height: 44px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
 }
 
     .sub {
@@ -81,6 +82,8 @@ export const ViewMore = styled.p`
     margin-top: 24px;
     min-width: 256px;
     line-height: 20px;
+
+    cursor: pointer;
 
     .view-text{
         font-weight: 900;

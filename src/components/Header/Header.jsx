@@ -1,19 +1,22 @@
 import React from 'react';
+import HeaderIcon from './HeaderStyle';
 
 function Header() {
     return (
         <div>
-            <header classNameName='header'>
-                <div classNameName="header_inner">
+            <header className='header'>
+                <div className="header_inner">
                     <div className="header-wrap">
-                        <h1 className="header-new-logo"><a href="/main">H FASHION</a></h1>
+                        <h1 className="header-new-logo">
+                            <HeaderIcon href="#"></HeaderIcon>
+                        </h1>
                         <nav className="header-util">
                             <button type="button" className="btn-search" id="btnSearchLayer"><span>검색열기</span></button>
-                            <span><a href="/public/member/login">로그인</a></span>
-                            <span><a href="/public/member/addMemberStep1">회원가입</a></span>
+                            <span><a href="#!">로그인</a></span>
+                            <span><a href="#!">회원가입</a></span>
                         </nav>
-                        <div id="layerSimpleGnb" className="layer-pop" tabindex="0">
-                            <div className="layer-wrap" tabindex="0">
+                        <div id="layerSimpleGnb" className="layer-pop">
+                            <div className="layer-wrap">
                                 <div className="layer-header">
                                     <h2 className="layer-title">H FASHION 간편가입 안내</h2>
                                 </div>
@@ -25,16 +28,16 @@ function Header() {
                                         </div>
                                         <p className="txt-simple-info">조회정보 : 이름, 휴대폰번호, 생년월일, CI</p>
                                         <div className="btn-box">
-                                            <button type="button" className="btn-type4-lg" onclick="layer.close('layerSimpleGnb');"><span>취소</span></button>
-                                            <a href="#" onclick="goHpointSimpleJoinGnb();" className="btn-type2-lg" title="새창으로 열림">간편가입</a>
+                                            <button type="button" className="btn-type4-lg"><span>취소</span></button>
+                                            <a href="#!" className="btn-type2-lg" title="새창으로 열림">간편가입</a>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" className="btn-layer-close" onclick="layer.close('layerSimpleGnb');">닫기</button>
+                                <button type="button" className="btn-layer-close">닫기</button>
                             </div>
                         </div>
-                        <div id="layerPwGnb" className="layer-pop" tabindex="0">
-                            <div className="layer-wrap" tabindex="0">
+                        <div id="layerPwGnb" className="layer-pop">
+                            <div className="layer-wrap">
                                 <div className="layer-header">
                                     <h2 className="layer-title">H.POINT 통합 멤버십 비밀번호 변경</h2>
                                 </div>
@@ -45,11 +48,11 @@ function Header() {
                                         </div>
                                     </div>
                                     <div className="btn-box">
-                                        <button onclick="nextUpdatePasswordGnb();" type="button" className="btn-type4-lg"><span>다음에 변경</span></button>
-                                        <a href="javascript:updatePasswordGnb();" className="btn-type2-lg">비밀번호 변경</a>
+                                        <button type="button" className="btn-type4-lg"><span>다음에 변경</span></button>
+                                        <a href="#!" className="btn-type2-lg">비밀번호 변경</a>
                                     </div>
                                 </div>
-                                <button type="button" className="btn-layer-close" onclick="layer.clsoe('layerPwGnb');">닫기</button>
+                                <button type="button" className="btn-layer-close">닫기</button>
                             </div>
                         </div>
                         <div className="dp-header">
@@ -62,36 +65,36 @@ function Header() {
                                     <img src="https://cdn.hfashionmall.com/goods/THBR/689309255928026.png" alt="TOMMY HILFIGER" />
                                 </a>
                             </h2>
-                            <h2 className="dp-header-logo"><a href="#"><img src="../resources/images/img_brand_th.png" alt="브랜드명" /></a></h2>
-                            <h2 className="dp-header-logo"><a href="#">SHOES COLLECTION</a></h2>
-                            <h2 className="dp-header-logo"><a href="#">OUTLET</a></h2>
+                            <h2 className="dp-header-logo"><a href="#!"><img src="../resources/images/img_brand_th.png" alt="브랜드명" /></a></h2>
+                            <h2 className="dp-header-logo"><a href="#!">SHOES COLLECTION</a></h2>
+                            <h2 className="dp-header-logo"><a href="#!">OUTLET</a></h2>
                             <nav className="dp-header-gnb" value="BDMA08">
                                 <ul>
                                     <li className="on">
                                         <a href="/display/brand?brndCtgryNo=BDMA08">MAIN</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A01">
+                                        <a href="!">
                                             MEN</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A02">
+                                        <a href="#!">
                                             WOMEN</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A03">
+                                        <a href="#!">
                                             TOMMY JEANS</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A04">
+                                        <a href="#!">
                                             KIDS</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A05">
+                                        <a href="#!">
                                             SHOES</a>
                                     </li>
                                     <li className="">
-                                        <a href="javascript:void(0);" onclick="goCategoryLink(this);" tp="BRND_MAIN" brndctgryno="BDMA08A09">
+                                        <a href="#!">
                                             GOLF</a>
                                     </li>
                                 </ul>
@@ -105,3 +108,4 @@ function Header() {
 }
 
 export default Header;
+

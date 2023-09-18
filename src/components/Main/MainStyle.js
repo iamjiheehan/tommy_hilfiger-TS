@@ -90,3 +90,16 @@ export const ViewMore = styled.p`
         height: 44px;
     }
 `;
+
+// 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
+
+export const Container = styled.div`
+    min-width: 1366px;
+    max-width: 1920px;
+    margin: 90px auto 0;
+    padding: 0 80px;
+`;
+
+export const Content = styled.div`
+
+`;

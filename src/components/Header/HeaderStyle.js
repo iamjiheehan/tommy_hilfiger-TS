@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import searchImg from "../../assets/images/icon_search_br.svg";
 import arrowIcon from "../../assets/images/ico_arrow_link.svg";
 
@@ -51,7 +52,7 @@ export const BtnCategory = styled.button`
     cursor: pointer;
     display: inline-block;
     padding-bottom: 16px;
-    margin-right: ${(props) => props.marginRight || '30px'};;
+    margin-right: ${(props) => props.marginright || '30px'};;
 `;
 
 export const SpanCategory = styled.div`
@@ -82,8 +83,7 @@ export const GnbFlex = styled.ul`
     list-style: none;
 `;
 
-export const GnbAbsolute = styled.div`
-    position: absolute;
+export const GnbWrap = styled.div`
     top: 120px;
     right: 0;
     left: 0;
@@ -91,6 +91,12 @@ export const GnbAbsolute = styled.div`
     font-size: 15px;
     font-weight: 300;
     text-align: center;
+
+    padding-bottom: 16px;
+    letter-spacing: 0;
+    min-width: 1286px;
+    max-width: 1920px;
+    margin: auto;
 `;
 
 
@@ -127,7 +133,7 @@ export const Span = styled.span`
         top: 3px;
         left: 0;
         height: 10px;
-        border-left : ${(props) => props.borderLeft || '1px solid #000;'};
+        border-left: ${(props) => (props.borderleft === "none" ? "none" : "1px solid #000")};
         opacity: 1;
     };
 `;

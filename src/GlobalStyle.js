@@ -10,6 +10,21 @@ export const GlobalStyle = createGlobalStyle`
     body {
         box-sizing: border-box;
     }
+    
+    header {
+        min-width: 1280px;
+        max-width: 1920px;
+        padding: 0 80px;
+        margin: 0 auto;
+    }
+
+    section {
+        min-height: 800px;
+    }
+
+    nav {
+        padding-bottom: 16px;
+    }
 
     a {
         text-decoration: none;
@@ -19,6 +34,12 @@ export const GlobalStyle = createGlobalStyle`
     span {
         color: #00174f;
     }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
 
     button {
         -webkit-appearance: none;
@@ -31,10 +52,4 @@ export const GlobalStyle = createGlobalStyle`
         background: transparent;
     }
 
-    header {
-        min-width: 1280px;
-        max-width: 1920px;
-        padding: 0 80px;
-        margin: 0 auto;
-    }
 `;

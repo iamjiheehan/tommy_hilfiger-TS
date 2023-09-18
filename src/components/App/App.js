@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import HomePage from '../../pages/HomePage/HomePage'
-import { GlobalStyle } from './GlobalStyle';
+import { GlobalStyle } from '../../GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 
 function App() {

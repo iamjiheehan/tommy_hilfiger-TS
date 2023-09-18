@@ -40,7 +40,6 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
 
-
     button {
         -webkit-appearance: none;
         appearance: none;
@@ -49,7 +48,9 @@ export const GlobalStyle = createGlobalStyle`
         border-radius: 0;
         font-family: "pre", "돋움", Dotum, arial, sans-serif;
         vertical-align: top;
-        background: transparent;
+
+        /* color: ${(props) => props.color || '#000'};
+        background: ${(props) => props.background || 'transparent'}; */
     }
 
 `;

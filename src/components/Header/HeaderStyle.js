@@ -43,7 +43,7 @@ export const Absolute = styled.div`
     text-align: center;
 `;
 
-export const BtnList = styled.button`
+export const BtnList = styled.div`
     position: absolute;
     left: 80px;
 `;

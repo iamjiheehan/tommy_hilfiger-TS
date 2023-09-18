@@ -29,12 +29,29 @@ export const Logo = styled.div`
     text-align: center;
 `;
 
+export const DivCategory = styled.div`
+    position: absolute;
+    top: -34px;
+    left: 80px;
+`;
+
+export const Absolute = styled.div`
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+`;
+
+export const BtnList = styled.button`
+    position: absolute;
+    left: 80px;
+`;
+
 export const BtnCategory = styled.button`
+    cursor: pointer;
     display: inline-block;
     padding-bottom: 16px;
-    cursor: pointer;
-    position: relative;
-    margin-right: 30px;
+    margin-right: ${(props) => props.marginRight || '30px'};;
 `;
 
 export const SpanCategory = styled.div`
@@ -47,6 +64,8 @@ export const MainFlex = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 `;
 
 export const Flex = styled.h2`
@@ -55,12 +74,25 @@ export const Flex = styled.h2`
     align-items: center;
 `;
 
+
 export const GnbFlex = styled.ul`
     display: flex;
     justify-content: center;
     margin: auto;
     list-style: none;
 `;
+
+export const GnbAbsolute = styled.div`
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+`;
+
 
 export const GnbLi = styled.li`
     display: block;
@@ -95,33 +127,7 @@ export const Span = styled.span`
         top: 3px;
         left: 0;
         height: 10px;
-        border-left: 1px solid #000;
+        border-left : ${(props) => props.borderLeft || '1px solid #000;'};
         opacity: 1;
     };
-`;
-
-export const SpanNoborder = styled.span`
-    position: relative;
-    display: inline-block;
-    margin-left: 12px;
-    padding-left: 12px;
-    color: #000;
-    line-height: 16px;
-    font-size: 13px;
-    vertical-align: middle;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 3px;
-        left: 0;
-        height: 10px;
-        border: none;
-        opacity: 1;
-    };
-`;
-
-
-export const BtnList = styled.button`
-
 `;

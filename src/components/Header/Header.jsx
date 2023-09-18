@@ -14,24 +14,26 @@ function Header() {
                         <Styles.Logo className="header-new-logo">
                             <Styles.Link href="#!">H FASHION</Styles.Link>
                         </Styles.Logo>
-                        <Styles.Flex className="header-logo">
-                            <a href="#!">
-                                <img src={logo} alt="TOMMY HILFIGER" />
-                            </a>
-                        </Styles.Flex>
+                        <Styles.Absolute>
+                            <Styles.Flex className="header-logo">
+                                <a href="#!">
+                                    <img src={logo} alt="TOMMY HILFIGER" />
+                                </a>
+                            </Styles.Flex>
+                        </Styles.Absolute>
                         <nav className="header-util">
                             <Styles.Btn type="button" className="btn-search" id="btnSearchLayer"><span>검색열기</span></Styles.Btn>
-                            <Styles.SpanNoborder><a href="#!">로그인</a></Styles.SpanNoborder>
+                            <Styles.Span borderLeft="none"><a href="#!">로그인</a></Styles.Span>
                             <Styles.Span><a href="#!">회원가입</a></Styles.Span>
                             <Styles.Span><a href="#!">마이페이지</a></Styles.Span>
                             <Styles.Span><a href="#!">장바구니</a></Styles.Span>
                         </nav>
                     </Styles.MainFlex>
-                    <nav className="header-gnb">
-                        <div>
-                            <button type="button"><Styles.SpanCategory>카테고리</Styles.SpanCategory></button>
-                            <button type="button"><Styles.SpanCategory>브랜드</Styles.SpanCategory></button>
-                        </div>
+                    <Styles.GnbAbsolute className="header-gnb">
+                        <Styles.BtnList>
+                            <Styles.BtnCategory type="button"><Styles.SpanCategory>카테고리</Styles.SpanCategory></Styles.BtnCategory>
+                            <Styles.BtnCategory marginRight="0" type="button"><Styles.SpanCategory>브랜드</Styles.SpanCategory></Styles.BtnCategory>
+                        </Styles.BtnList>
                         <Styles.GnbFlex>
                             <Styles.GnbLi className="on">
                                 <a href="#!">MAIN</a>
@@ -61,7 +63,7 @@ function Header() {
                                     GOLF</a>
                             </Styles.GnbLi>
                         </Styles.GnbFlex>
-                    </nav>
+                    </Styles.GnbAbsolute>
                 </div>
             </header>
         </>

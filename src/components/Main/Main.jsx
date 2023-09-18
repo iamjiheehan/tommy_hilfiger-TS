@@ -26,12 +26,12 @@ function Main() {
             </section>
             <section>
                 <Styles.Container>
-                    <div className="sec-content-wrap ui-tab2">
-                        <div className="brand-line-tab">
+                    <div className="sec-content-wrap">
+                        <Styles.BrandTab className="brand-line-tab">
                             <button type="button" ><span>CATEGORY</span></button>
                             <button type="button" ><span>DISCOVER</span></button>
-                        </div>
-                        <div className="brand-line-cont tab-cont2 on">
+                        </Styles.BrandTab>
+                        <Styles.BrandContent className="brand-line-cont tab-cont2 on">
                             <ul className="brand-line-list">
                                 <li className="brand-line-item">
                                     <a href="#!" className="link-item">
@@ -114,7 +114,7 @@ function Main() {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </Styles.BrandContent>
                         <div className="brand-line-cont tab-cont2">
                             <ul className="brand-line-list">
                                 <li className="brand-line-item">

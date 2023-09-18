@@ -4,6 +4,8 @@ export const Banner = styled.div`
     min-width: 1366px;
     max-width: 1920px;
     height: 533px;
+
+    object-fit: cover;
 `;
 
 export const Box= styled.div`
@@ -98,8 +100,23 @@ export const Container = styled.div`
     max-width: 1920px;
     margin: 90px auto 0;
     padding: 0 80px;
+
+    .sec-content-wrap{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 `;
 
-export const Content = styled.div`
-
+export const BrandTab = styled.div`
+    width: 100%;
+    font-size: 0;
+    text-align: center;
 `;
+
+export const BrandContent = styled.div`
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+`;
+

@@ -49,6 +49,7 @@ export const BtnList = styled.div`
 `;
 
 export const BtnCategory = styled.button`
+    background:transparent;
     cursor: pointer;
     display: inline-block;
     padding-bottom: 16px;
@@ -115,6 +116,7 @@ export const Btn = styled.button`
     vertical-align: middle;
     position: relative;
     margin-right: 2px;
+    background-color:transparent;
 `;
 
 export const Span = styled.span`

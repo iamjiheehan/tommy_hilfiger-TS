@@ -3,7 +3,6 @@ import React from 'react'
 export default function Home() {
   return (
     <>
-      <h1>메인페이지 ㅋ</h1>
       <header classNameName='header'>
         <div classNameName="header_inner">
           <div className="header-wrap">

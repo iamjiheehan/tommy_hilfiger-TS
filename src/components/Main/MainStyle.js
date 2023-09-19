@@ -231,7 +231,7 @@ export const NewTitle = styled.div`
 
     .title {
         color: #00174f;
-        margin: 0 0 20px 0;
+        /* margin: 0 0 20px 0; */
         font-size: 22px;
         font-weight: 900;
         line-height: 32px;
@@ -440,6 +440,24 @@ export const NewContent = styled.div`
     font-weight: 500;
     line-height: 17px;
 }
+
+/* TOP RANKING */
+
+    .item-rank {
+        top: 12px;
+        left: 12px;
+        width: 50px;
+        height: 50px;
+        padding-top: 13px;
+        border-radius: 0;
+        background-color: #fff;
+        color: var(--themeTextHoverColor);
+        font-family: "pre", "돋움", Dotum, arial, sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
 `;
 
 // 세번째 탭 || MORE CATOEGORIES--------------------------------------------------------
@@ -500,4 +518,12 @@ export const MoreContent = styled.div`
 
     z-index: 3;
 }
+`;
+
+// 네번째 섹션  || TOP RANKING--------------------------------------------------------
+
+export const RandkingTab = styled.div`
+    color: red;
+
+
 `;

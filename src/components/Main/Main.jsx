@@ -25,7 +25,7 @@ function Main() {
                     </Styles.Text>
                 </Styles.Box>
             </section>
-            {/* 첫번째 탭 */}
+            {/* 첫번째 섹션 */}
             <section>
                 <Styles.Container>
                     <div className="content-wrap">
@@ -204,7 +204,7 @@ function Main() {
                     </div>
                 </Styles.Container>
             </section>
-            {/* 두번째 탭  || New In */}
+            {/* 두번째 섹션  || New In */}
             <section>
                 <Styles.Container>
                     <Styles.NewTitle className="title-wrap">
@@ -268,24 +268,106 @@ function Main() {
                     </Styles.NewContent>
                 </Styles.Container>
             </section>
-            {/* 세번째 탭 || MORE CATOEGORIES */}
+            {/* 세번째 섹션 || MORE CATOEGORIES */}
             <section>
                 <Styles.Container>
                     <Styles.NewTitle className="title-wrap">
-                    <h2 className="title">MORE CATEGORIES</h2>
+                        <h2 className="title">MORE CATEGORIES</h2>
                     </Styles.NewTitle>
                     <Styles.MoreContent>
-                    <div className="slide-container">
-                                <ul className="swiper-wrapper">
-                                    <li class="swiper-item">
-                                        <a href="#!" className="link-item">
-                                            <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/752_203145_1_KOR_20230906171304.jpg?RS=593x593&amp;AR=0&amp;CS=425x593" alt="" />
-                                            <span class="text">남성 아우터</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="slide-container">
+                            <ul className="swiper-wrapper">
+                                <li class="swiper-item">
+                                    <a href="#!" className="link-item">
+                                        <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/752_203145_1_KOR_20230906171304.jpg?RS=593x593&amp;AR=0&amp;CS=425x593" alt="" />
+                                        <span class="text">남성 아우터</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </Styles.MoreContent>
+                </Styles.Container>
+            </section>
+            {/* 네번째 섹션  || TOP RANKING */}
+            <section>
+                <Styles.Container>
+                    <Styles.NewTitle className="title-wrap">
+                        <h2 className="title">NEW IN</h2>
+                        <div className="right-box">
+                            <a href="#!" className="btn-more-view type-dark-blue">
+                                <span className="text">전체보기</span>
+                                <i className="more-arr-dark-blue"></i>
+                            </a>
+                        </div>
+                    </Styles.NewTitle>
+                    <Styles.NewTab>
+                        <button type="button" class="on">
+                            <span>ALL</span>
+                        </button>
+                        <button type="button">
+                            <span>MEN</span>
+                        </button>
+                        <button type="button" class="on">
+                            <span>WOMEN</span>
+                        </button>
+                        <button type="button">
+                            <span>JEANS</span>
+                        </button>
+                        <button type="button" class="on">
+                            <span>KIDS</span>
+                        </button>
+                        <button type="button">
+                            <span>SHOES</span>
+                        </button>
+                        <button type="button" class="on">
+                            <span>GOLF</span>
+                        </button>
+                        <button type="button">
+                            <span>CATEGORY</span>
+                        </button>
+                    </Styles.NewTab>
+                    <Styles.RandkingTab>
+                        <button type="button" className='on'><span>ALL</span></button>
+                        <button type="button"><span>실시간</span></button>
+                        <button type="button"><span>일간</span></button>
+                        <button type="button"><span>주간</span></button>
+                        <button type="button"><span>월간</span></button>
+                    </Styles.RandkingTab>
+                    <Styles.NewContent>
+                        <div className="slide-container">
+                            <ul className="swiper-wrapper">
+                                <li className="swiper-item">
+                                        <figure className="item-box">
+                                            <div className="item-img">
+                                                <div className="img-box">
+                                                    <a href="#!" onclick="goGodDetail('GM0123052602707')">
+                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
+                                                    </a>
+                                                </div>
+                                                <button type="button" className="btn-like"><span></span></button>
+                                                <button type="button" className="btn-quick"><span></span></button>
+                                            </div>
+                                            <figcaption className="item-info">
+                                                <a href="#!">
+                                                    <span className="item-rank rank-top">
+                                                        1</span>
+                                                    <div className="item-brand">TOMMY HILFIGER KIDS</div>
+                                                    <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
+                                                    <div className="item-opt">
+                                                        <div className="item-price">
+                                                            <span className="price">59,670</span>
+                                                            <del className="regular">78,000</del>
+                                                            <span className="percent">24%</span>
+                                                        </div>
+                                                        <div className="item-label"></div>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </Styles.NewContent>
                 </Styles.Container>
             </section>
         </>

@@ -13,6 +13,21 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
+    html {
+        --themeTextColor: #00174f;
+        --themeTextHoverColor: #01123e;
+        --themeBgLightColor: #f9fafb;
+        --themeBgSmLightColor: #e5e7ed;
+        --themeScrollBgColor: #f1f4f8;
+        --themeSubTextColor: #5a5c66;
+        --themeSearchKeywordBgColor: #f1f4f8;
+        --themeBgRecoPickColor: #f1f4f8;
+        --themeRefreshColor: #969696;
+        --themeDimColor: #a5aabc;
+        --themeRegularColor: #a5aabc;
+        --themePercentColor: #cc0c2f;
+    }
+    
     body {
         box-sizing: border-box;
     }

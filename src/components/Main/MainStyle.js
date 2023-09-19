@@ -369,6 +369,10 @@ export const NewContent = styled.div`
         position: absolute;
         top: 18px;
         right: 18px;
+
+        width: 23px;
+        height: 21px;
+        font-size: 0;
     } 
 
     .item-box .btn-like:after {
@@ -452,11 +456,11 @@ export const NewContent = styled.div`
         border-radius: 0;
         background-color: #fff;
         color: var(--themeTextHoverColor);
-        font-family: "pre", "돋움", Dotum, arial, sans-serif;
         font-size: 18px;
         font-weight: 900;
         line-height: 24px;
     }
+
 
 `;
 

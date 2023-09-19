@@ -307,28 +307,24 @@ function Main() {
                         <button type="button">
                             <span>MEN</span>
                         </button>
-                        <button type="button" class="on">
+                        <button type="button">
                             <span>WOMEN</span>
                         </button>
                         <button type="button">
                             <span>JEANS</span>
                         </button>
-                        <button type="button" class="on">
+                        <button type="button">
                             <span>KIDS</span>
                         </button>
                         <button type="button">
                             <span>SHOES</span>
                         </button>
-                        <button type="button" class="on">
-                            <span>GOLF</span>
-                        </button>
                         <button type="button">
-                            <span>CATEGORY</span>
+                            <span>GOLF</span>
                         </button>
                     </Styles.NewTab>
                     <Styles.RandkingTab>
-                        <button type="button" className='on'><span>ALL</span></button>
-                        <button type="button"><span>실시간</span></button>
+                        <button type="button" className='on'><span>실시간</span></button>
                         <button type="button"><span>일간</span></button>
                         <button type="button"><span>주간</span></button>
                         <button type="button"><span>월간</span></button>

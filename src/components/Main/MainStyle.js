@@ -448,6 +448,9 @@ export const NewContent = styled.div`
 /* TOP RANKING */
 
     .item-rank {
+        position: absolute;
+        text-align: Center;
+
         top: 12px;
         left: 12px;
         width: 50px;
@@ -528,6 +531,31 @@ export const MoreContent = styled.div`
 
 export const RandkingTab = styled.div`
     color: red;
+    margin: 0 -10px 24px;
+    font-size: 0;
 
+    text-align: left;
+    
+    button {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0 5px;
+        vertical-align: top;
+    }
 
+    button span {
+        display: inline-block;
+        color: var(--themeTextColor);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        vertical-align: top;
+        opacity: .4;
+    }
+
+    button.on span {
+        font-weight: 700;
+        color: var(--themeTextColor);
+        opacity: 1;
+    }
 `;

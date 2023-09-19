@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import moreArrow from "../../assets/images/ico_more_arr_dark_blue.png"
+
 export const Banner = styled.div`
     min-width: 1366px;
     max-width: 1920px;
@@ -102,11 +104,7 @@ export const Container = styled.div`
     margin: 90px auto 0;
     padding: 0 80px;
 
-    .sec-content-wrap{
-        /* display: flex;
-        justify-content: center;
-        flex-wrap: wrap; */
-
+    .content-wrap{
         font-size: 0;
         text-align: center;
     }
@@ -165,7 +163,6 @@ export const BrandContent = styled.div`
         font-size: 0;
         vertical-align: top;
 
-
     }
 
     ul > li {
@@ -199,3 +196,127 @@ export const BrandContent = styled.div`
     }
 `;
 
+export const NewTitle = styled.div`
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    i {
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        background: url(${moreArrow}) center no-repeat;
+        background-size: 7px 12px;
+        vertical-align: top;
+
+        margin: 3px 0 0 8px;
+    }
+
+    .right-box {
+        margin-left: auto;
+    }
+
+    .title {
+        color: #00174f;
+        margin: 0 0 20px 0;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .btn-more-view {
+        display: inline-block;
+        font-size: 0;
+        vertical-align: top;
+    }
+`;
+
+export const NewTab = styled.div`
+    width: 100%;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #f1f4f8;
+
+    text-align: left;
+
+    button {
+        margin: 0 0 -1px 0;
+        padding: 0 0 12px 0;
+    }
+
+    button~button {
+        margin-left: 30px;
+    }
+
+    button.on {
+    border-bottom: 2px solid #00174f;
+}
+    button.on > span {
+        color: #00174f;
+        font-size: 13px;
+        font-weight: 900;
+        line-height: 18px;
+        opacity: 1;
+        letter-spacing: 0.02em;
+    }
+
+    button > span {
+        color: #a5aabc;
+        line-height: 18px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        opacity: 1;
+    }
+`;
+
+export const NewCategory = styled.div`
+    margin: 0 0 24px 0;
+    
+    text-align: left;
+
+    button {
+        margin: 0;
+        padding: 8px 20px;
+        border: 2px solid #a5aabc;
+    }
+
+    button > span {
+        color: #a5aabc;
+        font-size: 13px;
+        font-weight: 900;
+        line-height: 18px;
+        opacity: 1;
+        letter-spacing: 0.02em;
+    }
+    
+`;
+
+
+export const NewContent = styled.div`
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+`;

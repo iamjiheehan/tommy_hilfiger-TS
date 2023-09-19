@@ -535,7 +535,7 @@ export const RandkingTab = styled.div`
     font-size: 0;
 
     text-align: left;
-    
+
     button {
         display: inline-block;
         margin: 0 5px;
@@ -557,5 +557,16 @@ export const RandkingTab = styled.div`
         font-weight: 700;
         color: var(--themeTextColor);
         opacity: 1;
+    }
+`;
+
+// 다섯번째 섹션 TOMMY ISSUE--------------------------------------------------------
+
+export const IssueContent = styled.div`
+
+
+    .slide-container {
+        position: relative;
+        margin: 0 -80px;
     }
 `;

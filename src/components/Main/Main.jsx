@@ -333,33 +333,33 @@ function Main() {
                         <div className="slide-container">
                             <ul className="swiper-wrapper">
                                 <li className="swiper-item">
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!" onclick="goGodDetail('GM0123052602707')">
-                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"><span></span></button>
-                                                <button type="button" className="btn-quick"><span></span></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <span className="item-rank rank-top">
-                                                        1</span>
-                                                    <div className="item-brand">TOMMY HILFIGER KIDS</div>
-                                                    <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">59,670</span>
-                                                            <del className="regular">78,000</del>
-                                                            <span className="percent">24%</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
+                                    <figure className="item-box">
+                                        <div className="item-img">
+                                            <div className="img-box">
+                                                <a href="#!" onclick="goGodDetail('GM0123052602707')">
+                                                    <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
                                                 </a>
-                                            </figcaption>
-                                        </figure>
+                                            </div>
+                                            <button type="button" className="btn-like"><span></span></button>
+                                            <button type="button" className="btn-quick"><span></span></button>
+                                        </div>
+                                        <figcaption className="item-info">
+                                            <a href="#!">
+                                                <span className="item-rank rank-top">
+                                                    1</span>
+                                                <div className="item-brand">TOMMY HILFIGER KIDS</div>
+                                                <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
+                                                <div className="item-opt">
+                                                    <div className="item-price">
+                                                        <span className="price">59,670</span>
+                                                        <del className="regular">78,000</del>
+                                                        <span className="percent">24%</span>
+                                                    </div>
+                                                    <div className="item-label"></div>
+                                                </div>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
                                 </li>
                             </ul>
                         </div>
@@ -375,8 +375,104 @@ function Main() {
                     <Styles.IssueContent>
                         <div className="slide-container">
                             <ul className="swiper-wrapper">
-                                <li class="swiper-item">
-
+                                <li className="swiper-item">
+                                    <div className="season-visual-wrap">
+                                        <a href="#!" className="season-visual-box">
+                                            <img src="https://cdn.hfashionmall.com/display/plan/81/10181/10181_1PCE_PC_KOR_20230530180758.jpg?RS=729x729&amp;AR=0&amp;CS=729x729" alt="10181" />
+                                        </a>
+                                    </div>
+                                    <div className="season-info-wrap">
+                                        <div className="season-text-box">
+                                            <p className="season-title">
+                                                DISNEY X TOMMY</p>
+                                            <p className="season-subtitle">
+                                                디즈니 콜라보 아이템 단독 30% OFF</p>
+                                            <a href="#!" className="btn-season-more">
+                                                <span className="text">VIEW COLLECTION</span>
+                                            </a>
+                                        </div>
+                                        <ul className="product-list">
+                                            <li>
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
+                                                            <a href="#!">
+                                                                <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/30/GM0123053003551_1_ORGINL_1685434258767.jpg?RS=473x473&amp;AR=0&amp;CS=316x473" alt="[DISNEY X TOMMY] 폴카 도트 베스트" /></div>
+                                                            </a>
+                                                        </div>
+                                                        <button type="button" className="btn-like"><span></span></button>
+                                                    </div>
+                                                    <figcaption className="item-info">
+                                                        <a href="#!">
+                                                            <div className="item-brand">TOMMY HILFIGER MEN</div>
+                                                            <div className="item-name">[DISNEY X TOMMY] 폴카 도트 베스트</div>
+                                                            <div className="item-opt">
+                                                                <span className="item-price">
+                                                                    <div className="item-price">
+                                                                        <span className="price">255,500</span>
+                                                                        <del className="regular">365,000</del>
+                                                                        <span className="percent">30%</span>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </figcaption>
+                                                </figure>
+                                            </li><li>
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
+                                                            <a href="#!">
+                                                                <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/23/GM0123052301199_1_ORGINL_1684911309120.jpg?RS=473x473&amp;AR=0&amp;CS=316x473" alt="[DISNEY X TOMMY] 폴카 도트 폴로 니트 탑" /></div>
+                                                            </a>
+                                                        </div>
+                                                        <button type="button" className="btn-like" onclick="likeToggle();"><span></span></button>
+                                                    </div>
+                                                    <figcaption className="item-info">
+                                                        <a href="#!">
+                                                            <div className="item-brand">TOMMY HILFIGER WOMEN</div>
+                                                            <div className="item-name">[DISNEY X TOMMY] 폴카 도트 폴로 니트 탑</div>
+                                                            <div className="item-opt">
+                                                                <span className="item-price">
+                                                                    <div className="item-price">
+                                                                        <span className="price">206,500</span>
+                                                                        <del className="regular">295,000</del>
+                                                                        <span className="percent">30%</span>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </figcaption>
+                                                </figure>
+                                            </li><li>
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
+                                                            <a href="#!">
+                                                                <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/18/GM0123051899221_1_ORGINL_1684479923608.jpg?RS=473x473&amp;AR=0&amp;CS=316x473" alt="[DISNEY X TOMMY] 체스트 후디" /></div>
+                                                            </a>
+                                                        </div>
+                                                        <button type="button" className="btn-like" onclick="likeToggle();"><span></span></button>
+                                                    </div>
+                                                    <figcaption className="item-info">
+                                                        <a href="#!">
+                                                            <div className="item-brand">TOMMY HILFIGER KIDS</div>
+                                                            <div className="item-name">[DISNEY X TOMMY] 체스트 후디</div>
+                                                            <div className="item-opt">
+                                                                <span className="item-price">
+                                                                    <div className="item-price">
+                                                                        <span className="price">115,500</span>
+                                                                        <del className="regular">165,000</del>
+                                                                        <span className="percent">30%</span>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

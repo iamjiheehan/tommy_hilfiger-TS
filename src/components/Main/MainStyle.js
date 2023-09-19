@@ -564,9 +564,65 @@ export const RandkingTab = styled.div`
 
 export const IssueContent = styled.div`
 
-
     .slide-container {
         position: relative;
         margin: 0 -80px;
     }
+
+    .swiper-wrapper .swiper-item {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0 80px;
+    }
+
+    .swiper-wrapper .swiper-item .season-visual-wrap {
+        flex-shrink: 0;
+        width: 41.4204%;
+    }
+
+    .swiper-wrapper .swiper-item .season-info-wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex: 1;
+        align-content: space-between;
+        margin: -7px 0 0 40px;
+    }
+
+    .product-list .img-box a {
+        font-size:0;
+    }
+
+    .product-list .item-price * {
+        margin-right: 7px;
+    }
+
+    .item-info .item-price .regular {
+        color: var(--themeRegularColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-info .item-name {
+        font-weight: 500;
+        color: var(--themeTextColor);
+        line-height: 17px;
+    }
+
+    .item-price .percent {
+        color: var(--themePercentColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
 `;

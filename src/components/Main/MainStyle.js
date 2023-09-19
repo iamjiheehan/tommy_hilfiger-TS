@@ -441,3 +441,63 @@ export const NewContent = styled.div`
     line-height: 17px;
 }
 `;
+
+// 세번째 탭 || MORE CATOEGORIES--------------------------------------------------------
+
+export const MoreContent = styled.div`
+
+    .swiper-wrapper .swiper-item {
+        width: calc((100% - 60px) / 4);
+        margin-right: 20px;
+    }
+
+    .link-item {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+
+        font-size: 0;
+    } 
+
+    .link-item:before {
+        content: '';
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .link-item:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    z-index: 3;
+}
+`;

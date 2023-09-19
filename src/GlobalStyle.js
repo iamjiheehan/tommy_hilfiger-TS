@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
         font-size: medium;
         margin: 0;
         padding: 0;
+
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: inherit;
     }
 
     html {
@@ -61,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
     ul > li {
         list-style: none;
     }
-    
+
         
     button {
         -webkit-appearance: none;

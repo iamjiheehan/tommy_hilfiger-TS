@@ -268,6 +268,26 @@ function Main() {
                     </Styles.NewContent>
                 </Styles.Container>
             </section>
+            {/* 세번째 탭 || MORE CATOEGORIES */}
+            <section>
+                <Styles.Container>
+                    <Styles.NewTitle className="title-wrap">
+                    <h2 className="title">MORE CATEGORIES</h2>
+                    </Styles.NewTitle>
+                    <Styles.MoreContent>
+                    <div className="slide-container">
+                                <ul className="swiper-wrapper">
+                                    <li class="swiper-item">
+                                        <a href="#!" className="link-item">
+                                            <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/752_203145_1_KOR_20230906171304.jpg?RS=593x593&amp;AR=0&amp;CS=425x593" alt="" />
+                                            <span class="text">남성 아우터</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </Styles.MoreContent>
+                </Styles.Container>
+            </section>
         </>
     );
 }

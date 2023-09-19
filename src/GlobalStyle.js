@@ -58,6 +58,11 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
 
+    ul > li {
+        list-style: none;
+    }
+    
+        
     button {
         -webkit-appearance: none;
         appearance: none;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import moreArrow from "../../assets/images/ico_more_arr_dark_blue.png"
+import btnlike from "../../assets/images/btn_like.png"
 
 export const Banner = styled.div`
     min-width: 1366px;
@@ -316,11 +317,7 @@ export const NewCategory = styled.div`
         opacity: 1;
         letter-spacing: 0.02em;
     }
-
-
-    
 `;
-
 
 export const NewContent = styled.div`
     display: -webkit-box;
@@ -337,4 +334,110 @@ export const NewContent = styled.div`
     -webkit-align-items: center;
     align-items: center;
     margin-bottom: 20px;
+
+    text-align: left;
+
+    ul > li {
+        display: inline-block;
+        /* width: 20%; */
+        vertical-align: top;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .item-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        padding-top: 150%;
+    }
+
+    .item-img .img-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item-box .btn-like {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+    } 
+
+    .item-box .btn-like:after {
+    opacity: 0;
+}
+
+    .item-box .btn-like:after, .btn-like span {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 23px;
+        height: 21px;
+        background: url(${btnlike}) no-repeat;
+        opacity: 0.3;
+        transition: opacity .3s;
+    }
+
+    .item-brand {
+        margin: 0 0 8px 0;
+        font-weight: 400;
+        color: var(--themeTextColor);
+        line-height: 16px;
+        letter-spacing: inherit;
+    }
+
+    .item-name {
+        color: var(--themeTextColor);
+        overflow: hidden;
+        max-height: 34px;
+        line-height: 17px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .product-list .item-price {
+        margin: 7px 0 0;
+    }
+
+    .item-price * {
+        margin-right: 7px;
+    } 
+
+    .item-price .price {
+        color: var(--themeTextColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-price .regular {
+        color: var(--themeRegularColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-price .percent {
+    color: var(--themePercentColor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
 `;

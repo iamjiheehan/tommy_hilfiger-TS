@@ -221,7 +221,7 @@ export const NewTitle = styled.div`
         background-size: 7px 12px;
         vertical-align: top;
 
-        margin: 3px 0 0 8px;
+        margin: 7px 0 0 8px;
     }
 
     .right-box {
@@ -260,11 +260,15 @@ export const NewTab = styled.div`
     }
 
     button.on {
-    border-bottom: 2px solid #00174f;
+    border-bottom: 2px solid var(--themeTextColor);
 }
+
+/* -------------------------------- */
+
+
     button.on > span {
         color: #00174f;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 900;
         line-height: 18px;
         opacity: 1;
@@ -274,7 +278,7 @@ export const NewTab = styled.div`
     button > span {
         color: #a5aabc;
         line-height: 18px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 700;
         letter-spacing: 0.02em;
         opacity: 1;
@@ -292,6 +296,18 @@ export const NewCategory = styled.div`
         border: 2px solid #a5aabc;
     }
 
+    button ~ button {
+        margin-left: 12px;
+    }
+
+    button.on {
+        border: 2px solid var(--themeTextColor);
+
+        span {
+            color : var(--themeTextColor);
+        }
+    }
+    
     button > span {
         color: #a5aabc;
         font-size: 13px;
@@ -300,6 +316,8 @@ export const NewCategory = styled.div`
         opacity: 1;
         letter-spacing: 0.02em;
     }
+
+
     
 `;
 

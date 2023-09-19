@@ -8,7 +8,7 @@ const fonts = {
 export const GlobalStyle = createGlobalStyle`
     * {
         font-family: ${fonts.KoPubWorld}, arial, sans-serif;
-        font-size: 12px;
+        font-size: medium;
         margin: 0;
         padding: 0;
     }

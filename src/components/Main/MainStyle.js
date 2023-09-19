@@ -96,15 +96,19 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const Container = styled.div`
-    min-width: 1366px;
-    max-width: 1920px;
+    /* min-width: 1366px;
+    max-width: 1920px; */
+    /* 미디어 쿼리조절하기----------------------------- */
     margin: 90px auto 0;
     padding: 0 80px;
 
     .sec-content-wrap{
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
+
+        font-size: 0;
+        text-align: center;
     }
 `;
 
@@ -112,11 +116,86 @@ export const BrandTab = styled.div`
     width: 100%;
     font-size: 0;
     text-align: center;
+
+
+    button {
+        position: relative;
+        margin-left: 25px;
+        padding-left: 26px;
+
+        
+        &:not(:first-child){
+            color: #a5aabc;
+        }
+    }
+
+    .btn_line-before::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: inline-block;
+        width: 1px;
+        height: 13px;
+        background-color: #d9d9d9;
+        vertical-align: top;
+
+        color: red;
+
+    }
+
+    button > span {
+        font-size: 15px;
+        font-weight: bolder;
+
+        line-height: 18px;
+    }
 `;
 
 export const BrandContent = styled.div`
     width: 100%;
     font-size: 0;
     text-align: center;
+
+    margin-top: 30px;
+
+    ul {
+        display: inline-block;
+        margin: 0 7px 30px;
+        font-size: 0;
+        vertical-align: top;
+
+
+    }
+
+    ul > li {
+        display: inline-block;
+        width: 94px;
+        text-align: center;
+        vertical-align: top;
+
+
+        &:not(:first-child) {
+            margin-left: 14px;
+        }
+    }
+
+    ul > li > a {
+        display: block;
+    }
+
+    ul > li > a > img {
+        object-fit: cover;
+        vertical-align: top;
+    }
+
+    ul > li > a > span {
+        display: block;
+        margin-top: 15px;
+        color: #00174f;
+        font-weight: bolder;
+        line-height: 18px;
+        word-break: break-word;
+    }
 `;
 

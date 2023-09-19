@@ -8,6 +8,7 @@ const fonts = {
 export const GlobalStyle = createGlobalStyle`
     * {
         font-family: ${fonts.KoPubWorld}, arial, sans-serif;
+        font-size: 12px;
         margin: 0;
         padding: 0;
     }
@@ -24,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section {
-        min-height: 800px;
+        /* min-height: 800px; */
     }
 
     nav {
@@ -48,11 +49,14 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         border: 0;
         border-radius: 0;
-        font-family: "pre", "돋움", Dotum, arial, sans-serif;
         vertical-align: top;
+        font-weight: 900;
 
-        /* color: ${(props) => props.color || '#000'};
-        background: ${(props) => props.background || 'transparent'}; */
+        cursor: pointer;
+
+        color: ${(props) => props.color || '#000'};
+        background: ${(props) => props.background || 'transparent'};
+
     }
 
 `;

@@ -9,18 +9,18 @@ function Main() {
         <>
             <section>
                 <Styles.Box>
-                    <Styles.Banner classNameName="img">
+                    <Styles.Banner className="img">
                         <a href="#!">
                             <img src={MainBanner1} alt="MainBanner1" />
                         </a>
                     </Styles.Banner>
-                    <Styles.Text classNameName="str" href="#!">
-                        <span classNameName="etc">
+                    <Styles.Text className="str" href="#!">
+                        <span className="etc">
                             TOMMY HILFIGER X TOMMY JEANS
                         </span>
-                        <strong classNameName="title">가을 니트 맛집, 타미힐피거</strong>
-                        <span classNameName="sub">ALL-TIME ESSENTIALS</span>
-                        <Styles.ViewMore><span classNameName='view-text'>VIEW MORE</span></Styles.ViewMore>
+                        <strong className="title">가을 니트 맛집, 타미힐피거</strong>
+                        <span className="sub">ALL-TIME ESSENTIALS</span>
+                        <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
                     </Styles.Text>
                 </Styles.Box>
             </section>
@@ -28,8 +28,8 @@ function Main() {
                 <Styles.Container>
                     <div className="sec-content-wrap">
                         <Styles.BrandTab className="brand-line-tab">
-                            <button type="button" ><span>CATEGORY</span></button>
-                            <button type="button" ><span>DISCOVER</span></button>
+                            <button type="button"><span>CATEGORY</span></button>
+                            <button type="button" className='btn_line-before'><span>DISCOVER</span></button>
                         </Styles.BrandTab>
                         <Styles.BrandContent className="brand-line-cont tab-cont2 on">
                             <ul className="brand-line-list">
@@ -115,7 +115,7 @@ function Main() {
                                 </li>
                             </ul>
                         </Styles.BrandContent>
-                        <div className="brand-line-cont tab-cont2">
+                        <div className="brand-line-cont tab-cont2" style={{display:"none"}}>
                             <ul className="brand-line-list">
                                 <li className="brand-line-item">
                                     <a href="#!CtgryNo=THMA18A05" className="link-item">

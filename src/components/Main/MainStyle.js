@@ -744,6 +744,10 @@ export const MagazineWrap = styled.div`
         display: flex;
         flex-direction: column;
     }
+    
+    .left.no-product {
+        justify-content: space-between;
+    }
 
     .left .sub-title-wrap {
         display: -webkit-box;
@@ -755,6 +759,11 @@ export const MagazineWrap = styled.div`
         margin-top: 30px;
         flex: 1;
     }
+
+    .left.no-product .sub-title-wrap{
+        flex:0;
+    }
+
     .left .sub-title-wrap .text {
         font-size: 15px;
         line-height: 24px;

@@ -388,8 +388,6 @@ export const NewTab = styled.div`
     margin: 0 0 20px 0;
     border-bottom: 1px solid #f1f4f8;
 
-    text-align: left;
-
     button {
         margin: 0 0 -1px 0;
         padding: 0 0 12px 0;
@@ -426,8 +424,6 @@ export const NewTab = styled.div`
 
 export const NewCategory = styled.div`
     margin: 0 0 24px 0;
-
-    text-align: left;
 
     button {
         margin: 0;
@@ -485,7 +481,7 @@ export const NewContent = styled.div`
 
     .item-rank {
         position: absolute;
-        text-align: Center;
+        text-align: center;
 
         top: 12px;
         left: 12px;
@@ -571,8 +567,6 @@ export const RandkingTab = styled.div`
     margin: 0 -10px 24px;
     font-size: 0;
 
-    text-align: left;
-
     button {
         display: inline-block;
         margin: 0 5px;
@@ -600,10 +594,6 @@ export const RandkingTab = styled.div`
 // 다섯번째 섹션 TOMMY ISSUE--------------------------------------------------------
 
 export const IssueContent = styled.div`
-    div {
-        text-align: left;
-    }
-
     .slide-container {
         position: relative;
         margin: 0 -80px;
@@ -682,7 +672,7 @@ export const IssueContent = styled.div`
         vertical-align: top;
     }
     .season-info-wrap .product-list li {
-        width: calc(100% / 3);
+        /* width: calc(100% / 3); */
         margin-bottom: 0;
     }
 
@@ -717,10 +707,6 @@ export const MagazineWrap = styled.div`
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-
-    div {
-        text-align: left;
-    }
 
     h2,
     span {

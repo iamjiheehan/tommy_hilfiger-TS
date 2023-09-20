@@ -479,6 +479,12 @@ function Main() {
                     </Styles.IssueContent>
                 </Styles.Container>
             </section>
+            {/* 여섯번째 섹션 || FOCUS ON */}
+            <section>
+                <Styles.Container>
+                    
+                </Styles.Container>
+            </section>
         </>
     );
 }

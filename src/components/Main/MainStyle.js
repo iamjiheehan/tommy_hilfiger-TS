@@ -273,7 +273,7 @@ export const MainContainer = styled.div`
         height: auto;
     }
 
-    /* 아홉번째 섹션 || PROMOTION */
+    /* 아홉번째 섹션 || PROMOTION ---------------------------------------------------------------*/
     .season-text-box .season-subtitle {
         margin-top: 16px;
         color: var(--themeSubTextColor);
@@ -310,6 +310,7 @@ export const MainContainer = styled.div`
         width: calc((100% - 20px) / 3);
         margin-right: 16px;
     }
+
 `;
 
 
@@ -319,6 +320,32 @@ export const Container = styled.div`
     /* 미디어 쿼리조절하기----------------------------- */
     margin: 90px auto 0;
     padding: 0 80px;
+
+    /* 열번째 섹션 || INSTAGRAM --------------------------------------------------------------*/
+    
+    .btn-insta span {
+        color: var(--themeSubTextColor)
+    }
+    
+    .btn-popup img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+    }
+
+    .btn-popup {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .slide-container.insta .swiper-wrapper .swiper-item {
+        width: calc((100% - 80px) / 5);
+        margin-right: 20px;
+    }
 
 `;
 
@@ -336,6 +363,7 @@ export const BrandTab = styled.div`
             color: #a5aabc;
         }
     }
+
 `;
 
 export const BrandContent = styled.div`

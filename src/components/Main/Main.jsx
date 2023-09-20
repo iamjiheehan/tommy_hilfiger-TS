@@ -4,6 +4,7 @@ import * as Styles from './MainStyle';
 
 import MainBanner1 from '../../assets/images/main_banner-1.jpg'
 import vidBack from '../../assets/images/img_video_thumb_h.png'
+import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
 function Main() {
     return (
@@ -549,6 +550,33 @@ function Main() {
                         </div>
                     </Styles.MagazineWrap>
                 </Styles.Container>
+            </section>
+            {/* 일곱번째 섹션 || MD's Pick */}
+            <section>
+                <Styles.MDbanner>
+                    <img src={MDbanner} className="visual-img-box" alt="" />
+                    <div className="visual-text-box">
+                        <p className="pick-subtitle">MD가 추천하는 아이템 모음</p>
+                        <p className="pick-title">MD's PICK</p>
+                    </div>
+                    <div className="category-tab">
+                        <button type="button" className="on">
+                            <span>MEN</span>
+                        </button>
+                        <button type="button" className="">
+                            <span>WOMEN</span>
+                        </button>
+                        <button type="button" className="">
+                            <span>JEANS</span>
+                        </button>
+                        <button type="button" className="">
+                            <span>KIDS</span>
+                        </button>
+                        <button type="button" className="">
+                            <span>SHOES</span>
+                        </button>
+                    </div>
+                </Styles.MDbanner>
             </section>
         </>
     );

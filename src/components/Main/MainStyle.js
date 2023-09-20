@@ -782,6 +782,7 @@ export const IssueContent = styled.div`
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
 
 export const MagazineWrap = styled.div`
+    
     background: var(--themeTextColor);
 
     padding: 20px;
@@ -979,6 +980,71 @@ export const MagazineWrap = styled.div`
         clip: rect(1px, 1px, 1px, 1px);
         font-size: 14px !important;
     }
+
+    /* 열두번째 섹션 || MAGAZINE-바시티 점퍼 -------------------------------*/
+    .tab-content {
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    
+
+    .tab-category button {
+        display: inline-block;
+        padding: 12px 32px;
+        border: 2px solid #fff;
+    }
+
+    .tab-category button.on {
+        background-color: #fff;
+    }
+
+    .tab-category button.on .text {
+        color: var(--themeTextColor) !important;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .tab-category button .text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .tab-category button + button {
+        margin-left: 12px;
+    }
+
+    .left .tab-wrap {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .left.jumper {
+        /* width: calc(61.6470% - 120px); */
+        width: calc(100% - 32.4133% - 120px);
+        padding-left: 20px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right.jumper {
+        position: relative;
+        width: 32.4133%;
+        text-align: right;
+        align-self: end;
+    }
+
+    .left.jumper .item-box {
+        margin: 0 10px;
+    }
 `;
 
 // 일곱번째 섹션 || MD's Pick------------------------------------------------
@@ -1114,7 +1180,7 @@ export const MdContent = styled.div`
 // 열한번째 섹션 || COUPON--------------------------------------------------------
 export const CouponBanner = styled.div`
     margin: 90px auto 0;
-    
+
     .link-banner {
         overflow: hidden;
         display: block;

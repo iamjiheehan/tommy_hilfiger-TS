@@ -667,26 +667,26 @@ function Main() {
                             </button>
                         </div>
                         <div className="slide-container season">
-                                <ul className="swiper-wrapper">
-                                    <li className="swiper-item">
-                                        <a href="#!">
-                                            <div className="season-visual-wrap">
-                                                <div className="season-visual-box">
-                                                    <img src="https://cdn.hfashionmall.com/display/plan/76/10676/10676_1PCE_PC_KOR_20230818160645.jpg?RS=576x576&amp;AR=0&amp;CS=576x576" alt="1" />
-                                                </div>
+                            <ul className="swiper-wrapper">
+                                <li className="swiper-item">
+                                    <a href="#!">
+                                        <div className="season-visual-wrap">
+                                            <div className="season-visual-box">
+                                                <img src="https://cdn.hfashionmall.com/display/plan/76/10676/10676_1PCE_PC_KOR_20230818160645.jpg?RS=576x576&amp;AR=0&amp;CS=576x576" alt="1" />
                                             </div>
-                                            <div className="season-info-wrap">
-                                                <div className="season-text-box">
-                                                    <p className="season-title">
-                                                        TOMMY MEN｜ARCHIVE FIT</p>
-                                                    <p className="season-subtitle">
-                                                        새롭게 선보이는 아카이브핏을 만나보세요</p>
-                                                </div>
+                                        </div>
+                                        <div className="season-info-wrap">
+                                            <div className="season-text-box">
+                                                <p className="season-title">
+                                                    TOMMY MEN｜ARCHIVE FIT</p>
+                                                <p className="season-subtitle">
+                                                    새롭게 선보이는 아카이브핏을 만나보세요</p>
                                             </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </Styles.Container>
                 </section>
                 {/* 열번째 섹션 || INSTAGRAM */}
@@ -717,11 +717,104 @@ function Main() {
                         <a href="#!" class="link-banner">
                             <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/760_203151_3_KOR_20230823102444.jpg?RS=1920x1920&amp;AR=0&amp;CS=1920x180" alt="" />
                             <div class="text-box">
-                                    <p class="text">TOMMY 23SS SEASON OFF</p>
-                                    <p class="sub-text">최대 49% OFF + 추가 쿠폰 혜택</p>
+                                <p class="text">TOMMY 23SS SEASON OFF</p>
+                                <p class="sub-text">최대 49% OFF + 추가 쿠폰 혜택</p>
                             </div>
                         </a>
                     </Styles.CouponBanner>
+                </section>
+                {/* 열두번째 섹션 || MAGAZINE-바시티 점퍼 */}
+                <section>
+                    <Styles.Container>
+                        <Styles.MagazineWrap>
+                            <div className="left no-product jumper">
+                                <Styles.NewTitle className="title-wrap">
+                                    <h2 className="title">MAGAZINE</h2>
+                                    <div className="right-box">
+                                        <a href="#!" className="btn-more-view">
+                                            <span className="text">전체보기</span>
+                                            <i className="more-arr-dark-white"></i>
+                                        </a>
+                                    </div>
+                                </Styles.NewTitle>
+                                <div className="sub-title-wrap">
+                                    <span className="title">바시티점퍼</span>
+                                    <span className="text"> 23 F/W 타미힐피거 키 컬러 레드 컬러와 뉴 바시티 점퍼 </span>
+                                </div>
+                                <div class="tab-wrap">
+                                    <div class="tab-category">
+                                        <button type="button" className="on" ><span className="text">OUTER</span></button>
+                                        <button type="button" className="" ><span className="text">TOP</span></button>
+                                        <button type="button" className="" ><span className="text">BOTTOM</span></button>
+                                        <button type="button" className="" ><span className="text">ACC</span></button>
+                                    </div>
+                                    <div className="tab-content on" data-slide-length="4">
+                                        <div className="slide-container product-list">
+                                            <ul className="swiper-wrapper">
+                                                <li className="swiper-item">
+                                                    <figure className="item-box">
+                                                        <div className="item-img">
+                                                            <div className="img-box">
+                                                                <a href="#!">
+                                                                    <img src="https://cdn.hfashionmall.com/goods/THBR/23/08/28/GM0123082829962_0_ORGINL_1693463416978.jpg?RS=364x364&amp;AR=0&amp;CS=242x364" alt="패커블 라이트웨이트 자켓" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </li>
+                                                <li className="swiper-item">
+                                                    <figure className="item-box">
+                                                        <div className="item-img">
+                                                            <div className="img-box">
+                                                                <a href="#!">
+                                                                    <img src="https://cdn.hfashionmall.com/goods/THBR/23/08/28/GM0123082829962_0_ORGINL_1693463416978.jpg?RS=364x364&amp;AR=0&amp;CS=242x364" alt="패커블 라이트웨이트 자켓" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </li>
+                                                <li className="swiper-item">
+                                                    <figure className="item-box">
+                                                        <div className="item-img">
+                                                            <div className="img-box">
+                                                                <a href="#!">
+                                                                    <img src="https://cdn.hfashionmall.com/goods/THBR/23/08/28/GM0123082829962_0_ORGINL_1693463416978.jpg?RS=364x364&amp;AR=0&amp;CS=242x364" alt="패커블 라이트웨이트 자켓" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </li>
+                                                <li className="swiper-item">
+                                                    <figure className="item-box">
+                                                        <div className="item-img">
+                                                            <div className="img-box">
+                                                                <a href="#!">
+                                                                    <img src="https://cdn.hfashionmall.com/goods/THBR/23/08/28/GM0123082829962_0_ORGINL_1693463416978.jpg?RS=364x364&amp;AR=0&amp;CS=242x364" alt="패커블 라이트웨이트 자켓" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                            <div className="slide-nav">
+                                                <button className="slide-nav-prev swiper-button-disabled">
+                                                    <span className="offscreen"></span>
+                                                </button>
+                                                <button className="slide-nav-next swiper-button-disabled">
+                                                    <span className="offscreen"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right jumper">
+                                <a href="#!">
+                                    <img src="https://cdn.hfashionmall.com/display/trnd/22/6622/6622_KOR_20230901161536.jpg?RS=658" alt="1" />
+                                </a>
+                            </div>
+                        </Styles.MagazineWrap>
+                    </Styles.Container>
                 </section>
             </Styles.MainContainer>
         </>

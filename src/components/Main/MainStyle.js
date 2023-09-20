@@ -247,11 +247,68 @@ export const MainContainer = styled.div`
         vertical-align: top;
     }
 
+
     button > span {
         font-size: 15px;
         font-weight: bolder;
 
         line-height: 18px;
+    }
+
+    .season-text-box .season-title {
+        color: var(--themeTextColor);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        overflow: hidden;
+        height: 48px;
+        max-height: 48px;
+        line-height: 24px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
+    }
+
+    /* 아홉번째 섹션 || PROMOTION */
+    .season-text-box .season-subtitle {
+        margin-top: 16px;
+        color: var(--themeSubTextColor);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        overflow: hidden;
+        height: 48px;
+        max-height: 48px;
+        line-height: 24px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
+    }
+
+    .season-info-wrap {
+        margin-top: 30px;
+    }
+
+    .category-tab.season{
+        margin: 0 0 24px;
+        font-size: 0;
+
+        span {
+            color : var(--themeTextColor);
+        }
+    }
+
+    .slide-container.season .swiper-wrapper .swiper-item {
+        width: calc((100% - 20px) / 3);
+        margin-right: 16px;
     }
 `;
 
@@ -262,7 +319,6 @@ export const Container = styled.div`
     /* 미디어 쿼리조절하기----------------------------- */
     margin: 90px auto 0;
     padding: 0 80px;
-
 
 `;
 
@@ -643,6 +699,7 @@ export const IssueContent = styled.div`
         color: var(--themeTextColor);
         font-size: 34px;
         font-weight: 900;
+        line-height: 44px;
     }
 
     .season-info-wrap .season-text-box .season-subtitle {
@@ -672,7 +729,7 @@ export const IssueContent = styled.div`
         vertical-align: top;
     }
     .season-info-wrap .product-list li {
-        /* width: calc(100% / 3); */
+        width: calc(100% / 3);
         margin-bottom: 0;
     }
 
@@ -981,6 +1038,7 @@ export const MDbanner = styled.div`
         position: relative;
         margin: 32px 0 0 0;
         z-index: 2;
+
     }
 
     .category-tab button ~ button {

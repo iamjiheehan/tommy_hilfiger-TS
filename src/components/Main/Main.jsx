@@ -631,14 +631,14 @@ function Main() {
                                         <div class="vod-box-back">
                                             <img src={vidBack} alt="대체텍스트" />
                                         </div>
-                                        <iframe 
-                                            className="vod-box" 
-                                            frameborder="0" 
-                                            allowfullscreen="1" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            title="TOMMY HILFIGER 23FALL STORY" 
-                                            width="100%" 
-                                            height="100%" 
+                                        <iframe
+                                            className="vod-box"
+                                            frameborder="0"
+                                            allowfullscreen="1"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            title="TOMMY HILFIGER 23FALL STORY"
+                                            width="100%"
+                                            height="100%"
                                             src="https://www.youtube.com/embed/lIacQpfZyy0?autoplay=false&amp;rel=0&amp;playsinline=1&amp;mute=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.hfashionmall.com&amp;widgetid=1">
                                         </iframe>
                                     </div>
@@ -653,6 +653,40 @@ function Main() {
                                 </div>
                             </div>
                         </Styles.MagazineWrap>
+                    </Styles.Container>
+                </section>
+                {/* 아홉번째 섹션 || PROMOTION */}
+                <section>
+                    <Styles.Container>
+                        <Styles.NewTitle className="title-wrap">
+                            <h2 className="title">PROMOTION</h2>
+                        </Styles.NewTitle>
+                        <div className="category-tab season">
+                            <button type="button" className="on">
+                                <span>다양한 기획전을 만나보세요!</span>
+                            </button>
+                        </div>
+                        <div className="slide-container season">
+                                <ul className="swiper-wrapper">
+                                    <li className="swiper-item">
+                                        <a href="#!">
+                                            <div className="season-visual-wrap">
+                                                <div className="season-visual-box">
+                                                    <img src="https://cdn.hfashionmall.com/display/plan/76/10676/10676_1PCE_PC_KOR_20230818160645.jpg?RS=576x576&amp;AR=0&amp;CS=576x576" alt="1" />
+                                                </div>
+                                            </div>
+                                            <div className="season-info-wrap">
+                                                <div className="season-text-box">
+                                                    <p className="season-title">
+                                                        TOMMY MEN｜ARCHIVE FIT</p>
+                                                    <p className="season-subtitle">
+                                                        새롭게 선보이는 아카이브핏을 만나보세요</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </Styles.Container>
                 </section>
             </Styles.MainContainer>

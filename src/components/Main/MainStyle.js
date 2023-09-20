@@ -1110,3 +1110,46 @@ export const MdContent = styled.div`
     padding: 0 80px;
     margin-top: 40px;
 `;
+
+// 열한번째 섹션 || COUPON--------------------------------------------------------
+export const CouponBanner = styled.div`
+    margin: 90px auto 0;
+    
+    .link-banner {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        height: 180px;
+    }
+
+    .text-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        margin: 0 auto;
+        padding-left: 17.1975%;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .text-box .text {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .text-box .sub-text {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+`;

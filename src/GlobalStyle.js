@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const fonts = {
-  KoPubWorld: "KoPubWorld",
-  SourceCodePro: "SourceCodePro",
+    KoPubWorld: "KoPubWorld",
+    SourceCodePro: "SourceCodePro",
 };
 
 export const GlobalStyle = createGlobalStyle`

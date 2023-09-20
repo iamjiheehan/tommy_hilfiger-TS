@@ -611,10 +611,12 @@ export const IssueContent = styled.div`
     .swiper-wrapper .swiper-item .season-info-wrap .product-list {
         /* width: calc(100% + 22px); */
         margin-top: 40px;
-        margin: 0 -11px;
     }
 
-
+    .season-info-wrap .season-text-box {
+        margin : 0 11px;
+    }
+    
     .season-info-wrap .season-text-box .season-title {
         color: var(--themeTextColor);
         font-size: 34px;

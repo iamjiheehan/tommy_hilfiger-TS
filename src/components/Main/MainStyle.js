@@ -114,6 +114,7 @@ export const Container = styled.div`
         color: var(--themeTextColor);
         line-height: 16px;
         letter-spacing: inherit;
+        font-size: 13px;
     }
 
     .swiper-wrapper {
@@ -603,6 +604,8 @@ export const IssueContent = styled.div`
         display: -ms-flexbox;
         display: flex;
         padding: 0 80px;
+
+        align-items: flex-start;
     }
 
     .swiper-wrapper .swiper-item .season-visual-wrap {
@@ -647,6 +650,7 @@ export const IssueContent = styled.div`
         font-weight: 400;
         line-height: 24px;
     }
+
 
     .season-text-box .btn-season-more {
         display: inline-block;
@@ -731,11 +735,6 @@ export const MagazineWrap = styled.div`
         margin-top: 16px;
     }
 
-    .slide-container {
-        margin-top: 37px;
-        margin-bottom: 30px;
-        overflow: hidden;
-    }
 
     .left {
         width: 31.2389%;
@@ -764,6 +763,38 @@ export const MagazineWrap = styled.div`
         font-size: 15px;
         line-height: 24px;
         margin-top: 16px;
+    }
+
+
+    .left .slide-section {
+        margin-top: 37px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .left .slide-section .swiper-scrollbar {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+
+    .left .slide-section .swiper-scrollbar .swiper-scrollbar-drag{
+        height: 100%;
+        background-color: #fff;
+
+        width: 60.7059px;
+    }
+
+    .left .slide-section .slide-container {
+        position: relative;
+        margin: 0 -10px;
+    }
+
+    .left .slide-section .slide-container .swiper-item {
+        width: calc(100% / 3);
     }
 
     .right {

@@ -498,20 +498,26 @@ function Main() {
                                 <span className="title">23'FALL Take the City</span>
                                 <span className="text">타미진스와 나연의 <br />도심속 내츄럴한 바이브</span>
                             </div>
-                            <div className="slide-container">
-                                <ul className='swiper-wrapper'>
-                                    <li className='swiper-item'>
-                                        <figure class="item-box">
-                                            <div class="item-img">
-                                                <div class="img-box">
-                                                    <a href="#!">
-                                                        <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/01/GM0123090132377_0_ORGINL_1693543111205.jpg?RS=247x247&amp;AR=0&amp;CS=164x247" alt="빅 플래그 후디 스웨터" />
-                                                    </a>
+                            <div className="slide-section">
+                                <div className="slide-container">
+                                    <ul className='swiper-wrapper'>
+                                        <li className='swiper-item'>
+                                            <figure class="item-box">
+                                                <div class="item-img">
+                                                    <div class="img-box">
+                                                        <a href="#!">
+                                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/01/GM0123090132377_0_ORGINL_1693543111205.jpg?RS=247x247&amp;AR=0&amp;CS=164x247" alt="빅 플래그 후디 스웨터" />
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                </ul>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="swiper-scrollbar">
+                                    <div className="swiper-scrollbar-drag">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="right">

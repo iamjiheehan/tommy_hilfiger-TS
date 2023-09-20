@@ -136,6 +136,10 @@ export const Container = styled.div`
         height: 100%;
     }
 
+    .item-img .img-box a {
+        display: block;
+    }
+
     .item-box .btn-like {
         position: absolute;
         top: 18px;
@@ -675,3 +679,48 @@ export const IssueContent = styled.div`
 
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
 
+export const MagazineWrap = styled.div`
+    background: var(--themeTextColor);
+    padding: 20px;
+
+    div {
+        text-align: left;
+    }
+
+    h2, span{
+        color : #fff !important;
+    }
+
+
+    .sub-title-wrap .title {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+    .sub-title-wrap .text {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+
+    .slide-container {
+        margin-top: 37px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .left {
+    /* width: calc(61.6470% - 120px); */
+    width: calc(100% - 32.4133% - 120px);
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+`;

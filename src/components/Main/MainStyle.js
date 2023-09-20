@@ -749,7 +749,7 @@ export const MagazineWrap = styled.div`
         display: flex;
         flex-direction: column;
     }
-    
+
     .left .sub-title-wrap{
         display: -webkit-box;
         display: -moz-box;
@@ -763,9 +763,7 @@ export const MagazineWrap = styled.div`
     .left .sub-title-wrap .text {
         font-size: 15px;
         line-height: 24px;
-        margin-top: 160px !important;
-
-        background-color: red !important;
+        margin-top: 16px;
     }
 
     .right {

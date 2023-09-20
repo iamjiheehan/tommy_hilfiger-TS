@@ -105,9 +105,135 @@ export const Container = styled.div`
     margin: 90px auto 0;
     padding: 0 80px;
 
+
+    .item-brand {
+        margin: 0 0 8px 0;
+        font-weight: 400;
+        color: var(--themeTextColor);
+        line-height: 16px;
+        letter-spacing: inherit;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .item-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        padding-top: 150%;
+    }
+
+    .item-img .img-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item-box .btn-like {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+
+        width: 23px;
+        height: 21px;
+        font-size: 0;
+    } 
+
+    .item-box .btn-like:after {
+    opacity: 0;
+}
+
+    .item-box .btn-like:after, .btn-like span {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 23px;
+        height: 21px;
+        background: url(${btnlike}) no-repeat;
+        opacity: 0.3;
+        transition: opacity .3s;
+    }
+
+
+    .item-name {
+        color: var(--themeTextColor);
+        overflow: hidden;
+        max-height: 34px;
+        line-height: 17px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        white-space: normal;
+        height: auto;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .product-list .item-price {
+        margin: 7px 0 0;
+    }
+
+    .item-price * {
+        margin-right: 7px;
+    } 
+
+    .item-price .price {
+        color: var(--themeTextColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-price .regular {
+        color: var(--themeRegularColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-price .percent {
+        color: var(--themePercentColor);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .item-box .item-info {
+        padding-top: 20px;
+    }
     .content-wrap{
         font-size: 0;
         text-align: center;
+    }
+
+    .btn_line-before::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: inline-block;
+        width: 1px;
+        height: 13px;
+        background-color: #d9d9d9;
+        vertical-align: top;
+    }
+
+    button > span {
+        font-size: 15px;
+        font-weight: bolder;
+
+        line-height: 18px;
     }
 `;
 
@@ -128,27 +254,7 @@ export const BrandTab = styled.div`
         }
     }
 
-    .btn_line-before::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 2px;
-        display: inline-block;
-        width: 1px;
-        height: 13px;
-        background-color: #d9d9d9;
-        vertical-align: top;
 
-        color: red;
-
-    }
-
-    button > span {
-        font-size: 15px;
-        font-weight: bolder;
-
-        line-height: 18px;
-    }
 `;
 
 export const BrandContent = styled.div`
@@ -343,107 +449,7 @@ export const NewContent = styled.div`
         vertical-align: top;
     }
 
-    .swiper-wrapper {
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-    }
 
-    .item-img {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        padding-top: 150%;
-    }
-
-    .item-img .img-box {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .item-box .btn-like {
-        position: absolute;
-        top: 18px;
-        right: 18px;
-
-        width: 23px;
-        height: 21px;
-        font-size: 0;
-    } 
-
-    .item-box .btn-like:after {
-    opacity: 0;
-}
-
-    .item-box .btn-like:after, .btn-like span {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 23px;
-        height: 21px;
-        background: url(${btnlike}) no-repeat;
-        opacity: 0.3;
-        transition: opacity .3s;
-    }
-
-    .item-brand {
-        margin: 0 0 8px 0;
-        font-weight: 400;
-        color: var(--themeTextColor);
-        line-height: 16px;
-        letter-spacing: inherit;
-    }
-
-    .item-name {
-        color: var(--themeTextColor);
-        overflow: hidden;
-        max-height: 34px;
-        line-height: 17px;
-
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
-        white-space: normal;
-        height: auto;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    .product-list .item-price {
-        margin: 7px 0 0;
-    }
-
-    .item-price * {
-        margin-right: 7px;
-    } 
-
-    .item-price .price {
-        color: var(--themeTextColor);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
-    }
-
-    .item-price .regular {
-        color: var(--themeRegularColor);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
-    }
-
-    .item-price .percent {
-    color: var(--themePercentColor);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-}
 
 /* TOP RANKING */
 
@@ -564,6 +570,10 @@ export const RandkingTab = styled.div`
 
 export const IssueContent = styled.div`
 
+    div {
+        text-align: left;
+    }
+
     .slide-container {
         position: relative;
         margin: 0 -80px;
@@ -595,34 +605,68 @@ export const IssueContent = styled.div`
         flex: 1;
         align-content: space-between;
         margin: -7px 0 0 40px;
+        flex-direction: column;
     }
 
-    .product-list .img-box a {
-        font-size:0;
+    .swiper-wrapper .swiper-item .season-info-wrap .product-list {
+        /* width: calc(100% + 22px); */
+        margin-top: 40px;
+        margin: 0 -11px;
     }
 
-    .product-list .item-price * {
-        margin-right: 7px;
-    }
 
-    .item-info .item-price .regular {
-        color: var(--themeRegularColor);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
-    }
-
-    .item-info .item-name {
-        font-weight: 500;
+    .season-info-wrap .season-text-box .season-title {
         color: var(--themeTextColor);
-        line-height: 17px;
+        font-size: 34px;
+        font-weight: 900;
     }
 
-    .item-price .percent {
-        color: var(--themePercentColor);
+    .season-info-wrap .season-text-box .season-subtitle {
+        margin-top: 4px;
+        color: var(--themeSubTextColor);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .season-text-box .btn-season-more {
+        display: inline-block;
+        height: 44px;
+        margin-top: 20px;
+        padding: 10px 32px;
+        border: 2px solid var(--themeTextColor);
+        background-color: #fff;
+        vertical-align: top;
+    }
+
+    .season-info-wrap .season-text-box .btn-season-more .text {
+        display: inline-block;
+        color: var(--themeTextColor);
         font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
+        font-weight: 900;
+        line-height: 20px;
+        vertical-align: top;
+    }
+    .season-info-wrap .product-list li {
+        width: calc(100% / 3);
+        margin-bottom: 0;
+    }
+
+    .season-info-wrap .product-list {
+        width: calc(100% + 22px);
+        margin-top: 40px;
+    }
+
+    .product-list .item-box {
+        position: relative;
+        margin: 0 11px;
+        font-size: 14px;
+    }
+    
+    .product-list li {
+        display: inline-block;
+        margin-bottom: 40px;
+        vertical-align: top;
     }
 
 `;

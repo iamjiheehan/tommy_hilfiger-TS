@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const fonts = {
-    KoPubWorld: "KoPubWorld",
-    SourceCodePro : "SourceCodePro"
-}
+  KoPubWorld: "KoPubWorld",
+  SourceCodePro: "SourceCodePro",
+};
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -47,6 +47,10 @@ export const GlobalStyle = createGlobalStyle`
         /* min-height: 800px; */
     }
 
+    article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+    
     nav {
         padding-bottom: 16px;
     }
@@ -78,8 +82,8 @@ export const GlobalStyle = createGlobalStyle`
 
         cursor: pointer;
 
-        color: ${(props) => props.color || '#000'};
-        background: ${(props) => props.background || 'transparent'};
+        color: ${(props) => props.color || "#000"};
+        background: ${(props) => props.background || "transparent"};
 
     }
 

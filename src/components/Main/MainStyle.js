@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 import moreArrow from "../../assets/images/ico_more_arr_dark_blue.png"
+import moreArrowWhite from "../../assets/images/ico_more_arr_white.png"
 import btnlike from "../../assets/images/btn_like.png"
+import vidPlayBtn from "../../assets/images/ico_play_video_tommy.png"
 
 export const Banner = styled.div`
     min-width: 1366px;
@@ -324,11 +326,22 @@ export const NewTitle = styled.div`
     margin-bottom: 20px;
 
 
-    i {
+    .more-arr-dark-blue {
         display: inline-block;
         width: 7px;
         height: 12px;
         background: url(${moreArrow}) center no-repeat;
+        background-size: 7px 12px;
+        vertical-align: top;
+
+        margin: 7px 0 0 8px;
+    }
+
+    .more-arr-dark-white {
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        background: url(${moreArrowWhite}) center no-repeat;
         background-size: 7px 12px;
         vertical-align: top;
 
@@ -681,7 +694,15 @@ export const IssueContent = styled.div`
 
 export const MagazineWrap = styled.div`
     background: var(--themeTextColor);
+
     padding: 20px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
 
     div {
         text-align: left;
@@ -691,6 +712,10 @@ export const MagazineWrap = styled.div`
         color : #fff !important;
     }
 
+    .title-wrap {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 
     .sub-title-wrap .title {
     font-size: 34px;
@@ -713,14 +738,130 @@ export const MagazineWrap = styled.div`
     }
 
     .left {
-    /* width: calc(61.6470% - 120px); */
-    width: calc(100% - 32.4133% - 120px);
-    padding-left: 20px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-}
+        width: 31.2389%;
+        /* width: calc(61.6470% - 120px);
+        width: calc(100% - 32.4133% - 120px); */
+        padding-left: 20px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left .sub-title-wrap{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 1;
+    }
+    .left .sub-title-wrap .text {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 160px !important;
+
+        background-color: red !important;
+    }
+
+    .right {
+        align-self: auto;
+        width: calc(100% - 31.2389% - 120px);
+    }
+
+    .right .magazine-video-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right .magazine-video-box img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        object-fit: contain;
+        z-index: 2;
+    }
+
+    .right .vod-content {
+        position: relative;
+        padding-top: 56.25%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .right .magazine-video-box .vod-content iframe {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .right .magazine-video-box .btn-play-video {
+        z-index: 4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .right .magazine-video-box .vod-box-back {
+        z-index: 1;
+        width: calc(100% - 1px);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .right .magazine-video-box .vod-box-back::after {
+        z-index: 3;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(55px);
+        transition: background .5s;
+    }
+
+    .right .magazine-video-box .btn-play-video:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: url(${vidPlayBtn}) no-repeat center/cover;
+    }
+
+    .right .magazine-video-box .btn-play-video .offscreen {
+        position: absolute !important;
+        display: block;
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        font-size: 14px !important;
+    }
+
 `;

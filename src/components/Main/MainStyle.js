@@ -311,6 +311,38 @@ export const MainContainer = styled.div`
         margin-right: 16px;
     }
 
+
+    .slide-container.insta .swiper-wrapper .swiper-item {
+        width: calc((100% - 80px) / 5);
+        margin-right: 20px;
+    }
+
+    /* 슬라이더 버튼----------------------------------------------------------- */
+
+
+    .slide-container .slide-nav button:hover {
+        cursor: pointer;
+    }   
+
+    .slide-container .slide-nav button {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .slide-nav .slide-nav-prev {
+        left: 16px;
+        background-image: var(--swiperPrevUrl);
+    }
+
+    .slide-container .slide-nav .slide-nav-next {
+        right: 16px;
+        background-image: var(--swiperNextUrl);
+    }
 `;
 
 
@@ -340,11 +372,6 @@ export const Container = styled.div`
         position: relative;
         width: 100%;
         padding-top: 100%;
-    }
-
-    .slide-container.insta .swiper-wrapper .swiper-item {
-        width: calc((100% - 80px) / 5);
-        margin-right: 20px;
     }
 
 `;
@@ -982,7 +1009,6 @@ export const MagazineWrap = styled.div`
         font-size: 14px !important;
     }
 
-    /* 열두번째 섹션 || MAGAZINE-바시티 점퍼 -------------------------------*/
 
 `;
 
@@ -1157,4 +1183,98 @@ export const CouponBanner = styled.div`
         line-height: 18px;
     }
 
+`;
+
+
+export const CampaignWrap = styled.div`
+    background: var(--themeTextColor);
+    padding: 20px;
+
+    .title-wrap  h2,.title-wrap  div, .title-wrap span {
+        color: #fff !important;
+    }
+
+    .title-wrap {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0 20px;
+    }
+
+    .slide-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .slide-container .swiper-wrapper {
+        margin-right: -40px;
+        align-items: center;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item {
+        position: relative;
+        width: calc((100% - 30.5425%) / 3);
+    }
+
+    .slide-container .swiper-wrapper .swiper-item:first-child {
+        margin-right: 40px;
+        width: 31.3289%;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item:not(:first-child) {
+        margin-right: 20px;
+    }
+
+
+    .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    }
+
+
+    .slide-container .swiper-wrapper .swiper-item .link-item {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .slide-container .swiper-wrapper .swiper-item .link-item .img-wrap {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item .link-item .img-wrap  img {
+        vertical-align: bottom;
+        /* 이미지 여백 없애기 */
+    }
+
+    /* Tommy Jeans 뱃지 */
+    .slide-container .swiper-wrapper .swiper-item .link-item .text-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        padding: 6px 12px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item.on .link-item .text-wrap:first-child{
+        opacity: 1;
+    }
+
+    .slide-container .swiper-wrapper .link-item .text-wrap .text {
+        color: var(--themeTextHoverColor);
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    }
 `;

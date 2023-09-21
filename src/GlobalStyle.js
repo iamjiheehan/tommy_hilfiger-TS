@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+import icoNext from "./assets/images/ico_next_blue_h48.png"
+import icoPrev from "./assets/images/ico_prev_blue_h48.png"
+
 const fonts = {
     KoPubWorld: "KoPubWorld",
     SourceCodePro: "SourceCodePro",
@@ -30,6 +33,8 @@ export const GlobalStyle = createGlobalStyle`
         --themeDimColor: #a5aabc;
         --themeRegularColor: #a5aabc;
         --themePercentColor: #cc0c2f;
+        --swiperPrevUrl: url(${icoPrev});
+        --swiperNextUrl: url(${icoNext});
     }
     
     body {

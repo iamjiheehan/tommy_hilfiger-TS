@@ -7,17 +7,25 @@ import vidPlayBtn from "../../assets/images/ico_play_video_tommy.png";
 import star from "../../assets/images/tommy_rating_star_back.png";
 
 export const Banner = styled.div`
-    min-width: 1366px;
+    position: relative;
     max-width: 1920px;
-    height: 533px;
-
-    object-fit: cover;
+    margin: auto;
 `;
 
 export const Box = styled.div`
-    position: relative;
-    padding-top: 0;
-    overflow: hidden;
+    /* position: relative;
+    max-width: 1920px;
+    margin: auto; */
+`;
+
+export const Image = styled.div`
+    a {
+        height: auto;
+    }
+
+    a > img {
+        object-fit: cover;
+    }
 `;
 
 export const Text = styled.div`
@@ -101,7 +109,6 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
-
     .button-disabled {
         opacity: 0.3 !important;
     }
@@ -257,7 +264,6 @@ export const MainContainer = styled.div`
         vertical-align: top;
     }
 
-
     button > span {
         font-size: 15px;
         font-weight: bolder;
@@ -307,12 +313,12 @@ export const MainContainer = styled.div`
         margin-top: 30px;
     }
 
-    .category-tab.season{
+    .category-tab.season {
         margin: 0 0 24px;
         font-size: 0;
 
         span {
-            color : var(--themeTextColor);
+            color: var(--themeTextColor);
         }
     }
 
@@ -321,19 +327,17 @@ export const MainContainer = styled.div`
         margin-right: 16px;
     }
 
-
     .slide-container.insta .swiper-wrapper .swiper-item {
         width: calc((100% - 80px) / 5);
         margin-right: 20px;
     }
 
-    
     /* 열번째 섹션 || INSTAGRAM --------------------------------------------------------------*/
-    
+
     .btn-insta span {
-        color: var(--themeSubTextColor)
+        color: var(--themeSubTextColor);
     }
-    
+
     .btn-popup img {
         position: absolute;
         width: 100%;
@@ -350,7 +354,7 @@ export const MainContainer = styled.div`
     }
 
     /* 열세번째 섹션 || 마지막 섹션 || REVIEW || 리뷰 ------------------------------------------------- */
-    
+
     .slide-container.review {
         position: relative;
     }
@@ -359,21 +363,21 @@ export const MainContainer = styled.div`
         width: 25%;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box  {
+    .slide-container.review .swiper-wrapper .swiper-item .item-box {
         margin: 0 20px;
         position: relative;
         font-size: 14px;
     }
-        
+
     .slide-container.review .swiper-wrapper .swiper-item .item-box:first-child {
         margin-left: 0;
     }
-    
+
     .slide-container.review .swiper-wrapper .swiper-item .item-box * {
         height: 100%;
     }
-        
-    .slide-container.review .swiper-wrapper .swiper-item .item-box a img{
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box a img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -382,14 +386,17 @@ export const MainContainer = styled.div`
     .slide-container.review .swiper-wrapper .swiper-item .item-box a {
         display: block;
     }
-    
+
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-img {
-        padding-top:100%;
-
-
+        padding-top: 100%;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-img .img-box {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .item-img
+        .img-box {
         position: absolute;
         top: 0;
         left: 0;
@@ -397,14 +404,16 @@ export const MainContainer = styled.div`
         height: 100%;
     }
 
-
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info {
         background: var(--themeBgLightColor);
         padding: 24px;
-
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .review-product
+        .item-box {
         display: flex;
         align-items: center;
         margin: 0;
@@ -412,20 +421,35 @@ export const MainContainer = styled.div`
         font-size: 14px;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box .item-info {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .review-product
+        .item-box
+        .item-info {
         flex: 0 1 calc(100% - 80px);
         margin-left: 20px;
-        padding: 0; 
+        padding: 0;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
-    .review-product .item-box .item-img{
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .item-info
+        .review-product
+        .item-box
+        .item-img {
         flex: 0 0 60px;
         padding-top: 0;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box  
-    .review-info .review-desc {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info
+        .review-desc {
         color: var(--themeSubTextColor);
         margin-top: 16px;
         font-size: 13px;
@@ -443,26 +467,38 @@ export const MainContainer = styled.div`
 
     /* 13번째 섹션 슬라이더 버튼 */
 
-    #review .slide-nav-prev, #review .slide-nav-next {
-        top :274px
+    #review .slide-nav-prev,
+    #review .slide-nav-next {
+        top: 274px;
     }
 
     /* 리뷰 별점 */
-    .slide-container.review .swiper-wrapper .swiper-item .item-box
-    .review-info {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info {
         border-top: 1px solid var(--themeBgSmLightColor);
         margin-top: 24px;
         padding-top: 24px;
-
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box
-    .review-info .rating-option-box {
-        font-size : 0;
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info
+        .rating-option-box {
+        font-size: 0;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box
-    .review-info .rating-option-box .review-rating {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info
+        .rating-option-box
+        .review-rating {
         display: inline-block;
         width: 102px;
         height: 17px;
@@ -478,8 +514,12 @@ export const MainContainer = styled.div`
         }
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box 
-    .review-info .review-desc {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info
+        .review-desc {
         color: var(--themeSubTextColor);
         margin-top: 16px;
         font-size: 13px;
@@ -495,8 +535,13 @@ export const MainContainer = styled.div`
         white-space: normal;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box 
-    .review-info .rating-option-box .prd-option {
+    .slide-container.review
+        .swiper-wrapper
+        .swiper-item
+        .item-box
+        .review-info
+        .rating-option-box
+        .prd-option {
         display: inline-block;
         color: var(--themeTextColor);
         width: calc(100% - 112px);
@@ -509,13 +554,11 @@ export const MainContainer = styled.div`
         text-overflow: ellipsis;
     }
 
-
     /* 슬라이더 버튼----------------------------------------------------------- */
-
 
     .slide-container .slide-nav button:hover {
         cursor: pointer;
-    }   
+    }
 
     .slide-container .slide-nav button {
         position: absolute;
@@ -538,15 +581,12 @@ export const MainContainer = styled.div`
     }
 `;
 
-
 export const Container = styled.div`
     min-width: 1366px;
     max-width: 1920px;
     /* 미디어 쿼리조절하기----------------------------- */
     margin: 90px auto 0;
     padding: 0 80px;
-
-
 `;
 
 export const BrandTab = styled.div`
@@ -559,15 +599,14 @@ export const BrandTab = styled.div`
         margin-left: 25px;
         padding-left: 26px;
 
-        &:first-child span{
-            color: var(--themeTextColor)
+        &:first-child span {
+            color: var(--themeTextColor);
         }
 
-        &:not(:first-child) span{
+        &:not(:first-child) span {
             color: #a5aabc;
         }
     }
-
 `;
 
 export const BrandContent = styled.div`
@@ -764,7 +803,7 @@ export const NewContent = styled.div`
         width: 20%;
         vertical-align: top;
 
-        flex-shrink : 0;
+        flex-shrink: 0;
     }
 
     .slide-container {
@@ -780,7 +819,6 @@ export const NewContent = styled.div`
     .slide-container .swiper-wrapper .swiper-item .item-box:first-child {
         margin-left: 0;
     }
-
 
     /* TOP RANKING */
 
@@ -899,7 +937,6 @@ export const RankingTab = styled.div`
 // 다섯번째 섹션 TOMMY ISSUE--------------------------------------------------------
 
 export const IssueContent = styled.div`
-
     .slide-container {
         position: relative;
         margin: 0 -80px;
@@ -1006,13 +1043,11 @@ export const IssueContent = styled.div`
         margin: 0 11px;
         font-size: 14px;
     }
-
 `;
 
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
 
 export const MagazineWrap = styled.div`
-    
     background: var(--themeTextColor);
 
     padding: 20px;
@@ -1061,7 +1096,7 @@ export const MagazineWrap = styled.div`
         display: flex;
         flex-direction: column;
     }
-    
+
     .left.no-product {
         justify-content: space-between;
     }
@@ -1077,8 +1112,8 @@ export const MagazineWrap = styled.div`
         flex: 1;
     }
 
-    .left.no-product .sub-title-wrap{
-        flex:0;
+    .left.no-product .sub-title-wrap {
+        flex: 0;
     }
 
     .left .sub-title-wrap .text {
@@ -1211,8 +1246,6 @@ export const MagazineWrap = styled.div`
         clip: rect(1px, 1px, 1px, 1px);
         font-size: 14px !important;
     }
-
-
 `;
 
 // 일곱번째 섹션 || MD's Pick------------------------------------------------
@@ -1358,7 +1391,7 @@ export const MdContent = styled.div`
         width: 20%;
         vertical-align: top;
 
-        flex-shrink : 0;
+        flex-shrink: 0;
     }
 
     .slide-container {
@@ -1420,15 +1453,15 @@ export const CouponBanner = styled.div`
         font-size: 15px;
         line-height: 18px;
     }
-
 `;
-
 
 export const CampaignWrap = styled.div`
     background: var(--themeTextColor);
     padding: 20px;
 
-    .title-wrap  h2,.title-wrap  div, .title-wrap span {
+    .title-wrap h2,
+    .title-wrap div,
+    .title-wrap span {
         color: #fff !important;
     }
 
@@ -1442,7 +1475,6 @@ export const CampaignWrap = styled.div`
         overflow: hidden;
         position: relative;
     }
-
 
     .slide-container .swiper-wrapper {
         margin-right: -40px;
@@ -1463,24 +1495,26 @@ export const CampaignWrap = styled.div`
         margin-right: 20px;
     }
 
-
     .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {
-        content: '';
+        content: "";
         position: absolute;
         /* z-index: 2; */
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
-
 
     .slide-container .swiper-wrapper .swiper-item .link-item {
         position: relative;
         display: inline-block;
     }
-
 
     .slide-container .swiper-wrapper .swiper-item .link-item .img-wrap {
         width: 100%;
@@ -1488,7 +1522,7 @@ export const CampaignWrap = styled.div`
         object-fit: cover;
     }
 
-    .slide-container .swiper-wrapper .swiper-item .link-item .img-wrap  img {
+    .slide-container .swiper-wrapper .swiper-item .link-item .img-wrap img {
         vertical-align: bottom;
         /* 이미지 여백 없애기 */
     }
@@ -1504,7 +1538,11 @@ export const CampaignWrap = styled.div`
         opacity: 0;
     }
 
-    .slide-container .swiper-wrapper .swiper-item.on .link-item .text-wrap:first-child{
+    .slide-container
+        .swiper-wrapper
+        .swiper-item.on
+        .link-item
+        .text-wrap:first-child {
         opacity: 1;
     }
 

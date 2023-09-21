@@ -429,7 +429,7 @@ export const MainContainer = styled.div`
 
     /* 리뷰 별점 */
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
-    .review-info .rating-option-box .review-rating {
+    .review-info .rating-option-box {
         font-size : 0;
     }
 
@@ -448,6 +448,20 @@ export const MainContainer = styled.div`
             font-size: 0;
             vertical-align: top;
         }
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .review-info .rating-option-box .review-rating .prd-option {
+        display: inline-block;
+        color: var(--themeTextColor);
+        width: calc(100% - 112px);
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 18px;
+        vertical-align: top;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 
@@ -1345,7 +1359,7 @@ export const CampaignWrap = styled.div`
     .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {
         content: '';
         position: absolute;
-        z-index: 2;
+        /* z-index: 2; */
         top: 0;
         right: 0;
         bottom: 0;

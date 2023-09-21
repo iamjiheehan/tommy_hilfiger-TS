@@ -851,7 +851,7 @@ function Main() {
                                                 <div className="review-info">
                                                     <div className="rating-option-box">
                                                         <span className="review-rating"><span className="ico">별점</span></span>
-                                                        <span className="prd-option"><span></span> / <span>BLACK</span></span>
+                                                        <span className="prd-option"><span></span> / <span></span></span>
                                                     </div>
                                                     <p className="review-desc">170 56kg
                                                         일단 민소매 같은 이너 따로 안 챙겨 입어도 될 정도로
@@ -864,6 +864,7 @@ function Main() {
                                             </figcaption>
                                         </figure>
                                     </li>
+                                    
                                 </ul>
                                 <div className="slide-nav">
                                         <button className="slide-nav-prev">

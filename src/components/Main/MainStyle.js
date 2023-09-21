@@ -101,6 +101,10 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
+    .button-disabled {
+        opacity: 0.3;
+    }
+
     .product-list li {
         display: inline-block;
         width: 20%;
@@ -393,6 +397,7 @@ export const MainContainer = styled.div`
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info {
         background: var(--themeBgLightColor);
         padding: 24px;
+        
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box {
@@ -409,7 +414,7 @@ export const MainContainer = styled.div`
         padding-top: 0;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .slide-container.review .swiper-wrapper .swiper-item .item-box  
     .review-info .review-desc {
         color: var(--themeSubTextColor);
         margin-top: 16px;
@@ -426,14 +431,26 @@ export const MainContainer = styled.div`
         white-space: normal;
     }
 
+    /* 13번째 섹션 슬라이더 버튼 */
+
+    #review .slide-nav-prev, #review .slide-nav-next {
+        top :274px
+    }
 
     /* 리뷰 별점 */
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .slide-container.review .swiper-wrapper .swiper-item .item-box
+    .review-info {
+        border-top: 1px solid var(--themeBgSmLightColor);
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box
     .review-info .rating-option-box {
         font-size : 0;
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .slide-container.review .swiper-wrapper .swiper-item .item-box
     .review-info .rating-option-box .review-rating {
         display: inline-block;
         width: 102px;
@@ -450,8 +467,25 @@ export const MainContainer = styled.div`
         }
     }
 
-    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
-    .review-info .rating-option-box .review-rating .prd-option {
+    .slide-container.review .swiper-wrapper .swiper-item .item-box 
+    .review-info .review-desc {
+        color: var(--themeSubTextColor);
+        margin-top: 16px;
+        font-size: 13px;
+        overflow: hidden;
+        height: 60px;
+        max-height: 60px;
+        line-height: 20px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box 
+    .review-info .rating-option-box .prd-option {
         display: inline-block;
         color: var(--themeTextColor);
         width: calc(100% - 112px);

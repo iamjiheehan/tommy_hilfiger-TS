@@ -21,7 +21,7 @@ function Header() {
                             </Styles.Flex>
                         </Styles.Absolute>
                         <nav className="header-util">
-                            <Styles.Btn type="button" className="btn-search" id="btnSearchLayer"><span>검색열기</span></Styles.Btn>
+                            <Styles.Btn type="button" className="btn-search" id="btnSearchLayer"><span></span></Styles.Btn>
                             <Styles.Span borderleft="none"><a href="#!">로그인</a></Styles.Span>
                             <Styles.Span><a href="#!">회원가입</a></Styles.Span>
                             <Styles.Span><a href="#!">마이페이지</a></Styles.Span>

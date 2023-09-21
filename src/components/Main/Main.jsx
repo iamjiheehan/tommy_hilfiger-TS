@@ -266,7 +266,42 @@ function Main() {
                                             </figcaption>
                                         </figure>
                                     </li>
+                                    <li className="swiper-item">
+                                        <figure className="item-box">
+                                            <div className="item-img">
+                                                <div className="img-box">
+                                                    <a href="#!">
+                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
+                                                    </a>
+                                                </div>
+                                                <button type="button" className="btn-like"></button>
+                                                <button type="button" className="btn-quick"></button>
+                                            </div>
+                                            <figcaption className="item-info">
+                                                <a href="#!">
+                                                    <div className="item-brand">TOMMY HILFIGER WOMEN</div>
+                                                    <div className="item-name">폴로 칼라 바시티 재킷</div>
+                                                    <div className="item-opt">
+                                                        <div className="item-price">
+                                                            <span className="price">310,500</span>
+                                                            <del className="regular">345,000</del>
+                                                            <span className="percent">10%</span>
+                                                        </div>
+                                                        <div className="item-label"></div>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
                                 </ul>
+                                <div className="slide-nav">
+                                    <button className="slide-nav-prev button-disabled">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                    <button className="slide-nav-next">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                </div>
                             </div>
                         </Styles.NewContent>
                     </Styles.Container>
@@ -287,6 +322,14 @@ function Main() {
                                         </a>
                                     </li>
                                 </ul>
+                                <div className="slide-nav">
+                                    <button className="slide-nav-prev button-disabled">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                    <button className="slide-nav-next">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                </div>
                             </div>
                         </Styles.MoreContent>
                     </Styles.Container>
@@ -295,7 +338,7 @@ function Main() {
                 <section id='ranking'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
-                            <h2 className="title">NEW IN</h2>
+                            <h2 className="title">TOP RANKING</h2>
                             <div className="right-box">
                                 <a href="#!" className="btn-more-view type-dark-blue">
                                     <span className="text">전체보기</span>
@@ -364,7 +407,44 @@ function Main() {
                                             </figcaption>
                                         </figure>
                                     </li>
+                                    <li className="swiper-item">
+                                        <figure className="item-box">
+                                            <div className="item-img">
+                                                <div className="img-box">
+                                                    <a href="#!" onclick="goGodDetail('GM0123052602707')">
+                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
+                                                    </a>
+                                                </div>
+                                                <button type="button" className="btn-like"><span></span></button>
+                                                <button type="button" className="btn-quick"><span></span></button>
+                                            </div>
+                                            <figcaption className="item-info">
+                                                <a href="#!">
+                                                    <span className="item-rank rank-top">
+                                                        1</span>
+                                                    <div className="item-brand">TOMMY HILFIGER KIDS</div>
+                                                    <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
+                                                    <div className="item-opt">
+                                                        <div className="item-price">
+                                                            <span className="price">59,670</span>
+                                                            <del className="regular">78,000</del>
+                                                            <span className="percent">24%</span>
+                                                        </div>
+                                                        <div className="item-label"></div>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
                                 </ul>
+                                <div className="slide-nav">
+                                    <button className="slide-nav-prev button-disabled">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                    <button className="slide-nav-next">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                </div>
                             </div>
                         </Styles.NewContent>
                     </Styles.Container>
@@ -608,7 +688,42 @@ function Main() {
                                         </figcaption>
                                     </figure>
                                 </li>
+                                <li className="swiper-item">
+                                    <figure className="item-box">
+                                        <div className="item-img">
+                                            <div className="img-box">
+                                                <a href="#!">
+                                                    <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
+                                                </a>
+                                            </div>
+                                            <button type="button" className="btn-like"></button>
+                                            <button type="button" className="btn-quick"></button>
+                                        </div>
+                                        <figcaption className="item-info">
+                                            <a href="#!">
+                                                <div className="item-brand">TOMMY HILFIGER WOMEN</div>
+                                                <div className="item-name">폴로 칼라 바시티 재킷</div>
+                                                <div className="item-opt">
+                                                    <div className="item-price">
+                                                        <span className="price">310,500</span>
+                                                        <del className="regular">345,000</del>
+                                                        <span className="percent">10%</span>
+                                                    </div>
+                                                    <div className="item-label"></div>
+                                                </div>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
                             </ul>
+                            <div className="slide-nav">
+                                <button className="slide-nav-prev button-disabled">
+                                    <span className="offscreen"></span>
+                                </button>
+                                <button className="slide-nav-next">
+                                    <span className="offscreen"></span>
+                                </button>
+                            </div>
                         </div>
                     </Styles.MdContent>
                 </section>
@@ -685,7 +800,32 @@ function Main() {
                                         </div>
                                     </a>
                                 </li>
+                                <li className="swiper-item">
+                                    <a href="#!">
+                                        <div className="season-visual-wrap">
+                                            <div className="season-visual-box">
+                                                <img src="https://cdn.hfashionmall.com/display/plan/76/10676/10676_1PCE_PC_KOR_20230818160645.jpg?RS=576x576&amp;AR=0&amp;CS=576x576" alt="1" />
+                                            </div>
+                                        </div>
+                                        <div className="season-info-wrap">
+                                            <div className="season-text-box">
+                                                <p className="season-title">
+                                                    TOMMY MEN｜ARCHIVE FIT</p>
+                                                <p className="season-subtitle">
+                                                    새롭게 선보이는 아카이브핏을 만나보세요</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
                             </ul>
+                            <div className="slide-nav">
+                                <button className="slide-nav-prev button-disabled">
+                                    <span className="offscreen"></span>
+                                </button>
+                                <button className="slide-nav-next">
+                                    <span className="offscreen"></span>
+                                </button>
+                            </div>
                         </div>
                     </Styles.Container>
                 </section>
@@ -695,13 +835,18 @@ function Main() {
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">INSTAGRAM</h2>
                             <div className="right-box">
-                                <a href="https://www.instagram.com/tommyhilfiger" className="btn-insta" target="_blank">
+                                <a href="#!" className="btn-insta" target="_blank">
                                     <span class="text">@tommyhilfiger</span>
                                 </a>
                             </div>
                         </Styles.NewTitle>
                         <div className="slide-container insta">
                             <ul className="swiper-wrapper">
+                                <li className="swiper-item">
+                                    <button type="button" className="btn-popup" value="1">
+                                        <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/377929315_835516981439575_4094441858562293023_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QO8ctWWtXV8AX86q_pR&amp;_nc_ht=scontent-nrt1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfByIckuZYeWdUsezkdqSieZKxAIft81DLeNtw2Z7r74AA&amp;oe=650F08E1&amp;RS=336x336&amp;AR=0&amp;CS=336x336" alt="" />
+                                    </button>
+                                </li>
                                 <li className="swiper-item">
                                     <button type="button" className="btn-popup" value="1">
                                         <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/377929315_835516981439575_4094441858562293023_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QO8ctWWtXV8AX86q_pR&amp;_nc_ht=scontent-nrt1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfByIckuZYeWdUsezkdqSieZKxAIft81DLeNtw2Z7r74AA&amp;oe=650F08E1&amp;RS=336x336&amp;AR=0&amp;CS=336x336" alt="" />
@@ -781,7 +926,7 @@ function Main() {
                                         </li>
                                     </ul>
                                     <div className="slide-nav">
-                                        <button className="slide-nav-prev">
+                                        <button className="slide-nav-prev button-disabled">
                                             <span className="offscreen"></span>
                                         </button>
                                         <button className="slide-nav-next">
@@ -914,12 +1059,12 @@ function Main() {
                                     </li>
                                 </ul>
                                 <div className="slide-nav">
-                                        <button className="slide-nav-prev">
-                                            <span className="offscreen"></span>
-                                        </button>
-                                        <button className="slide-nav-next">
-                                            <span className="offscreen"></span>
-                                        </button>
+                                    <button className="slide-nav-prev button-disabled">
+                                        <span className="offscreen"></span>
+                                    </button>
+                                    <button className="slide-nav-next">
+                                        <span className="offscreen"></span>
+                                    </button>
                                 </div>
                             </div>
                         </div>

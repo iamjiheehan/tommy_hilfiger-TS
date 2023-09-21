@@ -101,8 +101,9 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
+
     .button-disabled {
-        opacity: 0.3;
+        opacity: 0.3 !important;
     }
 
     .product-list li {
@@ -119,6 +120,10 @@ export const MainContainer = styled.div`
         line-height: 16px;
         letter-spacing: inherit;
         font-size: 13px;
+    }
+
+    .slide-container {
+        position: relative;
     }
 
     .swiper-wrapper {
@@ -348,7 +353,6 @@ export const MainContainer = styled.div`
     
     .slide-container.review {
         position: relative;
-        background-color: tomato;
     }
 
     .slide-container.review .swiper-wrapper li {
@@ -532,14 +536,12 @@ export const MainContainer = styled.div`
         right: 16px;
         background-image: var(--swiperNextUrl);
     }
-
-
 `;
 
 
 export const Container = styled.div`
-    /* min-width: 1366px;
-    max-width: 1920px; */
+    min-width: 1366px;
+    max-width: 1920px;
     /* 미디어 쿼리조절하기----------------------------- */
     margin: 90px auto 0;
     padding: 0 80px;
@@ -557,7 +559,11 @@ export const BrandTab = styled.div`
         margin-left: 25px;
         padding-left: 26px;
 
-        &:not(:first-child) {
+        &:first-child span{
+            color: var(--themeTextColor)
+        }
+
+        &:not(:first-child) span{
             color: #a5aabc;
         }
     }
@@ -755,9 +761,26 @@ export const NewContent = styled.div`
 
     ul > li {
         display: inline-block;
-        /* width: 20%; */
+        width: 20%;
         vertical-align: top;
+
+        flex-shrink : 0;
     }
+
+    .slide-container {
+        width: 100%;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item .item-box {
+        margin: 0 20px;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item .item-box:first-child {
+        margin-left: 0;
+    }
+
 
     /* TOP RANKING */
 
@@ -890,6 +913,8 @@ export const IssueContent = styled.div`
         padding: 0 80px;
 
         align-items: flex-start;
+
+        position: relative;
     }
 
     .swiper-wrapper .swiper-item .season-visual-wrap {
@@ -1229,6 +1254,13 @@ export const MDbanner = styled.div`
             linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
 
+    div {
+        min-width: 1366px;
+        /* max-width: 1920px; */
+        margin: 90px auto 0;
+        padding: 0 80px;
+    }
+    
     .visual-img-box {
         position: absolute;
         display: block;
@@ -1268,7 +1300,6 @@ export const MDbanner = styled.div`
         position: relative;
         margin: 32px 0 0 0;
         z-index: 2;
-
     }
 
     .category-tab button ~ button {
@@ -1309,11 +1340,36 @@ export const MDbanner = styled.div`
 `;
 
 export const MdContent = styled.div`
+    min-width: 1366px;
+    max-width: 1920px;
+    margin: 90px auto 0;
     padding: 0 80px;
     margin-top: 40px;
+
+    ul > li {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+
+        flex-shrink : 0;
+    }
+
+    .slide-container {
+        width: 100%;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item .item-box {
+        margin: 0 20px;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .slide-container .swiper-wrapper .swiper-item .item-box:first-child {
+        margin-left: 0;
+    }
 `;
 
-// 열한번째 섹션 || COUPON--------------------------------------------------------
+// 열한번째 섹션 || COUPON || 배너 --------------------------------------------------------
 export const CouponBanner = styled.div`
     margin: 90px auto 0;
 

@@ -356,13 +356,13 @@ export const MainContainer = styled.div`
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .item-box  {
-        margin: 0 10px;
+        margin: 0 20px;
         position: relative;
         font-size: 14px;
     }
         
     .slide-container.review .swiper-wrapper .swiper-item .item-box:first-child {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
     
     .slide-container.review .swiper-wrapper .swiper-item .item-box * {

@@ -1322,6 +1322,10 @@ export const CouponBanner = styled.div`
         display: block;
         position: relative;
         height: 180px;
+
+        img {
+            object-fit: cover;
+        }
     }
 
     .text-box {

@@ -10,12 +10,17 @@ export const Banner = styled.div`
     position: relative;
     max-width: 1920px;
     margin: auto;
+    height: 750px;
+    overflow: hidden;
+
+    .swiper-container .swiper-wrapper {
+        display: flex;
+    }
 `;
 
 export const Box = styled.div`
-    /* position: relative;
-    max-width: 1920px;
-    margin: auto; */
+    position: relative;
+
 `;
 
 export const Image = styled.div`
@@ -24,6 +29,8 @@ export const Image = styled.div`
     }
 
     a > img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 `;

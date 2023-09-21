@@ -397,7 +397,7 @@ export const MainContainer = styled.div`
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info {
         background: var(--themeBgLightColor);
         padding: 24px;
-        
+
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box {
@@ -406,6 +406,12 @@ export const MainContainer = styled.div`
         margin: 0;
         position: relative;
         font-size: 14px;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box .item-info {
+        flex: 0 1 calc(100% - 80px);
+        margin-left: 20px;
+        padding: 0; 
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
@@ -443,6 +449,7 @@ export const MainContainer = styled.div`
         border-top: 1px solid var(--themeBgSmLightColor);
         margin-top: 24px;
         padding-top: 24px;
+
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .item-box

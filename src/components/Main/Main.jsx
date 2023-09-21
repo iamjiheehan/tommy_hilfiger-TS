@@ -793,6 +793,12 @@ function Main() {
                         </Styles.CampaignWrap>
                     </Styles.Container>
                 </section>
+                {/* 열세번째 섹션 || REVIEW */}
+                <section>
+                    <Styles.Container>
+                        
+                    </Styles.Container>
+                </section>
             </Styles.MainContainer >
         </>
     );

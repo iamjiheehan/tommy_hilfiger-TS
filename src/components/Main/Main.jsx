@@ -11,7 +11,7 @@ function Main() {
         <>
             <Styles.MainContainer>
                 {/* 메인배너 */}
-                <section>
+                <section id='mainBanner'>
                     <Styles.Box>
                         <Styles.Banner className="img">
                             <a href="#!">
@@ -29,7 +29,7 @@ function Main() {
                     </Styles.Box>
                 </section>
                 {/* 첫번째 섹션 */}
-                <section>
+                <section id='first'>
                     <Styles.Container>
                         <div className="content-wrap">
                             <Styles.BrandTab className="brand-line-tab">
@@ -208,7 +208,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 두번째 섹션  || New In */}
-                <section>
+                <section id='newIn'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">NEW IN</h2>
@@ -272,7 +272,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 세번째 섹션 || MORE CATOEGORIES */}
-                <section>
+                <section id='categories'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">MORE CATEGORIES</h2>
@@ -292,7 +292,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 네번째 섹션  || TOP RANKING */}
-                <section>
+                <section id='ranking'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">NEW IN</h2>
@@ -326,12 +326,12 @@ function Main() {
                                 <span>GOLF</span>
                             </button>
                         </Styles.NewTab>
-                        <Styles.RandkingTab>
+                        <Styles.RankingTab>
                             <button type="button" className='on'><span>실시간</span></button>
                             <button type="button"><span>일간</span></button>
                             <button type="button"><span>주간</span></button>
                             <button type="button"><span>월간</span></button>
-                        </Styles.RandkingTab>
+                        </Styles.RankingTab>
                         <Styles.NewContent>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
@@ -370,7 +370,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 다섯번째 섹션 TOMMY ISSUE */}
-                <section>
+                <section id='issue'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">TOMMY ISSUE</h2>
@@ -483,7 +483,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 여섯번째 섹션 || FOCUS ON */}
-                <section>
+                <section id='focus'>
                     <Styles.Container>
                         <Styles.MagazineWrap>
                             <div className="left">
@@ -553,7 +553,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 일곱번째 섹션 || MD's Pick */}
-                <section>
+                <section id='md'>
                     <Styles.MDbanner>
                         <img src={MDbanner} className="visual-img-box" alt="" />
                         <div className="visual-text-box">
@@ -613,7 +613,7 @@ function Main() {
                     </Styles.MdContent>
                 </section>
                 {/* 여덟번째 섹션 || MAGAZINE */}
-                <section>
+                <section id='magazine'>
                     <Styles.Container>
                         <Styles.MagazineWrap>
                             <div className="left no-product">
@@ -656,7 +656,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 아홉번째 섹션 || PROMOTION */}
-                <section>
+                <section id='promotion'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">PROMOTION</h2>
@@ -690,7 +690,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 열번째 섹션 || INSTAGRAM */}
-                <section>
+                <section id='insta'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">INSTAGRAM</h2>
@@ -712,7 +712,7 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 열한번째 섹션 || COUPON */}
-                <section>
+                <section id='coupon'>
                     <Styles.CouponBanner>
                         <a href="#!" class="link-banner">
                             <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/760_203151_3_KOR_20230823102444.jpg?RS=1920x1920&amp;AR=0&amp;CS=1920x180" alt="" />
@@ -724,7 +724,7 @@ function Main() {
                     </Styles.CouponBanner>
                 </section>
                 {/* 열두번째 섹션 || CAMPAIGN */}
-                <section>
+                <section id='campaign'>
                     <Styles.Container>
                         <Styles.CampaignWrap>
                             <Styles.NewTitle className="title-wrap">
@@ -794,10 +794,26 @@ function Main() {
                     </Styles.Container>
                 </section>
                 {/* 열세번째 섹션 || REVIEW */}
-                <section>
-                    <Styles.Container>
-                        
-                    </Styles.Container>
+                <section id="review">
+                        <Styles.Container>
+                            <Styles.NewTitle className="title-wrap">
+                                <h2 className="title">BEST REVIEW</h2>
+                                <div className="right-box">
+                                    <a href="#!" className="btn-more-view type-dark-blue">
+                                        <span className="text">전체보기</span>
+                                        <i className="more-arr-dark-blue"></i>
+                                    </a>
+                                </div>
+                            </Styles.NewTitle>
+                            <Styles.RankingTab>
+                                <button type="button" className='on'><span>ALL</span></button>
+                                <button type="button"><span>BEST</span></button>
+                                <button type="button"><span>JEANS</span></button>
+                                <button type="button"><span>WOMEN</span></button>
+                                <button type="button"><span>MEN</span></button>
+                                <button type="button"><span>KIDS</span></button>
+                            </Styles.RankingTab>
+                        </Styles.Container>
                 </section>
             </Styles.MainContainer >
         </>

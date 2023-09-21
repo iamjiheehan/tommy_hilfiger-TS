@@ -673,7 +673,7 @@ export const MoreContent = styled.div`
 
 // 네번째 섹션  || TOP RANKING--------------------------------------------------------
 
-export const RandkingTab = styled.div`
+export const RankingTab = styled.div`
     color: red;
     margin: 0 -10px 24px;
     font-size: 0;

@@ -4,6 +4,7 @@ import moreArrow from "../../assets/images/ico_more_arr_dark_blue.png";
 import moreArrowWhite from "../../assets/images/ico_more_arr_white.png";
 import btnlike from "../../assets/images/btn_like.png";
 import vidPlayBtn from "../../assets/images/ico_play_video_tommy.png";
+import star from "../../assets/images/tommy_rating_star_back.png";
 
 export const Banner = styled.div`
     min-width: 1366px;
@@ -317,6 +318,139 @@ export const MainContainer = styled.div`
         margin-right: 20px;
     }
 
+    
+    /* 열번째 섹션 || INSTAGRAM --------------------------------------------------------------*/
+    
+    .btn-insta span {
+        color: var(--themeSubTextColor)
+    }
+    
+    .btn-popup img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+    }
+
+    .btn-popup {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    /* 열세번째 섹션 || 마지막 섹션 || REVIEW || 리뷰 ------------------------------------------------- */
+    
+    .slide-container.review {
+        position: relative;
+        background-color: tomato;
+    }
+
+    .slide-container.review .swiper-wrapper li {
+        width: 25%;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box  {
+        margin: 0 10px;
+        position: relative;
+        font-size: 14px;
+    }
+        
+    .slide-container.review .swiper-wrapper .swiper-item .item-box:first-child {
+        margin-left: 0 !important;
+    }
+    
+    .slide-container.review .swiper-wrapper .swiper-item .item-box * {
+        height: 100%;
+    }
+        
+    .slide-container.review .swiper-wrapper .swiper-item .item-box a img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box a {
+        display: block;
+    }
+    
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-img {
+        padding-top:100%;
+
+
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-img .img-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info {
+        background: var(--themeBgLightColor);
+        padding: 24px;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .review-product .item-box {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .review-product .item-box .item-img{
+        flex: 0 0 60px;
+        padding-top: 0;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .review-info .review-desc {
+        color: var(--themeSubTextColor);
+        margin-top: 16px;
+        font-size: 13px;
+        overflow: hidden;
+        height: 60px;
+        max-height: 60px;
+        line-height: 20px;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+
+    /* 리뷰 별점 */
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .review-info .rating-option-box .review-rating {
+        font-size : 0;
+    }
+
+    .slide-container.review .swiper-wrapper .swiper-item .item-box .item-info 
+    .review-info .rating-option-box .review-rating {
+        display: inline-block;
+        width: 102px;
+        height: 17px;
+        background: transparent url(${star}) repeat-x 0 100%;
+        vertical-align: top;
+
+        .ico {
+            display: inline-block;
+            height: 17px;
+            background: transparent var(--ratingFrontUrl) repeat-x;
+            font-size: 0;
+            vertical-align: top;
+        }
+    }
+
+
     /* 슬라이더 버튼----------------------------------------------------------- */
 
 
@@ -343,6 +477,8 @@ export const MainContainer = styled.div`
         right: 16px;
         background-image: var(--swiperNextUrl);
     }
+
+
 `;
 
 
@@ -353,26 +489,6 @@ export const Container = styled.div`
     margin: 90px auto 0;
     padding: 0 80px;
 
-    /* 열번째 섹션 || INSTAGRAM --------------------------------------------------------------*/
-    
-    .btn-insta span {
-        color: var(--themeSubTextColor)
-    }
-    
-    .btn-popup img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        left: 0;
-        top: 0;
-    }
-
-    .btn-popup {
-        position: relative;
-        width: 100%;
-        padding-top: 100%;
-    }
 
 `;
 

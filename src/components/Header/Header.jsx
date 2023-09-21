@@ -22,7 +22,7 @@ function Header() {
                         </Styles.Absolute>
                         <div className="header-util">
                             <button type="button" className="btn-search" id="btnSearchLayer"></button>
-                            <span borderleft="none"><a href="#!">로그인</a></span>
+                            <span><a href="#!">로그인</a></span>
                             <span><a href="#!">회원가입</a></span>
                             <span><a href="#!">마이페이지</a></span>
                             <span><a href="#!">장바구니</a></span>

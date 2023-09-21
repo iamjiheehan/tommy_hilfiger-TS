@@ -66,8 +66,6 @@ export const BtnList = styled.div`
     }
 `;
 
-export const SpanCategory = styled.div``;
-
 export const MainFlex = styled.div`
     display: flex;
     justify-content: space-between;
@@ -84,15 +82,17 @@ export const MainFlex = styled.div`
         font-size: 13px;
         vertical-align: middle;
 
-        &::after {
+        &::after{
             content: "";
             position: absolute;
             top: 3px;
             left: 0;
             height: 10px;
-            border-left: ${(props) =>
-                props.borderleft === "none" ? "none" : "1px solid #000"};
-            opacity: 1;
+            border-left : 1px solid #000;
+        }
+
+        &:first-of-type::after{
+            opacity: 0;
         }
     }
 

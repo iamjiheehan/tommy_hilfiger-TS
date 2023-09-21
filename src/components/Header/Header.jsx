@@ -10,58 +10,58 @@ function Header() {
             <header className='header'>
                 <div className="header_inner">
                     <Styles.MainFlex className="header">
-                        <Styles.Logo className="header-new-logo">
+                        <div className="header-new-logo">
                             <Styles.Link href="#!">H FASHION</Styles.Link>
-                        </Styles.Logo>
+                        </div>
                         <Styles.Absolute>
-                            <Styles.Flex className="header-logo">
+                            <h2 className="header-logo">
                                 <a href="#!">
                                     <img src={logo} alt="TOMMY HILFIGER" />
                                 </a>
-                            </Styles.Flex>
+                            </h2>
                         </Styles.Absolute>
-                        <nav className="header-util">
-                            <Styles.Btn type="button" className="btn-search" id="btnSearchLayer"><span></span></Styles.Btn>
-                            <Styles.Span borderleft="none"><a href="#!">로그인</a></Styles.Span>
-                            <Styles.Span><a href="#!">회원가입</a></Styles.Span>
-                            <Styles.Span><a href="#!">마이페이지</a></Styles.Span>
-                            <Styles.Span><a href="#!">장바구니</a></Styles.Span>
-                        </nav>
+                        <div className="header-util">
+                            <button type="button" className="btn-search" id="btnSearchLayer"><span></span></button>
+                            <span borderleft="none"><a href="#!">로그인</a></span>
+                            <span><a href="#!">회원가입</a></span>
+                            <span><a href="#!">마이페이지</a></span>
+                            <span><a href="#!">장바구니</a></span>
+                        </div>
                     </Styles.MainFlex>
                     <Styles.GnbWrap className="header-gnb">
-                        <Styles.BtnList>
-                            <Styles.BtnCategory type="button"><Styles.SpanCategory>카테고리</Styles.SpanCategory></Styles.BtnCategory>
-                            <Styles.BtnCategory marginright="0" type="button"><Styles.SpanCategory>브랜드</Styles.SpanCategory></Styles.BtnCategory>
+                        <Styles.BtnList >
+                            <button className='btn-list' type="button"><Styles.SpanCategory>카테고리</Styles.SpanCategory></button>
+                            <button className='btn-list' marginright="0" type="button"><Styles.SpanCategory>브랜드</Styles.SpanCategory></button>
                         </Styles.BtnList>
-                        <Styles.GnbFlex>
-                            <Styles.GnbLi className="on">
+                        <ul>
+                            <li className="on">
                                 <a href="#!">MAIN</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="!">
                                     MEN</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="#!">
                                     WOMEN</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="#!">
                                     TOMMY JEANS</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="#!">
                                     KIDS</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="#!">
                                     SHOES</a>
-                            </Styles.GnbLi>
-                            <Styles.GnbLi className="">
+                            </li>
+                            <li className="">
                                 <a href="#!">
                                     GOLF</a>
-                            </Styles.GnbLi>
-                        </Styles.GnbFlex>
+                            </li>
+                        </ul>
                     </Styles.GnbWrap>
                 </div>
             </header>

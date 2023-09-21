@@ -449,7 +449,7 @@ function Main() {
                         </Styles.NewContent>
                     </Styles.Container>
                 </section>
-                {/* 다섯번째 섹션 TOMMY ISSUE */}
+                {/* 다섯번째 섹션 || TOMMY ISSUE */}
                 <section id='issue'>
                     <Styles.Container>
                         <Styles.NewTitle className="title-wrap">

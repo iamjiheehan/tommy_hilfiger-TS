@@ -899,6 +899,7 @@ export const RankingTab = styled.div`
 // 다섯번째 섹션 TOMMY ISSUE--------------------------------------------------------
 
 export const IssueContent = styled.div`
+
     .slide-container {
         position: relative;
         margin: 0 -80px;
@@ -914,7 +915,11 @@ export const IssueContent = styled.div`
 
         align-items: flex-start;
 
-        position: relative;
+        /* position: relative; */
+    }
+
+    .swiper-wrapper .swiper-item {
+        width: 100%;
     }
 
     .swiper-wrapper .swiper-item .season-visual-wrap {
@@ -935,10 +940,13 @@ export const IssueContent = styled.div`
         align-content: space-between;
         margin: -7px 0 0 40px;
         flex-direction: column;
+
+        flex-shrink: 0;
+        width: 41.4204%;
     }
 
     .swiper-wrapper .swiper-item .season-info-wrap .product-list {
-        /* width: calc(100% + 22px); */
+        width: calc(100% + 22px);
         margin-top: 40px;
     }
 
@@ -979,9 +987,13 @@ export const IssueContent = styled.div`
         line-height: 20px;
         vertical-align: top;
     }
+
     .season-info-wrap .product-list li {
         width: calc(100% / 3);
         margin-bottom: 0;
+        display: inline-block;
+        margin-bottom: 40px;
+        vertical-align: top;
     }
 
     .season-info-wrap .product-list {
@@ -995,11 +1007,6 @@ export const IssueContent = styled.div`
         font-size: 14px;
     }
 
-    .product-list li {
-        display: inline-block;
-        margin-bottom: 40px;
-        vertical-align: top;
-    }
 `;
 
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
@@ -1260,7 +1267,7 @@ export const MDbanner = styled.div`
         margin: 90px auto 0;
         padding: 0 80px;
     }
-    
+
     .visual-img-box {
         position: absolute;
         display: block;

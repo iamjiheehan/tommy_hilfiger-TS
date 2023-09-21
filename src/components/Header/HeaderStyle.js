@@ -8,7 +8,6 @@ export const Link = styled.a`
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-    color: #000;
     padding-right: 9px;
     position: relative;
     margin-top: 50px;
@@ -20,6 +19,12 @@ export const Link = styled.a`
         background: #00174f;
         -webkit-mask-image: url(${arrowIcon});
         mask-image: url(${arrowIcon});
+
+        display: inline-block;
+        content: "";
+        position: absolute;
+        right: -8px;
+        top: 3px;
     }
 `;
 export const DivCategory = styled.div`
@@ -45,6 +50,12 @@ export const BtnList = styled.div`
     position: absolute;
     left: 80px;
 
+    span {
+        font-size: 15px;
+        font-weight: 400;
+        color: #00174f;
+    }
+
     .btn-list {
         cursor: pointer;
 
@@ -55,12 +66,7 @@ export const BtnList = styled.div`
     }
 `;
 
-
-export const SpanCategory = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: #00174f;
-`;
+export const SpanCategory = styled.div``;
 
 export const MainFlex = styled.div`
     display: flex;
@@ -107,10 +113,6 @@ export const MainFlex = styled.div`
     }
 `;
 
-export const GnbFlex = styled.ul`
-
-`;
-
 export const GnbWrap = styled.div`
     top: 120px;
     right: 0;
@@ -140,5 +142,3 @@ export const GnbWrap = styled.div`
         letter-spacing: 0;
     }
 `;
-
-

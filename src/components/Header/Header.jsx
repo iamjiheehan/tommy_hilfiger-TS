@@ -21,7 +21,7 @@ function Header() {
                             </h2>
                         </Styles.Absolute>
                         <div className="header-util">
-                            <button type="button" className="btn-search" id="btnSearchLayer"><span></span></button>
+                            <button type="button" className="btn-search" id="btnSearchLayer"></button>
                             <span borderleft="none"><a href="#!">로그인</a></span>
                             <span><a href="#!">회원가입</a></span>
                             <span><a href="#!">마이페이지</a></span>
@@ -30,8 +30,8 @@ function Header() {
                     </Styles.MainFlex>
                     <Styles.GnbWrap className="header-gnb">
                         <Styles.BtnList >
-                            <button className='btn-list' type="button"><Styles.SpanCategory>카테고리</Styles.SpanCategory></button>
-                            <button className='btn-list' marginright="0" type="button"><Styles.SpanCategory>브랜드</Styles.SpanCategory></button>
+                            <button className='btn-list' type="button"><span>카테고리</span></button>
+                            <button className='btn-list' marginright="0" type="button"><span>브랜드</span></button>
                         </Styles.BtnList>
                         <ul>
                             <li className="on">

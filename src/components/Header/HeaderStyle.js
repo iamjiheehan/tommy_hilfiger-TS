@@ -280,11 +280,11 @@ export const NewBrand = styled.div`
         padding-top: 15px;
     }
 
-    .gnb-new-box .menu-contents .brand-line-search-wrap .bs-list-container {
+    .gnb-new-box .menu-contents .brand-line-search-wrap .bs-list-container.brand-list-scroll-box {
         position: relative;
         margin-top: 20px;
         padding-top: 40px;
-        border-top: 2px solid #000000;
+        border-top: 1px solid #e5e5e5;
     }
 
     .gnb-new-box .menu-contents .brand-line-search-wrap .brand-search-header {
@@ -363,9 +363,10 @@ export const NewBrand = styled.div`
         .brand-line-search-wrap
         .brand-search-cont
         .bs-list-nodata {
-        padding: 0 0 30px 0;
+        padding: 30px 0 0 0;
+        margin-top: 20px;
         margin-bottom: 40px;
-        border-bottom: 1px solid #e5e5e5;
+        border-top: 2px solid #000000;
         color: #666666;
         font-size: 16px;
         text-align: center;

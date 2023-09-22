@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as Styles from './MainStyle';
 
-import MainBanner1 from '../../assets/images/main_banner-1.jpg'
+// import MainBanner1 from '../../assets/images/main_banner-1.jpg'
 import MainBanner2 from '../../assets/images/main_banner-2.jpg'
 import MainBanner3 from '../../assets/images/main_banner-3.jpg'
 import vidBack from '../../assets/images/img_video_thumb_h.png'

@@ -340,6 +340,40 @@ function Header() {
                                     </fieldset>
                                 </div>
                                 <div className="brand-search-cont">
+                                    <div class="bs-btnTab">
+                                        <div class="bs-btn btn-all" id="searchTabList">
+                                            <button type="button" tabtype="MY" id="searchMyBrnd"><span>MY</span></button>
+                                            <button type="button" tabtype="ALL" id="searchTotalBrnd" class="on"><span>전체</span></button>
+                                        </div>
+                                        <div class="bs-btn btn-alphabet" id="searchAlphabetList">
+                                            <button type="button" tabtype="A"><span>A</span></button>
+                                            <button type="button" tabtype="B"><span>B</span></button>
+                                            <button type="button" tabtype="C"><span>C</span></button>
+                                            <button type="button" tabtype="D"><span>D</span></button>
+                                            <button type="button" tabtype="E"><span>E</span></button>
+                                            <button type="button" tabtype="F"><span>F</span></button>
+                                            <button type="button" tabtype="G"><span>G</span></button>
+                                            <button type="button" tabtype="H"><span>H</span></button>
+                                            <button type="button" tabtype="I"><span>I</span></button>
+                                            <button type="button" tabtype="J"><span>J</span></button>
+                                            <button type="button" tabtype="K"><span>K</span></button>
+                                            <button type="button" tabtype="L"><span>L</span></button>
+                                            <button type="button" tabtype="M"><span>M</span></button>
+                                            <button type="button" tabtype="N"><span>N</span></button>
+                                            <button type="button" tabtype="O"><span>O</span></button>
+                                            <button type="button" tabtype="P"><span>P</span></button>
+                                            <button type="button" tabtype="R"><span>R</span></button>
+                                            <button type="button" tabtype="S"><span>S</span></button>
+                                            <button type="button" tabtype="T"><span>T</span></button>
+                                            <button type="button" tabtype="U"><span>U</span></button>
+                                            <button type="button" tabtype="V"><span>V</span></button>
+                                            <button type="button" tabtype="W"><span>W</span></button>
+                                            <button type="button" tabtype="X"><span>X</span></button>
+                                            <button type="button" tabtype="Y"><span>Y</span></button>
+                                            <button type="button" tabtype="Z"><span>Z</span></button>
+                                            <button type="button" tabtype="ETC"><span>0~9</span></button>
+                                        </div>
+                                    </div>
                                     <div class="bs-list-container">
                                         <p class="bs-list-nodata">
                                             관심있는 브랜드에 하트를 눌러 보세요!

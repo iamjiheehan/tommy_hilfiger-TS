@@ -353,6 +353,11 @@ export const NewBrand = styled.div`
         }
     }
 
+    .gnb-new-box .menu-contents .brand-line-search-wrap .brand-search-cont {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
     .gnb-new-box
         .menu-contents
         .brand-line-search-wrap
@@ -364,5 +369,71 @@ export const NewBrand = styled.div`
         color: #666666;
         font-size: 16px;
         text-align: center;
+    }
+
+    .gnb-new-box
+        .menu-contents
+        .brand-line-search-wrap
+        .brand-search-cont
+        .bs-btnTab {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+
+        .bs-btn {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+
+            float: left;
+        }
+
+        button.on {
+            border: 1px solid #000000;
+            color: #ffffff;
+            background-color: #000000;
+
+            span {
+                color: #fff;
+            }
+        }
+        .bs-btn.btn-all button {
+            min-width: 90px;
+            height: 45px;
+            padding: 0 10px;
+            margin: 0 5px;
+            border: 1px solid #a4a4a4;
+            color: #000000;
+            font-size: 16px;
+            line-height: 28px;
+            vertical-align: middle;
+
+            &:first-child {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .bs-btn.btn-alphabet {
+            margin-left: 36px;
+
+            button {
+                padding: 0;
+                min-width: 30px;
+                height: 45px;
+                margin: 0 3px;
+                color: #969696;
+                font-size: 16px;
+                line-height: 28px;
+                vertical-align: middle;
+                border: none;
+            }
+            button:first-child {
+                margin: 0 3px 0 0;
+            }
+        }
     }
 `;

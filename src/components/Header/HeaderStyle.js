@@ -278,10 +278,18 @@ export const BrandSearch = styled.div`
     padding-top: 15px;
 
     .list-container.brand-list-scroll-box {
-        position: relative;
+        /* position: relative;
         margin-top: 20px;
         padding-top: 40px;
-        border-top: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5; */
+
+        max-height: 280px;
+        overflow: hidden;
+        overflow-y: auto;
+        margin-top: 0;
+        margin-right: -20px;
+        padding-top: 0;
+        padding-right: 18px;
     }
 
     .brand-search-header {

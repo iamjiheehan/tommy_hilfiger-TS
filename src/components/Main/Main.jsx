@@ -1106,6 +1106,11 @@ function Main() {
                         </div>
                     </Styles.Container>
                 </section>
+                <Styles.FixedBtn>
+                    <button type="button" class="history"><span>최근 본 상품 보기</span></button>
+                    <button type="button" class="bnc"><span>혜택 보기</span></button>
+                    <button type="button" class="top"><span>TOP</span></button>
+                </Styles.FixedBtn>
             </Styles.MainContainer >
         </>
     );

@@ -5,6 +5,7 @@ import moreArrowWhite from "../../assets/images/ico_more_arr_white.png";
 import btnlike from "../../assets/images/btn_like.png";
 import vidPlayBtn from "../../assets/images/ico_play_video_tommy.png";
 import star from "../../assets/images/tommy_rating_star_back.png";
+import fixedIco from "../../assets/images/icon_stickey.png";
 
 export const Banner = styled.div`
     position: relative;
@@ -18,7 +19,6 @@ export const Banner = styled.div`
     .slide-container {
         overflow: hidden;
         position: relative;
-
     }
 
     .slide-container .swiper-wrapper {
@@ -53,7 +53,10 @@ export const Banner = styled.div`
         line-height: 16px;
     }
 
-    .swiper-tool-wrap .swiper-tool .swiper-pagination .swiper-pagination-current {
+    .swiper-tool-wrap
+        .swiper-tool
+        .swiper-pagination
+        .swiper-pagination-current {
         opacity: 1;
         font-weight: 500;
         color: #fff;
@@ -66,7 +69,6 @@ export const Banner = styled.div`
         opacity: 0.5;
         margin: 0 2px;
     }
-
 `;
 
 export const Box = styled.div`
@@ -74,13 +76,18 @@ export const Box = styled.div`
     padding-top: 0;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) -44.67%, rgba(71, 71, 71, 0.35) 22.13%, rgba(111, 111, 111, 0) 59.47%);
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.7) -44.67%,
+            rgba(71, 71, 71, 0.35) 22.13%,
+            rgba(111, 111, 111, 0) 59.47%
+        );
         z-index: 3;
     }
 `;
@@ -185,7 +192,8 @@ export const ViewMore = styled.p`
 
 export const MainContainer = styled.div`
     padding-bottom: 160px;
-
+    position: relative;
+    
     .button-disabled {
         opacity: 0.3 !important;
     }
@@ -1630,4 +1638,52 @@ export const CampaignWrap = styled.div`
         line-height: 20px;
         letter-spacing: 0.02em;
     }
+`;
+
+// fixed btn
+
+export const FixedBtn = styled.div`
+    position: fixed;
+    z-index: 49;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 20px 0 0 0;
+    font-size: 0;
+
+    /* position: absolute;
+    bottom: 0; */
+
+    span {
+        position: relative;
+        display: inline-block;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        background: url(${fixedIco}) no-repeat;
+        vertical-align: middle;
+        font-size: 0;
+    }
+
+    .bnc {
+        background-position: -60px 0;
+    }
+
+    .top {
+        color: #fff;
+        font-size: 13px;
+        background-position: 100% 0;
+    }
+
+    .history span, .bnc span {
+        opacity: 0;
+    }
+
+    .top span {
+        padding-top: 20px;
+    }
+
 `;

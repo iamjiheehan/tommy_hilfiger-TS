@@ -8,7 +8,7 @@ function Footer() {
         <>
             <Styles.FooterWrap>
                 <div className="inner">
-                    <p className="logo">현대백화점 그룹 공식 패션몰</p>
+                    <p className="logo"></p>
                     <Styles.FamilySite>
                         <button type="button" className="btn">FAMILY SITE</button>
                         <div className="list">

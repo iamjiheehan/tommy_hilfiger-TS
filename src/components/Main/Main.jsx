@@ -55,9 +55,11 @@ function Main() {
                         </div>
                         <div className="swiper-tool-wrap">
                             <div className="swiper-tool">
-                                <div className="swiper-pagination swiper-pagination-fraction">
-                                    <span className="swiper-pagination-current">2</span><span>/</span><span class="swiper-pagination-total">9</span>
-                                    </div>
+                                <div className="swiper-pagination">
+                                    <span className="swiper-pagination-current">2</span>
+                                    <span className='swiper-pagination-bar'>/</span>
+                                    <span className="swiper-pagination-total">9</span>
+                                </div>
                             </div>
                         </div>
                     </Styles.Banner>

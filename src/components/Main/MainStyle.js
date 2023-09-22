@@ -34,6 +34,39 @@ export const Banner = styled.div`
         max-width: 1920px; */
     }
 
+    .swiper-tool-wrap {
+        position: absolute;
+        bottom: 60px;
+        right: 80px;
+        z-index: 10;
+    }
+
+    .swiper-tool-wrap .swiper-tool {
+        padding: 5px 10px;
+        background: rgba(0, 0, 0, 0.4);
+        display: inline-flex;
+    }
+
+    .swiper-tool-wrap .swiper-tool .swiper-pagination {
+        position: relative;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .swiper-tool-wrap .swiper-tool .swiper-pagination .swiper-pagination-current {
+        opacity: 1;
+        font-weight: 500;
+        color: #fff;
+        margin: 0 2px;
+    }
+
+    .swiper-tool-wrap .swiper-tool .swiper-pagination .swiper-pagination-bar,
+    .swiper-tool-wrap .swiper-tool .swiper-pagination .swiper-pagination-total {
+        color: #fff;
+        opacity: 0.5;
+        margin: 0 2px;
+    }
+
 `;
 
 export const Box = styled.div`

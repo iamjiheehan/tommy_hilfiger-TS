@@ -46,10 +46,8 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1920px;
         padding: 0 80px;
         margin: 0 auto;
-    }
 
-    section {
-        /* min-height: 800px; */
+        position: relative;
     }
 
     article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {

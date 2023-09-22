@@ -114,9 +114,6 @@ export const MainFlex = styled.div`
 `;
 
 export const GnbWrap = styled.div`
-    top: 120px;
-    right: 0;
-    left: 0;
     color: #fff;
     font-size: 15px;
     font-weight: 300;

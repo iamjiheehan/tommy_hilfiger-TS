@@ -8,10 +8,12 @@ import star from "../../assets/images/tommy_rating_star_back.png";
 
 export const Banner = styled.div`
     position: relative;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: auto;
     height: 750px;
     overflow: hidden;
+
+    background-color: tomato;
 
     .swiper-container .swiper-wrapper {
         display: flex;
@@ -21,6 +23,16 @@ export const Banner = styled.div`
 export const Box = styled.div`
     position: relative;
 
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) -44.67%, rgba(71, 71, 71, 0.35) 22.13%, rgba(111, 111, 111, 0) 59.47%);
+        z-index: 3;
+    }
 `;
 
 export const Image = styled.div`

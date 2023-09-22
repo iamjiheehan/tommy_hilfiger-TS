@@ -184,6 +184,8 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
+    padding-bottom: 160px;
+
     .button-disabled {
         opacity: 0.3 !important;
     }

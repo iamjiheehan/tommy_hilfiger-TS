@@ -380,16 +380,16 @@ function Header() {
                                         </p>
                                     </div>
                                     <div className="list-container brand-list-scroll-box">
-                                        <div className="bs-list-area">
-                                            <div className="bs-title-wrap">
-                                                <h3 className="bs-title">한섬 공식 브랜드</h3>
+                                        <Styles.SearchList>
+                                            <div className="alphabet-wrap">
+                                                <h3 className="title">한섬 공식 브랜드</h3>
                                             </div>
-                                            <div className="mbs-list-wrap">
-                                                <ul className="bs-list" id="brandSearchList">
+                                            <div className="brand-wrap">
+                                                <ul className="brand-list" id="brandSearchList">
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOMMY HILFIGER<br />
                                                                     <span className="name-ko">타미힐피거</span>
@@ -398,9 +398,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOMMY JEANS<br />
                                                                     <span className="name-ko">타미진스</span>
@@ -409,9 +409,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CLUB MONACO<br />
                                                                     <span className="name-ko">클럽모나코</span>
@@ -420,9 +420,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     DKNY<br />
                                                                     <span className="name-ko">디케이앤와이</span>
@@ -431,9 +431,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ck Calvin Klein<br />
                                                                     <span className="name-ko">CK 캘빈클라인</span>
@@ -442,9 +442,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     OUR LEGACY<br />
                                                                     <span className="name-ko">아워레가시</span>
@@ -453,9 +453,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     VERONICA BEARD<br />
                                                                     <span className="name-ko">베로니카 비어드</span>
@@ -464,9 +464,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ASPESI<br />
                                                                     <span className="name-ko">아스페시</span>
@@ -475,9 +475,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     SJYP<br />
                                                                     <span className="name-ko">에스제이와이피</span>
@@ -486,9 +486,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     rouge＆lounge<br />
                                                                     <span className="name-ko">루즈앤라운지</span>
@@ -497,9 +497,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOM GREYHOUND<br />
                                                                     <span className="name-ko">톰그레이하운드</span>
@@ -508,9 +508,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     MUE<br />
                                                                     <span className="name-ko">무이</span>
@@ -519,9 +519,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM THE STORE<br />
                                                                     <span className="name-ko">폼더스토어</span>
@@ -530,9 +530,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM STUDIO<br />
                                                                     <span className="name-ko">폼스튜디오</span>
@@ -541,9 +541,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM LOUNGE<br />
                                                                     <span className="name-ko">폼 라운지</span>
@@ -552,9 +552,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BALLY<br />
                                                                     <span className="name-ko">발리</span>
@@ -563,9 +563,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     MOOSE KNUCKLES<br />
                                                                     <span className="name-ko">무스너클</span>
@@ -574,9 +574,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     LANVIN PARIS<br />
                                                                     <span className="name-ko">랑방 파리</span>
@@ -585,9 +585,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     3.1 Phillip Lim<br />
                                                                     <span className="name-ko">필립림</span>
@@ -597,17 +597,17 @@ function Header() {
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <div className="bs-list-area" id="lowBrandSearchList">
-                                            <div className="bs-title-wrap">
-                                                <h3 className="bs-title">A</h3>
+                                        </Styles.SearchList>
+                                        <Styles.SearchList id="lowBrandSearchList">
+                                            <div className="alphabet-wrap">
+                                                <h3 className="title">A</h3>
                                             </div>
-                                            <div className="mbs-list-wrap">
-                                                <ul className="bs-list">
+                                            <div className="brand-wrap">
+                                                <ul className="brand-list">
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ACC ART BOOKS<br />
                                                                     <span className="name-ko">에이씨씨 아트 북스 by FOURM LOUNGE</span>
@@ -616,9 +616,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
                                                                     <span className="name-ko">아디다스 by TOM GREYHOUND</span>
@@ -627,9 +627,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
                                                                     <span className="name-ko">아디다스 by FOURM LOUNGE</span>
@@ -638,9 +638,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
                                                                     <span className="name-ko">아디다스 by MUE</span>
@@ -649,9 +649,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
                                                                     <span className="name-ko">에이골디 by TOM GREYHOUND</span>
@@ -660,9 +660,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
                                                                     <span className="name-ko">에이골디 by FOURM THE STORE</span>
@@ -671,9 +671,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
                                                                     <span className="name-ko">에이골디 by MUE</span>
@@ -682,9 +682,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
                                                                     <span className="name-ko">에이골디 by FOURM STUDIO</span>
@@ -693,9 +693,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AJE<br />
                                                                     <span className="name-ko">에이지 by FOURM STUDIO</span>
@@ -704,9 +704,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AKIRA NAKA<br />
                                                                     <span className="name-ko">아키라 나까 by FOURM STUDIO</span>
@@ -715,9 +715,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALCHEMIST<br />
                                                                     <span className="name-ko">알케미스트 by TOM GREYHOUND</span>
@@ -726,9 +726,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALDO<br />
                                                                     <span className="name-ko">알도</span>
@@ -737,9 +737,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALEMAIS<br />
                                                                     <span className="name-ko">알레메 by FOURM STUDIO</span>
@@ -748,9 +748,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALIGHIERI<br />
                                                                     <span className="name-ko">알리기에리 by TOM GREYHOUND</span>
@@ -759,9 +759,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALIITA<br />
                                                                     <span className="name-ko">알리타 by FOURM STUDIO</span>
@@ -770,9 +770,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     allegri<br />
                                                                     <span className="name-ko">알레그리</span>
@@ -781,9 +781,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALLUDE<br />
                                                                     <span className="name-ko">얼루드 by FOURM STUDIO</span>
@@ -792,9 +792,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALMOST BLACK<br />
                                                                     <span className="name-ko">올모스트 블랙 by TOM GREYHOUND</span>
@@ -803,9 +803,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     American Needle<br />
                                                                     <span className="name-ko">아메리칸 니들</span>
@@ -814,9 +814,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AMOMENTO<br />
                                                                     <span className="name-ko">아모멘토 by TOM GREYHOUND</span>
@@ -825,9 +825,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ANDERSON`S<br />
                                                                     <span className="name-ko">앤더슨즈 by FOURM LOUNGE</span>
@@ -836,9 +836,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ANINE BING<br />
                                                                     <span className="name-ko">애니빙 by FOURM THE STORE</span>
@@ -847,9 +847,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     Antichi Romani<br />
                                                                     <span className="name-ko">안치티 로마니</span>
@@ -858,9 +858,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     A POINT<br />
                                                                     <span className="name-ko">에이포인트 by FOURM STUDIO</span>
@@ -869,9 +869,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARENA<br />
                                                                     <span className="name-ko">아레나</span>
@@ -880,9 +880,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARIES<br />
                                                                     <span className="name-ko">에리즈 by FOURM THE STORE</span>
@@ -891,9 +891,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARIES ARISE<br />
                                                                     <span className="name-ko">에이리스 어라이즈 by TOM GREYHOUND</span>
@@ -902,9 +902,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ATLANTIQUE ASCOLI<br />
                                                                     <span className="name-ko">아트란틱 아스콜리 by MUE</span>
@@ -913,9 +913,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     ATM<br />
                                                                     <span className="name-ko">에이티엠 by FOURM THE STORE</span>
@@ -924,9 +924,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTOMATIC FOR THE PEOPLE<br />
                                                                     <span className="name-ko">오토매틱포더피플 by TOM GREYHOUND</span>
@@ -935,9 +935,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTRY<br />
                                                                     <span className="name-ko">오트리 by MUE</span>
@@ -946,9 +946,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTRY<br />
                                                                     <span className="name-ko">오트리 by TOM GREYHOUND</span>
@@ -957,9 +957,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     AVN<br />
                                                                     <span className="name-ko">에이브이엔 by TOM GREYHOUND</span>
@@ -969,15 +969,15 @@ function Header() {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="bs-title-wrap">
-                                                <h3 className="bs-title">B</h3>
+                                            <div className="alphabet-wrap">
+                                                <h3 className="title">B</h3>
                                             </div>
-                                            <div className="mbs-list-wrap">
-                                                <ul className="bs-list">
+                                            <div className="brand-wrap">
+                                                <ul className="brand-list">
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BARACUTA<br />
                                                                     <span className="name-ko">바라쿠타 by TOM GREYHOUND</span>
@@ -986,9 +986,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BAUM UND PFERDGARTEN<br />
                                                                     <span className="name-ko">바움 운드 페르트가르텐 by TOM GREYHOUND</span>
@@ -997,9 +997,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BEARBRICK<br />
                                                                     <span className="name-ko">베어브릭 by FOURM LOUNGE</span>
@@ -1008,9 +1008,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BED J.W. FORD<br />
                                                                     <span className="name-ko">베드 JW 포드 by TOM GREYHOUND</span>
@@ -1019,9 +1019,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BEMBIEN<br />
                                                                     <span className="name-ko">벰비앙 by FOURM STUDIO</span>
@@ -1030,9 +1030,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BEMBIEN<br />
                                                                     <span className="name-ko">벰비앙 by FOURM THE STORE</span>
@@ -1041,9 +1041,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BENSIMON<br />
                                                                     <span className="name-ko">벤시몽</span>
@@ -1052,9 +1052,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     Bleu de Chauffe<br />
                                                                     <span className="name-ko">블루드쇼프</span>
@@ -1063,9 +1063,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BLUEHOUR<br />
                                                                     <span className="name-ko">블루아워 by FOURM STUDIO</span>
@@ -1074,9 +1074,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BODE<br />
                                                                     <span className="name-ko">보드 by MUE</span>
@@ -1085,9 +1085,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BONFANTI<br />
                                                                     <span className="name-ko">본판티 by FOURM STUDIO</span>
@@ -1096,9 +1096,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BONNE MAISON<br />
                                                                     <span className="name-ko">본 메종 by FOURM THE STORE</span>
@@ -1107,9 +1107,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BORNN<br />
                                                                     <span className="name-ko">본에나멜웨어 by TOM GREYHOUND</span>
@@ -1118,9 +1118,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     BOSS<br />
                                                                     <span className="name-ko">보스</span>
@@ -1129,9 +1129,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     B SIDES<br />
                                                                     <span className="name-ko">비 사이드 by FOURM THE STORE</span>
@@ -1141,15 +1141,15 @@ function Header() {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="bs-title-wrap">
-                                                <h3 className="bs-title">C</h3>
+                                            <div className="alphabet-wrap">
+                                                <h3 className="title">C</h3>
                                             </div>
-                                            <div className="mbs-list-wrap">
-                                                <ul className="bs-list">
+                                            <div className="brand-wrap">
+                                                <ul className="brand-list">
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CA4LA<br />
                                                                     <span className="name-ko">카시라 by FOURM STUDIO</span>
@@ -1158,9 +1158,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CA4LA<br />
                                                                     <span className="name-ko">카시라 by FOURM LOUNGE</span>
@@ -1169,9 +1169,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     Calvin Klein<br />
                                                                     <span className="name-ko">캘빈클라인</span>
@@ -1180,9 +1180,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CAMPER LAB<br />
                                                                     <span className="name-ko">캠퍼랩 by TOM GREYHOUND</span>
@@ -1191,9 +1191,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CASEY CASEY<br />
                                                                     <span className="name-ko">케세이 케세이 by TOM GREYHOUND</span>
@@ -1202,9 +1202,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4" ><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CATERINA BERTINI<br />
                                                                     <span className="name-ko">카테리나 베르티니 by FOURM STUDIO</span>
@@ -1213,9 +1213,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CFCL<br />
                                                                     <span className="name-ko">씨에프씨엘 by MUE</span>
@@ -1224,9 +1224,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-llike4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CHILDREN OF THE DISCORDANCE<br />
                                                                     <span className="name-ko">칠드런오브더디스코던스 by TOM GREYHOUND</span>
@@ -1235,9 +1235,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CHINTI AND PARKER<br />
                                                                     <span className="name-ko">친티앤파커 by TOM GREYHOUND</span>
@@ -1246,9 +1246,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     Chums<br />
                                                                     <span className="name-ko">첨스</span>
@@ -1257,9 +1257,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CITIZENS OF HUMANITY<br />
                                                                     <span className="name-ko">시티젠스 오브 휴머니티 by FOURM THE STORE</span>
@@ -1268,9 +1268,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLE COLE<br />
                                                                     <span className="name-ko">꼴레꼴레 by FOURM LOUNGE</span>
@@ -1279,9 +1279,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLE HAAN<br />
                                                                     <span className="name-ko">콜한</span>
@@ -1290,9 +1290,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     Coleman<br />
                                                                     <span className="name-ko">콜맨</span>
@@ -1301,9 +1301,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLLINA STRADA<br />
                                                                     <span className="name-ko">콜리나 스트라다 by FOURM THE STORE</span>
@@ -1312,9 +1312,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     COMPLETED WORKS<br />
                                                                     <span className="name-ko">컴플리티드 웍스 by FOURM STUDIO</span>
@@ -1323,9 +1323,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     COURREGES<br />
                                                                     <span className="name-ko">꾸레쥬 by MUE</span>
@@ -1334,9 +1334,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CRYSTAL HAZE<br />
                                                                     <span className="name-ko">크리스탈 헤이즈 by FOURM STUDIO</span>
@@ -1345,9 +1345,9 @@ function Header() {
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div className="bsl-cont">
+                                                        <div className="wrap">
                                                             <button type="button" className="btn-like4"><span>좋아요</span></button>
-                                                            <div className="bsl-name">
+                                                            <div className="brand-name">
                                                                 <a href="#!">
                                                                     CURVES<br />
                                                                     <span className="name-ko">커브즈 바이 션 브라운 by TOM GREYHOUND</span>
@@ -1357,7 +1357,7 @@ function Header() {
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </Styles.SearchList>
                                     </div>
                                 </div>
                             </Styles.BrandSearch>

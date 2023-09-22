@@ -419,3 +419,7 @@ export const BrandSearch = styled.div`
         }
     }
 `;
+
+export const SearchList = styled.div`
+    
+`;

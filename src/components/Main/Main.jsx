@@ -4,6 +4,7 @@ import * as Styles from './MainStyle';
 
 import MainBanner1 from '../../assets/images/main_banner-1.jpg'
 import MainBanner2 from '../../assets/images/main_banner-2.jpg'
+import MainBanner3 from '../../assets/images/main_banner-3.jpg'
 import vidBack from '../../assets/images/img_video_thumb_h.png'
 import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
@@ -15,12 +16,12 @@ function Main() {
                 <section id='mainBanner'>
                     <Styles.Banner>
                         <div className='slide-container'>
-                            <div className='swipe-wrapper'>
-                                <div className='swipe-item'>
+                            <div className='swiper-wrapper'>
+                                <div className='swiper-item'>
                                     <Styles.Box>
                                         <Styles.Banner className="img">
                                             <a href="#!">
-                                                <img src={MainBanner1} alt="MainBanner1" />
+                                                <img src={MainBanner3} alt="MainBanner1" />
                                             </a>
                                         </Styles.Banner>
                                         <Styles.Text className="str" href="#!">
@@ -33,7 +34,7 @@ function Main() {
                                         </Styles.Text>
                                     </Styles.Box>
                                 </div>
-                                <div className='swipe-item'>
+                                <div className='swiper-item'>
                                     <Styles.Box>
                                         <Styles.Image>
                                             <a href="#!">
@@ -52,6 +53,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
+                        
                     </Styles.Banner>
                 </section>
                 {/* 첫번째 섹션 */}

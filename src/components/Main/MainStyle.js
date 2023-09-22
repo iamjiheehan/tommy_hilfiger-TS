@@ -8,20 +8,37 @@ import star from "../../assets/images/tommy_rating_star_back.png";
 
 export const Banner = styled.div`
     position: relative;
-    /* max-width: 1920px; */
-    margin: auto;
-    height: 750px;
+    min-height: 599px;
+    max-height: 750px;
+
     overflow: hidden;
 
-    background-color: tomato;
+    margin: auto;
 
-    .swiper-container .swiper-wrapper {
+    .slide-container {
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .slide-container .swiper-wrapper {
         display: flex;
     }
+    .slide-container .swiper-wrapper .swiper-item {
+        flex-shrink: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0;
+
+        /* min-width: 1366px;
+        max-width: 1920px; */
+    }
+
 `;
 
 export const Box = styled.div`
     position: relative;
+    padding-top: 0;
 
     &::after {
         content: '';
@@ -36,13 +53,19 @@ export const Box = styled.div`
 `;
 
 export const Image = styled.div`
+    position: relative;
+    z-index: 3;
+    width: 100%;
+
     a {
         height: auto;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
     }
 
     a > img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
     }
 `;

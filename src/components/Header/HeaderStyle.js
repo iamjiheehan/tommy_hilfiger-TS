@@ -242,7 +242,7 @@ export const BrandLine = styled.div`
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    
+
     .btn-brand-line {
         position: relative;
     display: inline-block;
@@ -277,7 +277,7 @@ export const BrandLine = styled.div`
 export const BrandSearch = styled.div`
     padding-top: 15px;
 
-    .bs-list-container.brand-list-scroll-box {
+    .list-container.brand-list-scroll-box {
         position: relative;
         margin-top: 20px;
         padding-top: 40px;
@@ -347,7 +347,7 @@ export const BrandSearch = styled.div`
         padding-bottom: 0;
     }
 
-    .brand-search-cont .bs-list-nodata {
+    .brand-search-cont .list-nodata {
         padding: 30px 0 0 0;
         margin-top: 20px;
         margin-bottom: 40px;
@@ -357,14 +357,14 @@ export const BrandSearch = styled.div`
         text-align: center;
     }
 
-    .brand-search-cont .bs-btnTab {
+    .brand-search-cont .btnTab {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         position: relative;
         margin: 0 auto;
 
-        .bs-btn {
+        .btn {
             display: flex;
             margin: 0;
             padding: 0;
@@ -383,7 +383,7 @@ export const BrandSearch = styled.div`
                 color: #fff;
             }
         }
-        .bs-btn.btn-all button {
+        .btn.btn-all button {
             min-width: 90px;
             height: 45px;
             padding: 0 10px;
@@ -399,7 +399,7 @@ export const BrandSearch = styled.div`
             }
         }
 
-        .bs-btn.btn-alphabet {
+        .btn.btn-alphabet {
             margin-left: 36px;
 
             button {

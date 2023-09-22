@@ -340,12 +340,12 @@ function Header() {
                                     </fieldset>
                                 </div>
                                 <div className="brand-search-cont">
-                                    <div class="bs-btnTab">
-                                        <div class="bs-btn btn-all" id="searchTabList">
+                                    <div class="btnTab">
+                                        <div class="btn btn-all" id="searchTabList">
                                             <button type="button" tabtype="MY" id="searchMyBrnd"><span>MY</span></button>
                                             <button type="button" tabtype="ALL" id="searchTotalBrnd" class="on"><span>전체</span></button>
                                         </div>
-                                        <div class="bs-btn btn-alphabet" id="searchAlphabetList">
+                                        <div class="btn btn-alphabet" id="searchAlphabetList">
                                             <button type="button" tabtype="A"><span>A</span></button>
                                             <button type="button" tabtype="B"><span>B</span></button>
                                             <button type="button" tabtype="C"><span>C</span></button>
@@ -373,14 +373,13 @@ function Header() {
                                             <button type="button" tabtype="Z"><span>Z</span></button>
                                             <button type="button" tabtype="ETC"><span>0~9</span></button>
                                         </div>
-
                                     </div>
-                                    <div class="bs-list-container">
-                                        <p class="bs-list-nodata">
+                                    <div class="list-container">
+                                        <p class="list-nodata">
                                             관심있는 브랜드에 하트를 눌러 보세요!
                                         </p>
                                     </div>
-                                    <div className="bs-list-container brand-list-scroll-box">
+                                    <div className="list-container brand-list-scroll-box">
                                         <div className="bs-list-area">
                                             <div className="bs-title-wrap">
                                                 <h3 className="bs-title">한섬 공식 브랜드</h3>

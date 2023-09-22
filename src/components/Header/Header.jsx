@@ -297,7 +297,7 @@ function Header() {
                 <Styles.NewBrand>
                     <div className="gnb-new-box">
                         <div class="menu-contents">
-                            <div class="brand-line-wrap">
+                            <Styles.BrandLine>
                                 <a href="#!" class="btn-brand-line">
                                     <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_7_KOR_20230712043648.jpg?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
                                     <div class="title">MAIN</div>
@@ -326,8 +326,8 @@ function Header() {
                                     <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_6_KOR_20230906164615.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
                                     <div class="title">GOLF</div>
                                 </a>
-                            </div>
-                            <div class="brand-line-search-wrap">
+                            </Styles.BrandLine>
+                            <Styles.BrandSearch>
                                 <div class="brand-search-container">
                                     <fieldset class="brand-search-header">
                                         <legend>검색</legend>
@@ -1361,7 +1361,7 @@ function Header() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Styles.BrandSearch>
                         </div>
                     </div>
                 </Styles.NewBrand>

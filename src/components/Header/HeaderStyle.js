@@ -227,37 +227,41 @@ export const NewBrand = styled.div`
         padding: 40px 0;
     }
 
-    .gnb-new-box .menu-contents .brand-line-wrap {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: center;
-    }
-
-    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line {
+    .brand-search-container {
         position: relative;
-        display: inline-block;
-        flex: 0 1 242px;
+        width: 1200px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+`;
+
+export const BrandLine = styled.div`
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    
+    .btn-brand-line {
+        position: relative;
+    display: inline-block;
+    flex: 0 1 242px;
     }
 
-    .gnb-new-box
-        .menu-contents
-        .brand-line-wrap
-        .btn-brand-line
-        + .btn-brand-line {
+
+    .btn-brand-line + .btn-brand-line {
         margin-left: 11px;
     }
 
-    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line img {
+    .btn-brand-line img {
         width: 100%;
         height: 90px;
         object-fit: cover;
         border: 1px solid #eaeaea;
     }
 
-    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line .title {
+    .btn-brand-line .title {
         position: relative;
         color: var(--themeTextColor);
         font-size: 15px;
@@ -268,35 +272,24 @@ export const NewBrand = styled.div`
         margin-top: 20px;
         text-align: center;
     }
+`;
 
-    .brand-search-container {
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        z-index: 2;
-    }
+export const BrandSearch = styled.div`
+    padding-top: 15px;
 
-    .gnb-new-box .menu-contents .brand-line-search-wrap {
-        padding-top: 15px;
-    }
-
-    .gnb-new-box .menu-contents .brand-line-search-wrap .bs-list-container.brand-list-scroll-box {
+    .bs-list-container.brand-list-scroll-box {
         position: relative;
         margin-top: 20px;
         padding-top: 40px;
         border-top: 1px solid #e5e5e5;
     }
 
-    .gnb-new-box .menu-contents .brand-line-search-wrap .brand-search-header {
+    .brand-search-header {
         width: 690px;
         margin: 0 auto;
     }
 
-    .gnb-new-box
-        .menu-contents
-        .brand-line-search-wrap
-        .brand-search-header
-        .brand-search-field {
+    .brand-search-header .brand-search-field {
         margin-top: 25px;
 
         padding-left: 30px;
@@ -324,12 +317,8 @@ export const NewBrand = styled.div`
             }
         }
     }
-    .gnb-new-box
-        .menu-contents
-        .brand-line-search-wrap
-        .brand-search-header
-        .brand-search-field
-        .input-box {
+
+    .brand-search-header .brand-search-field .input-box {
         width: 100%;
         position: relative;
         margin-top: 20px;
@@ -353,16 +342,12 @@ export const NewBrand = styled.div`
         }
     }
 
-    .gnb-new-box .menu-contents .brand-line-search-wrap .brand-search-cont {
+    .brand-search-cont {
         padding-top: 30px;
         padding-bottom: 0;
     }
 
-    .gnb-new-box
-        .menu-contents
-        .brand-line-search-wrap
-        .brand-search-cont
-        .bs-list-nodata {
+    .brand-search-cont .bs-list-nodata {
         padding: 30px 0 0 0;
         margin-top: 20px;
         margin-bottom: 40px;
@@ -372,11 +357,7 @@ export const NewBrand = styled.div`
         text-align: center;
     }
 
-    .gnb-new-box
-        .menu-contents
-        .brand-line-search-wrap
-        .brand-search-cont
-        .bs-btnTab {
+    .brand-search-cont .bs-btnTab {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;

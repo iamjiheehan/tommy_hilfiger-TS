@@ -341,7 +341,10 @@ function Header() {
                                 </div>
                                 <div className="brand-search-cont">
                                     <div class="bs-list-container">
-                                </div>
+                                        <p class="bs-list-nodata">
+                                            관심있는 브랜드에 하트를 눌러 보세요!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

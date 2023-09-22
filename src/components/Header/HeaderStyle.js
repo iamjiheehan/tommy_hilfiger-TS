@@ -158,7 +158,7 @@ export const GnbWrap = styled.div`
     }
 `;
 
-export const NewBox = styled.div`
+export const NewCategory = styled.div`
 
 
         position: absolute;
@@ -206,5 +206,21 @@ export const NewBox = styled.div`
     .gnb-new-box .menu-contents .brand-cate-wrap .brand-cate-list li:first-of-type a {
         font-weight: 600;
         
+    }
+`;
+
+export const NewBrand = styled.div`
+            position: absolute;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+
+    .gnb-new-box {
+        min-width: 1366px;
+        max-width: 1920px;
+        margin: auto;
+        position: relative;
+        padding: 0 80px;
     }
 `;

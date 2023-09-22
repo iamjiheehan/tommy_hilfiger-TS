@@ -66,8 +66,8 @@ function Header() {
                         </div>
                     </Styles.GnbWrap>
                 </div>
-                <Styles.NewBox>
-                    <div className="gnb-new-box">
+                <Styles.NewCategory>
+                    <div className="gnb-new-box hide">
                         <div className="menu-contents">
                             <div className="brand-cate-wrap">
                                 <ul className="brand-cate-list">
@@ -293,7 +293,12 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                </Styles.NewBox>
+                </Styles.NewCategory>
+                <Styles.NewBrand>
+                    <div className="gnb-new-box hide">
+                        
+                    </div>
+                </Styles.NewBrand>
             </header>
         </>
     );

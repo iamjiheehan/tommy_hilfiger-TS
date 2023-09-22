@@ -38,7 +38,7 @@ export const Banner = styled.div`
         position: absolute;
         bottom: 60px;
         right: 80px;
-        z-index: 10;
+        z-index: 9;
     }
 
     .swiper-tool-wrap .swiper-tool {

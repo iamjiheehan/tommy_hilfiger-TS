@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import searchImg from "../../assets/images/icon_search_br.svg";
 import arrowIcon from "../../assets/images/ico_arrow_link.svg";
+import btnLike4 from "../../assets/images/btn_like8.png";
 
 export const Link = styled.a`
     display: inline-block;
@@ -245,10 +246,9 @@ export const BrandLine = styled.div`
 
     .btn-brand-line {
         position: relative;
-    display: inline-block;
-    flex: 0 1 242px;
+        display: inline-block;
+        flex: 0 1 242px;
     }
-
 
     .btn-brand-line + .btn-brand-line {
         margin-left: 11px;
@@ -421,5 +421,66 @@ export const BrandSearch = styled.div`
 `;
 
 export const SearchList = styled.div`
-    
+    .alphabet-wrap {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        .title {
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+
+    .brand-wrap ul > li {
+        display: inline-block;
+        width: 25%;
+        min-height: 64px;
+        padding-bottom: 10px;
+    }
+
+    .brand-wrap ul > li .wrap {
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+
+    .brand-wrap ul > li .wrap .btn-like {
+        float: left;
+
+        width: 24px;
+        height: 20px;
+    }
+
+    .brand-wrap ul > li .wrap .btn-like span {
+        font-size: 0;
+    }
+    .brand-wrap ul > li .wrap .btn-like span::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 24px;
+        height: 20px;
+        background: url(${btnLike4}) no-repeat left top;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    .brand-wrap ul > li .wrap .brand-name {
+        margin-left: 18px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    .brand-wrap ul > li .wrap .brand-name .name-ko {
+        color: #a4a4a4;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        padding-top: 6px;
+    }
 `;

@@ -388,7 +388,7 @@ function Header() {
                                                 <ul className="brand-list" id="brandSearchList">
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOMMY HILFIGER<br />
@@ -399,7 +399,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOMMY JEANS<br />
@@ -410,7 +410,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CLUB MONACO<br />
@@ -421,7 +421,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     DKNY<br />
@@ -432,7 +432,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ck Calvin Klein<br />
@@ -443,7 +443,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     OUR LEGACY<br />
@@ -454,7 +454,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     VERONICA BEARD<br />
@@ -465,7 +465,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ASPESI<br />
@@ -476,7 +476,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     SJYP<br />
@@ -487,7 +487,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     rouge＆lounge<br />
@@ -498,7 +498,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     TOM GREYHOUND<br />
@@ -509,7 +509,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     MUE<br />
@@ -520,7 +520,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM THE STORE<br />
@@ -531,7 +531,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM STUDIO<br />
@@ -542,7 +542,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     FOURM LOUNGE<br />
@@ -553,7 +553,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BALLY<br />
@@ -564,7 +564,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     MOOSE KNUCKLES<br />
@@ -575,7 +575,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     LANVIN PARIS<br />
@@ -586,7 +586,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     3.1 Phillip Lim<br />
@@ -606,7 +606,7 @@ function Header() {
                                                 <ul className="brand-list">
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ACC ART BOOKS<br />
@@ -617,7 +617,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
@@ -628,7 +628,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
@@ -639,7 +639,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ADIDAS<br />
@@ -650,7 +650,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
@@ -661,7 +661,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
@@ -672,7 +672,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
@@ -683,7 +683,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AGOLDE<br />
@@ -694,7 +694,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AJE<br />
@@ -705,7 +705,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AKIRA NAKA<br />
@@ -716,7 +716,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALCHEMIST<br />
@@ -727,7 +727,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALDO<br />
@@ -738,7 +738,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALEMAIS<br />
@@ -749,7 +749,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALIGHIERI<br />
@@ -760,7 +760,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALIITA<br />
@@ -771,7 +771,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     allegri<br />
@@ -782,7 +782,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALLUDE<br />
@@ -793,7 +793,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ALMOST BLACK<br />
@@ -804,7 +804,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     American Needle<br />
@@ -815,7 +815,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AMOMENTO<br />
@@ -826,7 +826,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ANDERSON`S<br />
@@ -837,7 +837,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ANINE BING<br />
@@ -848,7 +848,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     Antichi Romani<br />
@@ -859,7 +859,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     A POINT<br />
@@ -870,7 +870,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARENA<br />
@@ -881,7 +881,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARIES<br />
@@ -892,7 +892,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ARIES ARISE<br />
@@ -903,7 +903,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ATLANTIQUE ASCOLI<br />
@@ -914,7 +914,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     ATM<br />
@@ -925,7 +925,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTOMATIC FOR THE PEOPLE<br />
@@ -936,7 +936,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTRY<br />
@@ -947,7 +947,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AUTRY<br />
@@ -958,7 +958,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     AVN<br />
@@ -976,7 +976,7 @@ function Header() {
                                                 <ul className="brand-list">
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BARACUTA<br />
@@ -1020,7 +1020,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BEMBIEN<br />
@@ -1031,7 +1031,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BEMBIEN<br />
@@ -1042,7 +1042,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BENSIMON<br />
@@ -1053,7 +1053,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     Bleu de Chauffe<br />
@@ -1064,7 +1064,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BLUEHOUR<br />
@@ -1075,7 +1075,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BODE<br />
@@ -1086,7 +1086,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BONFANTI<br />
@@ -1097,7 +1097,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BONNE MAISON<br />
@@ -1108,7 +1108,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BORNN<br />
@@ -1119,7 +1119,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     BOSS<br />
@@ -1130,7 +1130,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     B SIDES<br />
@@ -1148,7 +1148,7 @@ function Header() {
                                                 <ul className="brand-list">
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CA4LA<br />
@@ -1159,7 +1159,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CA4LA<br />
@@ -1170,7 +1170,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     Calvin Klein<br />
@@ -1181,7 +1181,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CAMPER LAB<br />
@@ -1192,7 +1192,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CASEY CASEY<br />
@@ -1203,7 +1203,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4" ><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like" ><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CATERINA BERTINI<br />
@@ -1214,7 +1214,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CFCL<br />
@@ -1225,7 +1225,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-llike4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CHILDREN OF THE DISCORDANCE<br />
@@ -1236,7 +1236,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CHINTI AND PARKER<br />
@@ -1247,7 +1247,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     Chums<br />
@@ -1258,7 +1258,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CITIZENS OF HUMANITY<br />
@@ -1269,7 +1269,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLE COLE<br />
@@ -1280,7 +1280,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLE HAAN<br />
@@ -1291,7 +1291,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     Coleman<br />
@@ -1302,7 +1302,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     COLLINA STRADA<br />
@@ -1313,7 +1313,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     COMPLETED WORKS<br />
@@ -1324,7 +1324,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     COURREGES<br />
@@ -1335,7 +1335,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CRYSTAL HAZE<br />
@@ -1346,7 +1346,7 @@ function Header() {
                                                     </li>
                                                     <li>
                                                         <div className="wrap">
-                                                            <button type="button" className="btn-like4"><span>좋아요</span></button>
+                                                            <button type="button" className="btn-like"><span>좋아요</span></button>
                                                             <div className="brand-name">
                                                                 <a href="#!">
                                                                     CURVES<br />
@@ -1361,6 +1361,7 @@ function Header() {
                                     </div>
                                 </div>
                             </Styles.BrandSearch>
+
                         </div>
                     </div>
                 </Styles.NewBrand>

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-import icoNext from "./assets/images/ico_next_blue_h48.png"
-import icoPrev from "./assets/images/ico_prev_blue_h48.png"
+import icoNext from "./assets/images/ico_next_blue_h48.png";
+import icoPrev from "./assets/images/ico_prev_blue_h48.png";
 
 const fonts = {
     KoPubWorld: "KoPubWorld",
@@ -69,6 +69,10 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
 
+    img, fieldset {
+    border: 0;
+}
+
     ul > li {
         list-style: none;
     }
@@ -89,5 +93,15 @@ export const GlobalStyle = createGlobalStyle`
         background: ${(props) => props.background || "transparent"};
 
     }
+
+    legend, caption {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin-top: -1px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
 
 `;

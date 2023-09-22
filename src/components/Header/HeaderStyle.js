@@ -56,8 +56,6 @@ export const BtnWrap = styled.div`
         color: #00174f;
     }
 
-
-    
     .btn-list {
         cursor: pointer;
 
@@ -65,7 +63,7 @@ export const BtnWrap = styled.div`
         display: inline-block;
         padding-bottom: 16px;
         margin-right: ${(props) => props.marginright || "30px"};
-    
+
         position: relative;
     }
 
@@ -78,7 +76,7 @@ export const BtnWrap = styled.div`
         position: absolute;
         bottom: 0;
         left: 0;
-        top:1px;
+        top: 1px;
     }
 `;
 
@@ -159,13 +157,11 @@ export const GnbWrap = styled.div`
 `;
 
 export const NewCategory = styled.div`
-
-
-        position: absolute;
-        left: 0;
-        right: 0;
-        background: #fff;
-        z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
 
     .gnb-new-box {
         min-width: 1366px;
@@ -173,7 +169,6 @@ export const NewCategory = styled.div`
         margin: auto;
         position: relative;
         padding: 0 80px;
-
     }
 
     .gnb-new-box .menu-contents {
@@ -203,18 +198,22 @@ export const NewCategory = styled.div`
         outline: none;
     }
 
-    .gnb-new-box .menu-contents .brand-cate-wrap .brand-cate-list li:first-of-type a {
+    .gnb-new-box
+        .menu-contents
+        .brand-cate-wrap
+        .brand-cate-list
+        li:first-of-type
+        a {
         font-weight: 600;
-        
     }
 `;
 
 export const NewBrand = styled.div`
-            position: absolute;
-        left: 0;
-        right: 0;
-        background: #fff;
-        z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
 
     .gnb-new-box {
         min-width: 1366px;
@@ -222,5 +221,136 @@ export const NewBrand = styled.div`
         margin: auto;
         position: relative;
         padding: 0 80px;
+    }
+
+    .gnb-new-box .menu-contents {
+        padding: 40px 0;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line {
+        position: relative;
+        display: inline-block;
+        flex: 0 1 242px;
+    }
+
+    .gnb-new-box
+        .menu-contents
+        .brand-line-wrap
+        .btn-brand-line
+        + .btn-brand-line {
+        margin-left: 11px;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+        border: 1px solid #eaeaea;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-wrap .btn-brand-line .title {
+        position: relative;
+        color: var(--themeTextColor);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }  
+    
+    .brand-search-container {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-search-wrap {
+        padding-top: 15px;
+    }
+
+
+    .gnb-new-box .menu-contents .brand-line-search-wrap .bs-list-container {
+        position: relative;
+        margin-top: 20px;
+        padding-top: 40px;
+        border-top: 2px solid #000000;
+    }
+
+    .gnb-new-box .menu-contents .brand-line-search-wrap .brand-search-header {
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .gnb-new-box
+        .menu-contents
+        .brand-line-search-wrap
+        .brand-search-header
+        .brand-search-field {
+        margin-top: 25px;
+
+        padding-left: 30px;
+        /* padding-left: 40px; */
+
+        overflow: hidden;
+        position: relative;
+        height: 60px;
+        padding-right: 69px;
+        border: none;
+        border-radius: 3px;
+        background-color: #fafafa;
+
+        .btn-search {
+            position: absolute;
+            top: 9px;
+            right: 15px;
+            width: 54px;
+            height: 42px;
+            /* font-size: 0; */
+            background: url(${searchImg}) no-repeat 50% 50%/24px;
+
+            span {
+                font-size: 0;
+            }
+        }
+    }
+    .gnb-new-box
+        .menu-contents
+        .brand-line-search-wrap
+        .brand-search-header
+        .brand-search-field
+        .input-box {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+
+        input[type="text"] {
+            line-height: 38px;
+            
+            width: 100%;
+            height: 100%;
+            border: 0;
+            font-size: 16px;
+            font-weight: 400;
+            background: none;
+
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            border-radius: 0;
+            vertical-align: top;
+            outline: none;
+        }
     }
 `;

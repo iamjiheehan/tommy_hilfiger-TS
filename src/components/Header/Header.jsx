@@ -295,8 +295,56 @@ function Header() {
                     </div>
                 </Styles.NewCategory>
                 <Styles.NewBrand>
-                    <div className="gnb-new-box hide">
-                        
+                    <div className="gnb-new-box">
+                        <div class="menu-contents">
+                            <div class="brand-line-wrap">
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_7_KOR_20230712043648.jpg?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">MAIN</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_1_KOR_20230906182644.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">MEN</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_2_KOR_20230906182653.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">WOMEN</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_3_KOR_20230906182702.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">JEANS</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_5_KOR_20230906164555.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">KIDS</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_4_KOR_20230906182350.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">SHOES</div>
+                                </a>
+                                <a href="#!" class="btn-brand-line">
+                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_6_KOR_20230906164615.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div class="title">GOLF</div>
+                                </a>
+                            </div>
+                            <div class="brand-line-search-wrap">
+                                <div class="brand-search-container">
+                                    <fieldset class="brand-search-header">
+                                        <legend>검색</legend>
+                                        <div class="input-info-group brand-search-field">
+                                            <div class="input-box">
+                                                <input type="text" name="brandSearch" id="brandSearch" title="브랜드 검색" placeholder="브랜드를 입력하세요." class="inp-reset inp-search" autocomplete="off" />
+                                            </div>
+                                            <button type="button" class="btn-search"><span>검색</span></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div className="brand-search-cont">
+                                    <div class="bs-list-container">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Styles.NewBrand>
             </header>

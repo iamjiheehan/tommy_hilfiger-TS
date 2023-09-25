@@ -278,11 +278,6 @@ export const BrandSearch = styled.div`
     padding-top: 15px;
 
     .list-container.brand-list-scroll-box {
-        /* position: relative;
-        margin-top: 20px;
-        padding-top: 40px;
-        border-top: 1px solid #e5e5e5; */
-
         max-height: 280px;
         overflow: hidden;
         overflow-y: auto;
@@ -290,7 +285,22 @@ export const BrandSearch = styled.div`
         margin-right: -20px;
         padding-top: 0;
         padding-right: 18px;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            height: 10px;
+            background: #000;
+            border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f7f7f7;
+        }
     }
+
 
     .brand-search-header {
         width: 690px;
@@ -301,7 +311,6 @@ export const BrandSearch = styled.div`
         margin-top: 25px;
 
         padding-left: 30px;
-        /* padding-left: 40px; */
 
         overflow: hidden;
         position: relative;

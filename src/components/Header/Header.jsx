@@ -295,7 +295,7 @@ function Header() {
                     </div>
                 </Styles.NewCategory>
                 <Styles.NewBrand>
-                    <div className="gnb-new-box">
+                    <div className="gnb-new-box hide">
                         <div class="menu-contents">
                             <Styles.BrandLine>
                                 <a href="#!" class="btn-brand-line">

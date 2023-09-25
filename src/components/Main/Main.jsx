@@ -12,11 +12,6 @@ import NewInMenData from '../../data/NewIn/men';
 
 function Main() {
 
-const NewInMen = [NewInMenData]
-
-console.log('====================================');
-console.log( Array.isArray(NewInMen), NewInMen.length, JSON.stringify(NewInMen) );
-console.log('====================================');
 
     return (
         <>
@@ -284,7 +279,7 @@ console.log('====================================');
                         <Styles.NewContent>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
-                                    { Object.values(NewInMen).map((item, index) => (
+                                    { NewInMenData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
                                                 <div className="item-img">

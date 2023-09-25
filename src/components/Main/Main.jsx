@@ -8,7 +8,15 @@ import MainBanner3 from '../../assets/images/main_banner-3.jpg'
 import vidBack from '../../assets/images/img_video_thumb_h.png'
 import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
+import NewInMen from '../../data/NewIn/men';
+
 function Main() {
+
+    const NewInMenData = [NewInMen];
+console.log('====================================');
+console.log(Array.isArray(NewInMenData) , typeof NewInMenData);
+console.log('====================================');
+
     return (
         <>
             <Styles.MainContainer>
@@ -256,7 +264,7 @@ function Main() {
                             </div>
                         </Styles.NewTitle>
                         <Styles.NewTab>
-                            <button type="button" class="on">
+                            <button type="button" className="on">
                                 <span>BRAND LINE</span>
                             </button>
                             <button type="button">
@@ -275,61 +283,94 @@ function Main() {
                         <Styles.NewContent>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
-                                    <li className="swiper-item">
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">TOMMY HILFIGER WOMEN</div>
-                                                    <div className="item-name">폴로 칼라 바시티 재킷</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">310,500</span>
-                                                            <del className="regular">345,000</del>
-                                                            <span className="percent">10%</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
+                                    { NewInMenData && NewInMenData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li className="swiper-item">
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
-                                                    </a>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
                                                 </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">TOMMY HILFIGER WOMEN</div>
-                                                    <div className="item-name">폴로 칼라 바시티 재킷</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">310,500</span>
-                                                            <del className="regular">345,000</del>
-                                                            <span className="percent">10%</span>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
                                                         </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
                                 </ul>
+                                {/* <ul className="swiper-wrapper">
+                                    <li className="swiper-item">
+                                        <figure className="item-box">
+                                            <div className="item-img">
+                                                <div className="img-box">
+                                                    <a href="#!">
+                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
+                                                    </a>
+                                                </div>
+                                                <button type="button" className="btn-like"></button>
+                                                <button type="button" className="btn-quick"></button>
+                                            </div>
+                                            <figcaption className="item-info">
+                                                <a href="#!">
+                                                    <div className="item-brand">TOMMY HILFIGER WOMEN</div>
+                                                    <div className="item-name">폴로 칼라 바시티 재킷</div>
+                                                    <div className="item-opt">
+                                                        <div className="item-price">
+                                                            <span className="price">310,500</span>
+                                                            <del className="regular">345,000</del>
+                                                            <span className="percent">10%</span>
+                                                        </div>
+                                                        <div className="item-label"></div>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li className="swiper-item">
+                                        <figure className="item-box">
+                                            <div className="item-img">
+                                                <div className="img-box">
+                                                    <a href="#!">
+                                                        <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
+                                                    </a>
+                                                </div>
+                                                <button type="button" className="btn-like"></button>
+                                                <button type="button" className="btn-quick"></button>
+                                            </div>
+                                            <figcaption className="item-info">
+                                                <a href="#!">
+                                                    <div className="item-brand">TOMMY HILFIGER WOMEN</div>
+                                                    <div className="item-name">폴로 칼라 바시티 재킷</div>
+                                                    <div className="item-opt">
+                                                        <div className="item-price">
+                                                            <span className="price">310,500</span>
+                                                            <del className="regular">345,000</del>
+                                                            <span className="percent">10%</span>
+                                                        </div>
+                                                        <div className="item-label"></div>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul> */}
                                 <div className="slide-nav">
                                     <button className="slide-nav-prev button-disabled">
                                         <span className="offscreen"></span>
@@ -351,10 +392,10 @@ function Main() {
                         <Styles.MoreContent>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
-                                    <li class="swiper-item">
+                                    <li className="swiper-item">
                                         <a href="#!" className="link-item">
                                             <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/752_203145_1_KOR_20230906171304.jpg?RS=593x593&amp;AR=0&amp;CS=425x593" alt="" />
-                                            <span class="text">남성 아우터</span>
+                                            <span className="text">남성 아우터</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -383,7 +424,7 @@ function Main() {
                             </div>
                         </Styles.NewTitle>
                         <Styles.NewTab>
-                            <button type="button" class="on">
+                            <button type="button" className="on">
                                 <span>ALL</span>
                             </button>
                             <button type="button">
@@ -418,7 +459,7 @@ function Main() {
                                         <figure className="item-box">
                                             <div className="item-img">
                                                 <div className="img-box">
-                                                    <a href="#!" onclick="goGodDetail('GM0123052602707')">
+                                                    <a href="#!">
                                                         <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
                                                     </a>
                                                 </div>
@@ -447,7 +488,7 @@ function Main() {
                                         <figure className="item-box">
                                             <div className="item-img">
                                                 <div className="img-box">
-                                                    <a href="#!" onclick="goGodDetail('GM0123052602707')">
+                                                    <a href="#!">
                                                         <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
                                                     </a>
                                                 </div>
@@ -545,7 +586,7 @@ function Main() {
                                                                     <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/23/GM0123052301199_1_ORGINL_1684911309120.jpg?RS=473x473&amp;AR=0&amp;CS=316x473" alt="[DISNEY X TOMMY] 폴카 도트 폴로 니트 탑" /></div>
                                                                 </a>
                                                             </div>
-                                                            <button type="button" className="btn-like" onclick="likeToggle();"><span></span></button>
+                                                            <button type="button" className="btn-like"><span></span></button>
                                                         </div>
                                                         <figcaption className="item-info">
                                                             <a href="#!">
@@ -571,7 +612,7 @@ function Main() {
                                                                     <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/18/GM0123051899221_1_ORGINL_1684479923608.jpg?RS=473x473&amp;AR=0&amp;CS=316x473" alt="[DISNEY X TOMMY] 체스트 후디" /></div>
                                                                 </a>
                                                             </div>
-                                                            <button type="button" className="btn-like" onclick="likeToggle();"><span></span></button>
+                                                            <button type="button" className="btn-like"><span></span></button>
                                                         </div>
                                                         <figcaption className="item-info">
                                                             <a href="#!">
@@ -620,9 +661,9 @@ function Main() {
                                     <div className="slide-container">
                                         <ul className='swiper-wrapper'>
                                             <li className='swiper-item'>
-                                                <figure class="item-box">
-                                                    <div class="item-img">
-                                                        <div class="img-box">
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
                                                             <a href="#!">
                                                                 <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/01/GM0123090132377_0_ORGINL_1693543111205.jpg?RS=247x247&amp;AR=0&amp;CS=164x247" alt="빅 플래그 후디 스웨터" />
                                                             </a>
@@ -641,13 +682,12 @@ function Main() {
                             <div className="right">
                                 <div className="magazine-video-box">
                                     <div className="vod-content">
-                                        <div class="vod-box-back">
+                                        <div className="vod-box-back">
                                             <img src={vidBack} alt="대체텍스트" />
                                         </div>
                                         <iframe
                                             className="vod-box"
-                                            frameborder="0"
-                                            allowfullscreen="1"
+                                            allowFullScreen="1"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                             title="TOMMY JEANS 23 FALL CAMPAIGN"
                                             width="100%"
@@ -779,13 +819,12 @@ function Main() {
                             <div className="right">
                                 <div className="magazine-video-box">
                                     <div className="vod-content">
-                                        <div class="vod-box-back">
+                                        <div className="vod-box-back">
                                             <img src={vidBack} alt="대체텍스트" />
                                         </div>
                                         <iframe
                                             className="vod-box"
-                                            frameborder="0"
-                                            allowfullscreen="1"
+                                            allowFullScreen="1"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                             title="TOMMY HILFIGER 23FALL STORY"
                                             width="100%"
@@ -872,7 +911,7 @@ function Main() {
                             <h2 className="title">INSTAGRAM</h2>
                             <div className="right-box">
                                 <a href="#!" className="btn-insta" target="_blank">
-                                    <span class="text">@tommyhilfiger</span>
+                                    <span className="text">@tommyhilfiger</span>
                                 </a>
                             </div>
                         </Styles.NewTitle>
@@ -895,11 +934,11 @@ function Main() {
                 {/* 열한번째 섹션 || COUPON */}
                 <section id='coupon'>
                     <Styles.CouponBanner>
-                        <a href="#!" class="link-banner">
+                        <a href="#!" className="link-banner">
                             <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/760_203151_3_KOR_20230823102444.jpg?RS=1920x1920&amp;AR=0&amp;CS=1920x180" alt="" />
-                            <div class="text-box">
-                                <p class="text">TOMMY 23SS SEASON OFF</p>
-                                <p class="sub-text">최대 49% OFF + 추가 쿠폰 혜택</p>
+                            <div className="text-box">
+                                <p className="text">TOMMY 23SS SEASON OFF</p>
+                                <p className="sub-text">최대 49% OFF + 추가 쿠폰 혜택</p>
                             </div>
                         </a>
                     </Styles.CouponBanner>
@@ -921,7 +960,7 @@ function Main() {
                                 <div className="slide-container">
                                     <ul className="swiper-wrapper">
                                         <li className="swiper-item on">
-                                            <a href="#!" class="link-item">
+                                            <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
@@ -931,7 +970,7 @@ function Main() {
                                             </a>
                                         </li>
                                         <li className="swiper-item">
-                                            <a href="#!" class="link-item">
+                                            <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
@@ -941,7 +980,7 @@ function Main() {
                                             </a>
                                         </li>
                                         <li className="swiper-item">
-                                            <a href="#!" class="link-item">
+                                            <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
@@ -951,7 +990,7 @@ function Main() {
                                             </a>
                                         </li>
                                         <li className="swiper-item">
-                                            <a href="#!" class="link-item">
+                                            <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
@@ -1107,9 +1146,9 @@ function Main() {
                     </Styles.Container>
                 </section>
                 <Styles.FixedBtn>
-                    <button type="button" class="history"><span>최근 본 상품 보기</span></button>
-                    <button type="button" class="bnc"><span>혜택 보기</span></button>
-                    <button type="button" class="top"><span>TOP</span></button>
+                    <button type="button" className="history"><span>최근 본 상품 보기</span></button>
+                    <button type="button" className="bnc"><span>혜택 보기</span></button>
+                    <button type="button" className="top"><span>TOP</span></button>
                 </Styles.FixedBtn>
             </Styles.MainContainer >
         </>

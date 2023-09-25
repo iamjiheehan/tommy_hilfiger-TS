@@ -61,11 +61,11 @@ function Footer() {
                                     <a href="#!">회원혜택</a>
                                 </li>
                                 <li><a href="#!">한섬 VVIP 혜택</a></li>
-                                <li><button><strong class="privacy">개인정보처리방침</strong></button></li>
+                                <li><button><strong className="privacy">개인정보처리방침</strong></button></li>
                                 <li><a href="#!">고객의 소리</a></li>
                             </ul>
                         </div>
-                        <div class="sns">
+                        <div className="sns">
                             <ul>
                                 <li className="facebook"><a href="#!" target="_blank">Facebook</a></li>
                                 <li className="post"><a href="#!" target="_blank">Post</a></li>

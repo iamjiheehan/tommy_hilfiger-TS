@@ -296,56 +296,56 @@ function Header() {
                 </Styles.NewCategory>
                 <Styles.NewBrand>
                     <div className="gnb-new-box hide">
-                        <div class="menu-contents">
+                        <div className="menu-contents">
                             <Styles.BrandLine>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_7_KOR_20230712043648.jpg?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">MAIN</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_7_KOR_20230712043648.jpg?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">MAIN</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_1_KOR_20230906182644.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">MEN</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_1_KOR_20230906182644.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">MEN</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_2_KOR_20230906182653.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">WOMEN</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_2_KOR_20230906182653.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">WOMEN</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_3_KOR_20230906182702.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">JEANS</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_3_KOR_20230906182702.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">JEANS</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_5_KOR_20230906164555.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">KIDS</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_5_KOR_20230906164555.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">KIDS</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_4_KOR_20230906182350.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">SHOES</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_4_KOR_20230906182350.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">SHOES</div>
                                 </a>
-                                <a href="#!" class="btn-brand-line">
-                                    <div class="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_6_KOR_20230906164615.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
-                                    <div class="title">GOLF</div>
+                                <a href="#!" className="btn-brand-line">
+                                    <div className="img"><img src="https://cdn.hfashionmall.com/display/category/THM/A18/A01/contents/741_202767_6_KOR_20230906164615.png?RS=242x242&amp;AR=0&amp;CS=242x90" alt="" /></div>
+                                    <div className="title">GOLF</div>
                                 </a>
                             </Styles.BrandLine>
                             <Styles.BrandSearch>
-                                <div class="brand-search-container">
-                                    <fieldset class="brand-search-header">
+                                <div className="brand-search-container">
+                                    <fieldset className="brand-search-header">
                                         <legend>검색</legend>
-                                        <div class="input-info-group brand-search-field">
-                                            <div class="input-box">
-                                                <input type="text" name="brandSearch" id="brandSearch" title="브랜드 검색" placeholder="브랜드를 입력하세요." class="inp-reset inp-search" autocomplete="off" />
+                                        <div className="input-info-group brand-search-field">
+                                            <div className="input-box">
+                                                <input type="text" name="brandSearch" id="brandSearch" title="브랜드 검색" placeholder="브랜드를 입력하세요." className="inp-reset inp-search" autoComplete="off" />
                                             </div>
-                                            <button type="button" class="btn-search"><span>검색</span></button>
+                                            <button type="button" className="btn-search"><span>검색</span></button>
                                         </div>
                                     </fieldset>
                                 </div>
                                 <div className="brand-search-cont">
-                                    <div class="btnTab">
-                                        <div class="btn btn-all" id="searchTabList">
+                                    <div className="btnTab">
+                                        <div className="btn btn-all" id="searchTabList">
                                             <button type="button" tabtype="MY" id="searchMyBrnd"><span>MY</span></button>
-                                            <button type="button" tabtype="ALL" id="searchTotalBrnd" class="on"><span>전체</span></button>
+                                            <button type="button" tabtype="ALL" id="searchTotalBrnd" className="on"><span>전체</span></button>
                                         </div>
-                                        <div class="btn btn-alphabet" id="searchAlphabetList">
+                                        <div className="btn btn-alphabet" id="searchAlphabetList">
                                             <button type="button" tabtype="A"><span>A</span></button>
                                             <button type="button" tabtype="B"><span>B</span></button>
                                             <button type="button" tabtype="C"><span>C</span></button>
@@ -374,8 +374,8 @@ function Header() {
                                             <button type="button" tabtype="ETC"><span>0~9</span></button>
                                         </div>
                                     </div>
-                                    <div class="list-container">
-                                        <p class="list-nodata">
+                                    <div className="list-container">
+                                        <p className="list-nodata">
                                             관심있는 브랜드에 하트를 눌러 보세요!
                                         </p>
                                     </div>

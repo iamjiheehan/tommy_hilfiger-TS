@@ -8,13 +8,14 @@ import MainBanner3 from '../../assets/images/main_banner-3.jpg'
 import vidBack from '../../assets/images/img_video_thumb_h.png'
 import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
-import NewInMen from '../../data/NewIn/men';
+import NewInMenData from '../../data/NewIn/men';
 
 function Main() {
 
-    const NewInMenData = [NewInMen];
+const NewInMen = [NewInMenData]
+
 console.log('====================================');
-console.log(Array.isArray(NewInMenData) , typeof NewInMenData);
+console.log( Array.isArray(NewInMen), NewInMen.length, JSON.stringify(NewInMen) );
 console.log('====================================');
 
     return (
@@ -283,7 +284,7 @@ console.log('====================================');
                         <Styles.NewContent>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
-                                    { NewInMenData && NewInMenData.map((item, index) => (
+                                    { Object.values(NewInMen).map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
                                                 <div className="item-img">

@@ -1,0 +1,82 @@
+[  
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "스트라이프 롱슬리브 티셔츠",
+        "price": "36,000",
+        "regular": "72,000",
+        "percent": "50%",
+        "img": "../../assets/images/TopRanking/Kids/001.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "헴프 릴렉스드 스트라이프 셔츠",
+        "price": "57,500",
+        "regular": "115,000",
+        "percent": "50%",
+        "img": "../../assets/images/TopRanking/Kids/002.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "에센셜 스트라이프 롱슬리브 티셔츠",
+        "price": "49,300",
+        "regular": "58,000",
+        "percent": "15%",
+        "img": "../../assets/images/TopRanking/Kids/003.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "카라 퀼티드 자켓",
+        "price": "116,025",
+        "regular": "195,000",
+        "percent": "41%",
+        "img": "../../assets/images/TopRanking/Kids/004.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "바시티 스웨트셔츠",
+        "price": "52,500",
+        "regular": "105,000",
+        "percent": "50%",
+        "img": "../../assets/images/TopRanking/Kids/005.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "퀼티드 자켓",
+        "price": "165,750",
+        "regular": "195,000",
+        "percent": "15%",
+        "img": "../../assets/images/TopRanking/Kids/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "오리지널 크루넥 롱슬리브 티셔츠",
+        "price": "32,300",
+        "regular": "38,000",
+        "percent": "15%",
+        "img": "../../assets/images/TopRanking/Kids/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "퀼티드 자켓",
+        "price": "165,750",
+        "regular": "195,000",
+        "percent": "15%",
+        "img": "../../assets/images/TopRanking/Kids/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "에센셜 V넥 스웨터",
+        "price": "66,300",
+        "regular": "78,000",
+        "percent": "15%",
+        "img": "../../assets/images/TopRanking/Kids/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "로고 롱슬리브 티셔츠",
+        "price": "32,725",
+        "regular": "55,000",
+        "percent": "41%",
+        "img": "../../assets/images/TopRanking/Kids/010.jpg"
+    }
+]

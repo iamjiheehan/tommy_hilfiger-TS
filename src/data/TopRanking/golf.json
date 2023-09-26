@@ -1,0 +1,82 @@
+[  
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "스트레치 슬라이드 로고 벨트",
+        "price": "74,340",
+        "regular": "118,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/001.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "기프트 버라이어티 캔",
+        "price": "53,100",
+        "regular": "59,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Golf/002.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "로고 자카드 카라 셔츠",
+        "price": "150,570",
+        "regular": "239,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/003.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "남성 매쉬 카라 반팔티",
+        "price": "163,170",
+        "regular": "259,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/004.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "베이직 로고 폴로 반팔 티셔츠",
+        "price": "125,370",
+        "regular": "199,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/005.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "플라켓 로고 폴로 반팔 티셔츠",
+        "price": "137,970",
+        "regular": "219,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/006.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "모크넥 언더셔츠",
+        "price": "68,040",
+        "regular": "108,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "라거 스트라이프 크루넥 니트",
+        "price": "175,770",
+        "regular": "279,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "스트레치 슬라이드 로고 벨트",
+        "price": "74,340",
+        "regular": "118,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Golf/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER GOLF",
+        "name": "캐주얼 믹스 벨트 부츠",
+        "price": "251,100",
+        "regular": "279,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Golf/010.jpg"
+    }
+]

@@ -5,7 +5,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/25/GM0123082529305_1_ORGINL_1692952305306.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/001.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -13,7 +13,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/25/GM0123082529306_1_ORGINL_1692952307325.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/002.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -21,7 +21,7 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/07/31/GM0123073121297_1_ORGINL_1691131105400.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/003.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -29,7 +29,7 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/07/31/GM0123073121287_1_ORGINL_1691131106913.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/004.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -37,7 +37,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/11/GM0123091137781_1_ORGINL_1694418411681.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/005.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -45,7 +45,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/11/GM0123091137780_1_ORGINL_1694418413452.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/006.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -53,6 +53,30 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/05/GM0123090533741_1_ORGINL_1693968141676.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/TopRanking/Shoes/007.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "인지 미드힐 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Shoes/008.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "자나 레더 첼시 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Shoes/009.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "가엘 레더 첼시 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Shoes/010.jpg"
     }
 ]

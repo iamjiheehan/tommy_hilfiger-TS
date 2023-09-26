@@ -5,7 +5,7 @@
         "price": "323,100",
         "regular": "359,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244403_1_ORGINL_1695373145683.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -13,7 +13,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244420_1_ORGINL_1695373244409.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -21,7 +21,7 @@
         "price": "323,100",
         "regular": "359,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244404_1_ORGINL_1695373149441.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -29,7 +29,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244391_1_ORGINL_1695373156014.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -37,7 +37,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244392_1_ORGINL_1695373159296.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -45,7 +45,7 @@
         "price": "197,100",
         "regular": "219,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244388_1_ORGINL_1695373179463.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -53,6 +53,30 @@
         "price": "197,100",
         "regular": "219,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244389_1_ORGINL_1695373182671.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Men/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER MEN",
+        "name": "레귤러핏 캐시미어 크루넥 스웨터",
+        "price": "323,100",
+        "regular": "359,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Men/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER MEN",
+        "name": "릴렉스핏 컬러블럭 모크넥 스웨터",
+        "price": "233,100",
+        "regular": "259,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Men/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER MEN",
+        "name": "피마 코튼 캐시미어 목폴라 니트",
+        "price": "215,100",
+        "regular": "239,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Men/010.jpg"
     }
 ]

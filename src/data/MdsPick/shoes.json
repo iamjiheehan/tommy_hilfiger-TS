@@ -1,51 +1,51 @@
 [  
     {
         "brand": "TOMMY SHOES",
-        "name": "미카엘 레더 바스켓 스니커즈",
-        "price": "106,470",
-        "regular": "169,000",
-        "percent": "37%",
-        "img": "../../assets/images/TopRanking/Shoes/001.jpg"
-    },
-    {
-        "brand": "TOMMY SHOES",
         "name": "가엘 레더 첼시 부츠",
         "price": "269,100",
         "regular": "299,000",
-        "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/002.jpg"
+        "percent": "37%",
+        "img": "../../assets/images/MdsPick/Shoes/001.jpg"
     },
     {
         "brand": "TOMMY SHOES",
-        "name": "메그 레트로 하이 스니커즈",
+        "name": "프리미엄 캐주얼 청키 첼시 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "10%",
+        "img": "../../assets/images/MdsPick/Shoes/002.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "에바 레이스업 청키 부츠",
+        "price": "323,100",
+        "regular": "359,000",
+        "percent": "10%",
+        "img": "../../assets/images/MdsPick/Shoes/003.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "페미닌 TH 하드웨어 미드 부츠",
+        "price": "305,100",
+        "regular": "339,000",
+        "percent": "10%",
+        "img": "../../assets/images/MdsPick/Shoes/004.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "세레나 윈터 퍼 스니커즈",
+        "price": "152,100",
+        "regular": "169,000",
+        "percent": "28%",
+        "img": "../../assets/images/MdsPick/Shoes/005.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "클래식 레더 러너",
         "price": "179,100",
         "regular": "199,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/003.jpg"
-    },
-    {
-        "brand": "TOMMY SHOES",
-        "name": "[M] 진 레더 스니커즈",
-        "price": "161,100",
-        "regular": "179,000",
-        "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/004.jpg"
-    },
-    {
-        "brand": "TOMMY SHOES",
-        "name": "기즈모 플리스 플래그 슬라이드",
-        "price": "49,680",
-        "regular": "69,000",
-        "percent": "28%",
-        "img": "../../assets/images/TopRanking/Shoes/005.jpg"
-    },
-    {
-        "brand": "TOMMY SHOES",
-        "name": "다니엘 웨빙 스니커즈",
-        "price": "136,890",
-        "regular": "169,000",
-        "percent": "19%",
-        "img": "../../assets/images/TopRanking/Shoes/006.jpg"
+        "img": "../../assets/images/MdsPick/Shoes/006.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -53,30 +53,30 @@
         "price": "143,100",
         "regular": "159,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/007.jpg"
+        "img": "../../assets/images/MdsPick/Shoes/007.jpg"
     },
     {
         "brand": "TOMMY SHOES",
-        "name": "코포레이트 레더 디테일 벌크 스니커즈",
-        "price": "152,100",
-        "regular": "169,000",
+        "name": "웜 이냐시오 샌들",
+        "price": "134,100",
+        "regular": "149,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/008.jpg"
+        "img": "../../assets/images/MdsPick/Shoes/008.jpg"
     },
     {
         "brand": "TOMMY SHOES",
-        "name": "[여성] 웨이브 베이직 슬라이드",
-        "price": "43,470",
-        "regular": "69,000",
-        "percent": "37%",
-        "img": "../../assets/images/TopRanking/Shoes/009.jpg"
-    },
-    {
-        "brand": "TOMMY SHOES",
-        "name": "캐주얼 믹스 벨트 부츠",
-        "price": "269,100",
-        "regular": "299,000",
+        "name": "[베스트 리오더] 캐시 스트레치가죽 앵클 부츠",
+        "price": "197,100",
+        "regular": "219,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/010.jpg"
+        "img": "../../assets/images/MdsPick/Shoes/009.jpg"
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "에바 레이스업 레더 슈즈",
+        "price": "251,100",
+        "regular": "279,000",
+        "percent": "10%",
+        "img": "../../assets/images/MdsPick/Shoes/010.jpg"
     }
 ]

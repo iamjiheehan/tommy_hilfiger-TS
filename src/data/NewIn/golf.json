@@ -5,7 +5,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339196_1_ORGINL_1694583966694.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -13,7 +13,7 @@
         "price": "287,100",
         "regular": "319,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339192_1_ORGINL_1694583970169.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -21,7 +21,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/11/GM0123091137275_1_ORGINL_1694400590006.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -29,7 +29,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/11/GM0123091137276_1_ORGINL_1694400593361.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -37,7 +37,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339196_1_ORGINL_1694583966694.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -45,7 +45,7 @@
         "price": "377,100",
         "regular": "419,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339191_1_ORGINL_1694583953616.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -53,7 +53,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339193_1_ORGINL_1694583956883.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -61,6 +61,6 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339194_1_ORGINL_1694583960384.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Golf/001.jpg"
     }
 ]

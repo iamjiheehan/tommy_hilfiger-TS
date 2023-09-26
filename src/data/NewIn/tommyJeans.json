@@ -5,7 +5,7 @@
         "price": "304,300",
         "regular": "358,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339224_1_ORGINL_1694585945804.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/001.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -13,7 +13,7 @@
         "price": "304,300",
         "regular": "358,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339225_1_ORGINL_1694585942666.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/002.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -21,7 +21,7 @@
         "price": "304,300",
         "regular": "358,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339226_1_ORGINL_1694585939260.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/003.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -29,7 +29,7 @@
         "price": "159,800",
         "regular": "188,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339214_1_ORGINL_1694585905323.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/004.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -37,7 +37,7 @@
         "price": "168,300",
         "regular": "198,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339215_1_ORGINL_1694585908758.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/005.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -45,7 +45,7 @@
         "price": "287,300",
         "regular": "338,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339230_1_ORGINL_1694585925365.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/006.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -53,6 +53,30 @@
         "price": "236,300",
         "regular": "278,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339229_1_ORGINL_1694585929129.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Jeans/007.jpg"
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "에이든 플래그 데님 재킷",
+        "price": "253,300",
+        "regular": "298,000",
+        "percent": "15%",
+        "img": "../../assets/images/NewIn/Jeans/008.jpg"
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "[COLLECTION] 그래픽 케이블 크루넥 스웨터",
+        "price": "278,800",
+        "regular": "328,000",
+        "percent": "15%",
+        "img": "../../assets/images/NewIn/Jeans/009.jpg"
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "[COLLECTION] 모크넥 집업 폴라 플리스",
+        "price": "312,800",
+        "regular": "368,000",
+        "percent": "15%",
+        "img": "../../assets/images/NewIn/Jeans/010.jpg"
     }
 ]

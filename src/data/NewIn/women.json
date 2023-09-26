@@ -5,7 +5,7 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/25/GM0123092545123_1_ORGINL_1695604802167.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -13,7 +13,7 @@
         "price": "436,500",
         "regular": "485,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322193_1_ORGINL_1691130511022.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -21,7 +21,7 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/12/GM0123091238165_1_ORGINL_1694502990344.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -29,7 +29,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -37,7 +37,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322171_1_ORGINL_1691130520901.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -45,7 +45,7 @@
         "price": "193,500",
         "regular": "215,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322168_1_ORGINL_1691130530864.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -53,6 +53,31 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322177_1_ORGINL_1691130534212.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Women/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "리버시블 가디건",
+        "price": "247,500",
+        "regular": "275,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Women/008.jpg"
+    }
+    ,
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "릴렉스 핏 울 캐시미어 크루넥 스웨터",
+        "price": "211,500",
+        "regular": "235,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Women/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "릴렉스 핏 울 캐시미어 크루넥 스웨터",
+        "price": "211,500",
+        "regular": "235,000",
+        "percent": "10%",
+        "img": "../../assets/images/NewIn/Women/010.jpg"
     }
 ]

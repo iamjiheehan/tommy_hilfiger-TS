@@ -5,7 +5,7 @@
         "price": "199,750",
         "regular": "235,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339440_1_ORGINL_1694668169743.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -13,7 +13,7 @@
         "price": "199,750",
         "regular": "235,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339440_1_ORGINL_1694668169743.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -21,7 +21,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/20/GM0123092043076_1_ORGINL_1695193472877.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -29,7 +29,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/20/GM0123092043076_1_ORGINL_1695193472877.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -37,7 +37,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339437_1_ORGINL_1694668179522.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -45,7 +45,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/13/GM0123091339438_1_ORGINL_1694668180770.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -53,6 +53,30 @@
         "price": "267,750",
         "regular": "315,000",
         "percent": "15",
-        "img": "https://cdn.hfashionmall.com/goods/THBR/23/09/20/GM0123092043083_1_ORGINL_1695283768935.jpg?RS=600x600&AR=0&CS=400x600"
+        "img": "../../assets/images/NewIn/Kids/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "셰르파 체크 자켓",
+        "price": "233,750",
+        "regular": "275,000",
+        "percent": "15",
+        "img": "../../assets/images/NewIn/Kids/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "크레스트 스웨터",
+        "price": "267,750",
+        "regular": "315,000",
+        "percent": "15",
+        "img": "../../assets/images/NewIn/Kids/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "리버시블 셰르파 체크 베스트",
+        "price": "165,750",
+        "regular": "195,000",
+        "percent": "15",
+        "img": "../../assets/images/NewIn/Kids/010.jpg"
     }
 ]

@@ -1,82 +1,82 @@
 [  
     {
         "brand": "TOMMY JEANS",
-        "name": "베이비 에센셜 롱슬리브 티셔츠",
-        "price": "26,000",
-        "regular": "52,000",
-        "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/001.jpg"
+        "name": "크롭드 투웨이 집 스루 후디",
+        "price": "131,600",
+        "regular": "188,000",
+        "percent": "30%",
+        "img": "../../assets/images/MdsPick/Jeans/001.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "빅 플래그 후디 스웨터",
-        "price": "151,300",
-        "regular": "178,000",
+        "name": "레오 가디건",
+        "price": "168,300",
+        "regular": "198,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/002.jpg"
+        "img": "../../assets/images/MdsPick/Jeans/002.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "빅 플래그 후디 스웨터",
-        "price": "151,300",
-        "regular": "178,000",
+        "name": "[UNISEX] 스프레이 프린트 후드 재킷",
+        "price": "168,300",
+        "regular": "198,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/003.jpg"
+        "img": "../../assets/images/MdsPick/Jeans/003.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "슬림 립 스냅 버튼 탑",
+        "name": "토널 뱃지 후드 티셔츠",
+        "price": "91,800",
+        "regular": "108,000",
+        "percent": "15%",
+        "img": "../../assets/images/MdsPick/Jeans/004.jpg"
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "[UNISEX] 릴렉스 에센셜 스웨트셔츠",
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/004.jpg"
+        "img": "../../assets/images/MdsPick/Jeans/005.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "베이비 에센셜 롱슬리브 티셔츠",
-        "price": "26,000",
-        "regular": "52,000",
-        "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/005.jpg"
+        "name": "다이아몬드 퀼팅 덕 다운 (셰르파 넥 탈 부착)",
+        "price": "287,300",
+        "regular": "338,000",
+        "percent": "15%",
+        "img": "../../assets/images/MdsPick/Jeans/006.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "[ARCHIVE] 데님 그래픽 셔츠",
-        "price": "89,000",
+        "name": "에센셜 뱃지 가디건",
+        "price": "124,600",
         "regular": "178,000",
-        "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/006.jpg"
+        "percent": "30%",
+        "img": "../../assets/images/MdsPick/Jeans/007.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "바시티 로고 티셔츠",
-        "price": "40,460",
-        "regular": "68,000",
-        "percent": "41%",
-        "img": "../../assets/images/TopRanking/Jeans/007.jpg"
-    },
-    {
-        "brand": "TOMMY JEANS",
-        "name": "스트라이프 크루넥 티셔츠",
-        "price": "49,300",
-        "regular": "58,000",
+        "name": "어센틱 아미 봄버 재킷",
+        "price": "270,300",
+        "regular": "318,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/008.jpg"
+        "img": "../../assets/images/MdsPick/Jeans/008.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "데님 덩가리 로고 스트랩 팬츠",
-        "price": "236,300",
-        "regular": "278,000",
+        "name": "토널 뱃지 스웨터",
+        "price": "159,800",
+        "regular": "188,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/009.jpg"
+        "img": "../../assets/images/MdsPick/Jeans/009.jpg"
     },
     {
         "brand": "TOMMY JEANS",
-        "name": "슬림 라인 데님 드레스",
-        "price": "141,610",
-        "regular": "238,000",
-        "percent": "41%",
-        "img": "../../assets/images/TopRanking/Jeans/010.jpg"
+        "name": "릴렉스 체크패턴 셔츠",
+        "price": "159,800",
+        "regular": "188,000",
+        "percent": "15%",
+        "img": "../../assets/images/MdsPick/Jeans/010.jpg"
     }
 ]

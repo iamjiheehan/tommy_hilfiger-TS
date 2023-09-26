@@ -5,7 +5,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/001.jpg"
+        "img": "img/NewIn/Shoes/001.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -13,7 +13,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/002.jpg"
+        "img": "img/NewIn/Shoes/002.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -21,7 +21,7 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/003.jpg"
+        "img": "img/NewIn/Shoes/003.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -29,7 +29,7 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/004.jpg"
+        "img": "img/NewIn/Shoes/004.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -37,7 +37,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/005.jpg"
+        "img": "img/NewIn/Shoes/005.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -45,7 +45,7 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/006.jpg"
+        "img": "img/NewIn/Shoes/006.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -53,7 +53,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/007.jpg"
+        "img": "img/NewIn/Shoes/007.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -61,7 +61,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/008.jpg"
+        "img": "img/NewIn/Shoes/008.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -69,7 +69,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/009.jpg"
+        "img": "img/NewIn/Shoes/009.jpg"
     },
     {
         "brand": "TOMMY SHOES",
@@ -77,6 +77,6 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Shoes/010.jpg"
+        "img": "img/NewIn/Shoes/010.jpg"
     }
 ]

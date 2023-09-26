@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -9,9 +9,16 @@ import vidBack from '../../assets/images/img_video_thumb_h.png'
 import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
 import NewInMenData from '../../data/NewIn/men';
+import NewInWomenData from '../../data/NewIn/women';
+import NewInGolfData from '../../data/NewIn/golf';
+import NewInKidsData from '../../data/NewIn/kids';
+import NewInJeansData from '../../data/NewIn/tommyJeans';
+import NewInShoesData from '../../data/NewIn/shoes';
 
 function Main() {
 
+        const [ isHovering, setIsHovering ] = useState(0);
+        
 
     return (
         <>
@@ -278,7 +285,7 @@ function Main() {
                         </Styles.NewCategory>
                         <Styles.NewContent>
                             <div className="slide-container">
-                                <ul className="swiper-wrapper">
+                                <ul className="swiper-wrapper men">
                                     { NewInMenData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -286,7 +293,172 @@ function Main() {
                                                     <div className="img-box">
                                                         <a href="#!">
                                                             <div className="img">
-                                                                <img src={item.img} alt={item.name} />
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper women">
+                                    { NewInWomenData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper shoes">
+                                    { NewInShoesData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper golf">
+                                    { NewInGolfData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper kids">
+                                    { NewInKidsData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper jeans">
+                                    { NewInJeansData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
                                                             </div>
                                                         </a>
                                                     </div>

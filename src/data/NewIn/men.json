@@ -5,7 +5,7 @@
         "price": "323,100",
         "regular": "359,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/001.jpg"
+        "img": "img/NewIn/Men/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -13,7 +13,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/002.jpg"
+        "img": "img/NewIn/Men/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -21,7 +21,7 @@
         "price": "323,100",
         "regular": "359,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/003.jpg"
+        "img": "img/NewIn/Men/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -29,7 +29,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/004.jpg"
+        "img": "img/NewIn/Men/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -37,7 +37,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/005.jpg"
+        "img": "img/NewIn/Men/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -45,7 +45,7 @@
         "price": "197,100",
         "regular": "219,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/006.jpg"
+        "img": "img/NewIn/Men/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -53,7 +53,7 @@
         "price": "197,100",
         "regular": "219,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/007.jpg"
+        "img": "img/NewIn/Men/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -61,7 +61,7 @@
         "price": "323,100",
         "regular": "359,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/008.jpg"
+        "img": "img/NewIn/Men/008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -69,7 +69,7 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/009.jpg"
+        "img": "img/NewIn/Men/009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -77,6 +77,6 @@
         "price": "215,100",
         "regular": "239,000",
         "percent": "10%",
-        "img": "../../assets/images/NewIn/Men/010.jpg"
+        "img": "img/NewIn/Men/010.jpg"
     }
 ]

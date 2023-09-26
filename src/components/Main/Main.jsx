@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -16,9 +16,38 @@ import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
 function Main() {
+    const [randomData, setRandomData] = useState([]);
 
-        const [ isHovering, setIsHovering ] = useState(0);
+        const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData ];
         
+        const getRandomData = () => {
+            const shuffledData = [...allData].sort(() => Math.random() - 0.5);
+            //-0.5는 sort 함수의 비교자(comparator)로 사용되며, 배열의 요소들을 무작위로 섞기 위한 것
+            // Math.random() 함수는 0(포함)부터 1(제외) 사이의 무작위 숫자를 생성합니다. 
+            // 즉, 0.0, 0.1, 0.2, ..., 0.99999까지의 값을 생성할 수 있지만, 실제로 1.0은 생성하지 않습니다.
+
+            // 0.5를 Math.random()에서 뺄셈하는 것은 주로 무작위 값을 0을 중심으로 가운데 정렬하는 데 사용됩니다. 
+            // 이렇게 하면 대략 절반의 시간 동안 결과값이 음수가 되고, 
+            // 절반의 시간 동안 양수가 됩니다.
+
+            // 이러한 값을 sort() 함수의 비교자로 사용하면 배열의 요소들을 사실상 무작위로 섞을 수 있습니다. 
+            // 양수 값을 가진 요소는 배열 끝으로 이동하고, 
+            // 음수 값을 가진 요소는 배열 앞쪽으로 이동하면서 배열이 섞인 효과를 만듭니다.
+
+            const limitedData = shuffledData.slice(0, 10);;
+            // 갯수 열개로 제한
+            setRandomData(limitedData);
+        };
+        
+        useEffect(() => {
+            const menuIndex = document.querySelectorAll("#newIn .menuWrap ul");
+            const TabIndex = document.querySelectorAll("#newIn .tabWrap button");
+        
+            console.log(`메뉴 갯수는 ${menuIndex.length} 탭 갯수는 ${TabIndex.length}`);
+        
+            getRandomData(); // Call the function to populate randomData
+            console.log(`Total Data Length: ${allData.length}, Random Data Length: ${randomData.length}`);
+        }, []);
 
     return (
         <>
@@ -274,18 +303,51 @@ function Main() {
                                 <span>CATEGORY</span>
                             </button>
                         </Styles.NewTab>
-                        <Styles.NewCategory>
-                            <button type="button" className='on'><span>ALL</span></button>
-                            <button type="button"><span>MEN</span></button>
-                            <button type="button"><span>WOMEN</span></button>
-                            <button type="button"><span>TOMMY JEANS</span></button>
-                            <button type="button"><span>KIDS</span></button>
-                            <button type="button"><span>SHOES</span></button>
-                            <button type="button"><span>GOLF</span></button>
+                        <Styles.NewCategory className='tabWrap'>
+                            <button type="button" className='on all'><span>ALL</span></button>
+                            <button type="button" className='men'><span>MEN</span></button>
+                            <button type="button" className='women'><span>WOMEN</span></button>
+                            <button type="button" className='jeans'><span>TOMMY JEANS</span></button>
+                            <button type="button" className='kids'><span>KIDS</span></button>
+                            <button type="button" className='shoes'><span>SHOES</span></button>
+                            <button type="button" className='golf'><span>GOLF</span></button>
                         </Styles.NewCategory>
-                        <Styles.NewContent>
+                        <Styles.NewContent className='menuWrap'>
                             <div className="slide-container">
-                                <ul className="swiper-wrapper men">
+                                <ul className="swiper-wrapper">
+                                    { randomData.map((item, index) => (
+                                        <li className="swiper-item" key={index}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            <div className="img">
+                                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" className="btn-like"></button>
+                                                    <button type="button" className="btn-quick"></button>
+                                                </div>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{item.brand}</div>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-opt">
+                                                            <div className="item-price">
+                                                                <span className="price">{item.price}</span>
+                                                                <del className="regular">{item.regular}</del>
+                                                                <span className="percent">{item.percent}</span>
+                                                            </div>
+                                                            <div className="item-label"></div>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ul className="swiper-wrapper hide">
                                     { NewInMenData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -318,7 +380,7 @@ function Main() {
                                         </li>
                                     ))}
                                 </ul>
-                                <ul className="swiper-wrapper women">
+                                <ul className="swiper-wrapper hide">
                                     { NewInWomenData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -351,7 +413,7 @@ function Main() {
                                         </li>
                                     ))}
                                 </ul>
-                                <ul className="swiper-wrapper shoes">
+                                <ul className="swiper-wrapper hide">
                                     { NewInShoesData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -384,7 +446,7 @@ function Main() {
                                         </li>
                                     ))}
                                 </ul>
-                                <ul className="swiper-wrapper golf">
+                                <ul className="swiper-wrapper hide">
                                     { NewInGolfData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -417,7 +479,7 @@ function Main() {
                                         </li>
                                     ))}
                                 </ul>
-                                <ul className="swiper-wrapper kids">
+                                <ul className="swiper-wrapper hide">
                                     { NewInKidsData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">
@@ -450,7 +512,7 @@ function Main() {
                                         </li>
                                     ))}
                                 </ul>
-                                <ul className="swiper-wrapper jeans">
+                                <ul className="swiper-wrapper hide">
                                     { NewInJeansData.map((item, index) => (
                                         <li className="swiper-item" key={index}>
                                             <figure className="item-box">

@@ -25,7 +25,7 @@
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 @keyframes App-logo-spin {

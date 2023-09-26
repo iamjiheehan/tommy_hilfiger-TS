@@ -1,0 +1,82 @@
+[  
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "레귤러 브이넥 솔리드 티셔츠",
+        "price": "47,520",
+        "regular": "88,000",
+        "percent": "46%",
+        "img": "../../assets/images/TopRanking/Women/001.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "케이블 크루넥 가디건",
+        "price": "케이블 크루넥 가디건",
+        "regular": "255,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Women/002.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "레귤러 브이넥 솔리드 티셔츠",
+        "price": "47,520",
+        "regular": "88,000",
+        "percent": "46%",
+        "img": "../../assets/images/TopRanking/Women/003.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "케이블 크루넥 가디건",
+        "price": "229,500",
+        "regular": "255,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Women/004.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "레귤러 크루넥 롱슬리브 티셔츠",
+        "price": "55,440",
+        "regular": "88,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Women/005.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "코튼 크루넥 스웨터",
+        "price": "110,250",
+        "regular": "175,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Women/006.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "모던 레귤러 로프 크루넥 스웻셔츠",
+        "price": "116,100",
+        "regular": "215,000",
+        "percent": "46%",
+        "img": "../../assets/images/TopRanking/Women/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "후디드 파카",
+        "price": "261,450",
+        "regular": "415,000",
+        "percent": "37%",
+        "img": "../../assets/images/TopRanking/Women/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "모던 다운 푸퍼 재킷",
+        "price": "436,500",
+        "regular": "485,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Women/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "로마 스트레이트 다크 데님팬츠",
+        "price": "175,500",
+        "regular": "195,000",
+        "percent": "10%",
+        "img": "../../assets/images/TopRanking/Women/010.jpg"
+    }
+]

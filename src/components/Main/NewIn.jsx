@@ -9,6 +9,7 @@ import NewInKidsData from '../../data/NewIn/kids';
 import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
+
 function NewIn() {
 
     const [randomData, setRandomData] = useState([]);
@@ -47,6 +48,9 @@ function NewIn() {
     return (
         <div>
             <section id='newIn'>
+                {/* 컴포넌트 탭 만들기 */}
+                <Men />
+
                 <Styles.Container>
                     <Styles.NewTitle className="title-wrap">
                         <h2 className="title">NEW IN</h2>
@@ -322,5 +326,43 @@ function NewIn() {
         </div>
     );
 }
+
+
+
+function All (){
+
+}
+
+
+function Men (){
+
+}
+
+
+function Women (){
+
+}
+
+
+function Kids (){
+
+}
+
+
+function Jeans (){
+
+}
+
+
+function Golf (){
+
+}
+
+
+function Shoes (){
+
+}
+
+
 
 export default NewIn;

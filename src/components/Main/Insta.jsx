@@ -1,8 +1,13 @@
 import React from 'react';
 
+import data from '../../data/insta.json';
+
 import * as Styles from './MainStyle';
 
 function Insta() {
+
+    const imgData = data[0].img;
+
     return (
         <div>
             <section id='insta'>
@@ -17,17 +22,26 @@ function Insta() {
                     </Styles.NewTitle>
                     <div className="slide-container insta">
                         <ul className="swiper-wrapper">
-                            <li className="swiper-item">
-                                <button type="button" className="btn-popup" value="1">
-                                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/377929315_835516981439575_4094441858562293023_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QO8ctWWtXV8AX86q_pR&amp;_nc_ht=scontent-nrt1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfByIckuZYeWdUsezkdqSieZKxAIft81DLeNtw2Z7r74AA&amp;oe=650F08E1&amp;RS=336x336&amp;AR=0&amp;CS=336x336" alt="" />
-                                </button>
-                            </li>
-                            <li className="swiper-item">
-                                <button type="button" className="btn-popup" value="1">
-                                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/377929315_835516981439575_4094441858562293023_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QO8ctWWtXV8AX86q_pR&amp;_nc_ht=scontent-nrt1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfByIckuZYeWdUsezkdqSieZKxAIft81DLeNtw2Z7r74AA&amp;oe=650F08E1&amp;RS=336x336&amp;AR=0&amp;CS=336x336" alt="" />
-                                </button>
-                            </li>
+                            {imgData.map((item, index) => (
+                                <li className="swiper-item" key={index}>
+                                    <button type="button" className="btn-popup" value="1">
+                                        <img src={process.env.PUBLIC_URL + item} alt={index}  />
+                                    </button>
+                                </li>
+                            ))}
                         </ul>
+                        <div className="slide-nav">
+                                    <button
+                                        className="slide-nav-prev button-disabled"
+                                    >
+                                        <span className="offscreen"></span>
+                                    </button>
+                                    <button
+                                        className="slide-nav-next"
+                                    >
+                                        <span className="offscreen"></span>
+                                    </button>
+                                </div>
                     </div>
                 </Styles.Container>
             </section>

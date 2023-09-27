@@ -1,9 +1,12 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import * as Styles from './MainStyle';
-
+import data from '../../data/campaign.json';
 
 function Campaign() {
+    const imgData = data[0].img; 
+    const itemsPerPage = 4; 
+    const [currentPage, setCurrentPage] = useState(0);
+
     return (
         <div>
             <section id='campaign'>
@@ -21,52 +24,28 @@ function Campaign() {
                         <Styles.CampaignWrap>
                             <div className="slide-container">
                                 <ul className="swiper-wrapper">
-                                    <li className="swiper-item on">
-                                        <a href="#!" className="link-item">
-                                            <div className="text-wrap">
-                                                <span className="text">TOMMY JEANS</span>
-                                            </div>
-                                            <div className="img-wrap">
-                                                <img src="https://cdn.hfashionmall.com/display/trnd/10/6810/6810_KOR_20230907134307.jpg?RS=658" alt="" />
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="swiper-item">
-                                        <a href="#!" className="link-item">
-                                            <div className="text-wrap">
-                                                <span className="text">TOMMY JEANS</span>
-                                            </div>
-                                            <div className="img-wrap">
-                                                <img src="https://cdn.hfashionmall.com/display/trnd/41/6141/6141_KOR_20230601175723.png?RS=658" alt="" />
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="swiper-item">
-                                        <a href="#!" className="link-item">
-                                            <div className="text-wrap">
-                                                <span className="text">TOMMY JEANS</span>
-                                            </div>
-                                            <div className="img-wrap">
-                                                <img src="https://cdn.hfashionmall.com/display/trnd/41/6141/6141_KOR_20230601175723.png?RS=658" alt="" />
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="swiper-item">
-                                        <a href="#!" className="link-item">
-                                            <div className="text-wrap">
-                                                <span className="text">TOMMY JEANS</span>
-                                            </div>
-                                            <div className="img-wrap">
-                                                <img src="https://cdn.hfashionmall.com/display/trnd/41/6141/6141_KOR_20230601175723.png?RS=658" alt="" />
-                                            </div>
-                                        </a>
-                                    </li>
+                                    {imgData.map((item, index) => (
+                                        <li className={`swiper-item ${index % itemsPerPage === 0 ? 'on' : ''}`} key={index}>
+                                            <a href="#!" className="link-item">
+                                                <div className="text-wrap">
+                                                    <span className="text">TOMMY JEANS</span>
+                                                </div>
+                                                <div className="img-wrap">
+                                                    <img src={process.env.PUBLIC_URL + item} alt={index} />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    ))}
                                 </ul>
                                 <div className="slide-nav">
-                                    <button className="slide-nav-prev button-disabled">
+                                    <button
+                                        className="slide-nav-prev button-disabled"
+                                    >
                                         <span className="offscreen"></span>
                                     </button>
-                                    <button className="slide-nav-next">
+                                    <button
+                                        className="slide-nav-next"
+                                    >
                                         <span className="offscreen"></span>
                                     </button>
                                 </div>

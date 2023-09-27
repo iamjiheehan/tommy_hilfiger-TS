@@ -11,11 +11,12 @@ import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
 import useRandomData from '../../hooks/useRandomize';
+import {useSelectMenuHandler} from '../../hooks/useSelectMenuHandler';
 
 import ItemLayout from './Layout';
 
 function NewIn() {
-    const [currentTab, setCurrentTab] = useState(0);
+    const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 
     const tabContents = {
         0: <All />,
@@ -26,13 +27,6 @@ function NewIn() {
         5: <Kids />,
         6: <Golf />
     }
-
-    const selectMenuHandler = (index) => {
-        setCurrentTab(index);
-        console.log(`현재 활성화 된 탭은 ${index}`);
-    }
-    
-
     return (
         <div>
             <section id='newIn'>

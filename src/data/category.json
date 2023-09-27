@@ -1,0 +1,36 @@
+[  
+    {
+        "title": "남성 아우터",
+        "img": "img/Category/001.jpg"
+    },
+    {
+        "title": "여성 아우터",
+        "img": "img/Category/002.jpg"
+    },
+    {
+        "title": "여성 니트",
+        "img": "img/Category/003.jpg"
+    },
+    {
+        "title": "남성 셔츠",
+        "img": "img/Category/004.jpg"
+    },
+    {
+        "title": "여성 부츠",
+        "img": "img/Category/005.jpg"
+    },
+    {
+        "title": "키즈 스웻셔츠",
+        "img": "img/Category/006.jpg"
+    }
+    ,
+    {
+        "title": "키즈 아우터",
+        "img": "img/Category/007.jpg"
+    }
+    ,
+    {
+        "title": "모자",
+        "img": "img/Category/008.jpg"
+    }
+]

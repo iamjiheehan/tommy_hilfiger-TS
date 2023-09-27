@@ -2,7 +2,12 @@ import React from 'react';
 
 import * as Styles from './MainStyle';
 
+import data from '../../data/category.json'
+
 function Category() {
+
+    const content = [...data];
+
     return (
         <div>
             <section id='categories'>
@@ -13,12 +18,14 @@ function Category() {
                     <Styles.MoreContent>
                         <div className="slide-container">
                             <ul className="swiper-wrapper">
-                                <li className="swiper-item">
-                                    <a href="#!" className="link-item">
-                                        <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/752_203145_1_KOR_20230906171304.jpg?RS=593x593&amp;AR=0&amp;CS=425x593" alt="" />
-                                        <span className="text">남성 아우터</span>
-                                    </a>
-                                </li>
+                                {content.map((item, index) => (
+                                    <li className="swiper-item" key={index}>
+                                        <a href="#!" className="link-item">
+                                            <img src={process.env.PUBLIC_URL + item.img} alt={index} />
+                                            <span className="text">{item.title}</span>
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">

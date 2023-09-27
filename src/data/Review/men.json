@@ -8,7 +8,7 @@
         "img": "img/Review/Men/M001.jpg",
         "rating":"5",
         "option":"",
-        "description": "테스트합니다.",
+        "description": "남편172에 76키로 M사이즈 좋네요 상의 길이가 살짝 긴 느낌 핏은 스탠다드한듯요 딱 평소 입는 스타일 사이즈로 샀는데 좋네요 점잖게 보여서 맘에 들어요",
         "brandimg" : "img/Review/Men/S001.jpg"
     },
     {
@@ -20,7 +20,7 @@
         "img": "img/Review/Men/M002.jpg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "작을줄. 알았는데 당행히 맞네요 부들부들 하니 좋아요. 작을줄. 알았는데 당행히 맞네요 부들부들 하니 좋아요",
         "brandimg" : "img/Review/Men/S002.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "img": "img/Review/Men/M003.jpg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "시원한 소재와 흔하지 않은 예쁜 컬러 여름이라면 이런 색 꼭 필요해요 얼굴이 더 환해보입니다",
         "brandimg" : "img/Review/Men/S003.jpg"
     },
     {
@@ -44,7 +44,7 @@
         "img": "img/Review/Men/M004.jpg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "색상이 밝고 예뻐요 원단은 엄청 얇아서 하늘하늘 옷이 가볍고 좋네요 다른색상도 구매하고싶네요",
         "brandimg" : "img/Review/Men/S004.jpg"
     },
     {
@@ -53,10 +53,10 @@
         "price": "197,100",
         "regular": "219,000",
         "percent": "10%",
-        "img": "img/Review/Men/M005.jpg",
+        "img": "img/Review/Men/M005.jpeg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "와플면소재로 신랑 회사 출근복으로 딱이예요. 그냥 면티는 입고출근하기 그렇다길래요. 핏도좋고. 고슬고슬하니 편하다고하네요",
         "brandimg" : "img/Review/Men/S005.jpg"
     },
     {
@@ -68,7 +68,7 @@
         "img": "img/Review/Men/M006.jpg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "재질이 얇아서 시원하구 가벼워요 흰색이라 좀 비추네요 속옷을 갖춰입어야할듯 ,다른색상 구매후 맘에들어서 구매했어요^^",
         "brandimg" : "img/Review/Men/S006.jpg"
     },
     {
@@ -80,7 +80,7 @@
         "img": "img/Review/Men/M007.jpg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "빠른 배송, 꼼꼼한 포장, 고급진 감촉과 디자인. 조금 사이즈가 큰 듯하여 한 치수 줄일까하다 편안하게 입는 걸 좋아하는 편이라 그대로 입기로 했습니다. 살에 닿는 감촉이 시원하여 한 여름 잘 날 듯합니다.",
         "brandimg" : "img/Review/Men/S007.jpg"
     },
     {
@@ -89,10 +89,10 @@
         "price": "215,100",
         "regular": "239,000",
         "percent": "10%",
-        "img": "img/Review/Men/M008.jpg",
+        "img": "img/Review/Men/M008.jpeg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "총장은 길고 소매길이는 짧고 애매해요 소재랑 디자인은 고급스러워요 오버핏같아서 평소사이즈보다 한사이즈 다운했더니 품은 살짝 딱맞고 길이는 넘 길어버림.. 정사이즈하세요",
         "brandimg" : "img/Review/Men/S008.jpg"
     }
     ,
@@ -103,9 +103,9 @@
         "regular": "239,000",
         "percent": "10%",
         "img": "img/Review/Men/M009.jpg",
-        "rating":"5",
+        "rating":"4",
         "option":"",
-        "description": "",
+        "description": "예상은했지만 빅앤톨라인보다 큽니다 ㅋㅋ",
         "brandimg" : "img/Review/Men/S009.jpg"
     },
     {
@@ -114,10 +114,10 @@
         "price": "179,100",
         "regular": "199,000",
         "percent": "10%",
-        "img": "img/Review/Men/M010.png",
+        "img": "img/Review/Men/M010.jpeg",
         "rating":"5",
         "option":"",
-        "description": "",
+        "description": "180 78  사이즈 여유있게 잘맞아요",
         "brandimg" : "img/Review/Men/S010.jpg"
     }
 ]

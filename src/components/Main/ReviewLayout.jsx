@@ -18,13 +18,13 @@ function ReviewLayout({ items }) {
                                 <figure className="item-box">
                                     <span className="item-img">
                                         <a href="#!">
-                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.brandimg} />
+                                            <img src={process.env.PUBLIC_URL + item.brandimg} alt={item.name} />
                                         </a>
                                     </span>
                                     <figcaption className="item-info">
                                         <a href="#!">
                                             <div className="item-brand">{item.brand}</div>
-                                            <div className="item-name">{item.name}</div>
+                                            {/* <div className="item-name">{item.name}</div> */}
                                             <div className="item-opt">
                                                 <div className="item-price">
                                                     <span className="price">{item.price}</span>

@@ -5,7 +5,11 @@
         "price": "61,200",
         "regular": "72,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/001.jpg"
+        "img": "img/Review/Kids/M001.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "132센치 아이 10사이즈 여유있게 이뻐요~~ 아이가 입어보곤 색상이 넘 이쁘다고 아주 만족스러워하네요~~네이비 색상도 추가로 구매하고 싶네요~~자수퀄리티도 좋아요",
+        "brandimg" : "img/Review/Kids/S001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -13,7 +17,11 @@
         "price": "157,250",
         "regular": "185,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/002.jpg"
+        "img": "img/Review/Kids/M002.jpeg",
+        "rating":"5",
+        "option":"",
+        "description": "남자아이라 니트는 잘 안입히는데 코디가 예뻐서 샀어요. 기본 스타일이고 부들부들 편해요. 내년까지 잘 입을 것 같아요^^",
+        "brandimg" : "img/Review/Kids/S002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -21,7 +29,11 @@
         "price": "89,250",
         "regular": "105,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/003.jpg"
+        "img": "img/Review/Kids/M003.jpeg",
+        "rating":"5",
+        "option":"",
+        "description": "35개월 4살 아동 낙낙하게 6사이즈로 구매했어요. 소매는 접어야 하지만 그래도 오래 입을 수 있을 것 같아요. 겉감, 안감 얇은 소재로 이중처리 되어 있어 간절기에 입기 딱 좋을 것 같습니다.",
+        "brandimg" : "img/Review/Kids/S003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -29,7 +41,11 @@
         "price": "123,250",
         "regular": "145,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/004.jpg"
+        "img": "img/Review/Kids/M004.jpeg",
+        "rating":"5",
+        "option":"",
+        "description": "4세 91cm, 13.5kg 아이가 입었어요.기장이 길어서 내년에도 충분히 입을 것 같아요.연핑크 느낌이라 귀여워요",
+        "brandimg" : "img/Review/Kids/S004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -37,7 +53,11 @@
         "price": "182,750",
         "regular": "215,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/005.jpg"
+        "img": "img/Review/Kids/M005.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "5학년 좀 크긴하지만 내년까지 14사이즈로 입기 좋을거 같아요.재질이 좋고 늘어짐,보풀없이 오래입었음 좋겠네요.",
+        "brandimg" : "img/Review/Kids/S005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -45,7 +65,11 @@
         "price": "114,750",
         "regular": "135,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/006.jpg"
+        "img": "img/Review/Kids/M006.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "넉넉한 핏감임에도 라인이 살아보이고 아이한테잘맞고 부드럽습니다 키 145 맛는 초5. 12사이즈 좋습니다",
+        "brandimg" : "img/Review/Kids/S006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -53,7 +77,11 @@
         "price": "78,200",
         "regular": "92,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/007.jpg"
+        "img": "img/Review/Kids/M007.jpeg",
+        "rating":"5",
+        "option":"",
+        "description": "55사이즈 기준 넉넉한듯 작은 너낌…그래도 뭐 입어보겠습니다! 파랑듀 사고싶어요 아들한텐 아직 커요~",
+        "brandimg" : "img/Review/Kids/S007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -61,7 +89,11 @@
         "price": "106,250",
         "regular": "125,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/008.jpg"
+        "img": "img/Review/Kids/M008.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "두께감 적당해서 쌀쌀해지기시작할때 부터 입기딱좋아요",
+        "brandimg" : "img/Review/Kids/S008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -69,7 +101,11 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/009.jpg"
+        "img": "img/Review/Kids/M009.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "136cm 34kg 10세 남아 사이즈 적당히 딱좋네요",
+        "brandimg" : "img/Review/Kids/S009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -77,6 +113,10 @@
         "price": "106,250",
         "regular": "125,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/010.jpg"
+        "img": "img/Review/Kids/M010.jpg",
+        "rating":"5",
+        "option":"",
+        "description": "16 사이즈 없어서 14 샀는데, 16이었음 더 좋았겠다 싶지만 그래도 영 이상하진 않아서 만족합니다 ㅎㅎ",
+        "brandimg" : "img/Review/Kids/S010.jpg"
     }
 ]

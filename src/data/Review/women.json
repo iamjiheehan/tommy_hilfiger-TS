@@ -5,21 +5,23 @@
         "price": "166,500",
         "regular": "185,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/001.jpg",
+        "img": "img/Review/Women/M001.jpeg",
         "rating":"5",
         "option":"",
-        "description": ""
+        "description": "170 56kg 일단 민소매 같은 이너 따로 안 챙겨 입어도 될 정도로소재가 대박 좋아요! 넥 부분은 깊이 파여 있어서 신경은 써야겠지만 그만큼 목이 가늘고 길어 보여서 오히려 더 맘에 들어요💖 얇아서 여기저기 다 잘 입을 수 있는 옷이에요~ 강력 추천👍🏻",
+        "brandimg" : "img/Review/Women/S001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "로마 스트레이트 다크 데님팬츠",
         "price": "175,500",
         "regular": "195,000",
-        "percent": "10%",
-        "img": "img/MdsPick/Women/002.jpg",
+        "percent": "10%", 
+        "img": "img/Review/Women/M002.jpg",
         "rating":"5",
         "option":"",
-        "description": ""
+        "description": "이 전 버전 크롭으로 크림, 핑크 있는데 레드 못 산 걸 땅치고 후회 중인데 이번 꺼는 세미 크롭 정도예요 직장에 입고 갈 수 있겠네요 예뻐서 네이비도 사려고요",
+        "brandimg" : "img/Review/Women/S002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -27,10 +29,11 @@
         "price": "88,200",
         "regular": "98,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/003.jpg",
+        "img": "img/Review/Women/M003.jpg",
         "rating":"5",
         "option":"",
-        "description": ""
+        "description": "제가 딱 좋아하는 사이즈 가방이라서 일단 좋고 루즈앤라운지 제품 검정 가지고 있어서 이번엔 타미제품 네이비로 했더니 후뚜루마뚜루 가지고 다니기 편해요 가방은 무조건 가볍고 비 맞아도 상관없는 재질 선호해서 저한테 딱입니다.",
+        "brandimg" : "img/Review/Women/S003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -38,10 +41,11 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/004.jpg",
+        "img": "img/Review/Women/M004.jpg",
         "rating":"5",
         "option":"",
-        "description": ""
+        "description": "일상룩, 여행룩 모두 가능한 스타일로 신축성이 좋아 활동하기 편하고 핏도 깔끔하게 떨어지네요.",
+        "brandimg" : "img/Review/Women/S004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -49,64 +53,10 @@
         "price": "55,440",
         "regular": "88,000",
         "percent": "37%",
-        "img": "img/MdsPick/Women/005.jpg",
+        "img": "img/Review/Women/M005.jpeg",
         "rating":"5",
         "option":"",
-        "description": ""
-    },
-    {
-        "brand": "TOMMY HILFIGER WOMEN",
-        "name": "다이아몬드 퀼티드 재킷",
-        "price": "328,500",
-        "regular": "365,000",
-        "percent": "10%",
-        "img": "img/MdsPick/Women/006.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
-    },
-    {
-        "brand": "TOMMY HILFIGER WOMEN",
-        "name": "울 캐시미어 크루넥 가디건",
-        "price": "229,500",
-        "regular": "255,000",
-        "percent": "46%",
-        "img": "img/MdsPick/Women/007.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
-    },
-    {
-        "brand": "TOMMY HILFIGER WOMEN",
-        "name": "스트라이프 오버사이즈드 셔츠",
-        "price": "229,500",
-        "regular": "255,000",
-        "percent": "10%",
-        "img": "img/MdsPick/Women/008.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
-    },
-    {
-        "brand": "TOMMY HILFIGER WOMEN",
-        "name": "슬림 리오셀 폴로 반팔 티셔츠",
-        "price": "121,500",
-        "regular": "135,000",
-        "percent": "10%",
-        "img": "img/MdsPick/Women/009.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
-    },
-    {
-        "brand": "TOMMY HILFIGER WOMEN",
-        "name": "케이블 V넥 롱슬리브 가디건",
-        "price": "211,500",
-        "regular": "235,000",
-        "percent": "10%",
-        "img": "img/MdsPick/Women/010.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "description": "마음에 들어요 재구매 의사 있습니다.",
+        "brandimg" : "img/Review/Women/S005.jpg"
     }
 ]

@@ -3,8 +3,30 @@ import React from 'react';
 import * as Styles from './MainStyle';
 import MDbanner from '../../assets/images/mdPickBanner.jpg';
 
+import MenData from '../../data/MdsPick/men';
+import WomenData from '../../data/MdsPick/women';
+import KidsData from '../../data/MdsPick/kids';
+import JeansData from '../../data/MdsPick/tommyJeans';
+import ShoesData from '../../data/MdsPick/shoes';
+
+import useRandomData from '../../hooks/useRandomize';
+import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
+
+import ItemLayout from './Layout';
 
 function Md() {
+
+    const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
+
+    const tabContents = {
+        0: <All />,
+        1: <Men />,
+        2: <Women />,
+        3: <Shoes />,
+        4: <Jeans />,
+        5: <Kids />,
+    }
+
     return (
         <div>
             <section id='md'>
@@ -15,81 +37,17 @@ function Md() {
                         <p className="pick-title">MD's PICK</p>
                     </div>
                     <div className="category-tab">
-                        <button type="button" className="on">
-                            <span>MEN</span>
-                        </button>
-                        <button type="button" className="">
-                            <span>WOMEN</span>
-                        </button>
-                        <button type="button" className="">
-                            <span>JEANS</span>
-                        </button>
-                        <button type="button" className="">
-                            <span>KIDS</span>
-                        </button>
-                        <button type="button" className="">
-                            <span>SHOES</span>
-                        </button>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={() => selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={() => selectMenuHandler(1)}><span>MEN</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={() => selectMenuHandler(2)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={() => selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={() => selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={() => selectMenuHandler(5)}><span>SHOES</span></button>
                     </div>
                 </Styles.MDbanner>
                 <Styles.MdContent>
                     <div className="slide-container">
-                        <ul className="swiper-wrapper">
-                            <li className="swiper-item">
-                                <figure className="item-box">
-                                    <div className="item-img">
-                                        <div className="img-box">
-                                            <a href="#!">
-                                                <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
-                                            </a>
-                                        </div>
-                                        <button type="button" className="btn-like"></button>
-                                        <button type="button" className="btn-quick"></button>
-                                    </div>
-                                    <figcaption className="item-info">
-                                        <a href="#!">
-                                            <div className="item-brand">TOMMY HILFIGER WOMEN</div>
-                                            <div className="item-name">폴로 칼라 바시티 재킷</div>
-                                            <div className="item-opt">
-                                                <div className="item-price">
-                                                    <span className="price">310,500</span>
-                                                    <del className="regular">345,000</del>
-                                                    <span className="percent">10%</span>
-                                                </div>
-                                                <div className="item-label"></div>
-                                            </div>
-                                        </a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li className="swiper-item">
-                                <figure className="item-box">
-                                    <div className="item-img">
-                                        <div className="img-box">
-                                            <a href="#!">
-                                                <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/08/03/GM0123080322170_1_ORGINL_1691130517534.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="폴로 칼라 바시티 재킷" /></div>
-                                            </a>
-                                        </div>
-                                        <button type="button" className="btn-like"></button>
-                                        <button type="button" className="btn-quick"></button>
-                                    </div>
-                                    <figcaption className="item-info">
-                                        <a href="#!">
-                                            <div className="item-brand">TOMMY HILFIGER WOMEN</div>
-                                            <div className="item-name">폴로 칼라 바시티 재킷</div>
-                                            <div className="item-opt">
-                                                <div className="item-price">
-                                                    <span className="price">310,500</span>
-                                                    <del className="regular">345,000</del>
-                                                    <span className="percent">10%</span>
-                                                </div>
-                                                <div className="item-label"></div>
-                                            </div>
-                                        </a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
+                        {tabContents[currentTab]}
                         <div className="slide-nav">
                             <button className="slide-nav-prev button-disabled">
                                 <span className="offscreen"></span>
@@ -106,3 +64,48 @@ function Md() {
 }
 
 export default Md;
+
+function All() {
+
+    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData, ...ShoesData];
+    const randomData = useRandomData(allData);
+
+    return (
+        <ItemLayout items={randomData} />
+    )
+}
+
+function Men() {
+    const menData = [...MenData];
+    return (
+        <ItemLayout items={menData} />
+    )
+}
+
+function Women() {
+    const womenData = [...WomenData];
+    return (
+        <ItemLayout items={womenData} />
+    )
+}
+
+function Jeans() {
+    const jeansData = [...JeansData];
+    return (
+        <ItemLayout items={jeansData} />
+    )
+}
+
+function Shoes() {
+    const shoesData = [...ShoesData];
+    return (
+        <ItemLayout items={shoesData} />
+    )
+}
+
+function Kids() {
+    const kidsData = [...KidsData];
+    return (
+        <ItemLayout items={kidsData} />
+    )
+}

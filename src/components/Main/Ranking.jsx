@@ -57,66 +57,6 @@ function Ranking() {
                     </Styles.RankingTab>
                     <Styles.NewContent>
                         <div className="slide-container">
-                            {/* <ul className="swiper-wrapper">
-                                <li className="swiper-item">
-                                    <figure className="item-box">
-                                        <div className="item-img">
-                                            <div className="img-box">
-                                                <a href="#!">
-                                                    <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
-                                                </a>
-                                            </div>
-                                            <button type="button" className="btn-like"><span></span></button>
-                                            <button type="button" className="btn-quick"><span></span></button>
-                                        </div>
-                                        <figcaption className="item-info">
-                                            <a href="#!">
-                                                <span className="item-rank rank-top">
-                                                    1</span>
-                                                <div className="item-brand">TOMMY HILFIGER KIDS</div>
-                                                <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
-                                                <div className="item-opt">
-                                                    <div className="item-price">
-                                                        <span className="price">59,670</span>
-                                                        <del className="regular">78,000</del>
-                                                        <span className="percent">24%</span>
-                                                    </div>
-                                                    <div className="item-label"></div>
-                                                </div>
-                                            </a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li className="swiper-item">
-                                    <figure className="item-box">
-                                        <div className="item-img">
-                                            <div className="img-box">
-                                                <a href="#!">
-                                                    <div className="img"><img src="https://cdn.hfashionmall.com/goods/THBR/23/05/26/GM0123052602707_1_ORGINL_1685088055492.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레치 옥스포드 롱슬리브 셔츠" /></div>
-                                                </a>
-                                            </div>
-                                            <button type="button" className="btn-like"><span></span></button>
-                                            <button type="button" className="btn-quick"><span></span></button>
-                                        </div>
-                                        <figcaption className="item-info">
-                                            <a href="#!">
-                                                <span className="item-rank rank-top">
-                                                    1</span>
-                                                <div className="item-brand">TOMMY HILFIGER KIDS</div>
-                                                <div className="item-name">스트레치 옥스포드 롱슬리브 셔츠</div>
-                                                <div className="item-opt">
-                                                    <div className="item-price">
-                                                        <span className="price">59,670</span>
-                                                        <del className="regular">78,000</del>
-                                                        <span className="percent">24%</span>
-                                                    </div>
-                                                    <div className="item-label"></div>
-                                                </div>
-                                            </a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                            </ul> */}
                             {tabContents[currentTab]}
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">

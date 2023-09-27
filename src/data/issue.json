@@ -1,0 +1,107 @@
+[
+    {
+        "season": {
+            "title": "DISNEY X TOMMY",
+            "subtitle": "디즈니 콜라보 아이템 단독 30% OFF",
+            "text": "VIEW COLLECTION",
+            "img": "img/Issue/001/B001.jpg"
+
+        },
+        "product": [
+            {
+                "brand": "TOMMY HILFIGER MEN",
+                "name": "[DISNEY X TOMMY] 폴카 도트 베스트",
+                "img": "img/Issue/001/S001.jpg",
+                "price": "255,500",
+                "regular": "365,000",
+                "percent": "30%"
+            },
+            {
+                "brand": "TOMMY HILFIGER WOMEN",
+                "name": "[DISNEY X TOMMY] 폴카 도트 폴로 니트 탑",
+                "img": "img/Issue/001/S002.jpg",
+                "price": "206,500",
+                "regular": "295,000",
+                "percent": "30%"
+            },
+            {
+                "brand": "TOMMY HILFIGER KIDS",
+                "name": "[DISNEY X TOMMY] 체스트 후디",
+                "img": "img/Issue/001/S003.jpg",
+                "price": "115,500",
+                "regular": "165,000",
+                "percent": "30%"
+            }
+        ]
+    },
+    {
+        "season": {
+            "title": "TOMMY JEANS 신상 세일의 기쁨",
+            "subtitle": "FW 30%off + 추가 혜택 확인!",
+            "text": "SHOP NOW",
+            "img": "img/Issue/002/B001.jpg"
+
+        },
+        "product": [
+            {
+                "brand": "TOMMY JEANS",
+                "name": "에센셜 뱃지 가디건",
+                "img": "img/Issue/002/S001.jpg",
+                "price": "124,600",
+                "regular": "178,000",
+                "percent": "30%"
+            },
+            {
+                "brand": "TOMMY JEANS",
+                "name": "크롭드 투웨이 집 스루 후디",
+                "img": "img/Issue/002/S002.jpg",
+                "price": "131,600",
+                "regular": "188,000",
+                "percent": "30%"
+            },
+            {
+                "brand": "TOMMY JEANS",
+                "name": "[EXCLUSIVE] 릴렉스 애슬래틱 플래그 스웨터",
+                "img": "img/Issue/002/S003.jpg",
+                "price": "138,600",
+                "regular": "198,000",
+                "percent": "30%"
+            }
+        ]
+    },
+    {
+        "season": {
+            "title": "TH_TRAVEL LOOK Style",
+            "subtitle": "Ready for 황금연휴 여행을 위한 여행룩 추천",
+            "text": "SHOP NOW",
+            "img": "img/Issue/003/B001.jpg"
+
+        },
+        "product": [
+            {
+                "brand": "TOMMY HILFIGER WOMEN",
+                "name": "보트넥 롱슬리브 니 드레스",
+                "img": "img/Issue/003/S001.jpg",
+                "price": "247,500",
+                "regular": "275,000",
+                "percent": "10%"
+            },
+            {
+                "brand": "TOMMY HILFIGER WOMEN",
+                "name": "클래식 케이블 크루넥 스웨터",
+                "img": "img/Issue/003/S002.jpg",
+                "price": "175,500",
+                "regular": "195,000",
+                "percent": "10%"
+            },
+            {
+                "brand": "TOMMY HILFIGER WOMEN",
+                "name": "TH 페미닌 체크 버킷햇",
+                "img": "img/Issue/003/S003.jpg",
+                "price": "70,200",
+                "regular": "78,000",
+                "percent": "10%"
+            }
+        ]
+    }
+]

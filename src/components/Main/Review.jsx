@@ -6,7 +6,6 @@ import MenData from '../../data/Review/men.json'
 import WomenData from '../../data/Review/women';
 import KidsData from '../../data/Review/kids';
 import JeansData from '../../data/Review/tommyJeans';
-import ShoesData from '../../data/Review/shoes';
 
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
@@ -69,7 +68,7 @@ export default Review;
 
 function All() {
 
-    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData, ...ShoesData];
+    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
 
     return (
@@ -79,7 +78,7 @@ function All() {
 
 function Best() {
 
-    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData, ...ShoesData];
+    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
 
     return (

@@ -21,7 +21,6 @@ function Review() {
         1: <Men />,
         2: <Women />,
         3: <Jeans />,
-        4: <Jeans />,
         4: <Kids />,
         5: <Shoes />,
     }

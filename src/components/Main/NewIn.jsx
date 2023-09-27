@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect, useState } from 'react';
 
 import * as Styles from './MainStyle';
@@ -12,45 +13,11 @@ import NewInShoesData from '../../data/NewIn/shoes';
 
 function NewIn() {
 
-    const [randomData, setRandomData] = useState([]);
 
-    const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData ];
-    
-    const getRandomData = () => {
-        const shuffledData = [...allData].sort(() => Math.random() - 0.5);
-        //-0.5는 sort 함수의 비교자(comparator)로 사용되며, 배열의 요소들을 무작위로 섞기 위한 것
-        // Math.random() 함수는 0(포함)부터 1(제외) 사이의 무작위 숫자를 생성합니다. 
-        // 즉, 0.0, 0.1, 0.2, ..., 0.99999까지의 값을 생성할 수 있지만, 실제로 1.0은 생성하지 않습니다.
-
-        // 0.5를 Math.random()에서 뺄셈하는 것은 주로 무작위 값을 0을 중심으로 가운데 정렬하는 데 사용됩니다. 
-        // 이렇게 하면 대략 절반의 시간 동안 결과값이 음수가 되고, 
-        // 절반의 시간 동안 양수가 됩니다.
-
-        // 이러한 값을 sort() 함수의 비교자로 사용하면 배열의 요소들을 사실상 무작위로 섞을 수 있습니다. 
-        // 양수 값을 가진 요소는 배열 끝으로 이동하고, 
-        // 음수 값을 가진 요소는 배열 앞쪽으로 이동하면서 배열이 섞인 효과를 만듭니다.
-
-        const limitedData = shuffledData.slice(0, 10);;
-        // 갯수 열개로 제한
-        setRandomData(limitedData);
-    };
-    
-    useEffect(() => {
-        const menuIndex = document.querySelectorAll("#newIn .menuWrap ul");
-        const TabIndex = document.querySelectorAll("#newIn .tabWrap button");
-    
-        console.log(`메뉴 갯수는 ${menuIndex.length} 탭 갯수는 ${TabIndex.length}`);
-    
-        getRandomData(); // Call the function to populate randomData
-        console.log(`Total Data Length: ${allData.length}, Random Data Length: ${randomData.length}`);
-    }, []);
 
     return (
         <div>
             <section id='newIn'>
-                {/* 컴포넌트 탭 만들기 */}
-                <Men />
-
                 <Styles.Container>
                     <Styles.NewTitle className="title-wrap">
                         <h2 className="title">NEW IN</h2>
@@ -80,237 +47,13 @@ function NewIn() {
                     </Styles.NewCategory>
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
-                            <ul className="swiper-wrapper">
-                                {randomData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInMenData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInWomenData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInShoesData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInGolfData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInKidsData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                            <ul className="swiper-wrapper hide">
-                                {NewInJeansData.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <div className="img">
-                                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like"></button>
-                                                <button type="button" className="btn-quick"></button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">{item.brand}</div>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-opt">
-                                                        <div className="item-price">
-                                                            <span className="price">{item.price}</span>
-                                                            <del className="regular">{item.regular}</del>
-                                                            <span className="percent">{item.percent}</span>
-                                                        </div>
-                                                        <div className="item-label"></div>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
+                            <All />
+                            <Men />
+                            <Women />
+                            <Shoes />
+                            <Golf />
+                            <Kids />
+                            <Jeans />
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>
@@ -329,39 +72,314 @@ function NewIn() {
 
 
 
-function All (){
+function All() {
+    const [randomData, setRandomData] = useState([]);
+
+    const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
+
+    const getRandomData = () => {
+        const shuffledData = [...allData].sort(() => Math.random() - 0.5);
+        //-0.5는 sort 함수의 비교자(comparator)로 사용되며, 배열의 요소들을 무작위로 섞기 위한 것
+        // Math.random() 함수는 0(포함)부터 1(제외) 사이의 무작위 숫자를 생성합니다. 
+        // 즉, 0.0, 0.1, 0.2, ..., 0.99999까지의 값을 생성할 수 있지만, 실제로 1.0은 생성하지 않습니다.
+
+        // 0.5를 Math.random()에서 뺄셈하는 것은 주로 무작위 값을 0을 중심으로 가운데 정렬하는 데 사용됩니다. 
+        // 이렇게 하면 대략 절반의 시간 동안 결과값이 음수가 되고, 
+        // 절반의 시간 동안 양수가 됩니다.
+
+        // 이러한 값을 sort() 함수의 비교자로 사용하면 배열의 요소들을 사실상 무작위로 섞을 수 있습니다. 
+        // 양수 값을 가진 요소는 배열 끝으로 이동하고, 
+        // 음수 값을 가진 요소는 배열 앞쪽으로 이동하면서 배열이 섞인 효과를 만듭니다.
+
+        const limitedData = shuffledData.slice(0, 10);;
+        // 갯수 열개로 제한
+        setRandomData(limitedData);
+    };
+
+    useEffect(() => {
+        const menuIndex = document.querySelectorAll("#newIn .menuWrap ul");
+        const TabIndex = document.querySelectorAll("#newIn .tabWrap button");
+
+        console.log(`메뉴 갯수는 ${menuIndex.length} 탭 갯수는 ${TabIndex.length}`);
+
+        getRandomData(); // Call the function to populate randomData
+        console.log(`Total Data Length: ${allData.length}, Random Data Length: ${randomData.length}`);
+    }, []);
+
+    return (
+        <ul className="swiper-wrapper">
+            {randomData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
 
 }
 
+function Men() {
 
-function Men (){
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInMenData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
 
+function Women() {
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInWomenData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Shoes() {
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInShoesData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Golf() {
+
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInGolfData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Kids() {
+
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInKidsData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Jeans() {
+
+    return (
+        <ul className="swiper-wrapper hide">
+            {NewInJeansData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
 }
 
 
-function Women (){
-
-}
 
 
-function Kids (){
 
-}
-
-
-function Jeans (){
-
-}
-
-
-function Golf (){
-
-}
-
-
-function Shoes (){
-
-}
 
 
 

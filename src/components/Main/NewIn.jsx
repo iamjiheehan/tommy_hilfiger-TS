@@ -62,13 +62,6 @@ function NewIn() {
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
                             {tabContents[currentTab]}
-                            {/* <All />
-                            <Men />
-                            <Women />
-                            <Shoes />
-                            <Golf />
-                            <Kids />
-                            <Jeans /> */}
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>
@@ -156,7 +149,6 @@ function All() {
             ))}
         </ul>
     )
-
 }
 
 function Men() {

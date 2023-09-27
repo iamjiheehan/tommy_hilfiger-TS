@@ -5,7 +5,10 @@
         "price": "166,500",
         "regular": "185,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/001.jpg"
+        "img": "img/MdsPick/Women/001.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -13,7 +16,10 @@
         "price": "175,500",
         "regular": "195,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/002.jpg"
+        "img": "img/MdsPick/Women/002.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -21,7 +27,10 @@
         "price": "88,200",
         "regular": "98,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/003.jpg"
+        "img": "img/MdsPick/Women/003.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -29,7 +38,10 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/004.jpg"
+        "img": "img/MdsPick/Women/004.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -37,7 +49,10 @@
         "price": "55,440",
         "regular": "88,000",
         "percent": "37%",
-        "img": "img/MdsPick/Women/005.jpg"
+        "img": "img/MdsPick/Women/005.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -45,7 +60,10 @@
         "price": "328,500",
         "regular": "365,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/006.jpg"
+        "img": "img/MdsPick/Women/006.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -53,7 +71,10 @@
         "price": "229,500",
         "regular": "255,000",
         "percent": "46%",
-        "img": "img/MdsPick/Women/007.jpg"
+        "img": "img/MdsPick/Women/007.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -61,7 +82,10 @@
         "price": "229,500",
         "regular": "255,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/008.jpg"
+        "img": "img/MdsPick/Women/008.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -69,7 +93,10 @@
         "price": "121,500",
         "regular": "135,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/009.jpg"
+        "img": "img/MdsPick/Women/009.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -77,6 +104,9 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/MdsPick/Women/010.jpg"
+        "img": "img/MdsPick/Women/010.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
     }
 ]

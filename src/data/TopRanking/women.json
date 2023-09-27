@@ -5,7 +5,7 @@
         "price": "47,520",
         "regular": "88,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Women/001.jpg"
+        "img": "img/Ranking/Women/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -13,7 +13,7 @@
         "price": "케이블 크루넥 가디건",
         "regular": "255,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Women/002.jpg"
+        "img": "img/Ranking/Women/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -21,7 +21,7 @@
         "price": "47,520",
         "regular": "88,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Women/003.jpg"
+        "img": "img/Ranking/Women/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -29,7 +29,7 @@
         "price": "229,500",
         "regular": "255,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Women/004.jpg"
+        "img": "img/Ranking/Women/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -37,7 +37,7 @@
         "price": "55,440",
         "regular": "88,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Women/005.jpg"
+        "img": "img/Ranking/Women/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -45,7 +45,7 @@
         "price": "110,250",
         "regular": "175,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Women/006.jpg"
+        "img": "img/Ranking/Women/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -53,7 +53,7 @@
         "price": "116,100",
         "regular": "215,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Women/007.jpg"
+        "img": "img/Ranking/Women/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -61,7 +61,7 @@
         "price": "261,450",
         "regular": "415,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Women/008.jpg"
+        "img": "img/Ranking/Women/008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -69,7 +69,7 @@
         "price": "436,500",
         "regular": "485,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Women/009.jpg"
+        "img": "img/Ranking/Women/009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER WOMEN",
@@ -77,6 +77,6 @@
         "price": "175,500",
         "regular": "195,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Women/010.jpg"
+        "img": "img/Ranking/Women/010.jpg"
     }
 ]

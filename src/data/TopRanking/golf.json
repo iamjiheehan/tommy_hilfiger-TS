@@ -5,7 +5,7 @@
         "price": "74,340",
         "regular": "118,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/001.jpg"
+        "img": "img/Ranking/Golf/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -13,7 +13,7 @@
         "price": "53,100",
         "regular": "59,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Golf/002.jpg"
+        "img": "img/Ranking/Golf/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -21,7 +21,7 @@
         "price": "150,570",
         "regular": "239,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/003.jpg"
+        "img": "img/Ranking/Golf/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -29,7 +29,7 @@
         "price": "163,170",
         "regular": "259,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/004.jpg"
+        "img": "img/Ranking/Golf/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -37,7 +37,7 @@
         "price": "125,370",
         "regular": "199,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/005.jpg"
+        "img": "img/Ranking/Golf/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -45,7 +45,7 @@
         "price": "137,970",
         "regular": "219,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/006.jpg"
+        "img": "img/Ranking/Golf/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -53,7 +53,7 @@
         "price": "68,040",
         "regular": "108,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/007.jpg"
+        "img": "img/Ranking/Golf/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -61,7 +61,7 @@
         "price": "175,770",
         "regular": "279,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/008.jpg"
+        "img": "img/Ranking/Golf/008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -69,7 +69,7 @@
         "price": "74,340",
         "regular": "118,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Golf/009.jpg"
+        "img": "img/Ranking/Golf/009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -77,6 +77,6 @@
         "price": "251,100",
         "regular": "279,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Golf/010.jpg"
+        "img": "img/Ranking/Golf/010.jpg"
     }
 ]

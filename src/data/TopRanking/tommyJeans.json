@@ -5,7 +5,7 @@
         "price": "26,000",
         "regular": "52,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/001.jpg"
+        "img": "img/Ranking/Jeans/001.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -13,7 +13,7 @@
         "price": "151,300",
         "regular": "178,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/002.jpg"
+        "img": "img/Ranking/Jeans/002.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -21,7 +21,7 @@
         "price": "151,300",
         "regular": "178,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/003.jpg"
+        "img": "img/Ranking/Jeans/003.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -29,7 +29,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/004.jpg"
+        "img": "img/Ranking/Jeans/004.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -37,7 +37,7 @@
         "price": "26,000",
         "regular": "52,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/005.jpg"
+        "img": "img/Ranking/Jeans/005.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -45,7 +45,7 @@
         "price": "89,000",
         "regular": "178,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Jeans/006.jpg"
+        "img": "img/Ranking/Jeans/006.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -53,7 +53,7 @@
         "price": "40,460",
         "regular": "68,000",
         "percent": "41%",
-        "img": "../../assets/images/TopRanking/Jeans/007.jpg"
+        "img": "img/Ranking/Jeans/007.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -61,7 +61,7 @@
         "price": "49,300",
         "regular": "58,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/008.jpg"
+        "img": "img/Ranking/Jeans/008.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -69,7 +69,7 @@
         "price": "236,300",
         "regular": "278,000",
         "percent": "15%",
-        "img": "../../assets/images/TopRanking/Jeans/009.jpg"
+        "img": "img/Ranking/Jeans/009.jpg"
     },
     {
         "brand": "TOMMY JEANS",
@@ -77,6 +77,6 @@
         "price": "141,610",
         "regular": "238,000",
         "percent": "41%",
-        "img": "../../assets/images/TopRanking/Jeans/010.jpg"
+        "img": "img/Ranking/Jeans/010.jpg"
     }
 ]

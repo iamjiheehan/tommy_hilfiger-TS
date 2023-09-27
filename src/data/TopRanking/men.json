@@ -5,7 +5,7 @@
         "price": "199,500",
         "regular": "399,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Men/001.jpg"
+        "img": "img/Ranking/Men/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -13,7 +13,7 @@
         "price": "209,300",
         "regular": "299,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Men/002.jpg"
+        "img": "img/Ranking/Men/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -21,7 +21,7 @@
         "price": "74,970",
         "regular": "119,000",
         "percent": "37%",
-        "img": "../../assets/images/TopRanking/Men/003.jpg"
+        "img": "img/Ranking/Men/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -29,7 +29,7 @@
         "price": "149,500",
         "regular": "299,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Men/004.jpg"
+        "img": "img/Ranking/Men/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -37,7 +37,7 @@
         "price": "84,500",
         "regular": "169,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Men/005.jpg"
+        "img": "img/Ranking/Men/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -45,7 +45,7 @@
         "price": "107,460",
         "regular": "199,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Men/006.jpg"
+        "img": "img/Ranking/Men/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -53,7 +53,7 @@
         "price": "109,500",
         "regular": "219,000",
         "percent": "50%",
-        "img": "../../assets/images/TopRanking/Men/007.jpg"
+        "img": "img/Ranking/Men/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -61,7 +61,7 @@
         "price": "172,260",
         "regular": "319,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Men/008.jpg"
+        "img": "img/Ranking/Men/008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -69,7 +69,7 @@
         "price": "48,060",
         "regular": "89,000",
         "percent": "46%",
-        "img": "../../assets/images/TopRanking/Men/009.jpg"
+        "img": "img/Ranking/Men/009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER MEN",
@@ -77,6 +77,6 @@
         "price": "305,100",
         "regular": "339,000",
         "percent": "10%",
-        "img": "../../assets/images/TopRanking/Men/010.jpg"
+        "img": "img/Ranking/Men/010.jpg"
     }
 ]

@@ -2,7 +2,31 @@ import React from 'react';
 
 import * as Styles from './MainStyle';
 
+import MenData from '../../data/TopRanking/men';
+import WomenData from '../../data/TopRanking/women';
+import GolfData from '../../data/TopRanking/golf';
+import KidsData from '../../data/TopRanking/kids';
+import JeansData from '../../data/TopRanking/tommyJeans';
+import ShoesData from '../../data/TopRanking/shoes';
+
+import useRandomData from '../../hooks/useRandomize';
+import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
+
+import ItemLayout from './Layout';
+
 function Ranking() {
+    const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
+
+    const tabContents = {
+        0: <All />,
+        1: <Men />,
+        2: <Women />,
+        3: <Shoes />,
+        4: <Jeans />,
+        5: <Kids />,
+        6: <Golf />
+    }
+
     return (
         <div>
             <section id='ranking'>
@@ -17,27 +41,13 @@ function Ranking() {
                         </div>
                     </Styles.NewTitle>
                     <Styles.NewTab>
-                        <button type="button" className="on">
-                            <span>ALL</span>
-                        </button>
-                        <button type="button">
-                            <span>MEN</span>
-                        </button>
-                        <button type="button">
-                            <span>WOMEN</span>
-                        </button>
-                        <button type="button">
-                            <span>JEANS</span>
-                        </button>
-                        <button type="button">
-                            <span>KIDS</span>
-                        </button>
-                        <button type="button">
-                            <span>SHOES</span>
-                        </button>
-                        <button type="button">
-                            <span>GOLF</span>
-                        </button>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={() => selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={() => selectMenuHandler(1)}><span>MEN</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={() => selectMenuHandler(2)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={() => selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={() => selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={() => selectMenuHandler(5)}><span>SHOES</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={() => selectMenuHandler(6)}><span>GOLF</span></button>
                     </Styles.NewTab>
                     <Styles.RankingTab>
                         <button type="button" className='on'><span>실시간</span></button>
@@ -47,7 +57,7 @@ function Ranking() {
                     </Styles.RankingTab>
                     <Styles.NewContent>
                         <div className="slide-container">
-                            <ul className="swiper-wrapper">
+                            {/* <ul className="swiper-wrapper">
                                 <li className="swiper-item">
                                     <figure className="item-box">
                                         <div className="item-img">
@@ -106,7 +116,8 @@ function Ranking() {
                                         </figcaption>
                                     </figure>
                                 </li>
-                            </ul>
+                            </ul> */}
+                            {tabContents[currentTab]}
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>
@@ -124,3 +135,55 @@ function Ranking() {
 }
 
 export default Ranking;
+
+function All() {
+
+    const allData = [...MenData, ...WomenData, ...GolfData, ...KidsData, ...JeansData, ...ShoesData];
+    const randomData = useRandomData(allData);
+
+    return (
+        <ItemLayout items={randomData} />
+    )
+}
+
+function Men() {
+    const menData = [...MenData];
+    return (
+        <ItemLayout items={menData} />
+    )
+}
+
+function Women() {
+    const womenData = [...WomenData];
+    return (
+        <ItemLayout items={womenData} />
+    )
+}
+
+function Jeans() {
+    const jeansData = [...JeansData];
+    return (
+        <ItemLayout items={jeansData} />
+    )
+}
+
+function Shoes() {
+    const shoesData = [...ShoesData];
+    return (
+        <ItemLayout items={shoesData} />
+    )
+}
+
+function Golf() {
+    const golfData = [...GolfData];
+    return (
+        <ItemLayout items={golfData} />
+    )
+}
+
+function Kids() {
+    const kidsData = [...KidsData];
+    return (
+        <ItemLayout items={kidsData} />
+    )
+}

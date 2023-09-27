@@ -5,10 +5,7 @@
         "price": "61,200",
         "regular": "72,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/001.jpg",
-        "rating":"5",
-        "option":"",
-        "description": "132센치 아이 10사이즈 여유있게 이뻐요~~ 아이가 입어보곤 색상이 넘 이쁘다고 아주 만족스러워하네요~~네이비 색상도 추가로 구매하고 싶네요~~자수퀄리티도 좋아요"
+        "img": "img/MdsPick/Kids/001.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -16,10 +13,7 @@
         "price": "157,250",
         "regular": "185,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/002.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/002.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -27,10 +21,7 @@
         "price": "89,250",
         "regular": "105,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/003.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/003.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -38,10 +29,7 @@
         "price": "123,250",
         "regular": "145,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/004.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/004.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -49,10 +37,7 @@
         "price": "182,750",
         "regular": "215,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/005.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -60,10 +45,7 @@
         "price": "114,750",
         "regular": "135,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/006.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -71,10 +53,7 @@
         "price": "78,200",
         "regular": "92,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/007.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -82,10 +61,7 @@
         "price": "106,250",
         "regular": "125,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/008.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/008.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -93,10 +69,7 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/009.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/009.jpg"
     },
     {
         "brand": "TOMMY HILFIGER KIDS",
@@ -104,9 +77,6 @@
         "price": "106,250",
         "regular": "125,000",
         "percent": "15%",
-        "img": "img/MdsPick/Kids/010.jpg",
-        "rating":"5",
-        "option":"",
-        "description": ""
+        "img": "img/MdsPick/Kids/010.jpg"
     }
 ]

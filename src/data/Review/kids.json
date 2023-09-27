@@ -1,0 +1,82 @@
+[  
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "타임리스 스웨트 셔츠",
+        "price": "61,200",
+        "regular": "72,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/001.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "럭비 울 스웨터",
+        "price": "157,250",
+        "regular": "185,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/002.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "체크 스탬프 스웨트 셔츠",
+        "price": "89,250",
+        "regular": "105,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/003.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "셰르파 스탬프 집 스루 자켓",
+        "price": "123,250",
+        "regular": "145,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/004.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "타탄 테디 셰르파 자켓",
+        "price": "182,750",
+        "regular": "215,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/005.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "모노타입 케이블 스웨터",
+        "price": "114,750",
+        "regular": "135,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/006.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "모노그램 크루 스웻셔츠",
+        "price": "78,200",
+        "regular": "92,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/007.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "에센셜 케이블 스웨터",
+        "price": "106,250",
+        "regular": "125,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/008.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "럭비 스트라이프 패턴 폴로 셔츠",
+        "price": "83,300",
+        "regular": "98,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/009.jpg"
+    },
+    {
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "테리 니트 스웨터",
+        "price": "106,250",
+        "regular": "125,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Kids/010.jpg"
+    }
+]

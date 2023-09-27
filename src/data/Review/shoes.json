@@ -1,0 +1,112 @@
+[  
+    {
+        "brand": "TOMMY SHOES",
+        "name": "가엘 레더 첼시 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "37%",
+        "img": "img/MdsPick/Shoes/001.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "프리미엄 캐주얼 청키 첼시 부츠",
+        "price": "269,100",
+        "regular": "299,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/002.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "에바 레이스업 청키 부츠",
+        "price": "323,100",
+        "regular": "359,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/003.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "페미닌 TH 하드웨어 미드 부츠",
+        "price": "305,100",
+        "regular": "339,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/004.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "세레나 윈터 퍼 스니커즈",
+        "price": "152,100",
+        "regular": "169,000",
+        "percent": "28%",
+        "img": "img/MdsPick/Shoes/005.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "클래식 레더 러너",
+        "price": "179,100",
+        "regular": "199,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/006.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "할렘 레더 로우 스니커즈",
+        "price": "143,100",
+        "regular": "159,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/007.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "웜 이냐시오 샌들",
+        "price": "134,100",
+        "regular": "149,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/008.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "[베스트 리오더] 캐시 스트레치가죽 앵클 부츠",
+        "price": "197,100",
+        "regular": "219,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/009.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY SHOES",
+        "name": "에바 레이스업 레더 슈즈",
+        "price": "251,100",
+        "regular": "279,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Shoes/010.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    }
+]

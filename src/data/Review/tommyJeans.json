@@ -1,0 +1,112 @@
+[  
+    {
+        "brand": "TOMMY JEANS",
+        "name": "크롭드 투웨이 집 스루 후디",
+        "price": "131,600",
+        "regular": "188,000",
+        "percent": "30%",
+        "img": "img/MdsPick/Jeans/001.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "레오 가디건",
+        "price": "168,300",
+        "regular": "198,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/002.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "[UNISEX] 스프레이 프린트 후드 재킷",
+        "price": "168,300",
+        "regular": "198,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/003.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "토널 뱃지 후드 티셔츠",
+        "price": "91,800",
+        "regular": "108,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/004.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "[UNISEX] 릴렉스 에센셜 스웨트셔츠",
+        "price": "83,300",
+        "regular": "98,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/005.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "다이아몬드 퀼팅 덕 다운 (셰르파 넥 탈 부착)",
+        "price": "287,300",
+        "regular": "338,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/006.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "에센셜 뱃지 가디건",
+        "price": "124,600",
+        "regular": "178,000",
+        "percent": "30%",
+        "img": "img/MdsPick/Jeans/007.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "어센틱 아미 봄버 재킷",
+        "price": "270,300",
+        "regular": "318,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/008.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "토널 뱃지 스웨터",
+        "price": "159,800",
+        "regular": "188,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/009.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY JEANS",
+        "name": "릴렉스 체크패턴 셔츠",
+        "price": "159,800",
+        "regular": "188,000",
+        "percent": "15%",
+        "img": "img/MdsPick/Jeans/010.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    }
+]

@@ -1,0 +1,112 @@
+[  
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "코튼 릴렉스드 롱 슬리브 셔츠",
+        "price": "166,500",
+        "regular": "185,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/001.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "로마 스트레이트 다크 데님팬츠",
+        "price": "175,500",
+        "regular": "195,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/002.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "레귤러핏 바시티 크루넥 티셔츠",
+        "price": "88,200",
+        "regular": "98,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/003.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "플루이드 트윌 플리츠 스커트",
+        "price": "211,500",
+        "regular": "235,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/004.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "탈리 롱 슬리브 크루넥 스웨터",
+        "price": "55,440",
+        "regular": "88,000",
+        "percent": "37%",
+        "img": "img/MdsPick/Women/005.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "다이아몬드 퀼티드 재킷",
+        "price": "328,500",
+        "regular": "365,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/006.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "울 캐시미어 크루넥 가디건",
+        "price": "229,500",
+        "regular": "255,000",
+        "percent": "46%",
+        "img": "img/MdsPick/Women/007.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "스트라이프 오버사이즈드 셔츠",
+        "price": "229,500",
+        "regular": "255,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/008.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "슬림 리오셀 폴로 반팔 티셔츠",
+        "price": "121,500",
+        "regular": "135,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/009.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    },
+    {
+        "brand": "TOMMY HILFIGER WOMEN",
+        "name": "케이블 V넥 롱슬리브 가디건",
+        "price": "211,500",
+        "regular": "235,000",
+        "percent": "10%",
+        "img": "img/MdsPick/Women/010.jpg",
+        "rating":"5",
+        "option":"",
+        "description": ""
+    }
+]

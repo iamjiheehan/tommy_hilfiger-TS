@@ -10,10 +10,24 @@ import NewInKidsData from '../../data/NewIn/kids';
 import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
-
 function NewIn() {
+    const [currentTab, setCurrentTab] = useState(0);
 
+    const tabContents = {
+        0: <All />,
+        1: <Men />,
+        2: <Women />,
+        3: <Shoes />,
+        4: <Jeans />,
+        5: <Kids />,
+        6: <Golf />
+    }
 
+    const selectMenuHandler = (index) => {
+        setCurrentTab(index);
+        console.log(`현재 활성화 된 탭은 ${index}`);
+    }
+    
 
     return (
         <div>
@@ -37,23 +51,24 @@ function NewIn() {
                         </button>
                     </Styles.NewTab>
                     <Styles.NewCategory className='tabWrap'>
-                        <button type="button" className='on all'><span>ALL</span></button>
-                        <button type="button" className='men'><span>MEN</span></button>
-                        <button type="button" className='women'><span>WOMEN</span></button>
-                        <button type="button" className='jeans'><span>TOMMY JEANS</span></button>
-                        <button type="button" className='kids'><span>KIDS</span></button>
-                        <button type="button" className='shoes'><span>SHOES</span></button>
-                        <button type="button" className='golf'><span>GOLF</span></button>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>MEN</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
                     </Styles.NewCategory>
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
-                            <All />
+                            {tabContents[currentTab]}
+                            {/* <All />
                             <Men />
                             <Women />
                             <Shoes />
                             <Golf />
                             <Kids />
-                            <Jeans />
+                            <Jeans /> */}
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>
@@ -147,7 +162,7 @@ function All() {
 function Men() {
 
     return (
-        <ul className="swiper-wrapper hide">
+        <ul className="swiper-wrapper">
             {NewInMenData.map((item, index) => (
                 <li className="swiper-item" key={index}>
                     <figure className="item-box">
@@ -185,8 +200,47 @@ function Men() {
 
 function Women() {
     return (
-        <ul className="swiper-wrapper hide">
+        <ul className="swiper-wrapper">
             {NewInWomenData.map((item, index) => (
+                <li className="swiper-item" key={index}>
+                    <figure className="item-box">
+                        <div className="item-img">
+                            <div className="img-box">
+                                <a href="#!">
+                                    <div className="img">
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" className="btn-like"></button>
+                            <button type="button" className="btn-quick"></button>
+                        </div>
+                        <figcaption className="item-info">
+                            <a href="#!">
+                                <div className="item-brand">{item.brand}</div>
+                                <div className="item-name">{item.name}</div>
+                                <div className="item-opt">
+                                    <div className="item-price">
+                                        <span className="price">{item.price}</span>
+                                        <del className="regular">{item.regular}</del>
+                                        <span className="percent">{item.percent}</span>
+                                    </div>
+                                    <div className="item-label"></div>
+                                </div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Jeans() {
+
+    return (
+        <ul className="swiper-wrapper">
+            {NewInJeansData.map((item, index) => (
                 <li className="swiper-item" key={index}>
                     <figure className="item-box">
                         <div className="item-img">
@@ -223,7 +277,7 @@ function Women() {
 
 function Shoes() {
     return (
-        <ul className="swiper-wrapper hide">
+        <ul className="swiper-wrapper">
             {NewInShoesData.map((item, index) => (
                 <li className="swiper-item" key={index}>
                     <figure className="item-box">
@@ -262,7 +316,7 @@ function Shoes() {
 function Golf() {
 
     return (
-        <ul className="swiper-wrapper hide">
+        <ul className="swiper-wrapper">
             {NewInGolfData.map((item, index) => (
                 <li className="swiper-item" key={index}>
                     <figure className="item-box">
@@ -301,7 +355,7 @@ function Golf() {
 function Kids() {
 
     return (
-        <ul className="swiper-wrapper hide">
+        <ul className="swiper-wrapper">
             {NewInKidsData.map((item, index) => (
                 <li className="swiper-item" key={index}>
                     <figure className="item-box">
@@ -337,44 +391,6 @@ function Kids() {
     )
 }
 
-function Jeans() {
-
-    return (
-        <ul className="swiper-wrapper hide">
-            {NewInJeansData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
-    )
-}
 
 
 

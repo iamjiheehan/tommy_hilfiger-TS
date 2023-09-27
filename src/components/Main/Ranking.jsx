@@ -12,7 +12,7 @@ import ShoesData from '../../data/TopRanking/shoes';
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
-import ItemLayout from './Layout';
+import ItemLayout from './ItemLayout';
 
 function Ranking() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);

@@ -13,7 +13,7 @@ import NewInShoesData from '../../data/NewIn/shoes';
 import useRandomData from '../../hooks/useRandomize';
 import {useSelectMenuHandler} from '../../hooks/useSelectMenuHandler';
 
-import ItemLayout from './Layout';
+import ItemLayout from './ItemLayout';
 
 function NewIn() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);

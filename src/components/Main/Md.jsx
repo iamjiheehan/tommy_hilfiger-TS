@@ -12,7 +12,7 @@ import ShoesData from '../../data/MdsPick/shoes';
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
-import ItemLayout from './Layout';
+import ItemLayout from './ItemLayout';
 
 function Md() {
 

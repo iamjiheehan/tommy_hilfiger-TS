@@ -10,6 +10,10 @@ import NewInKidsData from '../../data/NewIn/kids';
 import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
+import useRandomData from '../../hooks/useRandomize';
+
+import ItemLayout from './Layout';
+
 function NewIn() {
     const [currentTab, setCurrentTab] = useState(0);
 
@@ -78,317 +82,74 @@ function NewIn() {
     );
 }
 
-
-
 function All() {
-    const [randomData, setRandomData] = useState([]);
 
     const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
+    const randomData = useRandomData(allData);
 
-    const getRandomData = () => {
-        const shuffledData = [...allData].sort(() => Math.random() - 0.5);
-        //-0.5는 sort 함수의 비교자(comparator)로 사용되며, 배열의 요소들을 무작위로 섞기 위한 것
-        // Math.random() 함수는 0(포함)부터 1(제외) 사이의 무작위 숫자를 생성합니다. 
-        // 즉, 0.0, 0.1, 0.2, ..., 0.99999까지의 값을 생성할 수 있지만, 실제로 1.0은 생성하지 않습니다.
+    // const getRandomData = () => {
+    //     const shuffledData = [...allData].sort(() => Math.random() - 0.5);
 
-        // 0.5를 Math.random()에서 뺄셈하는 것은 주로 무작위 값을 0을 중심으로 가운데 정렬하는 데 사용됩니다. 
-        // 이렇게 하면 대략 절반의 시간 동안 결과값이 음수가 되고, 
-        // 절반의 시간 동안 양수가 됩니다.
 
-        // 이러한 값을 sort() 함수의 비교자로 사용하면 배열의 요소들을 사실상 무작위로 섞을 수 있습니다. 
-        // 양수 값을 가진 요소는 배열 끝으로 이동하고, 
-        // 음수 값을 가진 요소는 배열 앞쪽으로 이동하면서 배열이 섞인 효과를 만듭니다.
+    //     const limitedData = shuffledData.slice(0, 10);;
+    //     setRandomData(limitedData);
+    // };
 
-        const limitedData = shuffledData.slice(0, 10);;
-        // 갯수 열개로 제한
-        setRandomData(limitedData);
-    };
+    // useEffect(() => {
+    //     const menuIndex = document.querySelectorAll("#newIn .menuWrap ul");
+    //     const TabIndex = document.querySelectorAll("#newIn .tabWrap button");
 
-    useEffect(() => {
-        const menuIndex = document.querySelectorAll("#newIn .menuWrap ul");
-        const TabIndex = document.querySelectorAll("#newIn .tabWrap button");
+    //     console.log(`메뉴 갯수는 ${menuIndex.length} 탭 갯수는 ${TabIndex.length}`);
 
-        console.log(`메뉴 갯수는 ${menuIndex.length} 탭 갯수는 ${TabIndex.length}`);
-
-        getRandomData(); // Call the function to populate randomData
-        console.log(`Total Data Length: ${allData.length}, Random Data Length: ${randomData.length}`);
-    }, []);
+    //     getRandomData(); 
+    //     console.log(`Total Data Length: ${allData.length}, Random Data Length: ${randomData.length}`);
+    // }, []);
 
     return (
-        <ul className="swiper-wrapper">
-            {randomData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={randomData} />
     )
 }
 
 function Men() {
-
+    const menData = [...NewInMenData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInMenData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={menData} />
     )
 }
 
 function Women() {
+    const womenData = [...NewInWomenData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInWomenData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={womenData} />
     )
 }
 
 function Jeans() {
-
+    const jeansData = [...NewInJeansData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInJeansData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={jeansData} />
     )
 }
 
 function Shoes() {
+    const shoesData = [...NewInShoesData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInShoesData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={shoesData} />
     )
 }
 
 function Golf() {
-
+    const golfData = [...NewInGolfData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInGolfData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={golfData} />
     )
 }
 
 function Kids() {
-
+    const kidsData = [...NewInKidsData];
     return (
-        <ul className="swiper-wrapper">
-            {NewInKidsData.map((item, index) => (
-                <li className="swiper-item" key={index}>
-                    <figure className="item-box">
-                        <div className="item-img">
-                            <div className="img-box">
-                                <a href="#!">
-                                    <div className="img">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
-                                    </div>
-                                </a>
-                            </div>
-                            <button type="button" className="btn-like"></button>
-                            <button type="button" className="btn-quick"></button>
-                        </div>
-                        <figcaption className="item-info">
-                            <a href="#!">
-                                <div className="item-brand">{item.brand}</div>
-                                <div className="item-name">{item.name}</div>
-                                <div className="item-opt">
-                                    <div className="item-price">
-                                        <span className="price">{item.price}</span>
-                                        <del className="regular">{item.regular}</del>
-                                        <span className="percent">{item.percent}</span>
-                                    </div>
-                                    <div className="item-label"></div>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </li>
-            ))}
-        </ul>
+        <ItemLayout items={kidsData} />
     )
 }
-
-
-
-
-
-
-
-
 
 export default NewIn;

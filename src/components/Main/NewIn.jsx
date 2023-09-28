@@ -50,10 +50,18 @@ function NewIn() {
                     </Styles.NewTab>
                     <Styles.NewCategory className='tabWrap'>
                         <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
-                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>MEN</span></button>
-                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>MEN</span></button>
                         <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
                         <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
+                    </Styles.NewCategory>
+                    <Styles.NewCategory className='tabWrap'>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>여성</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>남성</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>키즈</span></button>
                         <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
                         <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
                     </Styles.NewCategory>

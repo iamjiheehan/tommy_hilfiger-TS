@@ -37,7 +37,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/001.jpg"
+        "img": "img/NewIn/Golf/005.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -45,7 +45,7 @@
         "price": "377,100",
         "regular": "419,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/001.jpg"
+        "img": "img/NewIn/Golf/006.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -53,7 +53,7 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/001.jpg"
+        "img": "img/NewIn/Golf/007.jpg"
     },
     {
         "brand": "TOMMY HILFIGER GOLF",
@@ -61,6 +61,6 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/001.jpg"
+        "img": "img/NewIn/Golf/008.jpg"
     }
 ]

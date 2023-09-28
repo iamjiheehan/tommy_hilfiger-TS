@@ -22,18 +22,37 @@ function NewIn() {
     const tabContArr=[
             {
                 tabTitle:(
-                    <li onClick={()=>tabClickHandler(0)}> 탭1 </li>
+                    <button type="button" className={activeIndex === 0 ? 'on' : ''} onClick={()=>tabClickHandler(0)}>
+                        <span>BRAND LINE</span>
+                    </button>
                 ),
                 tabCont:(
-                    <div>탭1 내용</div>
+                    <Styles.NewCategory className='tabWrap'>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>WOMEN</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>MEN</span></button>
+                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
+                    </Styles.NewCategory>
                 )
             },
             {
                 tabTitle:(
-                    <li onClick={()=>tabClickHandler(1)}> 탭2 </li>
+                    <button type="button" className={activeIndex === 1 ? 'on' : ''} onClick={()=>tabClickHandler(1)}>
+                        <span>CATEGORY</span>
+                    </button>
                 ),
                 tabCont:(
-                    <div>탭2 내용</div>
+                    <Styles.NewCategory className='tabWrap'>
+                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
+                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>여성</span></button>
+                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>남성</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>키즈</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>잡화</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>골프</span></button>
+                    </Styles.NewCategory>
                 )
             }
         ];
@@ -65,30 +84,11 @@ function NewIn() {
                         </div>
                     </Styles.NewTitle>
                     <Styles.NewTab>
-                        <button type="button" className={activeIndex === 0 ? 'on' : ''}>
-                            <span>BRAND LINE</span>
-                        </button>
-                        <button type="button" className={activeIndex === 1 ? 'on' : ''}>
-                            <span>CATEGORY</span>
-                        </button>
+                        {tabContArr.map((section, index)=>{
+                            return section.tabTitle
+                        })}
                     </Styles.NewTab>
-                    <Styles.NewCategory className='tabWrap'>
-                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
-                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>WOMEN</span></button>
-                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>MEN</span></button>
-                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
-                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>KIDS</span></button>
-                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
-                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
-                    </Styles.NewCategory>
-                    <Styles.NewCategory className='tabWrap'>
-                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
-                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>여성</span></button>
-                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>남성</span></button>
-                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>키즈</span></button>
-                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>잡화</span></button>
-                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>골프</span></button>
-                    </Styles.NewCategory>
+                    {tabContArr[activeIndex].tabCont}
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
                             {tabContents[currentTab]}

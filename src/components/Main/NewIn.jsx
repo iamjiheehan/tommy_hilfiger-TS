@@ -17,6 +17,7 @@ import ItemLayout from './ItemLayout';
 
 function NewIn() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
+    const [ currentCate, setCurrentCate ] = useState(0);
 
     const tabContents = {
         0: <All />,
@@ -62,8 +63,8 @@ function NewIn() {
                         <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>여성</span></button>
                         <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>남성</span></button>
                         <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>키즈</span></button>
-                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
-                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
+                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>잡화</span></button>
+                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>골프</span></button>
                     </Styles.NewCategory>
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">

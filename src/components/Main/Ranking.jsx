@@ -23,6 +23,8 @@ function Ranking() {
         setActiveTab(tabName);
     };
 
+    //주간 일간 버튼 클릭할때마다 랜덤으로 sort하기
+
     const tabContents = {
         0: <All />,
         1: <Men />,

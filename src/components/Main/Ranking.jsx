@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -16,6 +16,12 @@ import ItemLayout from './ItemLayout';
 
 function Ranking() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
+
+    const [activeTab, setActiveTab] = useState('실시간');
+
+    const handleTabClick = (tabName) => {
+        setActiveTab(tabName);
+    };
 
     const tabContents = {
         0: <All />,
@@ -50,10 +56,34 @@ function Ranking() {
                         <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={() => selectMenuHandler(6)}><span>GOLF</span></button>
                     </Styles.NewTab>
                     <Styles.RankingTab>
-                        <button type="button" className='on'><span>실시간</span></button>
-                        <button type="button"><span>일간</span></button>
-                        <button type="button"><span>주간</span></button>
-                        <button type="button"><span>월간</span></button>
+                        <button
+                            type="button"
+                            className={activeTab === '실시간' ? 'on' : ''}
+                            onClick={() => handleTabClick('실시간')}
+                        >
+                            <span>실시간</span>
+                        </button>
+                        <button
+                            type="button"
+                            className={activeTab === '일간' ? 'on' : ''}
+                            onClick={() => handleTabClick('일간')}
+                        >
+                            <span>일간</span>
+                        </button>
+                        <button
+                            type="button"
+                            className={activeTab === '주간' ? 'on' : ''}
+                            onClick={() => handleTabClick('주간')}
+                        >
+                            <span>주간</span>
+                        </button>
+                        <button
+                            type="button"
+                            className={activeTab === '월간' ? 'on' : ''}
+                            onClick={() => handleTabClick('월간')}
+                        >
+                            <span>월간</span>
+                        </button>
                     </Styles.RankingTab>
                     <Styles.NewContent>
                         <div className="slide-container">

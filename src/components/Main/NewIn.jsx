@@ -56,11 +56,9 @@ function NewIn() {
                 )
             }
         ];
-        
         const tabClickHandler=(index)=>{
             setActiveIndex(index)
         }
-
     const tabContents = {
         0: <All />,
         1: <Women />,

@@ -68,7 +68,7 @@ export const BtnWrap = styled.div`
         position: relative;
     }
 
-    .btn-list::after {
+    .btn-list:hover::after {
         content: "";
         display: block;
         width: 100%;
@@ -77,7 +77,11 @@ export const BtnWrap = styled.div`
         position: absolute;
         bottom: 0;
         left: 0;
-        top: 1px;
+        /* top: 1px; */
+    }
+
+    .btn-list:hover span{
+        font-weight: bold;
     }
 `;
 

@@ -24,10 +24,10 @@
         "img": "img/Ranking/Jeans/002.jpg"
     },
     {
-        "liveRank":"2",
-        "dailyRank":"3",
-        "weeklyRank":"4",
-        "monthlyRank":"5",
+        "liveRank":"3",
+        "dailyRank":"4",
+        "weeklyRank":"5",
+        "monthlyRank":"6",
         "brand": "TOMMY JEANS",
         "name": "빅 플래그 후디 스웨터",
         "price": "151,300",
@@ -36,10 +36,10 @@
         "img": "img/Ranking/Jeans/003.jpg"
     },
     {
-        "liveRank":"2",
-        "dailyRank":"3",
-        "weeklyRank":"4",
-        "monthlyRank":"5",
+        "liveRank":"4",
+        "dailyRank":"5",
+        "weeklyRank":"6",
+        "monthlyRank":"7",
         "brand": "TOMMY JEANS",
         "name": "슬림 립 스냅 버튼 탑",
         "price": "83,300",

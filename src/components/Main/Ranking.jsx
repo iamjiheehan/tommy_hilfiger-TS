@@ -12,7 +12,7 @@ import ShoesData from '../../data/TopRanking/shoes';
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
-import ItemLayout from './ItemLayout';
+import ItemLayout from './ItemRankingLayout';
 
 function Ranking() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
@@ -23,8 +23,9 @@ function Ranking() {
         setActiveTab(tabName);
     };
 
-    //주간 일간 버튼 클릭할때마다 랜덤으로 sort하기
 
+
+    //주간 일간 버튼 클릭할때마다 랜덤으로 sort하기
     const tabContents = {
         0: <All />,
         1: <Men />,

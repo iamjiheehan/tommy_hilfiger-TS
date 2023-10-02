@@ -24,10 +24,10 @@
         "img": "img/Ranking/Shoes/002.jpg"
     },
     {
-        "liveRank":"2",
-        "dailyRank":"3",
-        "weeklyRank":"4",
-        "monthlyRank":"5",
+        "liveRank":"3",
+        "dailyRank":"4",
+        "weeklyRank":"5",
+        "monthlyRank":"6",
         "brand": "TOMMY SHOES",
         "name": "메그 레트로 하이 스니커즈",
         "price": "179,100",
@@ -36,10 +36,10 @@
         "img": "img/Ranking/Shoes/003.jpg"
     },
     {
-        "liveRank":"2",
-        "dailyRank":"3",
-        "weeklyRank":"4",
-        "monthlyRank":"5",
+        "liveRank":"4",
+        "dailyRank":"5",
+        "weeklyRank":"6",
+        "monthlyRank":"7",
         "brand": "TOMMY SHOES",
         "name": "[M] 진 레더 스니커즈",
         "price": "161,100",

@@ -22,9 +22,9 @@ function Md() {
         0: <All />,
         1: <Men />,
         2: <Women />,
-        3: <Shoes />,
-        4: <Jeans />,
-        5: <Kids />,
+        3: <Jeans />,
+        4: <Kids />,
+        5: <Shoes />,
     }
 
     return (

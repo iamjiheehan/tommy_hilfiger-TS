@@ -1037,7 +1037,6 @@ export const IssueContent = styled.div`
 
         align-items: flex-start;
 
-        /* position: relative; */
     }
 
     .swiper-wrapper .swiper-item {
@@ -1127,6 +1126,14 @@ export const IssueContent = styled.div`
         position: relative;
         margin: 0 11px;
         font-size: 14px;
+    }
+
+    .slide-nav .slide-nav-prev {
+        left: 96px !important;
+    }
+
+    .slide-nav .slide-nav-next {
+        right: 96px !important;
     }
 `;
 

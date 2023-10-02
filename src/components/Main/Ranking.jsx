@@ -21,20 +21,54 @@ function Ranking() {
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
+        console.log(tabName, activeTab);
     };
 
+    const [selectedRankingField, setSelectedRankingField] = useState('liveRank'); 
+    // liveRank를 기본값으로 설정
 
+    const allData = [
+        ...MenData,
+        ...WomenData,
+        ...GolfData,
+        ...KidsData,
+        ...JeansData,
+        ...ShoesData,
+    ];
 
-    //주간 일간 버튼 클릭할때마다 랜덤으로 sort하기
+    const sortData = (data, sortBy) => [...data].sort(sortBy);
+
+    const sortByLiveRank = (a, b) => parseInt(a.liveRank) - parseInt(b.liveRank);
+    const sortByDailyRank = (a, b) => parseInt(a.dailyRank) - parseInt(b.dailyRank);
+    const sortByWeeklyRank = (a, b) => parseInt(a.weeklyRank) - parseInt(b.weeklyRank);
+    const sortByMonthlyRank = (a, b) => parseInt(a.monthlyRank) - parseInt(b.monthlyRank);
+
     const tabContents = {
-        0: <All />,
-        1: <Men />,
-        2: <Women />,
-        3: <Shoes />,
-        4: <Jeans />,
-        5: <Kids />,
-        6: <Golf />
+        0: <All items={allData} />,
+        1: <Men items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        2: <Women items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        3: <Shoes items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        4: <Jeans items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        5: <Kids items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        6: <Golf items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
     }
+
+    const handleLiveRankClick = () => {
+        setSelectedRankingField('liveRank');
+    };
+
+    const handleDailyRankClick = () => {
+        setSelectedRankingField('dailyRank');
+    };
+
+    const handleWeeklyRankClick = () => {
+        setSelectedRankingField('weeklyRank');
+    };
+
+    const handleMonthlyRankClick = () => {
+        setSelectedRankingField('monthlyRank');
+    };
+
 
     return (
         <div>
@@ -62,28 +96,40 @@ function Ranking() {
                         <button
                             type="button"
                             className={activeTab === '실시간' ? 'on' : ''}
-                            onClick={() => handleTabClick('실시간')}
+                            onClick={() => {
+                                handleTabClick('실시간');
+                                handleLiveRankClick(); // Update ranking field to 'liveRank'
+                            }}
                         >
                             <span>실시간</span>
                         </button>
                         <button
                             type="button"
                             className={activeTab === '일간' ? 'on' : ''}
-                            onClick={() => handleTabClick('일간')}
+                            onClick={() => {
+                                handleTabClick('일간');
+                                handleDailyRankClick(); // Update ranking field to 'dailyRank'
+                            }}
                         >
                             <span>일간</span>
                         </button>
                         <button
                             type="button"
                             className={activeTab === '주간' ? 'on' : ''}
-                            onClick={() => handleTabClick('주간')}
+                            onClick={() => {
+                                handleTabClick('주간');
+                                handleWeeklyRankClick(); // Update ranking field to 'weeklyRank'
+                            }}
                         >
                             <span>주간</span>
                         </button>
                         <button
                             type="button"
                             className={activeTab === '월간' ? 'on' : ''}
-                            onClick={() => handleTabClick('월간')}
+                            onClick={() => {
+                                handleTabClick('월간');
+                                handleMonthlyRankClick(); // Update ranking field to 'monthlyRank'
+                            }}
                         >
                             <span>월간</span>
                         </button>
@@ -109,20 +155,17 @@ function Ranking() {
 
 export default Ranking;
 
-function All() {
-
-    const allData = [...MenData, ...WomenData, ...GolfData, ...KidsData, ...JeansData, ...ShoesData];
-    const randomData = useRandomData(allData);
+function All({ items }) {
+    const randomData = useRandomData(items);
 
     return (
         <ItemLayout items={randomData} />
     )
 }
 
-function Men() {
-    const menData = [...MenData];
+function Men({ items }) {
     return (
-        <ItemLayout items={menData} />
+        <ItemLayout items={items} />
     )
 }
 

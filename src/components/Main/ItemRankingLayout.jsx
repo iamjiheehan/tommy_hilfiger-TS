@@ -19,7 +19,7 @@ function ItemLayout({ items }) {
                         </div>
                         <figcaption className="item-info">
                             <a href="#!">
-                                <span class="item-rank">{index + 1}</span>
+                                <span className="item-rank">{index + 1}</span>
                                 <div className="item-brand">{item.brand}</div>
                                 <div className="item-name">{item.name}</div>
                                 <div className="item-opt">

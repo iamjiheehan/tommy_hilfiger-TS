@@ -21,7 +21,7 @@ function MainCategory() {
                         <button type="button" onClick={() => trigger(0)} className={active === 0 ? 'on' : ''}><span>CATEGORY</span></button>
                             <button type="button" onClick={() => trigger(1)} className={`${active === 1 ? 'on' : ''} btn_line-before`}><span>DISCOVER</span></button>
                         </Styles.BrandTab>
-                        <Styles.BrandContent className="brand-line-cont tab-cont2 on">
+                        <Styles.BrandContent className={`brand-line-cont tab-cont2 ${active === 0 ? 'on' : ''}`} active={active === 1}>
                             <ul className="brand-line-list">
                                 {data.people.map((item, index) => (
                                     <li className="brand-line-item" key={index}>
@@ -32,7 +32,7 @@ function MainCategory() {
                                     </li>
                                 ))}
                             </ul>
-                            <ul className="brand-line-list">
+                            <ul className="brand-line-list" active={!active}>
                                 {data.icon.map((item, index) => (
                                     <li className="brand-line-item" key={index}>
                                         <a href="#!" className="link-item">

@@ -700,6 +700,10 @@ export const BrandContent = styled.div`
 
     margin-top: 30px;
 
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: ${props => (props.active ? "column" : "column-reverse")};
+
     ul {
         display: inline-block;
         margin: 0 7px 30px;

@@ -1,5 +1,9 @@
 [  
     {
+        "liveRank":"1",
+        "dailyRank":"2",
+        "weeklyRank":"3",
+        "monthlyRank":"4",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "레귤러 브이넥 솔리드 티셔츠",
         "price": "47,520",
@@ -8,6 +12,10 @@
         "img": "img/Ranking/Women/001.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "케이블 크루넥 가디건",
         "price": "케이블 크루넥 가디건",
@@ -16,6 +24,10 @@
         "img": "img/Ranking/Women/002.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "레귤러 브이넥 솔리드 티셔츠",
         "price": "47,520",
@@ -24,6 +36,10 @@
         "img": "img/Ranking/Women/003.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "케이블 크루넥 가디건",
         "price": "229,500",
@@ -32,6 +48,10 @@
         "img": "img/Ranking/Women/004.jpg"
     },
     {
+        "liveRank":"5",
+        "dailyRank":"6",
+        "weeklyRank":"7",
+        "monthlyRank":"8",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "레귤러 크루넥 롱슬리브 티셔츠",
         "price": "55,440",
@@ -40,6 +60,10 @@
         "img": "img/Ranking/Women/005.jpg"
     },
     {
+        "liveRank":"6",
+        "dailyRank":"7",
+        "weeklyRank":"8",
+        "monthlyRank":"9",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "코튼 크루넥 스웨터",
         "price": "110,250",
@@ -48,6 +72,10 @@
         "img": "img/Ranking/Women/006.jpg"
     },
     {
+        "liveRank":"7",
+        "dailyRank":"8",
+        "weeklyRank":"9",
+        "monthlyRank":"10",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "모던 레귤러 로프 크루넥 스웻셔츠",
         "price": "116,100",
@@ -56,6 +84,10 @@
         "img": "img/Ranking/Women/007.jpg"
     },
     {
+        "liveRank":"8",
+        "dailyRank":"9",
+        "weeklyRank":"10",
+        "monthlyRank":"1",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "후디드 파카",
         "price": "261,450",
@@ -64,6 +96,10 @@
         "img": "img/Ranking/Women/008.jpg"
     },
     {
+        "liveRank":"9",
+        "dailyRank":"10",
+        "weeklyRank":"1",
+        "monthlyRank":"2",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "모던 다운 푸퍼 재킷",
         "price": "436,500",
@@ -72,6 +108,10 @@
         "img": "img/Ranking/Women/009.jpg"
     },
     {
+        "liveRank":"10",
+        "dailyRank":"1",
+        "weeklyRank":"2",
+        "monthlyRank":"3",
         "brand": "TOMMY HILFIGER WOMEN",
         "name": "로마 스트레이트 다크 데님팬츠",
         "price": "175,500",

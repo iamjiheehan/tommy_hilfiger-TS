@@ -1,5 +1,9 @@
 [  
     {
+        "liveRank":"1",
+        "dailyRank":"2",
+        "weeklyRank":"3",
+        "monthlyRank":"4",
         "brand": "TOMMY JEANS",
         "name": "베이비 에센셜 롱슬리브 티셔츠",
         "price": "26,000",
@@ -8,6 +12,10 @@
         "img": "img/Ranking/Jeans/001.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY JEANS",
         "name": "빅 플래그 후디 스웨터",
         "price": "151,300",
@@ -16,6 +24,10 @@
         "img": "img/Ranking/Jeans/002.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY JEANS",
         "name": "빅 플래그 후디 스웨터",
         "price": "151,300",
@@ -24,6 +36,10 @@
         "img": "img/Ranking/Jeans/003.jpg"
     },
     {
+        "liveRank":"2",
+        "dailyRank":"3",
+        "weeklyRank":"4",
+        "monthlyRank":"5",
         "brand": "TOMMY JEANS",
         "name": "슬림 립 스냅 버튼 탑",
         "price": "83,300",
@@ -32,6 +48,10 @@
         "img": "img/Ranking/Jeans/004.jpg"
     },
     {
+        "liveRank":"5",
+        "dailyRank":"6",
+        "weeklyRank":"7",
+        "monthlyRank":"8",
         "brand": "TOMMY JEANS",
         "name": "베이비 에센셜 롱슬리브 티셔츠",
         "price": "26,000",
@@ -40,6 +60,10 @@
         "img": "img/Ranking/Jeans/005.jpg"
     },
     {
+        "liveRank":"6",
+        "dailyRank":"7",
+        "weeklyRank":"8",
+        "monthlyRank":"9",
         "brand": "TOMMY JEANS",
         "name": "[ARCHIVE] 데님 그래픽 셔츠",
         "price": "89,000",
@@ -48,6 +72,10 @@
         "img": "img/Ranking/Jeans/006.jpg"
     },
     {
+        "liveRank":"7",
+        "dailyRank":"8",
+        "weeklyRank":"9",
+        "monthlyRank":"10",
         "brand": "TOMMY JEANS",
         "name": "바시티 로고 티셔츠",
         "price": "40,460",
@@ -56,6 +84,10 @@
         "img": "img/Ranking/Jeans/007.jpg"
     },
     {
+        "liveRank":"8",
+        "dailyRank":"9",
+        "weeklyRank":"10",
+        "monthlyRank":"1",
         "brand": "TOMMY JEANS",
         "name": "스트라이프 크루넥 티셔츠",
         "price": "49,300",
@@ -64,6 +96,10 @@
         "img": "img/Ranking/Jeans/008.jpg"
     },
     {
+        "liveRank":"9",
+        "dailyRank":"10",
+        "weeklyRank":"1",
+        "monthlyRank":"2",
         "brand": "TOMMY JEANS",
         "name": "데님 덩가리 로고 스트랩 팬츠",
         "price": "236,300",
@@ -72,6 +108,10 @@
         "img": "img/Ranking/Jeans/009.jpg"
     },
     {
+        "liveRank":"10",
+        "dailyRank":"1",
+        "weeklyRank":"2",
+        "monthlyRank":"3",
         "brand": "TOMMY JEANS",
         "name": "슬림 라인 데님 드레스",
         "price": "141,610",

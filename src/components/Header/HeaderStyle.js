@@ -168,6 +168,7 @@ export const NewCategory = styled.div`
     background: #fff;
     z-index: 10;
 
+
     .gnb-new-box {
         min-width: 1366px;
         max-width: 1920px;

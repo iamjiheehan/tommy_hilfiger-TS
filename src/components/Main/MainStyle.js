@@ -684,12 +684,11 @@ export const BrandTab = styled.div`
         margin-left: 25px;
         padding-left: 26px;
 
-        &:first-child span {
-            color: var(--themeTextColor);
-        }
-
-        &:not(:first-child) span {
+        & span {
             color: #a5aabc;
+        }
+        &.on span {
+            color: var(--themeTextColor) !important;
         }
     }
 `;

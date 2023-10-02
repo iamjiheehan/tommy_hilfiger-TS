@@ -1,58 +1,60 @@
-{
-    "people": [
-        {
-            "title": "MEN",
-            "img": "img/FirstSection/001.jpg"
-        },
-        {
-            "title": "WOMEN",
-            "img": "img/FirstSection/002.jpg"
-        },
-        {
-            "title": "KIDS",
-            "img": "img/FirstSection/003.png"
-        },
-        {
-            "title": "ACC",
-            "img": "img/FirstSection/004.png"
-        },
-        {
-            "title": "GOLF",
-            "img": "img/FirstSection/005.jpg"
-        }
-    ],
-    "icon": [
-        {
-            "title": "신상품",
-            "img": "img/FirstSection/icon001.png"
-        },
-        {
-            "title": "베스트",
-            "img": "img/FirstSection/icon002.png"
-        },
-        {
-            "title": "아카이브",
-            "img": "img/FirstSection/icon003.png"
-        },
-        {
-            "title": "브랜드소개",
-            "img": "img/FirstSection/icon004.png"
-        },
-        {
-            "title": "리뷰플러스",
-            "img": "img/FirstSection/icon005.png"
-        },
-        {
-            "title": "기획전",
-            "img": "img/FirstSection/icon006.png"
-        },
-        {
-            "title": "뉴스",
-            "img": "img/FirstSection/icon007.png"
-        },
-        {
-            "title": "매거진",
-            "img": "img/FirstSection/icon008.png"
-        }
-    ]
-}
+[
+    {
+        "people": [
+            {
+                "title": "MEN",
+                "img": "img/FirstSection/001.jpg"
+            },
+            {
+                "title": "WOMEN",
+                "img": "img/FirstSection/002.jpg"
+            },
+            {
+                "title": "KIDS",
+                "img": "img/FirstSection/003.png"
+            },
+            {
+                "title": "ACC",
+                "img": "img/FirstSection/004.png"
+            },
+            {
+                "title": "GOLF",
+                "img": "img/FirstSection/005.jpg"
+            }
+        ],
+        "icon": [
+            {
+                "title": "신상품",
+                "img": "img/FirstSection/icon001.png"
+            },
+            {
+                "title": "베스트",
+                "img": "img/FirstSection/icon002.png"
+            },
+            {
+                "title": "아카이브",
+                "img": "img/FirstSection/icon003.png"
+            },
+            {
+                "title": "브랜드소개",
+                "img": "img/FirstSection/icon004.png"
+            },
+            {
+                "title": "리뷰플러스",
+                "img": "img/FirstSection/icon005.png"
+            },
+            {
+                "title": "기획전",
+                "img": "img/FirstSection/icon006.png"
+            },
+            {
+                "title": "뉴스",
+                "img": "img/FirstSection/icon007.png"
+            },
+            {
+                "title": "매거진",
+                "img": "img/FirstSection/icon008.png"
+            }
+        ]
+    }
+]

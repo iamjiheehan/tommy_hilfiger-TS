@@ -24,7 +24,7 @@ function Ranking() {
         console.log(tabName, activeTab);
     };
 
-    const [selectedRankingField, setSelectedRankingField] = useState('liveRank'); 
+    const [selectedRankingField, setSelectedRankingField] = useState('liveRank');
     // liveRank를 기본값으로 설정
 
     const allData = [
@@ -45,13 +45,64 @@ function Ranking() {
 
     const tabContents = {
         0: <All items={allData} />,
-        1: <Men items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
-        2: <Women items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
-        3: <Shoes items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
-        4: <Jeans items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
-        5: <Kids items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
-        6: <Golf items={sortData(allData, selectedRankingField === 'liveRank' ? sortByLiveRank : sortByWeeklyRank)} />,
+        1: (
+            <Men
+                items={sortData(MenData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
+        2: (
+            <Women
+                items={sortData(WomenData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
+        3: (
+
+            <Jeans
+                items={sortData(JeansData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
+        4: (
+            <Kids
+                items={sortData(KidsData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
+        5: (
+
+            <Shoes
+                items={sortData(ShoesData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
+        6: (
+            <Golf
+                items={sortData(GolfData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+                    selectedRankingField === 'dailyRank' ? sortByDailyRank :
+                        selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
+                            sortByMonthlyRank
+                )}
+            />
+        ),
     }
+
 
     const handleLiveRankClick = () => {
         setSelectedRankingField('liveRank');
@@ -169,37 +220,32 @@ function Men({ items }) {
     )
 }
 
-function Women() {
-    const womenData = [...WomenData];
+function Women({ items }) {
     return (
-        <ItemLayout items={womenData} />
+        <ItemLayout items={items} />
     )
 }
 
-function Jeans() {
-    const jeansData = [...JeansData];
+function Jeans({ items }) {
     return (
-        <ItemLayout items={jeansData} />
+        <ItemLayout items={items} />
     )
 }
 
-function Shoes() {
-    const shoesData = [...ShoesData];
+function Shoes({ items }) {
     return (
-        <ItemLayout items={shoesData} />
+        <ItemLayout items={items} />
     )
 }
 
-function Golf() {
-    const golfData = [...GolfData];
+function Golf({ items }) {
     return (
-        <ItemLayout items={golfData} />
+        <ItemLayout items={items} />
     )
 }
 
-function Kids() {
-    const kidsData = [...KidsData];
+function Kids({ items }) {
     return (
-        <ItemLayout items={kidsData} />
+        <ItemLayout items={items} />
     )
 }

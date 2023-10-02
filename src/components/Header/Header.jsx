@@ -24,6 +24,7 @@ function Header() {
     const handleBrandMouseLeave = () => {
         setBrandActive(false);
     };
+    
     return (
         <>
             <header className='header'>

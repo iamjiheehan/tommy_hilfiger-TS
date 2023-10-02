@@ -2,7 +2,9 @@ import React from 'react';
 
 import * as Styles from './MainStyle';
 
-function MainCategory() {
+import data from '../../data/firstSection.json';
+
+ function MainCategory() {
     return (
         <div>
             <section id='first'>

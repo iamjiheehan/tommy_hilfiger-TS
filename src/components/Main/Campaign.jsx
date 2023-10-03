@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Styles from './MainStyle';
 import data from '../../data/campaign.json';
 
 function Campaign() {
     const imgData = data[0].img; 
     const itemsPerPage = 4; 
-    const [currentPage, setCurrentPage] = useState(0);
 
     return (
         <div>

@@ -14,7 +14,10 @@ export const Banner = styled.div`
 
     overflow: hidden;
 
-    margin: auto;
+    
+    min-width: 1366px;
+    max-width: 1920px;
+    margin: 0 auto;
 
     .slide-container {
         overflow: hidden;
@@ -30,8 +33,6 @@ export const Banner = styled.div`
         white-space: nowrap;
         font-size: 0;
 
-        /* min-width: 1366px;
-        max-width: 1920px; */
     }
 
     .swiper-tool-wrap {

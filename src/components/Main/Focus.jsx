@@ -2,10 +2,22 @@ import React from 'react';
 
 import * as Styles from './MainStyle';
 
+import data from '../../data/focus.json';
+
 import vidBack from '../../assets/images/img_video_thumb_h.png'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 function Focus() {
+
+    const imgData = data[0].img;
+
     return (
         <div>
             <section id='focus'>
@@ -27,19 +39,29 @@ function Focus() {
                             </div>
                             <div className="slide-section">
                                 <div className="slide-container">
-                                    <ul className='swiper-wrapper'>
-                                        <li className='swiper-item'>
-                                            <figure className="item-box">
-                                                <div className="item-img">
-                                                    <div className="img-box">
-                                                        <a href="#!">
-                                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/01/GM0123090132377_0_ORGINL_1693543111205.jpg?RS=247x247&amp;AR=0&amp;CS=164x247" alt="빅 플래그 후디 스웨터" />
-                                                        </a>
+                                    <Swiper
+                                        className="swiper-wrapper mySwiper"
+                                        slidesPerView={3}
+                                        spaceBetween={20}
+                                        scrollbar={{
+                                            hide: false,
+                                            el:'.swiper-scrollbar'
+                                        }}
+                                        modules={[Scrollbar]}>
+                                        {imgData.map((item, index) => (
+                                            <SwiperSlide className="swiper-item" key={index}>
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
+                                                            <a href="#!">
+                                                                <img src={process.env.PUBLIC_URL + item} alt={index}  />
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </figure>
-                                        </li>
-                                    </ul>
+                                                </figure>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
                                 </div>
                                 <div className="swiper-scrollbar">
                                     <div className="swiper-scrollbar-drag">

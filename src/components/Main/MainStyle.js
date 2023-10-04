@@ -1155,6 +1155,7 @@ export const IssueContent = styled.div`
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
 
 export const MagazineWrap = styled.div`
+
     background: var(--themeTextColor);
 
     padding: 20px;

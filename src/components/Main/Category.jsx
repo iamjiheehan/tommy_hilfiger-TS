@@ -4,6 +4,14 @@ import * as Styles from './MainStyle';
 
 import data from '../../data/category.json'
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 function Category() {
 
     const content = [...data];
@@ -17,16 +25,27 @@ function Category() {
                     </Styles.NewTitle>
                     <Styles.MoreContent>
                         <div className="slide-container">
-                            <ul className="swiper-wrapper">
+                            <Swiper
+                                className="swiper-wrapper mySwiper"
+                                slidesPerView={5}
+                                spaceBetween={10}
+                                navigation={{
+                                    prevEl: '.slide-nav-prev',
+                                    nextEl: '.slide-nav-next',
+                                }}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Navigation, Mousewheel, Keyboard]}>
                                 {content.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
+                                    <SwiperSlide className="swiper-item" key={index}>
                                         <a href="#!" className="link-item">
                                             <img src={process.env.PUBLIC_URL + item.img} alt={index} />
                                             <span className="text">{item.title}</span>
                                         </a>
-                                    </li>
+                                    </SwiperSlide>
                                 ))}
-                            </ul>
+                            </Swiper>
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>

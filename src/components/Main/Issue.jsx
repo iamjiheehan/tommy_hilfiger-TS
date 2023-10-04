@@ -2,7 +2,15 @@ import React from 'react';
 import * as Styles from './MainStyle';
 import IssueData from '../../data/issue.json';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 function Issue() {
+
     const data = [...IssueData];
 
     return (
@@ -14,9 +22,21 @@ function Issue() {
                     </Styles.NewTitle>
                     <Styles.IssueContent>
                         <div className="slide-container">
-                            <ul className="swiper-wrapper">
+                            <Swiper
+                                className="swiper-wrapper mySwiper"
+                                slidesPerView={1}
+                                spaceBetween={20}
+                                navigation={{
+                                    prevEl: '.slide-nav-prev',
+                                    nextEl: '.slide-nav-next',
+                                }}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Navigation, Mousewheel, Keyboard]}
+                            >
                                 {data.map((item, index) => (
-                                    <li className="swiper-item" key={index}>
+                                    <SwiperSlide className="swiper-item" key={index}>
                                         <div className="season-visual-wrap">
                                             <a href="#!" className="season-visual-box">
                                                 <img src={process.env.PUBLIC_URL + item.season.img} alt={item.season.img} />
@@ -64,9 +84,9 @@ function Issue() {
                                                 ))}
                                             </ul>
                                         </div>
-                                    </li>
+                                    </SwiperSlide>
                                 ))}
-                            </ul>
+                            </Swiper>
                             <div className="slide-nav">
                                 <button className="slide-nav-prev button-disabled">
                                     <span className="offscreen"></span>

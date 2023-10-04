@@ -1,10 +1,29 @@
 import React from 'react';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 function ReviewLayout({ items }) {
     return (
-        <ul className='swiper-wrapper'>
+        <Swiper
+            className="swiper-wrapper mySwiper"
+            slidesPerView={5}
+            spaceBetween={20}
+            navigation={{
+                prevEl: '.slide-nav-prev',
+                nextEl: '.slide-nav-next',
+            }}
+            pagination={{
+                clickable: true,
+            }}
+            modules={[Navigation, Mousewheel, Keyboard]}
+        >
             {items.map((item, index) => (
-                <li className="swiper-item" key={index}>
+                <SwiperSlide className="swiper-item" key={index}>
                     <figure className="item-box">
                         <div className="item-img top">
                             <div className="img-box">
@@ -46,9 +65,9 @@ function ReviewLayout({ items }) {
                             </div>
                         </figcaption>
                     </figure>
-                </li>
+                </SwiperSlide>
             ))}
-        </ul>
+        </Swiper>
     );
 }
 

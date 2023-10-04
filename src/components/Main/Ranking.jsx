@@ -149,7 +149,7 @@ function Ranking() {
                             className={activeTab === '실시간' ? 'on' : ''}
                             onClick={() => {
                                 handleTabClick('실시간');
-                                handleLiveRankClick(); // Update ranking field to 'liveRank'
+                                handleLiveRankClick();
                             }}
                         >
                             <span>실시간</span>
@@ -159,7 +159,7 @@ function Ranking() {
                             className={activeTab === '일간' ? 'on' : ''}
                             onClick={() => {
                                 handleTabClick('일간');
-                                handleDailyRankClick(); // Update ranking field to 'dailyRank'
+                                handleDailyRankClick();
                             }}
                         >
                             <span>일간</span>
@@ -169,7 +169,7 @@ function Ranking() {
                             className={activeTab === '주간' ? 'on' : ''}
                             onClick={() => {
                                 handleTabClick('주간');
-                                handleWeeklyRankClick(); // Update ranking field to 'weeklyRank'
+                                handleWeeklyRankClick();
                             }}
                         >
                             <span>주간</span>
@@ -179,7 +179,7 @@ function Ranking() {
                             className={activeTab === '월간' ? 'on' : ''}
                             onClick={() => {
                                 handleTabClick('월간');
-                                handleMonthlyRankClick(); // Update ranking field to 'monthlyRank'
+                                handleMonthlyRankClick();
                             }}
                         >
                             <span>월간</span>
@@ -188,14 +188,7 @@ function Ranking() {
                     <Styles.NewContent>
                         <div className="slide-container">
                             {tabContents[currentTab]}
-                            <div className="slide-nav">
-                                <button className="slide-nav-prev button-disabled">
-                                    <span className="offscreen"></span>
-                                </button>
-                                <button className="slide-nav-next">
-                                    <span className="offscreen"></span>
-                                </button>
-                            </div>
+
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>

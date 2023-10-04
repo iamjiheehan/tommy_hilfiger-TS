@@ -31,8 +31,8 @@ function NewIn() {
                         <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
                         <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>WOMEN</span></button>
                         <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>MEN</span></button>
-                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>TOMMY JEANS</span></button>
-                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>KIDS</span></button>
+                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>TOMMY JEANS</span></button>
                         <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
                         <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
                     </Styles.NewCategory>
@@ -63,9 +63,9 @@ function NewIn() {
         0: <All />,
         1: <Women />,
         2: <Men />,
-        3: <Shoes />,
+        3: <Kids />,
         4: <Jeans />,
-        5: <Kids />,
+        5: <Shoes />,
         6: <Golf />
     }
     return (
@@ -83,9 +83,7 @@ function NewIn() {
                     </Styles.NewTitle>
                     <Styles.NewTab>
                         {tabContArr.map((section, index)=>{
-                            <div key={index}>
-                                section.tabTitle
-                            </div>
+                            return section.tabTitle
                         })}
                     </Styles.NewTab>
                     {tabContArr[activeIndex].tabCont}

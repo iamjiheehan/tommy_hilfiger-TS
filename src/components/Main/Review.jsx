@@ -12,6 +12,13 @@ import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ReviewLayout from './ReviewLayout';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 function Review() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 

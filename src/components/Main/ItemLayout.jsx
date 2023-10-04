@@ -13,7 +13,7 @@ function ItemLayout({ items }) {
         <Swiper
             className="swiper-wrapper mySwiper"
             slidesPerView={5}
-            spaceBetween={0}
+            spaceBetween={20}
             navigation={{
                 prevEl: '.slide-nav-prev',
                 nextEl: '.slide-nav-next',

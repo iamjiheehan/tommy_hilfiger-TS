@@ -1,10 +1,29 @@
 import React from "react";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 function ItemLayout({ items }) {
     return (
-        <ul className="swiper-wrapper">
+        <Swiper
+            className="swiper-wrapper mySwiper"
+            slidesPerView={5}
+            spaceBetween={20}
+            navigation={{
+                prevEl: '.slide-nav-prev',
+                nextEl: '.slide-nav-next',
+            }}
+            pagination={{
+                clickable: true,
+            }}
+            modules={[Navigation, Mousewheel, Keyboard]}
+        >
             {items.map((item, index) => (
-                <li className="swiper-item" key={index}>
+                <SwiperSlide className="swiper-item" key={index}>
                     <figure className="item-box">
                         <div className="item-img">
                             <div className="img-box">
@@ -33,9 +52,17 @@ function ItemLayout({ items }) {
                             </a>
                         </figcaption>
                     </figure>
-                </li>
+                </SwiperSlide>
             ))}
-        </ul>
+            <div className="slide-nav">
+                <button className="slide-nav-prev button-disabled">
+                    <span className="offscreen"></span>
+                </button>
+                <button className="slide-nav-next">
+                    <span className="offscreen"></span>
+                </button>
+            </div>
+        </Swiper>
     );
 }
 

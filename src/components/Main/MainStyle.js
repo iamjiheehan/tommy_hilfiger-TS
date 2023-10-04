@@ -424,7 +424,7 @@ export const MainContainer = styled.div`
 
     .slide-container.insta .swiper-wrapper .swiper-item {
         width: calc((100% - 80px) / 5);
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     /* 열번째 섹션 || INSTAGRAM --------------------------------------------------------------*/
@@ -459,7 +459,8 @@ export const MainContainer = styled.div`
     }
 
     .slide-container.review .swiper-wrapper .swiper-item .item-box {
-        margin: 0 20px;
+        /* margin: 0 20px; */
+
         position: relative;
         font-size: 14px;
     }
@@ -911,7 +912,7 @@ export const NewContent = styled.div`
     }
 
     .slide-container .swiper-wrapper .swiper-item .item-box {
-        margin: 0 20px;
+        /* margin: 0 20px; */
         position: relative;
         font-size: 14px;
     }
@@ -945,7 +946,7 @@ export const NewContent = styled.div`
 export const MoreContent = styled.div`
     .swiper-wrapper .swiper-item {
         width: calc((100% - 60px) / 4);
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     .link-item {
@@ -1505,7 +1506,7 @@ export const MdContent = styled.div`
     }
 
     .slide-container .swiper-wrapper .swiper-item .item-box {
-        margin: 0 20px;
+        /* margin: 0 20px; */
         position: relative;
         font-size: 14px;
     }
@@ -1598,7 +1599,7 @@ export const CampaignWrap = styled.div`
     }
 
     .slide-container .swiper-wrapper .swiper-item:not(:first-child) {
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {

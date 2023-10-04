@@ -1600,7 +1600,7 @@ export const CampaignWrap = styled.div`
     }
 
     .slide-container .swiper-wrapper .swiper-item:not(:first-child) {
-        /* margin-right: 20px; */
+        margin-right: 20px;
     }
 
     .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {

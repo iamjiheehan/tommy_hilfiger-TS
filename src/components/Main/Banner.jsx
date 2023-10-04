@@ -28,7 +28,6 @@ function Banner() {
             return index; // Return the updated value to set it as the new state
         });
     }
-    
 
     // const trigger = () => {
     //     let index = currentSlide;
@@ -62,8 +61,6 @@ function Banner() {
 
 
     return (
-
-
 
         < div >
         <section id='mainBanner'>

@@ -16,7 +16,7 @@ function ItemLayout({ items }) {
         <Swiper 
             className="swiper-wrapper mySwiper"
             slidesPerView={5}
-            spaceBetween={30}
+            spaceBetween={0}
             pagination={{
                 clickable: true,
             }}

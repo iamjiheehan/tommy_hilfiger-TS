@@ -229,7 +229,7 @@ export const MainContainer = styled.div`
         display: -webkit-flex;
         display: flex;
 
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .swiper-wrapper .swiper-item {

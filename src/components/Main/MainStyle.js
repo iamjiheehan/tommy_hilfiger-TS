@@ -19,6 +19,10 @@ export const Banner = styled.div`
     max-width: 1920px;
     margin: 0 auto;
 
+    img {
+        width: auto;
+    }
+
     .slide-container {
         overflow: hidden;
         position: relative;

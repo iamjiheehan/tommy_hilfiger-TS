@@ -5,14 +5,26 @@ import * as Styles from './MainStyle';
 import MainBanner2 from '../../assets/images/main_banner-2.jpg'
 import MainBanner3 from '../../assets/images/main_banner-3.jpg'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+
 function Banner() {
     return (
         <div>
             <section id='mainBanner'>
                 <Styles.Banner>
                     <div className='slide-container'>
-                        <div className='swiper-wrapper'>
-                            <div className='swiper-item'>
+                        <Swiper
+                            pagination={{
+                                type: 'fraction',
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper swiper-wrapper"
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            <SwiperSlide className='swiper-item'>
                                 <Styles.Box>
                                     <Styles.Banner className="img">
                                         <a href="#!">
@@ -28,8 +40,8 @@ function Banner() {
                                         <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
                                     </Styles.Text>
                                 </Styles.Box>
-                            </div>
-                            <div className='swiper-item'>
+                            </SwiperSlide>
+                            <SwiperSlide className='swiper-item'>
                                 <Styles.Box>
                                     <Styles.Image>
                                         <a href="#!">
@@ -45,8 +57,8 @@ function Banner() {
                                         <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
                                     </Styles.Text>
                                 </Styles.Box>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                     <div className="swiper-tool-wrap">
                         <div className="swiper-tool">

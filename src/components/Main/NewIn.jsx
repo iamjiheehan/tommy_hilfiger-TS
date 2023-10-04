@@ -90,14 +90,7 @@ function NewIn() {
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
                             {tabContents[currentTab]}
-                            <div className="slide-nav">
-                                <button className="slide-nav-prev swiper-button-next button-disabled">
-                                    <span className="offscreen"></span>
-                                </button>
-                                <button className="slide-nav-next swiper-button-next">
-                                    <span className="offscreen"></span>
-                                </button>
-                            </div>
+                           
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>

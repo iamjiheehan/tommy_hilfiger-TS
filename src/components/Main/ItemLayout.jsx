@@ -3,24 +3,25 @@ import React from "react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper/modules';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 
 function ItemLayout({ items }) {
     return (
-        <Swiper 
+        <Swiper
             className="swiper-wrapper mySwiper"
             slidesPerView={5}
             spaceBetween={0}
+            navigation={{
+                prevEl: '.slide-nav-prev',
+                nextEl: '.slide-nav-next',
+            }}
             pagination={{
                 clickable: true,
             }}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            modules={[Navigation, Mousewheel, Keyboard]}
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>
@@ -53,6 +54,14 @@ function ItemLayout({ items }) {
                     </figure>
                 </SwiperSlide>
             ))}
+            <div className="slide-nav">
+                <button className="slide-nav-prev button-disabled">
+                    <span className="offscreen"></span>
+                </button>
+                <button className="slide-nav-next">
+                    <span className="offscreen"></span>
+                </button>
+            </div>
         </Swiper>
     );
 }

@@ -14,7 +14,6 @@ export const Banner = styled.div`
 
     overflow: hidden;
 
-    
     min-width: 1366px;
     max-width: 1920px;
     margin: 0 auto;
@@ -36,7 +35,6 @@ export const Banner = styled.div`
         overflow: hidden;
         white-space: nowrap;
         font-size: 0;
-
     }
 
     .swiper-tool-wrap {
@@ -196,11 +194,16 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+
     padding-bottom: 160px;
     position: relative;
-    
+
     .button-disabled {
-        opacity: 0.3 !important;
+        /* opacity: 0.3 !important; */
     }
 
     .product-list li {
@@ -711,7 +714,7 @@ export const BrandContent = styled.div`
 
     display: flex;
     /* flex-direction: column; */
-    flex-direction: ${props => (props.active ? "column" : "column-reverse")};
+    flex-direction: ${(props) => (props.active ? "column" : "column-reverse")};
 
     ul {
         display: inline-block;
@@ -1048,7 +1051,6 @@ export const IssueContent = styled.div`
         padding: 0 80px;
 
         align-items: flex-start;
-
     }
 
     .swiper-wrapper .swiper-item {
@@ -1697,12 +1699,12 @@ export const FixedBtn = styled.div`
         background-position: 100% 0;
     }
 
-    .history span, .bnc span {
+    .history span,
+    .bnc span {
         opacity: 0;
     }
 
     .top span {
         padding-top: 20px;
     }
-
 `;

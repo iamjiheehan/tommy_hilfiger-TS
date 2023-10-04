@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -18,14 +18,17 @@ function Banner() {
     const [currentSlide, setCurrentSlide] = useState(1);
 
     const trigger = () => {
-        let index = currentSlide;
-
-        if (index < dataLength) {
-            index++;
-            setCurrentSlide(index);
-            console.log(currentSlide);
-        }
+        setCurrentSlide((prevSlide) => {
+            let index = prevSlide;
+    
+            if (index < dataLength) {
+                index++;
+            }
+            console.log(index); // Log the updated value
+            return index; // Return the updated value to set it as the new state
+        });
     }
+    
 
     // const trigger = () => {
     //     let index = currentSlide;
@@ -48,7 +51,7 @@ function Banner() {
     //         console.log(currentSlide);
     //     }
     // }
-    // 기존의 trigger 함수가 작동하지 않았던 
+    // 기존의 trigger 함수가 작동하지 않았던
     // 이유는 index 변수를 올바르게 업데이트하지 않았기 때문. 
     // trigger 함수 내에서 매번 함수가 호출될 때 index를 0으로 선언했는데, 
     // 이렇게 하면 항상 0의 값을 가지게 되어 setCurrentSlide(index + 1) 라인은 

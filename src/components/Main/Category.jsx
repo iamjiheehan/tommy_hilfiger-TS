@@ -18,7 +18,7 @@ function Category() {
 
     return (
         <div>
-            <section id='categories'>
+            <section id='category'>
                 <Styles.Container>
                     <Styles.NewTitle className="title-wrap">
                         <h2 className="title">MORE CATEGORIES</h2>
@@ -30,8 +30,8 @@ function Category() {
                                 slidesPerView={5}
                                 spaceBetween={10}
                                 navigation={{
-                                    prevEl: '.slide-nav-prev',
-                                    nextEl: '.slide-nav-next',
+                                    prevEl: '#category .slide-nav-prev',
+                                    nextEl: '#category .slide-nav-next',
                                 }}
                                 pagination={{
                                     clickable: true,

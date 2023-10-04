@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 function ReviewLayout({ items }) {
+
     return (
         <Swiper
             className="swiper-wrapper mySwiper"

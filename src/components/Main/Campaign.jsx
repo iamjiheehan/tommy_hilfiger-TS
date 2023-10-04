@@ -6,6 +6,7 @@ function Campaign() {
     const imgData = data[0].img; 
     const itemsPerPage = 4; 
 
+    
     return (
         <div>
             <section id='campaign'>

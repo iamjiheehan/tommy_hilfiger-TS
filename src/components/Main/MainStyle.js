@@ -228,6 +228,8 @@ export const MainContainer = styled.div`
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
+
+        overflow: hidden;
     }
 
     .swiper-wrapper .swiper-item {

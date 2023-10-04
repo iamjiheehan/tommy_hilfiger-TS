@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import data from '../../data/insta.json';
+import SwiperCore from 'swiper/core';
 
 import * as Styles from './MainStyle';
 
@@ -14,6 +15,23 @@ import 'swiper/css/navigation';
 function Insta() {
 
     const imgData = data[0].img;
+
+    const [swiper, setSwiper] = useState(null);
+
+    SwiperCore.use([Navigation]);
+
+    const swiperParams = {
+        slidesPerView:5,
+        spaceBetween:20,
+        navigation:{
+            prevEl: '.insta-prev',
+            nextEl: '.insta-next',
+        },
+        pagination:{
+            clickable: true
+        },
+        modules:{Navigation, Mousewheel, Keyboard}
+    }
 
     return (
         <div>
@@ -29,17 +47,9 @@ function Insta() {
                     </Styles.NewTitle>
                     <div className="slide-container insta">
                         <Swiper
+                            {...swiperParams}
                             className="swiper-wrapper mySwiper"
-                            slidesPerView={5}
-                            spaceBetween={20}
-                            navigation={{
-                                prevEl: '.slide-nav-prev',
-                                nextEl: '.slide-nav-next',
-                            }}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            modules={[Navigation, Mousewheel, Keyboard]}>
+                            ref={setSwiper}>
                             {imgData.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index}>
                                     <button type="button" className="btn-popup" value="1">
@@ -50,12 +60,12 @@ function Insta() {
                         </Swiper>
                         <div className="slide-nav">
                             <button
-                                className="slide-nav-prev button-disabled"
+                                className="slide-nav-prev insta-prev button-disabled"
                             >
                                 <span className="offscreen"></span>
                             </button>
                             <button
-                                className="slide-nav-next"
+                                className="slide-nav-next insta-next"
                             >
                                 <span className="offscreen"></span>
                             </button>

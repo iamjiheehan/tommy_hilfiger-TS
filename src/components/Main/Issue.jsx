@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Styles from './MainStyle';
 import IssueData from '../../data/issue.json';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import SwiperCore from 'swiper/core';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +13,23 @@ import 'swiper/css/navigation';
 function Issue() {
 
     const data = [...IssueData];
+
+    const [swiper, setSwiper] = useState(null);
+
+    SwiperCore.use([Navigation]);
+
+    const swiperParams = {
+        slidesPerView:1,
+        spaceBetween:20,
+        navigation:{
+            prevEl: '.issue-prev',
+            nextEl: '.issue-next',
+        },
+        pagination:{
+            clickable: true
+        },
+        modules:{Navigation, Mousewheel, Keyboard}
+    }
 
     return (
         <div>
@@ -24,16 +42,8 @@ function Issue() {
                         <div className="slide-container">
                             <Swiper
                                 className="swiper-wrapper mySwiper"
-                                slidesPerView={1}
-                                spaceBetween={20}
-                                navigation={{
-                                    prevEl: '.slide-nav-prev',
-                                    nextEl: '.slide-nav-next',
-                                }}
-                                pagination={{
-                                    clickable: true,
-                                }}
-                                modules={[Navigation, Mousewheel, Keyboard]}
+                                {...swiperParams}
+                                ref={setSwiper}
                             >
                                 {data.map((item, index) => (
                                     <SwiperSlide className="swiper-item" key={index}>
@@ -88,10 +98,10 @@ function Issue() {
                                 ))}
                             </Swiper>
                             <div className="slide-nav">
-                                <button className="slide-nav-prev button-disabled">
+                                <button className="slide-nav-prev issue-prev button-disabled">
                                     <span className="offscreen"></span>
                                 </button>
-                                <button className="slide-nav-next">
+                                <button className="slide-nav-next issue-next">
                                     <span className="offscreen"></span>
                                 </button>
                             </div>

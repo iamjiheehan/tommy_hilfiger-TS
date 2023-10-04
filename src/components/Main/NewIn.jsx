@@ -14,10 +14,27 @@ import useRandomData from '../../hooks/useRandomize';
 import {useSelectMenuHandler} from '../../hooks/useSelectMenuHandler';
 
 import ItemLayout from './ItemLayout';
+import { Navigation} from 'swiper/modules';
+
 
 function NewIn() {
+
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
     const [activeIndex, setActiveIndex] = useState(0);
+
+    const swiperNewInParams = {
+        className:"swiper-wrapper newIn",
+        slidesPerView:5,
+        spaceBetween:20,
+        navigation:{
+            prevEl: '.slide-nav-prev.newIn ',
+            nextEl: '.slide-nav-next.newIn',
+        },
+        pagination:{
+            clickable: true
+        },
+        modules:{Navigation}
+    }
 
     const tabContArr=[
             {
@@ -60,7 +77,7 @@ function NewIn() {
             setActiveIndex(index)
         }
     const tabContents = {
-        0: <All />,
+        0: <All swiperParams={swiperNewInParams}/>,
         1: <Women />,
         2: <Men />,
         3: <Kids />,
@@ -90,6 +107,14 @@ function NewIn() {
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
                             {tabContents[currentTab]}
+                            <div className="slide-nav">
+                            <button className="slide-nav-prev button-disabled newIn">
+                                <span className="offscreen"></span>
+                            </button>
+                            <button className="slide-nav-next newIn">
+                                <span className="offscreen"></span>
+                            </button>
+                        </div>
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>
@@ -98,11 +123,10 @@ function NewIn() {
     );
 }
 
-function All() {
+function All({ swiperParams }) {
 
     const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
     const randomData = useRandomData(allData);
-
     // const getRandomData = () => {
     //     const shuffledData = [...allData].sort(() => Math.random() - 0.5);
 
@@ -122,49 +146,49 @@ function All() {
     // }, []);
 
     return (
-        <ItemLayout items={randomData} />
+        <ItemLayout items={randomData} params={swiperParams} />
     )
 }
 
-function Men() {
+function Men({ swiperParams }) {
     const menData = [...NewInMenData];
     return (
-        <ItemLayout items={menData} />
+        <ItemLayout items={menData} params={swiperParams}/>
     )
 }
 
-function Women() {
+function Women({ swiperParams }) {
     const womenData = [...NewInWomenData];
     return (
-        <ItemLayout items={womenData} />
+        <ItemLayout items={womenData} params={swiperParams}/>
     )
 }
 
-function Jeans() {
+function Jeans({ swiperParams }) {
     const jeansData = [...NewInJeansData];
     return (
-        <ItemLayout items={jeansData} />
+        <ItemLayout items={jeansData} params={swiperParams}/>
     )
 }
 
-function Shoes() {
+function Shoes({ swiperParams }) {
     const shoesData = [...NewInShoesData];
     return (
-        <ItemLayout items={shoesData} />
+        <ItemLayout items={shoesData} params={swiperParams}/>
     )
 }
 
-function Golf() {
+function Golf({ swiperParams }) {
     const golfData = [...NewInGolfData];
     return (
-        <ItemLayout items={golfData} />
+        <ItemLayout items={golfData} params={swiperParams}/>
     )
 }
 
-function Kids() {
+function Kids({ swiperParams }) {
     const kidsData = [...NewInKidsData];
     return (
-        <ItemLayout items={kidsData} />
+        <ItemLayout items={kidsData} params={swiperParams}/>
     )
 }
 

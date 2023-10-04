@@ -11,6 +11,7 @@ import ShoesData from '../../data/MdsPick/shoes';
 
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
+import { Navigation} from 'swiper/modules';
 
 import ItemLayout from './ItemLayout';
 
@@ -18,13 +19,27 @@ function Md() {
 
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 
+    const swiperMdsParams = {
+        className:"swiper-wrapper Mds",
+        slidesPerView:5,
+        spaceBetween:20,
+        navigation:{
+            prevEl: '.slide-nav-prev.md ',
+            nextEl: '.slide-nav-next.md',
+        },
+        pagination:{
+            clickable: true
+        },
+        modules:{Navigation}
+    }
+
     const tabContents = {
-        0: <All />,
-        1: <Men />,
-        2: <Women />,
-        3: <Jeans />,
-        4: <Kids />,
-        5: <Shoes />,
+        0: <All swiperParams={swiperMdsParams} />,
+        1: <Men swiperParams={swiperMdsParams}/>,
+        2: <Women swiperParams={swiperMdsParams}/>,
+        3: <Jeans swiperParams={swiperMdsParams}/>,
+        4: <Kids swiperParams={swiperMdsParams}/>,
+        5: <Shoes swiperParams={swiperMdsParams}/>,
     }
 
     return (
@@ -49,10 +64,10 @@ function Md() {
                     <div className="slide-container">
                         {tabContents[currentTab]}
                         <div className="slide-nav">
-                            <button className="slide-nav-prev button-disabled">
+                            <button className="slide-nav-prev button-disabled md">
                                 <span className="offscreen"></span>
                             </button>
-                            <button className="slide-nav-next">
+                            <button className="slide-nav-next md">
                                 <span className="offscreen"></span>
                             </button>
                         </div>
@@ -65,47 +80,47 @@ function Md() {
 
 export default Md;
 
-function All() {
+function All({swiperParams}) {
 
     const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData, ...ShoesData];
     const randomData = useRandomData(allData);
 
     return (
-        <ItemLayout items={randomData} />
+        <ItemLayout items={randomData} params={swiperParams} />
     )
 }
 
-function Men() {
+function Men({swiperParams}) {
     const menData = [...MenData];
     return (
-        <ItemLayout items={menData} />
+        <ItemLayout items={menData} params={swiperParams} />
     )
 }
 
-function Women() {
+function Women({swiperParams}) {
     const womenData = [...WomenData];
     return (
-        <ItemLayout items={womenData} />
+        <ItemLayout items={womenData} params={swiperParams} />
     )
 }
 
-function Jeans() {
+function Jeans({swiperParams}) {
     const jeansData = [...JeansData];
     return (
-        <ItemLayout items={jeansData} />
+        <ItemLayout items={jeansData} params={swiperParams} />
     )
 }
 
-function Shoes() {
+function Shoes({swiperParams}) {
     const shoesData = [...ShoesData];
     return (
-        <ItemLayout items={shoesData} />
+        <ItemLayout items={shoesData} params={swiperParams} />
     )
 }
 
-function Kids() {
+function Kids({swiperParams}) {
     const kidsData = [...KidsData];
     return (
-        <ItemLayout items={kidsData} />
+        <ItemLayout items={kidsData} params={swiperParams} />
     )
 }

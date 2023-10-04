@@ -12,6 +12,7 @@ import ShoesData from '../../data/TopRanking/shoes';
 import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
+import { Navigation } from 'swiper/modules';
 import ItemLayout from './ItemRankingLayout';
 
 function Ranking() {
@@ -23,6 +24,20 @@ function Ranking() {
         setActiveTab(tabName);
         console.log(tabName, activeTab);
     };
+
+    const swiperRankingparams = {
+        className: "swiper-wrapper ranking",
+        slidesPerView: 5,
+        spaceBetween: 20,
+        navigation: {
+            prevEl: '.slide-nav-prev.ranking ',
+            nextEl: '.slide-nav-next.ranking',
+        },
+        pagination: {
+            clickable: true
+        },
+        modules: { Navigation }
+    }
 
     const [selectedRankingField, setSelectedRankingField] = useState('liveRank');
     // liveRank를 기본값으로 설정
@@ -44,7 +59,7 @@ function Ranking() {
     const sortByMonthlyRank = (a, b) => parseInt(a.monthlyRank) - parseInt(b.monthlyRank);
 
     const tabContents = {
-        0: <All items={allData} />,
+        0: <All items={allData} swiperParams={swiperRankingparams} />,
         1: (
             <Men
                 items={sortData(MenData, selectedRankingField === 'liveRank' ? sortByLiveRank :
@@ -52,6 +67,7 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                swiperParams={swiperRankingparams}
             />
         ),
         2: (
@@ -61,6 +77,7 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                swiperParams={swiperRankingparams}
             />
         ),
         3: (
@@ -71,15 +88,17 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                swiperParams={swiperRankingparams}
             />
         ),
         4: (
             <Kids
-                items={sortData(KidsData, selectedRankingField === 'liveRank' ? sortByLiveRank :
+            items={sortData(KidsData, selectedRankingField === 'liveRank' ? sortByLiveRank :
                     selectedRankingField === 'dailyRank' ? sortByDailyRank :
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                swiperParams={swiperRankingparams}
             />
         ),
         5: (
@@ -90,6 +109,7 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                swiperParams={swiperRankingparams}
             />
         ),
         6: (
@@ -99,6 +119,7 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
+                params={swiperRankingparams}
             />
         ),
     }
@@ -188,7 +209,14 @@ function Ranking() {
                     <Styles.NewContent>
                         <div className="slide-container">
                             {tabContents[currentTab]}
-
+                            <div className="slide-nav">
+                                <button className="slide-nav-prev ranking button-disabled">
+                                    <span className="offscreen"></span>
+                                </button>
+                                <button className="slide-nav-next ranking">
+                                    <span className="offscreen"></span>
+                                </button>
+                            </div>
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>
@@ -199,46 +227,45 @@ function Ranking() {
 
 export default Ranking;
 
-function All({ items }) {
+function All({ items, swiperParams}) {
     const randomData = useRandomData(items);
-
     return (
-        <ItemLayout items={randomData} />
+        <ItemLayout items={randomData} params={swiperParams}/>
     )
 }
 
-function Men({ items }) {
+function Men({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }
 
-function Women({ items }) {
+function Women({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }
 
-function Jeans({ items }) {
+function Jeans({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }
 
-function Shoes({ items }) {
+function Shoes({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }
 
-function Golf({ items }) {
+function Golf({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }
 
-function Kids({ items }) {
+function Kids({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} />
+        <ItemLayout items={items} params={swiperParams} />
     )
 }

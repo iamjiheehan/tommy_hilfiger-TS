@@ -1,27 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation} from 'swiper/modules';
+import SwiperCore from 'swiper/core';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-function ItemLayout({ items }) {
+
+function ItemLayout({ items, params }) {
+
+    const [swiper, setSwiper] = useState(null);
+
+    SwiperCore.use([Navigation]);
+
     return (
         <Swiper
-            className="swiper-wrapper mySwiper"
-            slidesPerView={5}
-            spaceBetween={20}
-            navigation={{
-                prevEl: '.slide-nav-prev',
-                nextEl: '.slide-nav-next',
-            }}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Navigation, Mousewheel, Keyboard]}
+            {...params}
+            ref={setSwiper}
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>
@@ -54,14 +52,7 @@ function ItemLayout({ items }) {
                     </figure>
                 </SwiperSlide>
             ))}
-            <div className="slide-nav">
-                <button className="slide-nav-prev button-disabled">
-                    <span className="offscreen"></span>
-                </button>
-                <button className="slide-nav-next">
-                    <span className="offscreen"></span>
-                </button>
-            </div>
+            
         </Swiper>
     );
 }

@@ -660,6 +660,8 @@ export const MainContainer = styled.div`
         transform: translateY(-50%);
         border-radius: 50%;
         opacity: 1;
+
+        z-index: 999;
     }
 
     .slide-nav .slide-nav-prev {

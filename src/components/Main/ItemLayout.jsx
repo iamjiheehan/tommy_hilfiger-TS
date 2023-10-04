@@ -1,10 +1,29 @@
 import React from "react";
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 function ItemLayout({ items }) {
     return (
-        <ul className="swiper-wrapper">
+        <Swiper 
+            className="swiper-wrapper mySwiper"
+            slidesPerView={5}
+            spaceBetween={30}
+            pagination={{
+                clickable: true,
+            }}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        >
             {items.map((item, index) => (
-                <li className="swiper-item" key={index}>
+                <SwiperSlide className="swiper-item" key={index}>
                     <figure className="item-box">
                         <div className="item-img">
                             <div className="img-box">
@@ -32,9 +51,9 @@ function ItemLayout({ items }) {
                             </a>
                         </figcaption>
                     </figure>
-                </li>
+                </SwiperSlide>
             ))}
-        </ul>
+        </Swiper>
     );
 }
 

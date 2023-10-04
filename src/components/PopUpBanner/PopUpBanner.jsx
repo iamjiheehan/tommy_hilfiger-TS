@@ -14,11 +14,11 @@ function PopUpBanner() {
         <>
             {modalOpen && (
                 <Styles.Container className='container'>
-                    <div class="top-line-box">
+                    <div className="top-line-box">
                         <a href="#!">
                             가족보다 더 가족 같은 사이, 스트레이 키즈와 타미힐피거의 ‘Always together’ 캠페인</a>
                         <button type="button"
-                            class="btn-top-close"
+                            className="btn-top-close"
                             onClick={modalClose}
                         ><span>닫기</span></button>
                     </div>

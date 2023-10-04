@@ -83,14 +83,15 @@ function NewIn() {
                     </Styles.NewTitle>
                     <Styles.NewTab>
                         {tabContArr.map((section, index)=>{
-                            return section.tabTitle
+                            <div key={index}>
+                                section.tabTitle
+                            </div>
                         })}
                     </Styles.NewTab>
                     {tabContArr[activeIndex].tabCont}
                     <Styles.NewContent className='menuWrap'>
                         <div className="slide-container">
                             {tabContents[currentTab]}
-                           
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>

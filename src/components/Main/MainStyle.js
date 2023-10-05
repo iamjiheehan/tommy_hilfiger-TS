@@ -598,7 +598,7 @@ export const MainContainer = styled.div`
         display: inline-block;
         width: 102px;
         height: 17px;
-        background: transparent url(${star}) repeat-x 0 100%;
+        /* background: transparent url(${star}) repeat-x 0 100%; */
         vertical-align: top;
 
         .ico {

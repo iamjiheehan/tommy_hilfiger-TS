@@ -6,8 +6,23 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { FaStar } from 'react-icons/fa';
+
 function ReviewLayout({ items, params }) {
     const [swiper, setSwiper] = useState(null);
+
+    const startRender = (item, index) => {
+        const result = [];
+        for (let i = 0; i < item.rating; i++) {
+            result.push(<FaStar
+                key={index}
+                size="16"
+                color='#00174f'
+            ></FaStar>);
+        }
+        return result;
+    }
+
 
     return (
         <Swiper
@@ -49,7 +64,7 @@ function ReviewLayout({ items, params }) {
                             </div>
                             <div className="review-info">
                                 <div className="rating-option-box">
-                                    <span className="review-rating"><span className="ico">{item.rating}</span></span>
+                                    <span className="review-rating"><span className="ico">{startRender(item,index)}</span></span>
                                     <span className="prd-option"><span></span> / <span></span></span>
                                 </div>
                                 <p className="review-desc">{item.description}

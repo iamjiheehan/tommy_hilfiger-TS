@@ -105,26 +105,25 @@ function Campaign() {
                 setTarget(newTarget);
                 console.log('now index :::', swiper.realIndex, "Target :::", newTarget);
 
-                // Remove the 'on' class from all slides
+                // on클래스 없애기
                 swiper.slides.forEach((slide) => {
                     slide.classList.remove('on');
                 });
 
-                // Add the 'on' class to the current slide (realIndex)
+                // realIndex에 on클래스 추가하기
                 const currentSlide = swiper.slides[swiper.realIndex];
                 currentSlide.classList.add('on');
             };
 
-            // Attach the event handler only once
+            // 이벤트 핸들러
             swiper.on('transitionEnd', handleTransitionEnd);
-            // Clean up the event handler when the component unmounts
+
+            // 컴포넌트 언마운트되었을때의 상태 초기화
             return () => {
                 swiper.off('transitionEnd', handleTransitionEnd);
             };
         }
     }, [swiper]);
-
-
 
     return (
         <div>
@@ -146,7 +145,7 @@ function Campaign() {
                                     {...swiperCampaignParams}
                                     ref={setSwiper}
                                     onSwiper={(swiperInstance) => {
-                                        // Save the Swiper instance to the state
+                                        // Swiper instance 상태관리 함수에 저장
                                         setSwiper(swiperInstance);
                                     }}
                                 >

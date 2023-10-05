@@ -9,7 +9,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 function Insta() {
@@ -49,7 +48,8 @@ function Insta() {
                     <div className="slide-container insta">
                         <Swiper
                             {...swiperInstaParams}
-                            ref={setSwiper}>
+                            ref={setSwiper}
+                            >
                             {imgData.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index}>
                                     <button type="button" className="btn-popup" value="1">

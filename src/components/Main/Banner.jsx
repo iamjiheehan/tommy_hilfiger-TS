@@ -13,7 +13,7 @@ function Banner() {
     const dataSet = [...data];
     const dataLength = dataSet.length;
 
-    console.log(dataLength);
+    // console.log(dataLength);
 
     const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -24,8 +24,8 @@ function Banner() {
             if (index < dataLength) {
                 index++;
             }
-            console.log(index); // Log the updated value
-            return index; // Return the updated value to set it as the new state
+            // console.log(index); 
+            return index; 
         });
     }
 
@@ -72,7 +72,7 @@ function Banner() {
                             console.log('slide change');
                             trigger();
                         }}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSwiper={(swiper) => console.log(swiper)}
                     >
                         {data.map((item, index) => (
                             <SwiperSlide className='swiper-item' key={index}>

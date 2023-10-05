@@ -21,6 +21,7 @@ function Insta() {
     SwiperCore.use([Navigation]);
 
     const swiperInstaParams = {
+        className:"swiper-wrapper mySwiper",
         slidesPerView:5,
         spaceBetween:20,
         navigation:{
@@ -48,7 +49,6 @@ function Insta() {
                     <div className="slide-container insta">
                         <Swiper
                             {...swiperInstaParams}
-                            className="swiper-wrapper mySwiper"
                             ref={setSwiper}>
                             {imgData.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index}>

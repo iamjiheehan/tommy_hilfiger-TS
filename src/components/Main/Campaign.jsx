@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Styles from './MainStyle';
+
 import data from '../../data/campaign.json';
+import SwiperCore from 'swiper/core';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 function Campaign() {
     const imgData = data[0].img; 
     const itemsPerPage = 4; 
 
+    const [swiper, setSwiper] = useState(null);
+
+    SwiperCore.use([Navigation]);
+
+    const swiperCampaignParams = {
+        slidesPerView:4,
+        spaceBetween:20,
+        navigation:{
+            prevEl: '.campaign-prev',
+            nextEl: '.campaign-next',
+        },
+        pagination:{
+            clickable: true
+        },
+        modules:{Navigation}
+    }
     
     return (
         <div>
@@ -39,12 +64,12 @@ function Campaign() {
                                 </ul>
                                 <div className="slide-nav">
                                     <button
-                                        className="slide-nav-prev button-disabled"
+                                        className="slide-nav-prev campaign-prev button-disabled"
                                     >
                                         <span className="offscreen"></span>
                                     </button>
                                     <button
-                                        className="slide-nav-next"
+                                        className="slide-nav-next campaign-next"
                                     >
                                         <span className="offscreen"></span>
                                     </button>

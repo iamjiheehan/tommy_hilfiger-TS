@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import logo from "../../assets/images/img_logo_footer.png";
-import familylogo from "../../assets/images/icon_familysite_arrow.png";
+import familysiteUplogo from "../../assets/images/icon_familysite_arrow.png";
 import sns from "../../assets/images/icon_footer_sns.png";
 
 export const FooterWrap = styled.div`
@@ -49,11 +49,15 @@ export const FamilySite = styled.div`
         right: 0;
         width: 30px;
         height: 30px;
-        background: url(${familylogo}) no-repeat 50% 50%;
+        background: url(${familysiteUplogo}) no-repeat 50% 50%;
     }
 
+    .btn.active::after {
+        /* Target .btn when it has the .active class */
+        transform: rotate(180deg) !important;
+    }
     .list {
-        display: none;
+        opacity: 0;
         position: absolute;
         right: 0;
         bottom: 30px;
@@ -61,17 +65,26 @@ export const FamilySite = styled.div`
         padding: 15px;
         background: #fff;
         border: 1px solid #fafafa;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.4s ease-out;
+    }
+
+    .list.active {
+        opacity: 1;
+        max-height: 800px;
+    }
+
+    .list:not(.active) {
+        max-height: 0;
     }
 
     .list p {
         font-weight: 700;
         line-height: 1.5;
-    }
-
-    .list p ~ p {
         margin-top: 10px;
     }
-
     .list ul {
         margin: 5px 0 0;
     }
@@ -79,6 +92,10 @@ export const FamilySite = styled.div`
     .list ul > li {
         line-height: 1.5;
         font-size: 12px;
+
+        a {
+            color: #000;
+        }
     }
 `;
 

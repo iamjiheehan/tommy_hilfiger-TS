@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import * as Styles from './FooterStyle';
 
 
 function Footer() {
+
+    const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
+
+    const toggleMenu = () => {
+        setMenu(isOpen => !isOpen); // on,off 개념 boolean
+    }
+
     return (
         <>
             <Styles.FooterWrap>
                 <div className="inner">
                     <p className="logo"></p>
                     <Styles.FamilySite>
-                        <button type="button" className="btn">FAMILY SITE</button>
-                        <div className="list">
+                        <button type="button" className={`btn ${isOpen ? 'active' : ''}`}
+                            onClick={toggleMenu}>FAMILY SITE</button>
+                        <div className={`list ${isOpen ? 'active' : ''}`}>
+                            <p>
+                                쇼핑몰 사이트
+                            </p>
                             <ul>
                                 <li><a href="#!" target="_blank" title="새창으로 열림">더현대닷컴</a></li>
                                 <li><a href="#!" target="_blank" title="새창으로 열림">현대백화점 DUTY FREE</a></li>

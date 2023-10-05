@@ -1586,6 +1586,7 @@ export const CampaignWrap = styled.div`
     .slide-container .swiper-wrapper {
         /* margin-right: -40px; */
         align-items: center;
+        transition: transform 0.3s ease-in-out;
     }
 
     .slide-container .swiper-wrapper .swiper-item {
@@ -1611,8 +1612,8 @@ export const CampaignWrap = styled.div`
         }
 
         &.on {
-            margin-right: 40px;
-            width: 31.3289%;
+            margin-right: 40px !important;
+            width: 31.3289% !important;
             background: none;
 
             &::after{

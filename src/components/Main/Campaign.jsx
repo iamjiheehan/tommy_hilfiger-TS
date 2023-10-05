@@ -92,29 +92,42 @@ function Campaign() {
     // useEffect 내에서 target 값을 최신 상태로 사용하려면 target 값을 
     // 의존성 배열에 추가하여 useEffect가 target 값이 변경될 때마다 다시 실행되도록 해야 함.
 
-    const [target, setTarget] = useState(0);
+    // const [target, setTarget] = useState(0);
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     if (swiper) {
+    //         const handleTransitionEnd = () => {
+    //             const newTarget = swiper.realIndex;
+    //             setTarget(newTarget);
+    //             console.log('now index :::', swiper.realIndex, "Target :::", newTarget);
+    //         };
+
+    //         // Attach the event handler
+    //         swiper.on('transitionEnd', handleTransitionEnd);
+
+    //         // Clean up the event handler when the component unmounts
+    //         return () => {
+    //             swiper.off('transitionEnd', handleTransitionEnd);
+    //         };
+    //     }
+    // }, [swiper]);
+
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
+    const handleNextButtonClick = () => {
         if (swiper) {
-            const handleTransitionEnd = () => {
-                const newTarget = swiper.realIndex;
-                setTarget(newTarget);
-                console.log('now index :::', swiper.realIndex, "Target :::", newTarget);
-            };
-    
-            // Attach the event handler
-            swiper.on('transitionEnd', handleTransitionEnd);
-    
-            // Clean up the event handler when the component unmounts
-            return () => {
-                swiper.off('transitionEnd', handleTransitionEnd);
-            };
+            swiper.slideNext();
+            setActiveSlideIndex(swiper.realIndex);
         }
-    }, [swiper]);
-    
+    };
 
+    const handlePrevButtonClick = () => {
+        if (swiper) {
+            swiper.slidePrev();
+            setActiveSlideIndex(swiper.realIndex);
+        }
+    };
 
-    
     return (
         <div>
             <section id='campaign'>
@@ -138,12 +151,15 @@ function Campaign() {
                                         // Swiper instance 상태관리 함수에 저장
                                         setSwiper(swiperInstance);
                                     }}
+                                    onSlideChange={(swiper) => {
+                                        setActiveSlideIndex(swiper.realIndex);
+                                    }}
                                 >
                                     {imgData.map((item, index) => (
                                         <SwiperSlide
-                                        className={`swiper-item ${index === target ? 'on' : ''}`}
+                                            className={`swiper-item ${index === activeSlideIndex ? 'on' : ''}`}
                                         // className='swiper-item'
-                                    >
+                                        >
                                             <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
@@ -158,11 +174,13 @@ function Campaign() {
                                 <div className="slide-nav">
                                     <button
                                         className="slide-nav-prev campaign-prev button-disabled"
+                                        onClick={handlePrevButtonClick}
                                     >
                                         <span className="offscreen"></span>
                                     </button>
                                     <button
                                         className="slide-nav-next campaign-next"
+                                        onClick={handleNextButtonClick}
                                     >
                                         <span className="offscreen"></span>
                                     </button>

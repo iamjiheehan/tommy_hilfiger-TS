@@ -1,27 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-function ReviewLayout({ items }) {
+function ReviewLayout({ items, params }) {
+    const [swiper, setSwiper] = useState(null);
 
     return (
         <Swiper
-            className="swiper-wrapper mySwiper"
-            slidesPerView={5}
-            spaceBetween={20}
-            navigation={{
-                prevEl: '.slide-nav-prev',
-                nextEl: '.slide-nav-next',
-            }}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Navigation, Mousewheel, Keyboard]}
+            {...params}
+            ref={setSwiper}
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>

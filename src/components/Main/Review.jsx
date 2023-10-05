@@ -12,16 +12,41 @@ import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ReviewLayout from './ReviewLayout';
 
+import SwiperCore from 'swiper/core';
+
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 function Review() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 
+
+    SwiperCore.use([Navigation]);
+
+    const swiperReviewParams = {
+        className:"swiper-wrapper mySwiper",
+        slidesPerView: 5,
+        spaceBetween: 20,
+        navigation: {
+            prevEl: '.review-prev',
+            nextEl: '.review-next',
+        },
+        pagination: {
+            clickable: true
+        },
+        modules: { Navigation }
+    }
+
     const tabContents = {
-        0: <All />,
-        1: <Best />,
-        2: <Jeans />,
-        3: <Women />,
-        4: <Men />,
-        5: <Kids />,
+        0: <All swiperParams={swiperReviewParams}/>,
+        1: <Best swiperParams={swiperReviewParams}/>,
+        2: <Jeans swiperParams={swiperReviewParams}/>,
+        3: <Women swiperParams={swiperReviewParams}/>,
+        4: <Men swiperParams={swiperReviewParams}/>,
+        5: <Kids swiperParams={swiperReviewParams}/>,
     }
 
     return (
@@ -49,10 +74,10 @@ function Review() {
                         <div className='slide-container review'>
                             {tabContents[currentTab]}
                             <div className="slide-nav">
-                                <button className="slide-nav-prev button-disabled">
+                                <button className="slide-nav-prev review-prev button-disabled">
                                     <span className="offscreen"></span>
                                 </button>
-                                <button className="slide-nav-next">
+                                <button className="slide-nav-next review-next">
                                     <span className="offscreen"></span>
                                 </button>
                             </div>
@@ -66,50 +91,50 @@ function Review() {
 
 export default Review;
 
-function All() {
+function All({swiperParams}) {
 
     const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
 
     return (
-        <ReviewLayout items={randomData} />
+        <ReviewLayout items={randomData} params={swiperParams}/>
     )
 }
 
-function Best() {
+function Best({swiperParams}) {
 
     const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
 
     return (
-        <ReviewLayout items={randomData} />
+        <ReviewLayout items={randomData} params={swiperParams} />
     )
 }
 
-function Men() {
+function Men({swiperParams}) {
     const menData = [...MenData];
     return (
-        <ReviewLayout items={menData} />
+        <ReviewLayout items={menData} params={swiperParams} />
     )
 }
 
-function Women() {
+function Women({swiperParams}) {
     const womenData = [...WomenData];
     return (
-        <ReviewLayout items={womenData} />
+        <ReviewLayout items={womenData} params={swiperParams} />
     )
 }
 
-function Jeans() {
+function Jeans({swiperParams}) {
     const jeansData = [...JeansData];
     return (
-        <ReviewLayout items={jeansData} />
+        <ReviewLayout items={jeansData} params={swiperParams} />
     )
 }
 
-function Kids() {
+function Kids({swiperParams}) {
     const kidsData = [...KidsData];
     return (
-        <ReviewLayout items={kidsData} />
+        <ReviewLayout items={kidsData} params={swiperParams} />
     )
 }

@@ -30,13 +30,15 @@ function Ranking() {
         slidesPerView: 5,
         spaceBetween: 20,
         navigation: {
-            prevEl: '.slide-nav-prev.ranking ',
-            nextEl: '.slide-nav-next.ranking',
+            prevEl: '.ranking-prev ',
+            nextEl: '.ranking-next',
         },
         pagination: {
             clickable: true
         },
-        modules: { Navigation }
+        modules: {Navigation},
+        allowSlidePrev: true,
+        allowSlideNext: true,
     }
 
     const [selectedRankingField, setSelectedRankingField] = useState('liveRank');
@@ -210,10 +212,10 @@ function Ranking() {
                         <div className="slide-container">
                             {tabContents[currentTab]}
                             <div className="slide-nav">
-                                <button className="slide-nav-prev ranking button-disabled">
+                                <button className="slide-nav-prev ranking-prev button-disabled">
                                     <span className="offscreen"></span>
                                 </button>
-                                <button className="slide-nav-next ranking">
+                                <button className="slide-nav-next ranking-next">
                                     <span className="offscreen"></span>
                                 </button>
                             </div>

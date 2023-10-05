@@ -77,13 +77,13 @@ function NewIn() {
             setActiveIndex(index)
         }
     const tabContents = {
-        0: <All swiperParams={swiperNewInParams}/>,
-        1: <Women />,
-        2: <Men />,
-        3: <Kids />,
-        4: <Jeans />,
-        5: <Shoes />,
-        6: <Golf />
+        0: <All swiperParams={swiperNewInParams} />,
+        1: <Women swiperParams={swiperNewInParams} />,
+        2: <Men swiperParams={swiperNewInParams} />,
+        3: <Kids swiperParams={swiperNewInParams} />,
+        4: <Jeans swiperParams={swiperNewInParams} />,
+        5: <Shoes swiperParams={swiperNewInParams} />,
+        6: <Golf swiperParams={swiperNewInParams} />
     }
     return (
         <div>

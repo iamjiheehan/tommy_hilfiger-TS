@@ -28,7 +28,7 @@ function Review() {
 
     const swiperReviewParams = {
         className:"swiper-wrapper mySwiper",
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 20,
         navigation: {
             prevEl: '.review-prev',

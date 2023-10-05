@@ -20,6 +20,7 @@ function Campaign() {
     SwiperCore.use([Navigation]);
 
     const swiperCampaignParams = {
+        className:"swiper-wrapper mySwiper",
         slidesPerView:4,
         spaceBetween:20,
         navigation:{
@@ -29,7 +30,8 @@ function Campaign() {
         pagination:{
             clickable: true
         },
-        modules:{Navigation}
+        modules:{Navigation},
+        loop: true
     }
     
     return (
@@ -48,9 +50,11 @@ function Campaign() {
                         </Styles.NewTitle>
                         <Styles.CampaignWrap>
                             <div className="slide-container">
-                                <ul className="swiper-wrapper">
+                                <Swiper
+                                    {...swiperCampaignParams}
+                                    ref={setSwiper}>
                                     {imgData.map((item, index) => (
-                                        <li className={`swiper-item ${index % itemsPerPage === 0 ? 'on' : ''}`} key={index}>
+                                        <SwiperSlide className={`swiper-item ${index % itemsPerPage === 0 ? 'on' : ''}`} key={index}>
                                             <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
@@ -59,9 +63,9 @@ function Campaign() {
                                                     <img src={process.env.PUBLIC_URL + item} alt={index} />
                                                 </div>
                                             </a>
-                                        </li>
+                                        </SwiperSlide>
                                     ))}
-                                </ul>
+                                </Swiper>
                                 <div className="slide-nav">
                                     <button
                                         className="slide-nav-prev campaign-prev button-disabled"

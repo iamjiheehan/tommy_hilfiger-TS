@@ -1585,18 +1585,19 @@ export const CampaignWrap = styled.div`
     }
 
     .slide-container .swiper-wrapper {
-        margin-right: -40px;
+        /* margin-right: -40px; */
         align-items: center;
     }
 
     .slide-container .swiper-wrapper .swiper-item {
         position: relative;
-        width: calc((100% - 30.5425%) / 3);
+        flex-shrink: 0;
+        /* width: calc((100% - 30.5425%) / 3); */
     }
 
     .slide-container .swiper-wrapper .swiper-item:first-child {
-        margin-right: 40px;
-        width: 31.3289%;
+        /* margin-right: 40px; */
+        /* width: 31.3289%; */
     }
 
     .slide-container .swiper-wrapper .swiper-item:not(:first-child) {
@@ -1664,7 +1665,6 @@ export const CampaignWrap = styled.div`
 `;
 
 // fixed btn
-
 export const FixedBtn = styled.div`
     position: fixed;
     z-index: 49;

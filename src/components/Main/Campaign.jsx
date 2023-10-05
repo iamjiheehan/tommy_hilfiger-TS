@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import * as Styles from './MainStyle';
 import data from '../../data/campaign.json';
 

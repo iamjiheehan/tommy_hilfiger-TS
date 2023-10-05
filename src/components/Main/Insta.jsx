@@ -6,7 +6,7 @@ import SwiperCore from 'swiper/core';
 import * as Styles from './MainStyle';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -20,7 +20,7 @@ function Insta() {
 
     SwiperCore.use([Navigation]);
 
-    const swiperParams = {
+    const swiperInstaParams = {
         slidesPerView:5,
         spaceBetween:20,
         navigation:{
@@ -30,7 +30,7 @@ function Insta() {
         pagination:{
             clickable: true
         },
-        modules:{Navigation, Mousewheel, Keyboard}
+        modules:{Navigation}
     }
 
     return (
@@ -47,7 +47,7 @@ function Insta() {
                     </Styles.NewTitle>
                     <div className="slide-container insta">
                         <Swiper
-                            {...swiperParams}
+                            {...swiperInstaParams}
                             className="swiper-wrapper mySwiper"
                             ref={setSwiper}>
                             {imgData.map((item, index) => (

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Styles from './MainStyle';
 
 import data from '../../data/promotion.json'
+import SwiperCore from 'swiper/core';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +13,24 @@ import 'swiper/css/navigation';
 
 function Promotion() {
     const content = [...data]
+
+    const [swiper, setSwiper] = useState(null);
+
+    SwiperCore.use([Navigation]);
+
+    const swiperPromoParams = {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            prevEl: '.promo-prev',
+            nextEl: '.promo-next',
+        },
+        pagination: {
+            clickable: true
+        },
+        modules: { Navigation }
+    }
+
 
     return (
         <div>
@@ -28,16 +47,8 @@ function Promotion() {
                     <div className="slide-container season">
                         <Swiper
                             className="swiper-wrapper mySwiper"
-                            slidesPerView={3}
-                            spaceBetween={20}
-                            navigation={{
-                                prevEl: '.slide-nav-prev',
-                                nextEl: '.slide-nav-next',
-                            }}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            modules={[Navigation, Mousewheel, Keyboard]}
+                            ref={setSwiper}
+                            {...swiperPromoParams}
                         >
                             {content.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index} >
@@ -60,10 +71,10 @@ function Promotion() {
                             ))}
                         </Swiper>
                         <div className="slide-nav">
-                            <button className="slide-nav-prev button-disabled">
+                            <button className="slide-nav-prev promo-prev button-disabled">
                                 <span className="offscreen"></span>
                             </button>
-                            <button className="slide-nav-next">
+                            <button className="slide-nav-next promo-next">
                                 <span className="offscreen"></span>
                             </button>
                         </div>

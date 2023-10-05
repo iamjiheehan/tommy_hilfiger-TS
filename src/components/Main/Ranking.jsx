@@ -212,10 +212,10 @@ function Ranking() {
                         <div className="slide-container">
                             {tabContents[currentTab]}
                             <div className="slide-nav">
-                                <button className="slide-nav-prev ranking-prev button-disabled">
+                                <button className="ranking-prev button-disabled">
                                     <span className="offscreen"></span>
                                 </button>
-                                <button className="slide-nav-next ranking-next">
+                                <button className="ranking-next">
                                     <span className="offscreen"></span>
                                 </button>
                             </div>

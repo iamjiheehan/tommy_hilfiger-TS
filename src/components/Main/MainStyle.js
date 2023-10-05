@@ -1155,7 +1155,6 @@ export const IssueContent = styled.div`
 // 여섯번째 섹션 || FOCUS ON----------------------------------------------------------------
 
 export const MagazineWrap = styled.div`
-
     background: var(--themeTextColor);
 
     padding: 20px;
@@ -1590,35 +1589,38 @@ export const CampaignWrap = styled.div`
     }
 
     .slide-container .swiper-wrapper .swiper-item {
+        margin-right: 20px;
         position: relative;
         flex-shrink: 0;
-        /* width: calc((100% - 30.5425%) / 3); */
+        width: calc((100% - 30.5425%) / 3);
+
+        &::after{
+            content: "";
+            position: absolute;
+            /* z-index: 2; */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                ),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        }
+
+        &.on {
+            margin-right: 40px;
+            width: 31.3289%;
+            background: none;
+
+            &::after{
+                background: none !important;
+            }
+        }
     }
 
-    .slide-container .swiper-wrapper .swiper-item:first-child {
-        /* margin-right: 40px; */
-        /* width: 31.3289%; */
-    }
-
-    .slide-container .swiper-wrapper .swiper-item:not(:first-child) {
-        margin-right: 20px;
-    }
-
-    .slide-container .swiper-wrapper .swiper-item:not(:first-child):after {
-        content: "";
-        position: absolute;
-        /* z-index: 2; */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    }
 
     .slide-container .swiper-wrapper .swiper-item .link-item {
         position: relative;
@@ -1651,7 +1653,7 @@ export const CampaignWrap = styled.div`
         .swiper-wrapper
         .swiper-item.on
         .link-item
-        .text-wrap:first-child {
+        .text-wrap {
         opacity: 1;
     }
 

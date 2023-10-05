@@ -17,9 +17,6 @@ function Campaign() {
     const imgData = data[0].img;
 
     const [swiper, setSwiper] = useState(null);
-    const slideTo = (index) => swiper.slideTo(index);
-
-    const swiperRef = useRef(null);
 
     const swiperCampaignParams = {
         className: "swiper-wrapper mySwiper",
@@ -29,11 +26,10 @@ function Campaign() {
             prevEl: '.campaign-prev',
             nextEl: '.campaign-next',
         },
-        pagination: {
-            clickable: true,
-        },
         modules: { Navigation },
         loop: true,
+        allowTouchMove: false,
+        lazy: true,
     }
 
     // useEffect(() => {
@@ -104,27 +100,21 @@ function Campaign() {
                 const newTarget = swiper.realIndex;
                 setTarget(newTarget);
                 console.log('now index :::', swiper.realIndex, "Target :::", newTarget);
-
-                // on클래스 없애기
-                swiper.slides.forEach((slide) => {
-                    slide.classList.remove('on');
-                });
-
-                // realIndex에 on클래스 추가하기
-                const currentSlide = swiper.slides[swiper.realIndex];
-                currentSlide.classList.add('on');
             };
-
-            // 이벤트 핸들러
+    
+            // Attach the event handler
             swiper.on('transitionEnd', handleTransitionEnd);
-
-            // 컴포넌트 언마운트되었을때의 상태 초기화
+    
+            // Clean up the event handler when the component unmounts
             return () => {
                 swiper.off('transitionEnd', handleTransitionEnd);
             };
         }
     }, [swiper]);
+    
 
+
+    
     return (
         <div>
             <section id='campaign'>
@@ -151,14 +141,15 @@ function Campaign() {
                                 >
                                     {imgData.map((item, index) => (
                                         <SwiperSlide
-                                        className={`swiper-item ${target === index ? 'on' : ''}`}
+                                        className={`swiper-item ${index === target ? 'on' : ''}`}
+                                        // className='swiper-item'
                                     >
                                             <a href="#!" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
                                                 <div className="img-wrap">
-                                                    <img src={process.env.PUBLIC_URL + item} alt={index} />
+                                                    <img src={process.env.PUBLIC_URL + item} alt={index} className="swiper-lazy" />
                                                 </div>
                                             </a>
                                         </SwiperSlide>

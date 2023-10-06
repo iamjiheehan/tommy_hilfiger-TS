@@ -24,13 +24,7 @@
   color: #61dafb;
 }
 
-.hide {
-  display: none !important;
-}
 
-.clear {
-  clear: both;
-}
 
 @keyframes App-logo-spin {
   from {

@@ -6,11 +6,8 @@ import searchBtn from "../../assets/images/btn_search_head.png";
 export const Header = styled.div`
     display: block;
 
-    a,
-    span {
-    }
+    list-style: none;
 
-    /* .depth2-menu, */
     .search {
         display: none;
     }
@@ -142,9 +139,12 @@ export const GnbMenu = styled.div`
             height: 26px;
             font-size: 14px;
         }
-
+    }
+    
         /* 호버메뉴 */
         .depth2 {
+            display: none;
+
             position: absolute;
             top: 34px;
             right: 0;
@@ -167,13 +167,6 @@ export const GnbMenu = styled.div`
             }
         }
 
-        ul[class^="depth2-menu-list"] {
-            display: inline-flex;
-            flex-flow: column wrap;
-            min-height: 224px;
-            max-height: 340px;
-        }
-
         .depth2-inner {
             display: flex;
             width: 100%;
@@ -182,7 +175,30 @@ export const GnbMenu = styled.div`
             margin: 0 auto;
             padding: 0 80px;
         }
-    }
+
+        .depth2-menu {
+            flex: 1;
+            
+        }
+
+        .depth2-menu ul {
+            margin-top: 15px;
+        }
+
+        .depth2-menu ul[class^="depth2-menu-list"] {
+                display: inline-flex;
+                flex-flow: column wrap;
+                min-height: 224px;
+                max-height: 340px;
+            }
+
+        .depth2-menu > li {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 36px;
+            font-size: 14px;
+            vertical-align: top;
+        }
 `;
 
 export const GnbEtc = styled.div`

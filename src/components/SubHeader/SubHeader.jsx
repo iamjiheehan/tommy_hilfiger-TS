@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import * as Styles from '../SubHeader/SubHeaderStyle'
 
 function SubHeader() {
+    const [target, setTarget] = useState(false);
+
+    const handleMouseEnter = () => {
+        setTarget(true);
+        console.log("마우스 올라감");
+    };
+
+    const handleMouseLeave = () => {
+        setTarget(false);
+        console.log("마우스 내려감");
+
+    };
+
     return (
         <>
             <Styles.Header>
@@ -60,11 +73,11 @@ function SubHeader() {
                         <div className="wrap">
                             <Styles.GnbMenu className="gnb-menu">
                                 <div className="gnb-category">
-                                    <a href="#!">
+                                    <a href="#!" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                         <span>
                                             여성</span>
                                     </a>
-                                    <div className="depth2">
+                                    <div className={`depth2 ${target ? "active" : ""}`}>
                                         <div className="depth2-inner">
                                             <ul className="depth2-menu">
                                                 <li>
@@ -145,11 +158,11 @@ function SubHeader() {
                                     </div>
                                 </div>
                                 <div className="gnb-category">
-                                    <a href="#!">
+                                    <a href="#!" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                         <span>
                                             남성</span>
                                     </a>
-                                    <div className="depth2">
+                                    <div className="depth2 ">
                                         <div className="depth2-inner">
                                             <ul className="depth2-menu">
                                                 <li>

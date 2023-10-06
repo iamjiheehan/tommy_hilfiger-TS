@@ -74,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
     ul > li {
-        list-style: none;
+        list-style: none !important;
     }
 
         
@@ -103,5 +103,16 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 0;
     line-height: 0;
 }
+    .hide {
+        display: none !important;
+    }
 
+    .active {
+        display: block !important;
+        z-index: 999;
+    }
+
+    .clear {
+        clear: both;
+    }
 `;

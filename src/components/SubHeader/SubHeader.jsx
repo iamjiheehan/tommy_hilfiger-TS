@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as Styles from '../SubHeader/SubHeaderStyle'
 
@@ -8,13 +8,29 @@ function SubHeader() {
     const handleMouseEnter = () => {
         setTarget(true);
         console.log("마우스 올라감");
+        console.log("마우스 내려감",targetBtn.index, targetBtn.length);
+
     };
 
     const handleMouseLeave = () => {
         setTarget(false);
-        console.log("마우스 내려감");
-
+        console.log("마우스 내려감",targetBtn.index, targetBtn.length);
     };
+
+    const targetBox = document.querySelectorAll('.depth2');
+    const targetBtn = document.querySelectorAll('.gnb-category > a');
+
+    const targetBoxArr = Array.from(targetBox);
+    const targetBtnArr = Array.from(targetBtn);
+
+    const addIndex = (el, index)=>{
+        targetBoxArr.setAttribute('data-index', index);
+        targetBtnArr.setAttribute('data-index', index);
+    };
+
+    useEffect (()=>{
+        addIndex();
+    })
 
     return (
         <>
@@ -159,8 +175,7 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                        <span>
-                                            남성</span>
+                                        <span>남성</span>
                                     </a>
                                     <div className="depth2 ">
                                         <div className="depth2-inner">
@@ -240,8 +255,7 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!" >
-                                        <span>
-                                            키즈</span>
+                                        <span>키즈</span>
                                     </a>
                                     <div className="depth2">
                                         <div className="depth2-inner">
@@ -277,9 +291,7 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!">
-                                        <span>
-                                            잡화
-                                        </span>
+                                        <span>잡화</span>
                                     </a>
                                     <div className="depth2">
                                         <div className="depth2-inner">
@@ -339,8 +351,7 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!">
-                                        <span>
-                                            라이프스타일</span>
+                                        <span>라이프스타일</span>
                                     </a>
                                     <div className="depth2">
                                         <div className="depth2-inner">
@@ -392,8 +403,7 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!">
-                                        <span>
-                                            골프</span>
+                                        <span>골프</span>
                                     </a>
                                     <div className="depth2">
                                         <div className="depth2-inner">
@@ -457,7 +467,8 @@ function SubHeader() {
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!">
-                                        아울렛</a>
+                                        <span>아울렛</span>
+                                    </a>
                                     <div className="depth2">
                                         <div className="depth2-inner">
                                             <ul className="depth2-menu">
@@ -475,14 +486,17 @@ function SubHeader() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div></div>
-                                <div className="gnb-category">
-                                    <a href="#!">
-                                        H SHOP</a>
+                                    </div>
                                 </div>
                                 <div className="gnb-category">
                                     <a href="#!">
-                                        편집샵</a>
+                                        <span>H SHOP</span>
+                                    </a>
+                                </div>
+                                <div className="gnb-category">
+                                    <a href="#!">
+                                        <span>편집샵</span>
+                                    </a>
                                 </div>
                             </Styles.GnbMenu>
                             <Styles.GnbEtc className="gnb-etc">

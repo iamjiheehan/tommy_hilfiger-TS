@@ -186,7 +186,7 @@ export const GnbMenu = styled.div`
             margin-top: 15px;
         }
 
-        .depth2-menu ul[class^="depth2-menu-list"] {
+        .depth2-menu ul[className^="depth2-menu-list"] {
                 display: inline-flex;
                 flex-flow: column wrap;
                 min-height: 224px;

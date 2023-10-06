@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import * as Styles from '../SubHeader/SubHeaderStyle'
 
@@ -509,6 +509,7 @@ function SubHeader() {
                     </div>
                 </div>
             </Styles.Header>
+            <div className='clear'></div>
         </>
     );
 }

@@ -8,10 +8,10 @@ export const Header = styled.div`
 
     a,
     span {
-        color: #fff;
     }
 
-    .depth2-menu, .header-search, .search {
+    /* .depth2-menu, */
+    .search {
         display: none;
     }
 
@@ -87,6 +87,7 @@ export const Header = styled.div`
         span > a {
             white-space: nowrap;
             font-size: 13px;
+            color: #fff;
         }
 
         span ~ span::after {
@@ -140,15 +141,53 @@ export const Header = styled.div`
                 height: 26px;
                 font-size: 14px;
             }
-        }
 
-        
+            /* 호버메뉴 */
+            .depth2 {
+                position: absolute;
+                top: 34px;
+                right: 0;
+                left: 0;
+                min-height: 235px;
+                padding: 10px 0 30px;
+                background: #fff;
+                color: #000;
+                /* transform: scaleY(0); */
+                transform-origin: 0 0;
+                /* z-index: -1;
+                opacity: 0; */
+
+                a {
+                    color: #666;
+                    white-space: nowrap;
+                    font-size: 13px;
+                    font-weight: 300;
+                    padding-left: 0;
+                }
+            }
+
+            ul[class^="depth2-menu-list"] {
+                display: inline-flex;
+                flex-flow: column wrap;
+                min-height: 224px;
+                max-height: 340px;
+            }
+
+            .depth2-inner {
+                display: flex;
+                width: 100%;
+                min-width: 1280px;
+                max-width: 1920px;
+                margin: 0 auto;
+                padding: 0 80px;
+            }
+        }
     }
-    .gnb-etc {
-            float: right;
-        }
 
-        .gnb-etc li {
+    .gnb-etc {
+        float: right;
+
+        li {
             float: left;
             margin-left: 15px;
 
@@ -159,6 +198,9 @@ export const Header = styled.div`
                 font-weight: 600;
             }
         }
+    }
+`;
 
+export const Category = styled.div`
 
 `;

@@ -144,6 +144,7 @@ export const GnbMenu = styled.div`
         /* 호버메뉴 */
         .depth2 {
             display: none;
+            /* 일시적으로감춤 */
 
             position: absolute;
             top: 34px;

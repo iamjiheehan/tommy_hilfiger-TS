@@ -24,6 +24,17 @@ export const Header = styled.div`
         background: #000;
     }
 
+    .search {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        text-align: center;
+    }
+
     .inner .wrap {
         min-width: 1280px;
         max-width: 1920px;
@@ -112,6 +123,7 @@ export const Header = styled.div`
         max-width: 750px;
 
         .gnb-category {
+            float: left;
             margin-left: -15px;
 
             a {
@@ -122,15 +134,31 @@ export const Header = styled.div`
                 font-size: 14px;
                 font-weight: 600;
             }
+
+            a span {
+                display: block;
+                height: 26px;
+                font-size: 14px;
+            }
         }
 
-        .gnb-etc {
+        
+    }
+    .gnb-etc {
             float: right;
         }
 
         .gnb-etc li {
             float: left;
             margin-left: 15px;
+
+            a {
+                min-height: 34px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 600;
+            }
         }
-    }
+
+
 `;

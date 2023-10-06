@@ -16,14 +16,14 @@ function SubHeader() {
                             <span><a href="#!">마이페이지</a></span>
                             <span><a href="#!">장바구니</a></span>
                         </nav>
-                        <div>
+                        {/* <div>
                             <div className="btns">
                                 <a href="/">홈</a>
                                 <button type="button" className="btn-menu"></button>
                             </div>
                             <h2 className="logo">
                             </h2>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="search">
                         <div className="inner">
@@ -55,7 +55,8 @@ function SubHeader() {
                         </div>
                         <button type="button" className="btn-close">닫기</button>
                     </div>
-                    {/* <nav id="gnb">
+                    <div className='clear'></div>
+                    <nav id="gnb">
                         <div className="wrap">
                             <div className="gnb-menu">
                                 <div className="gnb-category">
@@ -506,7 +507,7 @@ function SubHeader() {
                                 </li>
                             </ul>
                         </div>
-                    </nav> */}
+                    </nav>
                 </div>
             </Styles.Header>
         </>

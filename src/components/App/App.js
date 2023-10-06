@@ -6,7 +6,7 @@ import Product from '../../pages/Product'
 
 import { GlobalStyle } from '../../GlobalStyle';
 import { ThemeProvider } from 'styled-components';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

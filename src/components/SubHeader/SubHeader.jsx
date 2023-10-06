@@ -3,34 +3,6 @@ import React, { useEffect, useState } from 'react';
 import * as Styles from '../SubHeader/SubHeaderStyle'
 
 function SubHeader() {
-    const [target, setTarget] = useState(false);
-
-    const handleMouseEnter = () => {
-        setTarget(true);
-        console.log("마우스 올라감");
-        console.log("마우스 내려감",targetBtn.index, targetBtn.length);
-
-    };
-
-    const handleMouseLeave = () => {
-        setTarget(false);
-        console.log("마우스 내려감",targetBtn.index, targetBtn.length);
-    };
-
-    const targetBox = document.querySelectorAll('.depth2');
-    const targetBtn = document.querySelectorAll('.gnb-category > a');
-
-    const targetBoxArr = Array.from(targetBox);
-    const targetBtnArr = Array.from(targetBtn);
-
-    const addIndex = (el, index)=>{
-        targetBoxArr.setAttribute('data-index', index);
-        targetBtnArr.setAttribute('data-index', index);
-    };
-
-    useEffect (()=>{
-        addIndex();
-    })
 
     return (
         <>
@@ -89,11 +61,11 @@ function SubHeader() {
                         <div className="wrap">
                             <Styles.GnbMenu className="gnb-menu">
                                 <div className="gnb-category">
-                                    <a href="#!" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                                    <a href="#!">
                                         <span>
                                             여성</span>
                                     </a>
-                                    <div className={`depth2 ${target ? "active" : ""}`}>
+                                    <div className="depth2">
                                         <div className="depth2-inner">
                                             <ul className="depth2-menu">
                                                 <li>
@@ -174,7 +146,7 @@ function SubHeader() {
                                     </div>
                                 </div>
                                 <div className="gnb-category">
-                                    <a href="#!" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                                    <a href="#!">
                                         <span>남성</span>
                                     </a>
                                     <div className="depth2 ">

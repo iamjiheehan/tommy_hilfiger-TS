@@ -118,89 +118,85 @@ export const Header = styled.div`
         position: relative;
         color: #fff;
     }
+`;
 
-    .gnb-menu {
+export const GnbMenu = styled.div`
+    float: left;
+    max-width: 750px;
+
+    .gnb-category {
         float: left;
-        max-width: 750px;
+        margin-left: -15px;
 
-        .gnb-category {
-            float: left;
-            margin-left: -15px;
+        a {
+            display: block;
+            min-height: 34px;
+            padding: 0 15px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+        }
 
-            a {
-                display: block;
-                min-height: 34px;
-                padding: 0 15px;
-                color: #ffffff;
-                font-size: 14px;
-                font-weight: 600;
-            }
+        a span {
+            display: block;
+            height: 26px;
+            font-size: 14px;
+        }
 
-            a span {
-                display: block;
-                height: 26px;
-                font-size: 14px;
-            }
-
-            /* 호버메뉴 */
-            .depth2 {
-                position: absolute;
-                top: 34px;
-                right: 0;
-                left: 0;
-                min-height: 235px;
-                padding: 10px 0 30px;
-                background: #fff;
-                color: #000;
-                /* transform: scaleY(0); */
-                transform-origin: 0 0;
-                /* z-index: -1;
+        /* 호버메뉴 */
+        .depth2 {
+            position: absolute;
+            top: 34px;
+            right: 0;
+            left: 0;
+            min-height: 235px;
+            padding: 10px 0 30px;
+            background: #fff;
+            color: #000;
+            /* transform: scaleY(0); */
+            transform-origin: 0 0;
+            /* z-index: -1;
                 opacity: 0; */
 
-                a {
-                    color: #666;
-                    white-space: nowrap;
-                    font-size: 13px;
-                    font-weight: 300;
-                    padding-left: 0;
-                }
-            }
-
-            ul[class^="depth2-menu-list"] {
-                display: inline-flex;
-                flex-flow: column wrap;
-                min-height: 224px;
-                max-height: 340px;
-            }
-
-            .depth2-inner {
-                display: flex;
-                width: 100%;
-                min-width: 1280px;
-                max-width: 1920px;
-                margin: 0 auto;
-                padding: 0 80px;
+            a {
+                color: #666;
+                white-space: nowrap;
+                font-size: 13px;
+                font-weight: 300;
+                padding-left: 0;
             }
         }
-    }
 
-    .gnb-etc {
-        float: right;
+        ul[class^="depth2-menu-list"] {
+            display: inline-flex;
+            flex-flow: column wrap;
+            min-height: 224px;
+            max-height: 340px;
+        }
 
-        li {
-            float: left;
-            margin-left: 15px;
-
-            a {
-                min-height: 34px;
-                color: #ffffff;
-                font-size: 14px;
-                font-weight: 600;
-            }
+        .depth2-inner {
+            display: flex;
+            width: 100%;
+            min-width: 1280px;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 80px;
         }
     }
 `;
 
-export const Category = styled.div`
+export const GnbEtc = styled.div`
+    float: right;
 
+    li {
+        float: left;
+        margin-left: 15px;
+
+        a {
+            min-height: 34px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 `;

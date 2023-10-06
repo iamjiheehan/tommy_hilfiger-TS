@@ -14,7 +14,7 @@ function App() {
       <ThemeProvider theme={{ fontFamily: 'Helvetica Neue' }}>
         <React.Fragment>
           <GlobalStyle />
-            <div classNameName="App"></div>
+            <div className="App"></div>
         </React.Fragment>
       </ThemeProvider>
       <Routes>

@@ -56,9 +56,9 @@ function SubHeader() {
                         <button type="button" className="btn-close">닫기</button>
                     </div>
                     <div className='clear'></div>
-                    <nav id="gnb">
+                    <div id="gnb">
                         <div className="wrap">
-                            <div className="gnb-menu">
+                            <Styles.GnbMenu className="gnb-menu">
                                 <div className="gnb-category">
                                     <a href="#!">
                                         <span>
@@ -471,8 +471,8 @@ function SubHeader() {
                                     <a href="#!">
                                         편집샵</a>
                                 </div>
-                            </div>
-                            <ul className="gnb-etc">
+                            </Styles.GnbMenu>
+                            <Styles.GnbEtc className="gnb-etc">
                                 <li>
                                     <a href="#!">
                                         브랜드</a>
@@ -505,9 +505,9 @@ function SubHeader() {
                                     <a href="#!">
                                         리뷰플러스</a>
                                 </li>
-                            </ul>
+                            </Styles.GnbEtc>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </Styles.Header>
         </>

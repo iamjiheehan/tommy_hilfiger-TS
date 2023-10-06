@@ -10,11 +10,11 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <BrowserRouter>
-        <React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
             <App />
-        </React.StrictMode>
-    </BrowserRouter>
+        </BrowserRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
@@ -22,5 +22,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
-//https://velog.io/@cobocho/React-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-React-Router%EB%A1%9C-%EB%8B%A4%EC%A4%91-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-
+// https://velog.io/@reasonz/2022.07.14-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EC%A4%91%EC%B2%A9-%EB%9D%BC%EC%9A%B0%ED%8C%85-nested-routes-outlet

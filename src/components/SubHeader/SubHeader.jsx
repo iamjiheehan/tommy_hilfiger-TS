@@ -6,7 +6,7 @@ function SubHeader() {
 
     return (
         <>
-            <Styles.Header>
+            <Styles.Header id='subheader'>
                 <div className="inner">
                     <div className="wrap">
                         <h1 className="logo"><a href="/main">H FASHION</a></h1>
@@ -25,6 +25,7 @@ function SubHeader() {
                             <h2 className="logo">
                             </h2>
                         </div> */}
+                        <div className='clear'></div>
                     </div>
                     <div className="search">
                         <div className="inner">
@@ -56,7 +57,7 @@ function SubHeader() {
                         </div>
                         <button type="button" className="btn-close">닫기</button>
                     </div>
-                    <div className='clear'></div>
+                    {/* <div className='clear'></div> */}
                     <div id="gnb">
                         <div className="wrap">
                             <Styles.GnbMenu className="gnb-menu">
@@ -508,8 +509,8 @@ function SubHeader() {
                         </div>
                     </div>
                 </div>
+                <div className='clear'></div>
             </Styles.Header>
-            <div className='clear'></div>
         </>
     );
 }

@@ -5,9 +5,8 @@ import searchBtn from "../../assets/images/btn_search_head.png";
 
 export const Header = styled.div`
     display: block;
-
+    position: relative;
     list-style: none;
-
     .search {
         display: none;
     }
@@ -37,6 +36,8 @@ export const Header = styled.div`
         max-width: 1920px;
         padding: 0 80px;
         margin: 0 auto;
+
+        display: block;
     }
     .inner .wrap .btns a {
         font-size: 0;

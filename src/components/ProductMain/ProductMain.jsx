@@ -6,14 +6,15 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 export default function ProductMain() {
     return (
         <>
-            <Styles.Container>
+            <Styles.Container id='productMain'>
+                {/* <h3>야</h3>
                 <Breadcrumb>
                     <Breadcrumb.Item href="#!" className='bread-item'>Home</Breadcrumb.Item>
                     <Breadcrumb.Item href="#!">
                         Library
                     </Breadcrumb.Item>
                     <Breadcrumb.Item active>Data</Breadcrumb.Item>
-                </Breadcrumb>
+                </Breadcrumb> */}
                 <h3>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias magni repellat illo, veniam dolorum quia facilis labore nulla eius assumenda tempore saepe eligendi voluptatum soluta cupiditate nisi sunt quidem mollitia!
                 </h3>

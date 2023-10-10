@@ -82,8 +82,62 @@ export default function ProductMain() {
                                     <p class="txt">
                                         ARMY GREEN</p>
                                 </div>
+                                <div className="row size">
+                                    <div className="select">
+                                        <button type="button" className="sel-btn">사이즈를 선택하세요. <span class="val"></span></button>
+                                        <div className="sel-list">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            S</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            M</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            L</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            XL</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            XXL
+                                                            (2XL)
+                                                        </span>
+                                                        <span class="soldout">(품절)</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-size" ><span>사이즈 가이드</span></button>
+                                    <div class="guide">
+                                        <span class="sizeRecommandArea">
+                                            <button type="button"></button>
+                                        </span>
+                                    </div>
+                                </div>
                             </Styles.ViewOption>
-                            <div className="info-bot"></div>
+                            <div className="info-bot">
+                            </div>
                         </Styles.TopRight>
                     </div>
                     <div className="view-list"></div>

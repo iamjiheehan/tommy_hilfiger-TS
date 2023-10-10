@@ -5,6 +5,7 @@ import linkarrow from "../../assets/images/icon_link_arrow2.png";
 import like from "../../assets/images/btn_like_sub.png";
 import share from "../../assets/images/icon-share-sub.png";
 import colorChip from "../../assets/images/colorChip-sub.jpg";
+import select from "../../assets/images/select.png";
 
 export const Container = styled.div`
     background-color: #fff;
@@ -14,7 +15,11 @@ export const Container = styled.div`
     padding: 140px 80px 160px;
     margin: 0 auto;
 
-    input[type=radio], input[type=checkbox], input[type=submit], input[type=tel], input[type=number] {
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="submit"],
+    input[type="tel"],
+    input[type="number"] {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -76,7 +81,6 @@ export const Container = styled.div`
         vertical-align: top;
     }
 
-
     .view-top {
         position: relative;
         display: table;
@@ -107,7 +111,7 @@ export const TopRight = styled.div`
     background: #fff;
 
     span {
-        font-size:inherit;
+        font-size: inherit;
     }
 
     .item-brand {
@@ -146,7 +150,7 @@ export const TopRight = styled.div`
         height: 21px;
         background: url(${like}) no-repeat;
         opacity: 0.3;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
     }
     .btn-share {
         font-size: 0;
@@ -154,7 +158,6 @@ export const TopRight = styled.div`
         height: 19px;
         background: url(${share}) no-repeat;
     }
-
 
     .item-tag {
         margin-bottom: 10px;
@@ -245,45 +248,47 @@ export const ViewOption = styled.div`
     }
 
     span {
-        font-size:inherit;
+        font-size: inherit;
     }
 
     .color {
         position: relative;
         margin-top: -10px;
         padding-right: 115px;
-    }   
-    .color .txt {
-        position: absolute;
-        top: 18px;
-        right: 0;
-        font-size: 13px;
-        color: #000;
+
+        .txt {
+            position: absolute;
+            top: 18px;
+            right: 0;
+            font-size: 13px;
+            color: #000;
+        }
     }
 
-    .color-check  {
+    .color-check {
         position: relative;
         display: inline-block;
         cursor: pointer;
+
+        .etc {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding-top: 16px;
+            border-radius: 50%;
+            font-family: "돋움", "noto";
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+            line-height: 0;
+
+            margin: 10px 8px 0 0;
+        }
     }
 
-    .color-check .etc {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding-top: 16px;
-        border-radius: 50%;
-        font-family: '돋움', 'noto';
-        font-size: 11px;
-        color: #666;
-        text-align: center;
-        line-height: 0;
-
-        margin: 10px 8px 0 0;
-    }
 
     .color-check .pdImage {
         width: 30px;
@@ -318,5 +323,91 @@ export const ViewOption = styled.div`
         left: 0;
         border-radius: 50%;
         z-index: 2;
+    }
+
+    /* 사이즈 선택 구간 */
+
+    .size {
+        position: relative;
+        padding-right: 115px;
+    }
+
+    .select {
+        width: 100%;
+        font-size: 14px;
+
+        position: relative;
+        display: inline-block;
+        
+        .sel-btn {
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            padding: 0 30px 0 0;
+            line-height: 38px;
+            font-size: 14px;
+            color: #ccc;
+            background: url(${select}) no-repeat 100% 50%;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        li ~ li {
+            margin-top: 15px;
+        }
+    }
+
+    .select .sel-list {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        min-width: 100%;
+        background: #fff;
+        border: 1px solid #666;
+        transform-origin: 100% 0;
+        z-index: -1;
+        white-space: nowrap;
+
+        opacity: 0;
+
+        ul {
+            padding: 25px;
+        }
+
+        label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+
+            span {
+                color: #666;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .btn-size {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        height: 26px;
+        line-height: 24px;
+        color: #000 !important;
+        background: #eee;
+
+        min-width: 90px;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 28px;
+        font-size: 12px;
+        border-radius: 2px;
     }
 `;

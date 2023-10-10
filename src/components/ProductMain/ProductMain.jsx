@@ -368,6 +368,63 @@ export default function ProductMain() {
                                         </div>
                                     </div>
                                 </Styles.DetailReview>
+                                <Styles.DetailReview id="tabContentReview">
+                                    <h3 className="sec-title">배송/교환/반품</h3>
+                                    <div className="review-list">
+                                    <table>
+                                        <caption>배송/교환/반품</caption>
+                                        <colgroup><col style={{ width: "180px", textAlign: "left" }} /></colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">제품 주소재</th>
+                                                <td>
+                                                    겉감<br />안감: 나일론 100%
+                                                    <br />충전재: 오리털 70% 깃털 30%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">색상</th>
+                                                <td>ARMY GREEN</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">치수</th>
+                                                <td>
+                                                    L/ 가슴둘레:130cm, 어깨단면:48cm, 소매기장:69cm, 소매폭:15cm, 소매통:26cm, 총장:75cm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">제조자</th>
+                                                <td>TOMMY HILFIGER</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수입자/병행수입</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">제조국</th>
+                                                <td>중국</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">세탁방법 및 취급시 주의사항</th>
+                                                <td>
+                                                    - 뒤집어서 세탁 후 건조시키십시오.<br />
+                                                    - 여밈을 모두 잠그고 세탁하십시오.<br />
+                                                    - 깨끗한 테니스 공 3개를 건조 사이클에 넣으십시오.<br /></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">제조연월</th>
+                                                <td>2023.07</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">품질보증기준</th>
+                                                <td>관련법 및 소비자분쟁해결 규정에 따름</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A/S 책임자,전화번호</th>
+                                                <td>
+                                                    (주)한섬,18005700</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </Styles.DetailReview>
                             </Styles.DetailTable>
                         </div>
                         <div className="detail-option"></div>

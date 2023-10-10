@@ -122,29 +122,121 @@ export default function ProductMain() {
                                                             XXL
                                                             (2XL)
                                                         </span>
-                                                        <span class="soldout">(품절)</span>
+                                                        <span className="soldout">(품절)</span>
                                                     </label>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn-size" ><span>사이즈 가이드</span></button>
-                                    <div class="guide">
-                                        <span class="sizeRecommandArea">
+                                    <button type="button" className="btn-size" ><span>사이즈 가이드</span></button>
+                                    <div className="guide">
+                                        <span className="sizeRecommandArea">
                                             <button type="button"></button>
                                         </span>
                                     </div>
                                 </div>
+                                <div className="btn-box">
+                                    <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                        <span>장바구니</span>
+                                    </button>
+                                    <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                        <span>
+                                            <input type="hidden" />
+                                            바로구매
+                                        </span>
+                                    </button>
+                                </div>
                             </Styles.ViewOption>
-                            <div className="info-bot">
-                            </div>
+                            <Styles.InfoBot className="info-bot">
+                                <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
+                                <ul className='list'>
+                                    <li className='row'>
+                                        <span className="title">배송비</span>
+                                        <span>30,000이상 구매시 무료(도서산간추가 3000원)</span>
+                                    </li>
+                                    <li className='row'>
+                                        <span className="title">한섬마일리지</span>
+                                        <span>최대 6% 적립</span>
+                                    </li>
+                                    <li className='row'>
+                                        <span className="title">H포인트</span>
+                                        <span>0.1% 적립</span>
+                                    </li>
+                                </ul>
+                            </Styles.InfoBot>
                         </Styles.TopRight>
                     </div>
-                    <div className="view-list"></div>
-                    <div className="view-detail">
-                        <div className="detail-tab"></div>
+                    {/* 추천 아이템 리스트 */}
+                    <Styles.ViewList className="view-list">
+                        <div className="tab-wrap">
+                            <button type="button" className='on'><span>모델 착용 상품</span></button>
+                            <button type="button"><span>이 상품을 본 고객이 구매한 상품</span></button>
+                        </div>
+                        <div className="tab-content">
+                            <div className="swiper-container product-list">
+                                <ul className="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <figure class="item-box">
+                                            <div class="item-img">
+                                                <div class="img-box">
+                                                    <a href="#!">
+                                                        <img src="https://cdn.hfashionmall.com/goods/THBR/23/07/18/GM0123071817764_1_ORGINL_1689666172845.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레이트핏 단톤 블랙 데님 팬츠" />
+                                                    </a>
+                                                </div>
+                                                <button type="button" class="btn-like">
+                                                    <span>좋아요</span>
+                                                </button>
+                                            </div>
+                                            <figcaption class="item-info">
+                                                <a href="#!">
+                                                    <div class="item-brand">TOMMY HILFIGER MEN</div>
+                                                    <div class="item-name">스트레이트핏 단톤 블랙 데님 팬츠</div>
+                                                    <div class="item-price">
+                                                        <span class="price">199,000</span>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <figure class="item-box">
+                                            <div class="item-img">
+                                                <div class="img-box">
+                                                    <a href="#!">
+                                                        <img src="https://cdn.hfashionmall.com/goods/THBR/23/07/18/GM0123071817764_1_ORGINL_1689666172845.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레이트핏 단톤 블랙 데님 팬츠" />
+                                                    </a>
+                                                </div>
+                                                <button type="button" class="btn-like">
+                                                    <span>좋아요</span>
+                                                </button>
+                                            </div>
+                                            <figcaption class="item-info">
+                                                <a href="#!">
+                                                    <div class="item-brand">TOMMY HILFIGER MEN</div>
+                                                    <div class="item-name">스트레이트핏 단톤 블랙 데님 팬츠</div>
+                                                    <div class="item-price">
+                                                        <span class="price">199,000</span>
+                                                    </div>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Styles.ViewList>
+                    <Styles.ViewDetails className="view-detail">
+                        <div className="detail-tab">
+                            <ul class="tabs" style={{width:"870px"}}>
+                                <li class="on"><button type="button"><span>상품상세정보</span></button></li>
+                                <li class=""><button type="button"><span>리뷰(0)</span></button></li>
+                                <li class=""><button type="button"><span>상품 QnA(0)</span></button></li>
+                            </ul>
+                            {/* 상품 상세 정보 */}
+                            
+                        </div>
                         <div className="detail-option"></div>
-                    </div>
+                    </Styles.ViewDetails>
                 </div>
             </Styles.Container>
         </>

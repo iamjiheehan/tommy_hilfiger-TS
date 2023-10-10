@@ -592,6 +592,17 @@ export const ViewDetails = styled.div`
     margin-top: 80px;
     padding-right: 336px;
 
+    span {
+        font-size: inherit !important;
+    }
+
+    .sec-title {
+        margin: 80px 0 20px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
     .detail-tab {
         position: relative;
         margin-top: -1px;
@@ -660,4 +671,233 @@ export const ViewDetails = styled.div`
             }
         }
     }
+`;
+
+export const DetailInfo = styled.section`
+    padding-top: 130px;
+    padding-bottom: 45px;
+    display: block;
+
+    p, span {
+        font-size: inherit !important;
+    }
+
+    .hidden {
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+        width: 1px;
+        height: 1px;
+    }
+    .info-wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info-text {
+        position: relative;
+        width: 1000px;
+        margin-bottom: 40px;
+        padding: 38px 40px 38px 204px;
+        background-color: #f6f6f6;
+        line-height: 24px;
+        font-family:sans-serif;
+        font-size: 14px !important;
+    }
+
+    .info-text::before {
+        content: "md's comment";
+        text-transform: uppercase;
+        position: absolute;
+        top: 30px;
+        left: -8px;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 20px;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .info-text::after {
+        content: "";
+        position: absolute;
+        top: 76px;
+        left: -8px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 8px 0;
+        border-color: transparent #333 transparent transparent;
+    }
+
+    .html-wrap {
+        font-size: 14px !important;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.6;
+        word-break: break-all;
+    }
+
+`;
+
+export const DetailTable = styled.div`
+    /* 상품고시정보 */
+
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    table th {
+        font-weight: 400;
+        color: #666;
+
+    }
+
+    table td {
+        color: #666;
+    }
+
+    colgroup {
+        display: table-column-group;
+    }
+
+    .detail-table {
+        padding: 20px 20px 0;
+        border-top: 1px solid #000;
+    }
+
+    .detail-table th, .detail-table td{
+        padding: 8px 0;
+        text-align: left !important;
+        font-size: 14px;
+        line-height: 24px;
+        vertical-align: top;
+    }
+
+`;
+
+
+export const DetailReview = styled.section`
+    .review-list {
+        position: relative;
+        margin-top: 30px;
+        padding-right: 10px;
+    }
+
+    .review-list .head {
+        position: relative;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .review-list .head .txt {
+        margin: 10px 0 0;
+        font-size: 13px;
+        color: #666;
+        text-align: left;
+        line-height: 14px;
+    }
+
+    .head .option {
+        float: left;
+        margin-top: 20px;
+    }
+
+    .head .option + .option {
+        float: right;
+        font-size: 0;
+    }
+
+    .head .option + .option [class*="btn-"] {
+        margin-left: 6px;
+    }
+    
+    .head [class*="btn-"] {
+        vertical-align: middle;
+        margin-left: 4px;
+    }
+
+    .head:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .select {
+        position: relative;
+        display: inline-block;
+        width: auto;
+    }
+
+    .select .sel-list {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        min-width: 100%;
+        background: #fff;
+        border: 1px solid #666;
+        transform-origin: 100% 0;
+        z-index: -1;
+        opacity: 0;
+        white-space: nowrap;
+    }
+
+
+
+    button {
+        min-width: 90px;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 28px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+
+    .btn-beige {
+        color: #000 !important;
+        background: #eee8dc;
+    }
+
+    .btn-black {
+        color: #fff !important;
+        background: #333;
+    }
+
+    .select .sel-btn {
+        width: auto;
+        max-width: 100%;
+        color: #ccc;
+
+        height: 30px;
+        /* margin-left: 10px; */
+        padding: 0 40px 0 0;
+        line-height: 30px;
+        border: 0;
+        font-size: 14px;
+        vertical-align: middle;
+        background: url(${select}) no-repeat 100% 50%;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    .nodata {
+        padding: 100px 0;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+
+        line-height: 1.5;
+
+        font-size: 14px;
+    }
+
 `;

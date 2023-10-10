@@ -25,9 +25,17 @@ export default function ProductMain() {
                             다운/패딩</li>
                     </ol>
                 </div>
-                <h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias magni repellat illo, veniam dolorum quia facilis labore nulla eius assumenda tempore saepe eligendi voluptatum soluta cupiditate nisi sunt quidem mollitia!
-                </h3>
+                <div className="resposive-wrap">
+                    <div className="view-top">
+                        <div className="top-left"></div>
+                        <div className="top-right"></div>
+                    </div>
+                    <div className="view-list"></div>
+                    <div className="view-detail">
+                        <div className="detail-tab"></div>
+                        <div className="detail-option"></div>
+                    </div>
+                </div>
             </Styles.Container>
         </>
     )

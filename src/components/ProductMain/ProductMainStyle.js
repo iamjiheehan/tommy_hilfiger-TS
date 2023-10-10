@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import breadcrumb from "../../assets/images/icon_breadcrumb.png"
-
+import breadcrumb from "../../assets/images/icon_breadcrumb.png";
 
 export const Container = styled.div`
     background-color: #fff;
@@ -32,14 +31,13 @@ export const Container = styled.div`
     }
 
     .breadcrumb-wrap .breadcrumb li {
-list-style: none;
+        list-style: none;
 
         position: relative;
-    min-height: 14px;
-    color: #999;
-    font-size: 13px;
-    font-weight: 300;
-
+        min-height: 14px;
+        color: #999;
+        font-size: 13px;
+        font-weight: 300;
     }
     .breadcrumb-wrap .breadcrumb li.active {
         color: #000 !important;
@@ -50,18 +48,17 @@ list-style: none;
     }
 
     .breadcrumb-wrap .breadcrumb li + li:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 5px;
-    height: 9px;
-    background: url(${breadcrumb}) no-repeat 0 0;
-    vertical-align: top;
-}
-    
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 5px;
+        height: 9px;
+        background: url(${breadcrumb}) no-repeat 0 0;
+        vertical-align: top;
+    }
+
     h3 {
-        font-size: 50px;
     }
 `;

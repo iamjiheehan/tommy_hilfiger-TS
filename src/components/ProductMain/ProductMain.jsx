@@ -73,7 +73,15 @@ export default function ProductMain() {
                                 </p>
                             </div>
                             <Styles.ViewOption className="view-option">
-                                
+                                <div className="row color">
+                                    <label className="color-check">
+                                        <input type="radio" />
+                                        <span className="pdImage">
+                                            ARMY GREEN</span>
+                                    </label>
+                                    <p class="txt">
+                                        ARMY GREEN</p>
+                                </div>
                             </Styles.ViewOption>
                             <div className="info-bot"></div>
                         </Styles.TopRight>

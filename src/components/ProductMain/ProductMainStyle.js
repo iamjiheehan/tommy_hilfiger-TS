@@ -4,6 +4,7 @@ import breadcrumb from "../../assets/images/icon_breadcrumb.png";
 import linkarrow from "../../assets/images/icon_link_arrow2.png";
 import like from "../../assets/images/btn_like_sub.png";
 import share from "../../assets/images/icon-share-sub.png";
+import colorChip from "../../assets/images/colorChip-sub.jpg";
 
 export const Container = styled.div`
     background-color: #fff;
@@ -13,7 +14,17 @@ export const Container = styled.div`
     padding: 140px 80px 160px;
     margin: 0 auto;
 
-
+    input[type=radio], input[type=checkbox], input[type=submit], input[type=tel], input[type=number] {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: "pre", "돋움", Dotum, arial, sans-serif;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        vertical-align: top;
+        outline: none;
+    }
 
     a {
         color: inherit;
@@ -229,10 +240,83 @@ export const ViewOption = styled.div`
     padding-top: 40px;
     border-top: 1px solid #eee;
 
+    .row ~ .row {
+        margin-top: 10px;
+    }
+
+    span {
+        font-size:inherit;
+    }
+
     .color {
         position: relative;
         margin-top: -10px;
         padding-right: 115px;
-}
+    }   
+    .color .txt {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        font-size: 13px;
+        color: #000;
+    }
 
+    .color-check  {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .color-check .etc {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 16px;
+        border-radius: 50%;
+        font-family: '돋움', 'noto';
+        font-size: 11px;
+        color: #666;
+        text-align: center;
+        line-height: 0;
+
+        margin: 10px 8px 0 0;
+    }
+
+    .color-check .pdImage {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+
+        display: inline-block;
+        font-size: 0;
+        background-size: contain;
+
+        background: rgba(0, 0, 0, 0.2) url(${colorChip}) no-repeat 50% 50%;
+    }
+
+    input .pdImage ::before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    input .pdImage ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        z-index: 2;
+    }
 `;

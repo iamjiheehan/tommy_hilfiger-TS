@@ -29,6 +29,18 @@ export default function ProductMain() {
         setTab(index);
     }
 
+    //탭 클릭시 스크롤 이동
+    const btnArr = document.querySelectorAll('button[id^="tab"]');
+    
+    for(let i = 0; i < btnArr.length; i++){
+    
+        btnArr[i].addEventListener('click',function(e){
+            e.preventDefault();
+            document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
+        });
+    
+    }
+
     return (
         <>
             <Styles.Container id='productMain'>

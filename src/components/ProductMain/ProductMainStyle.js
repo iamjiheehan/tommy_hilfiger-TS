@@ -955,6 +955,8 @@ export const DetailOption = styled.div`
         padding: 67px 0 0 40px;
 
         background-color: tomato;
+
+        position: sticky;
     }
 
     .sticky {

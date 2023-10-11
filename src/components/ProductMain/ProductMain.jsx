@@ -253,13 +253,12 @@ export default function ProductMain() {
                     <Styles.ViewDetails className="view-detail">
                         <div className="detail-tab">
                             <ul className="tabs">
-                                <li className={tab === 0 ? "on" : ""}><button type="button" onClick={() => ActiveTab(0)}><span>상품상세정보</span></button></li>
-                                <li className={tab === 1 ? "on" : ""}><button type="button" onClick={() => ActiveTab(1)}><span>리뷰(0)</span></button></li>
-                                <li className={tab === 2 ? "on" : ""}><button type="button" onClick={() => ActiveTab(2)}><span>상품 QnA(0)</span></button></li>
-
+                                <li className={tab === 0 ? "on" : ""}><button type="button" id='tab1' onClick={() => ActiveTab(0)}><span>상품상세정보</span></button></li>
+                                <li className={tab === 1 ? "on" : ""}><button type="button" id='tab2' onClick={() => ActiveTab(1)}><span>리뷰(0)</span></button></li>
+                                <li className={tab === 2 ? "on" : ""}><button type="button" id='tab3' onClick={() => ActiveTab(2)}><span>상품 QnA(0)</span></button></li>
                             </ul>
                             {/* 상품 상세 정보 */}
-                            <Styles.DetailInfo className='detail-info'>
+                            <Styles.DetailInfo className='detail-info tab1'>
                                 <h3 className='hidden'>상품상세정보</h3>
                                 <div className="info-wrap">
                                     <div className="info-text">
@@ -329,7 +328,7 @@ export default function ProductMain() {
                                         </tbody>
                                     </table>
                                 </div>
-                                <Styles.DetailReview id="tabContentReview">
+                                <Styles.DetailReview id="tabContentReview" className='tab2'>
                                     <h3 className="sec-title">리뷰</h3>
                                     <div className="review-list">
                                         <div className="head">
@@ -391,6 +390,18 @@ export default function ProductMain() {
                                         <div id="reviewNodata" className="nodata">
                                             지금 첫 리뷰를 작성해주세요.<br />
                                             포토리뷰 1,000포인트, 텍스트 리뷰 300포인트를 증정합니다. (상품구매시)
+                                        </div>
+                                    </div>
+                                </Styles.DetailReview>
+                                <Styles.DetailReview id="tabContentQna" className='tab3'>
+                                    <h3 className="sec-title">상품 Q&A</h3>
+                                    <div className="review-list">
+                                        <div className="head">
+                                            <p className="txt" style={{ float : "left" }}>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="#!"> 고객센터 1:1문의</a>를 이용하여 주시기 바랍니다.</p>
+                                            <button type="button" className="btn-black"><span>리뷰작성</span></button>
+                                        </div>
+                                        <div id="reviewNodata" className="nodata">
+                                            등록된 상품문의가 없습니다.
                                         </div>
                                     </div>
                                 </Styles.DetailReview>

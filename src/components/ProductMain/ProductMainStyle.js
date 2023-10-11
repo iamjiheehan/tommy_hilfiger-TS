@@ -806,7 +806,6 @@ export const DetailTable = styled.div`
 
 `;
 
-
 export const DetailReview = styled.section`
     .review-list {
         position: relative;
@@ -925,4 +924,8 @@ export const DetailReview = styled.section`
     }
 
 .txt-list {}
+`;
+
+export const DetailOption = styled.div`
+
 `;

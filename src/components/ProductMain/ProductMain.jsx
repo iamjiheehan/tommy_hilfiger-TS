@@ -441,7 +441,73 @@ export default function ProductMain() {
                                 </Styles.DetailReview>
                             </Styles.DetailTable>
                         </div>
-                        <div className="detail-option"></div>
+                        <Styles.DetailOption className="detail-option">
+                        <Styles.ViewOption className="view-option">
+                                <div className="row size">
+                                    <div className="select">
+                                        <button type="button" className="sel-btn">사이즈를 선택하세요. <span class="val"></span></button>
+                                        <div className="sel-list">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            S</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            M</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            L</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            XL</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" />
+                                                        <span>
+                                                            XXL
+                                                            (2XL)
+                                                        </span>
+                                                        <span className="soldout">(품절)</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="guide">
+                                        <span className="sizeRecommandArea">
+                                            <button type="button"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="btn-box">
+                                    <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                        <span>장바구니</span>
+                                    </button>
+                                    <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                        <span>
+                                            <input type="hidden" />
+                                            바로구매
+                                        </span>
+                                    </button>
+                                </div>
+                            </Styles.ViewOption>
+                        </Styles.DetailOption>
                     </Styles.ViewDetails>
                 </div>
             </Styles.Container>

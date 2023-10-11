@@ -374,10 +374,10 @@ export const ViewOption = styled.div`
         background: #fff;
         border: 1px solid #666;
         transform-origin: 100% 0;
-        z-index: -1;
+        z-index: 2;
         white-space: nowrap;
 
-        opacity: 0;
+        /* opacity: 0; */
 
         ul {
             padding: 25px;
@@ -941,6 +941,14 @@ export const DetailOption = styled.div`
     height: 100%;
 
     background-color: gold;
+
+    .sticky-wrap {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background-color: blue;
+    }
+
     .view-option {
         width: 336px;
         margin: 0;
@@ -949,7 +957,7 @@ export const DetailOption = styled.div`
         background-color: tomato;
     }
 
-    .view-option.sticky {
+    .sticky {
         position: fixed;
         top: 80px;
     }

@@ -763,6 +763,30 @@ export const DetailTable = styled.div`
         color: #666;
     }
 
+    .txt-list li {
+        position: relative;
+        padding-left: 11px;
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+        word-break: break-all;
+    }
+
+    .txt-list > li + li {
+        margin-top: 7px;
+    }
+
+    .txt-list > li::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: #666;
+    }
+
     colgroup {
         display: table-column-group;
     }
@@ -772,7 +796,7 @@ export const DetailTable = styled.div`
         border-top: 1px solid #000;
     }
 
-    .detail-table th, .detail-table td{
+    .detail-table th, .detail-table td {
         padding: 8px 0;
         text-align: left !important;
         font-size: 14px;
@@ -900,4 +924,5 @@ export const DetailReview = styled.section`
         font-size: 14px;
     }
 
+.txt-list {}
 `;

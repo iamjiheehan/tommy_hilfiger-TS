@@ -325,31 +325,31 @@ export default function ProductMain() {
                                                             <li>
                                                                 <label>
                                                                     <input type="radio" value="S" />
-                                                                        <span>S</span>
+                                                                    <span>S</span>
                                                                 </label>
                                                             </li>
                                                             <li>
                                                                 <label>
                                                                     <input type="radio" value="M" />
-                                                                        <span>M</span>
+                                                                    <span>M</span>
                                                                 </label>
                                                             </li>
                                                             <li>
                                                                 <label>
                                                                     <input type="radio" value="L" />
-                                                                        <span>L</span>
+                                                                    <span>L</span>
                                                                 </label>
                                                             </li>
                                                             <li>
                                                                 <label>
                                                                     <input type="radio" value="XL" />
-                                                                        <span>XL</span>
+                                                                    <span>XL</span>
                                                                 </label>
                                                             </li>
                                                             <li>
                                                                 <label>
                                                                     <input type="radio" value="XXL" />
-                                                                        <span>XXL</span>
+                                                                    <span>XXL</span>
                                                                 </label>
                                                             </li>
                                                         </ul>
@@ -369,60 +369,74 @@ export default function ProductMain() {
                                     </div>
                                 </Styles.DetailReview>
                                 <Styles.DetailReview id="tabContentReview">
-                                    <h3 className="sec-title">배송/교환/반품</h3>
-                                    <div className="review-list">
-                                    <table>
-                                        <caption>배송/교환/반품</caption>
-                                        <colgroup><col style={{ width: "180px", textAlign: "left" }} /></colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">제품 주소재</th>
-                                                <td>
-                                                    겉감<br />안감: 나일론 100%
-                                                    <br />충전재: 오리털 70% 깃털 30%</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">색상</th>
-                                                <td>ARMY GREEN</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">치수</th>
-                                                <td>
-                                                    L/ 가슴둘레:130cm, 어깨단면:48cm, 소매기장:69cm, 소매폭:15cm, 소매통:26cm, 총장:75cm</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">제조자</th>
-                                                <td>TOMMY HILFIGER</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">수입자/병행수입</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">제조국</th>
-                                                <td>중국</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">세탁방법 및 취급시 주의사항</th>
-                                                <td>
-                                                    - 뒤집어서 세탁 후 건조시키십시오.<br />
-                                                    - 여밈을 모두 잠그고 세탁하십시오.<br />
-                                                    - 깨끗한 테니스 공 3개를 건조 사이클에 넣으십시오.<br /></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">제조연월</th>
-                                                <td>2023.07</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">품질보증기준</th>
-                                                <td>관련법 및 소비자분쟁해결 규정에 따름</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">A/S 책임자,전화번호</th>
-                                                <td>
-                                                    (주)한섬,18005700</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <h4 className='sec-title'>배송/교환/반품</h4>
+                                    <div className='detail-table'>
+                                        <table>
+                                            <caption>배송/교환/반품</caption>
+                                            <colgroup><col style={{ width: "180px", textAlign: "left" }} /></colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">배송기간</th>
+                                                    <td>
+                                                        - 상품의 배송비는 공급업체의 정책에 따라 다르오며 공휴일 및 휴일은 배송이 불가합니다.- 상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요기간이 달라집니다.- 동일 브랜드의 상품이라도 상품별 출고일시가 달라 각각 배송될 수 있습니다.- 일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.- 도서 산간 지역은 별도의 배송비와 반품비가 추가될 수 있습니다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">반품배송비</th>
+                                                    <ul class="txt-list">
+                                                        <li>전체 반품 시 : 5,000원</li>
+                                                        <li>부분 반품 시 : 2,500원 (단, 부분 반품 후 결제금액이 3만원 미만인 경우 5,000원)
+                                                            <br /> * 반품비는 브랜드/입점사별로 상이할 수 있습니다.
+                                                            <br /> * 도서산간 지역은 추가 배송비가 부과됩니다.</li>
+                                                    </ul>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">교환배송비</th>
+                                                    <td>
+                                                        <ul class="txt-list">
+                                                            <li>5,000원 (교환상품 배송비 + 2,500원)
+                                                                <br />* 교환배송비는 브랜드/입점사별로 상이할 수 있습니다.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">교환/반품 유의사항</th>
+                                                    <td>
+                                                        - 상품 수령일로부터 7일 이내 반품/환불 가능합니다.
+                                                        <br /> - 상품하자 이외 사이즈, 색상교환 등 단순 변심에 의한 교환/반품 택배비 고객부담으로 왕복택배비가 발생합니다.
+                                                        <br /> - 고객 부주의로 상품이 훼손, 변경된 경우 반품 / 교환이 불가능 합니다.
+                                                        <br /> - 주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.
+                                                        <br /> - 임의반품은 불가하오니 반드시 고객센터나 MY Page&gt; 주문취소/교환/반품 신청을 통해서 신청접수를 하시기 바랍니다.
+                                                        <br /> - 특정브랜드의 상품설명에 별도로 기입된 교환/반품/AS기준이 우선합니다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">교환 안내</th>
+                                                    <td>
+                                                        교환 가능 기간
+                                                        <br /> 교환 신청은 배송 완료 후 7일 내 가능합니다.
+                                                        <br />
+                                                        <br /> 교환 불가 상품
+                                                        <br /> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
+                                                        <br /> 쥬얼리와 언더웨어 상품은 착용 이후 교환 및 반품이 불가합니다.
+                                                        <br /> 맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">반품안내</th>
+                                                    <td>
+                                                        반품 가능 기간
+                                                        <br />반품 신청은 배송 완료 후 7일 내 가능합니다.
+                                                        <br />
+                                                        <br /> 반품 불가 상품
+                                                        <br /> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
+                                                        <br /> 쥬얼리와 언더웨어 상품은 착용 이후, 교환 및 반품이 불가합니다.
+                                                        <br /> 맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
+                                                        <br /> 상품박스, 별도 부속물등이 정상적인 상태에서 반품진행이 원활하게 진행될 수 있습니다.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </Styles.DetailReview>
                             </Styles.DetailTable>

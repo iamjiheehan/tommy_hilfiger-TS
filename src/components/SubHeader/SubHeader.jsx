@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import * as Styles from '../SubHeader/SubHeaderStyle'
 
 function SubHeader() {
+    useEffect(() => {
+        const target = document.querySelector('header');
+
+        const handleScroll = () => {
+            const scrollValue = window.scrollY;
+
+            if (scrollValue >= 77) {
+                target.classList.add('fixed');
+            } else {
+                target.classList.remove('fixed');
+            }
+        };
+
+        // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너를 추가합니다.
+        window.addEventListener('scroll', handleScroll);
+
+        // 컴포넌트가 언마운트될 때 이벤트 리스너를 정리하여 메모리 누수를 방지
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); // Empty dependency array ensures the effect runs only once
+
 
     return (
         <>
             <Styles.Header id='subheader'>
-                <header className='fixed'>
+                <header>
+                    {/* <header className='fixed'> */}
                     <div className="inner">
                         <div className="wrap">
                             <h1 className="logo"><a href="/main">H FASHION</a></h1>
                             <nav className="util">
-                                <button className="btn-search"><span>버튼 ㅋ</span></button>
+                                <button className="btn-search"><span>버튼</span></button>
                                 <span><a href="#!">로그인</a></span>
                                 <span><a href="#!">회원가입</a></span>
                                 <span><a href="#!">마이페이지</a></span>

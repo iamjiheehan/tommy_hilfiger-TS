@@ -17,6 +17,12 @@ export default function ProductMain() {
         setShowSize(!showSize);
     }
 
+    //관련상품탭 활성화 
+    const [listTab, setListTab] = useState(0);
+    function ActiveListTab(index) {
+        setListTab(index);
+    }
+
     //탭 활성화 
     const [tab, setTab] = useState(0);
     function ActiveTab(index) {
@@ -188,8 +194,8 @@ export default function ProductMain() {
                     {/* 추천 아이템 리스트 */}
                     <Styles.ViewList className="view-list">
                         <div className="tab-wrap">
-                            <button type="button" className='on'><span>모델 착용 상품</span></button>
-                            <button type="button"><span>이 상품을 본 고객이 구매한 상품</span></button>
+                            <button type="button" className={listTab === 0 ? "on" : ""} onClick={() => ActiveListTab(0)}><span>모델 착용 상품</span></button>
+                            <button type="button" className={listTab === 1 ? "on" : ""} onClick={() => ActiveListTab(1)}><span>이 상품을 본 고객이 구매한 상품</span></button>
                         </div>
                         <div className="tab-content">
                             <div className="swiper-container product-list">

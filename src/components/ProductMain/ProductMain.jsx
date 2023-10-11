@@ -227,7 +227,7 @@ export default function ProductMain() {
                     </Styles.ViewList>
                     <Styles.ViewDetails className="view-detail">
                         <div className="detail-tab">
-                            <ul class="tabs" style={{ width: "870px" }}>
+                            <ul class="tabs">
                                 <li class="on"><button type="button"><span>상품상세정보</span></button></li>
                                 <li class=""><button type="button"><span>리뷰(0)</span></button></li>
                                 <li class=""><button type="button"><span>상품 QnA(0)</span></button></li>
@@ -443,7 +443,7 @@ export default function ProductMain() {
                         </div>
                         <Styles.DetailOption className="detail-option">
                             <Styles.ViewOption className="view-option sticky">
-                                <div className="row size">
+                                <div className="row size" style={{paddingRight:"0"}}>
                                     <div className="select">
                                         <button type="button" className="sel-btn">사이즈를 선택하세요. <span class="val"></span></button>
                                         <div className="sel-list">

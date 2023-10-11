@@ -606,7 +606,7 @@ export const ViewDetails = styled.div`
     .detail-tab {
         position: relative;
         margin-top: -1px;
-        /* border-right: 1px solid #ddd; */
+        border-right: 1px solid #ddd;
 
         .tabs {
             position: absolute;
@@ -630,6 +630,10 @@ export const ViewDetails = styled.div`
                 flex: 1;
             }
 
+            li.on {
+                margin-bottom: -1px;
+            }
+
             li.on button {
                 font-weight: 700;
                 background: #fff;
@@ -649,14 +653,16 @@ export const ViewDetails = styled.div`
                 border: 1px solid #eee;
                 border-bottom-width: 0;
                 border-color: #ddd;
-                font-weight: 700;
+                font-weight: 300;
                 z-index: 10;
             }
             li + li button{
                 border-left: 0 !important;
             }
 
-            li + li button::before {
+            .tab-wrap2 > .tabs > li + li button::before,
+            .tab-wrap2 > .tabs > li + li a::before
+            {
                 content: '';
                 width: 1px;
                 height: 12px;

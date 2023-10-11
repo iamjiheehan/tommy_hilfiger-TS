@@ -442,7 +442,7 @@ export default function ProductMain() {
                             </Styles.DetailTable>
                         </div>
                         <Styles.DetailOption className="detail-option">
-                        <Styles.ViewOption className="view-option">
+                            <Styles.ViewOption className="view-option sticky">
                                 <div className="row size">
                                     <div className="select">
                                         <button type="button" className="sel-btn">사이즈를 선택하세요. <span class="val"></span></button>

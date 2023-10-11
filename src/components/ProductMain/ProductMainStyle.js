@@ -923,9 +923,28 @@ export const DetailReview = styled.section`
         font-size: 14px;
     }
 
-.txt-list {}
 `;
 
 export const DetailOption = styled.div`
 
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 336px;
+    height: 100%;
+
+    background-color: gold;
+    .view-option {
+        width: 336px;
+        margin: 0;
+        padding: 67px 0 0 40px;
+
+        background-color: tomato;
+    }
+
+    .view-option.sticky {
+        position: fixed;
+        top: 80px;
+    }
 `;

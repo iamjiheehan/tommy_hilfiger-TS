@@ -7,6 +7,21 @@ export const Header = styled.div`
     display: block;
     position: relative;
     list-style: none;
+
+    position: relative;
+
+    .fixed {
+        position: fixed;
+        top: -70px;
+        min-width: 1280px;
+        width: 100%;
+        z-index: 999;
+
+        & .inner {
+            height: 145px !important;
+        }
+    }
+
     .search {
         display: none;
     }

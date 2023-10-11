@@ -4,6 +4,27 @@ import searchImg from "../../assets/images/icon_search_br.svg";
 import arrowIcon from "../../assets/images/ico_arrow_link.svg";
 import btnLike4 from "../../assets/images/btn_like8.png";
 
+export const Header = styled.div`
+    display: block;
+    position: relative;
+    list-style: none;
+height: 100%;
+    background-color: #FFF !important;
+    position: relative;
+
+    .fixed {
+        position: fixed;
+        top: -70px;
+        min-width: 1280px;
+        width: 100%;
+
+        & .header_inner {
+            height: 145px !important;
+        }
+    }
+`;
+
+
 export const Link = styled.a`
     display: inline-block;
     font-size: 13px;

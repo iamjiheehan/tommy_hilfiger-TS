@@ -940,13 +940,10 @@ export const DetailOption = styled.div`
     width: 336px;
     height: 100%;
 
-    background-color: gold;
-
     .sticky-wrap {
         position: relative;
         width: 100%;
-        height: 600px;
-        background-color: blue;
+        height: 100%;
     }
 
     .view-option {
@@ -954,13 +951,7 @@ export const DetailOption = styled.div`
         margin: 0;
         padding: 67px 0 0 40px;
 
-        background-color: tomato;
-
         position: sticky;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 80px;
+        top: 90px;
     }
 `;

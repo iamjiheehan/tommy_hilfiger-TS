@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as Styles from './HeaderStyle';
 // 이미지 임포트
@@ -25,10 +25,32 @@ function Header() {
         setBrandActive(false);
     };
     
+    useEffect(() => {
+        const target = document.querySelector('header');
+
+        const handleScroll = () => {
+            const scrollValue = window.scrollY;
+
+            if (scrollValue >= 77) {
+                target.classList.add('fixed');
+            } else {
+                target.classList.remove('fixed');
+            }
+        };
+
+        // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너를 추가합니다.
+        window.addEventListener('scroll', handleScroll);
+
+        // 컴포넌트가 언마운트될 때 이벤트 리스너를 정리하여 메모리 누수를 방지
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); 
+
     return (
         <>
             <Styles.Header>
-                <header className='header fixed'>
+                <header className='header'>
                     <div className="inner">
                         <Styles.MainFlex>
                             <div className="header-new-logo">

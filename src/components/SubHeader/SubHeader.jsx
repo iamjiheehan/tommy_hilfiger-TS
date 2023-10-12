@@ -23,7 +23,7 @@ function SubHeader() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Empty dependency array ensures the effect runs only once
+    }, []); 
 
 
     return (

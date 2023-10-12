@@ -8,18 +8,18 @@ export const Header = styled.div`
     display: block;
     position: relative;
     list-style: none;
-height: 100%;
     background-color: #FFF !important;
     position: relative;
-
+    z-index: 9999;
     .fixed {
         position: fixed;
-        top: -70px;
+        top: -90px;
         min-width: 1280px;
         width: 100%;
+        background-color: #FFF !important;
 
-        & .header_inner {
-            height: 145px !important;
+        & .header-gnb {
+            padding-bottom: 30px !important;
         }
     }
 `;

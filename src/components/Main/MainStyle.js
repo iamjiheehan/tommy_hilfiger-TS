@@ -194,6 +194,8 @@ export const ViewMore = styled.p`
 // 카테고리 섹션 || 두번쨰 섹션 --------------------------------------------------------
 
 export const MainContainer = styled.div`
+    position: relative;
+
     .swiper-button-next::after,
     .swiper-button-prev::after {
         display: none;
@@ -1669,8 +1671,10 @@ export const CampaignWrap = styled.div`
 
 // fixed btn
 export const FixedBtn = styled.div`
+    
+
     position: fixed;
-    z-index: 49;
+    z-index: 999;
     right: 0;
     bottom: 0;
     overflow: hidden;

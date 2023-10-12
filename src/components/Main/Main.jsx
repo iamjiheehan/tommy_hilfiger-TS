@@ -51,7 +51,7 @@ function Main() {
                 <Campaign />
                 {/* 열세번째 섹션 || REVIEW */}
                 <Review />
-                <Styles.FixedBtn>
+                <Styles.FixedBtn id='fixedbtn'>
                     <button type="button" className="history"><span>최근 본 상품 보기</span></button>
                     <button type="button" className="bnc"><span>혜택 보기</span></button>
                     <button type="button" className="top"><span>TOP</span></button>

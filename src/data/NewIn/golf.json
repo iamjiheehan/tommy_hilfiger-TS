@@ -1,5 +1,6 @@
 [  
     {
+        "id": "NG001",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "윈드루프 본딩 팬츠",
         "price": "269,100",
@@ -8,6 +9,7 @@
         "img": "img/NewIn/Golf/001.jpg"
     },
     {
+        "id": "NG002",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "리버시블 패디드 스커트",
         "price": "287,100",
@@ -16,6 +18,7 @@
         "img": "img/NewIn/Golf/002.jpg"
     },
     {
+        "id": "NG003",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "원 턱 테이퍼드 팬츠",
         "price": "269,100",
@@ -24,6 +27,7 @@
         "img": "img/NewIn/Golf/003.jpg"
     },
     {
+        "id": "NG004",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "원 턱 테이퍼드 팬츠",
         "price": "269,100",
@@ -32,6 +36,7 @@
         "img": "img/NewIn/Golf/004.jpg"
     },
     {
+        "id": "NG005",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "원 턱 테이퍼드 팬츠",
         "price": "269,100",
@@ -40,6 +45,7 @@
         "img": "img/NewIn/Golf/005.jpg"
     },
     {
+        "id": "NG006",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "리버시블 보어 플리스 베스트",
         "price": "377,100",
@@ -48,6 +54,7 @@
         "img": "img/NewIn/Golf/006.jpg"
     },
     {
+        "id": "NG007",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "윈드루프 본딩 팬츠",
         "price": "269,100",
@@ -56,6 +63,7 @@
         "img": "img/NewIn/Golf/007.jpg"
     },
     {
+        "id": "NG008",
         "brand": "TOMMY HILFIGER GOLF",
         "name": "윈드루프 본딩 팬츠",
         "price": "269,100",

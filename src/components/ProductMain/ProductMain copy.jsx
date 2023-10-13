@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 
 import * as Styles from './ProductMainStyle'
 
-import { useParams } from 'react-router-dom';
-
 export default function ProductMain() {
-
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
     function SetModal() {
@@ -71,10 +68,10 @@ export default function ProductMain() {
                                 <div className="swiper-container">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <img className='img' src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_4_ORGINL_1695373248443.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
+                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_4_ORGINL_1695373248443.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
                                         </div>
                                         <div className="swiper-slide">
-                                            <img className='img' src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_5_ORGINL_1695373248599.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
+                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_5_ORGINL_1695373248599.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -86,21 +83,21 @@ export default function ProductMain() {
                                 <span className="bar">|</span>
                                 <button type="button" className="btn-share"><span></span></button>
                             </div>
-                            <p className="item-brand brand">
+                            <p className="item-brand">
                                 <a href="#!">
                                     TOMMY HELFIGER MEN
                                 </a>
                             </p>
                             <p className="item-tag">
-                                {/* <span className="code">T12D9QOT020MT1RBN</span> */}
+                                <span className="code">T12D9QOT020MT1RBN</span>
                                 <span className="tag" style={{ color: "#C2935F" }}>
                                 </span>
                             </p>
-                            <p className="item-name name">뉴욕 가먼트다이 덕다운 푸퍼</p>
+                            <p className="item-name">뉴욕 가먼트다이 덕다운 푸퍼</p>
                             <div className="item-price">
-                                <p className="price regular"><span>579,000</span></p>
+                                <p className="price"><span>579,000</span></p>
                                 <p className="coupon">
-                                    <span className="num price">
+                                    <span className="num">
                                         521,100</span>
                                     <span className="txt">회원/멤버십 쿠폰가
                                         <button type="button" className="btn-tooltip">툴팁보기</button>

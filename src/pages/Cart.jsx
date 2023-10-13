@@ -1,15 +1,15 @@
 import React from 'react'
 
 import SubHeader from '../components/SubHeader/SubHeader'
-import ProductMain from '../components/ProductMain/ProductMain'
+import CartCont from '../components/Cart/CartCont'
 import Footer from '../components/Footer/Footer'
 
-export default function Product() {
+export default function Cart() {
 
     return (
         <>
             <SubHeader />
-            <ProductMain/>
+            <CartCont/>
             <Footer />
         </>
     )

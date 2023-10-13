@@ -4,18 +4,21 @@ import * as Styles from './MainStyle';
 
 import Banner from './Banner';
 import MainCategory from './MainCategory';
-import NewIn from './NewIn';
 import Category from './Category';
+import Campaign from './Campaign';
+import Promotion from './Promotion';
+import Insta from './Insta';
+import Review from './Review';
+import Coupon from './Coupon';
+import Focus from './Focus';
+
+
+//상세페이지 구현 필요한 컴포넌트들
+import NewIn from './NewIn';
+import Md from './Md';
 import Ranking from './Ranking';
 import Issue from './Issue';
-import Md from './Md';
 import Magazine from './Magazine';
-import Promotion from './Promotion';
-import Focus from './Focus';
-import Insta from './Insta';
-import Coupon from './Coupon';
-import Campaign from './Campaign';
-import Review from './Review';
 
 
 function Main() {

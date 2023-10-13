@@ -23,7 +23,6 @@ import 'swiper/css/navigation';
 function Review() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 
-
     SwiperCore.use([Navigation]);
 
     const swiperReviewParams = {

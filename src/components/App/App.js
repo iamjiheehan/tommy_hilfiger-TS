@@ -1,14 +1,16 @@
 import React from 'react';
 
 import './App.css';
-import HomePage from '../../pages/HomePage'
-import Product from '../../pages/Product'
+import HomePage from '../../pages/HomePage';
+import Product from '../../pages/Product';
+import Cart from '../../pages/Cart';
 
 import { GlobalStyle } from '../../GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
+
   return (
     <>
       <ThemeProvider theme={{ fontFamily: 'Helvetica Neue' }}>
@@ -18,8 +20,10 @@ function App() {
         </React.Fragment>
       </ThemeProvider>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/product" element={<Product />}></Route>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/product/:productId" element={<Product />} /> */}
+        <Route path="/product" element={<Product />} />
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </>
   );

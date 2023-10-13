@@ -1,5 +1,8 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import { useDispatch } from "react-redux";
+import setData from "../../dataSlice";
 
 import * as Styles from './MainStyle';
 
@@ -11,71 +14,87 @@ import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
 import useRandomData from '../../hooks/useRandomize';
-import {useSelectMenuHandler} from '../../hooks/useSelectMenuHandler';
+import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ItemLayout from './ItemLayout';
-import { Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 
 function NewIn() {
+
+    const dispatch = useDispatch();
+
+    // Send the data to the store
+    useEffect(() => {
+        const allData = {
+            men: NewInMenData,
+            women: NewInWomenData,
+            golf: NewInGolfData,
+            kids: NewInKidsData,
+            tommyJeans: NewInJeansData,
+            shoes: NewInShoesData,
+        };
+
+        dispatch(setData(allData));
+    }, [dispatch]);
 
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
     const [activeIndex, setActiveIndex] = useState(0);
 
     const swiperNewInParams = {
-        className:"swiper-wrapper newIn",
-        slidesPerView:5,
-        spaceBetween:20,
-        navigation:{
+        className: "swiper-wrapper newIn",
+        slidesPerView: 5,
+        spaceBetween: 20,
+        navigation: {
             prevEl: '.slide-nav-prev.newIn ',
             nextEl: '.slide-nav-next.newIn',
         },
-        pagination:{
+        pagination: {
             clickable: true
         },
-        modules:{Navigation}
+        modules: { Navigation }
     }
 
-    const tabContArr=[
-            {
-                tabTitle:(
-                    <button type="button" className={activeIndex === 0 ? 'on' : ''} onClick={()=>tabClickHandler(0)}>
-                        <span>BRAND LINE</span>
-                    </button>
-                ),
-                tabCont:(
-                    <Styles.NewCategory className='tabWrap'>
-                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
-                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>WOMEN</span></button>
-                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>MEN</span></button>
-                        <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={()=> selectMenuHandler(3)}><span>KIDS</span></button>
-                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>TOMMY JEANS</span></button>
-                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>SHOES</span></button>
-                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>GOLF</span></button>
-                    </Styles.NewCategory>
-                )
-            },
-            {
-                tabTitle:(
-                    <button type="button" className={activeIndex === 1 ? 'on' : ''} onClick={()=>tabClickHandler(1)}>
-                        <span>CATEGORY</span>
-                    </button>
-                ),
-                tabCont:(
-                    <Styles.NewCategory className='tabWrap'>
-                        <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={()=> selectMenuHandler(0)}><span>ALL</span></button>
-                        <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={()=> selectMenuHandler(1)}><span>여성</span></button>
-                        <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={()=> selectMenuHandler(2)}><span>남성</span></button>
-                        <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={()=> selectMenuHandler(4)}><span>키즈</span></button>
-                        <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={()=> selectMenuHandler(5)}><span>잡화</span></button>
-                        <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={()=> selectMenuHandler(6)}><span>골프</span></button>
-                    </Styles.NewCategory>
-                )
-            }
-        ];
-        const tabClickHandler=(index)=>{
-            setActiveIndex(index)
+    const tabContArr = [
+        {
+            tabTitle: (
+                <button type="button" className={activeIndex === 0 ? 'on' : ''} onClick={() => tabClickHandler(0)}>
+                    <span>BRAND LINE</span>
+                </button>
+            ),
+            tabCont: (
+                <Styles.NewCategory className='tabWrap'>
+                    <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={() => selectMenuHandler(0)}><span>ALL</span></button>
+                    <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={() => selectMenuHandler(1)}><span>WOMEN</span></button>
+                    <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={() => selectMenuHandler(2)}><span>MEN</span></button>
+                    <button type="button" className={currentTab === 3 ? 'on' : ''} onClick={() => selectMenuHandler(3)}><span>KIDS</span></button>
+                    <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={() => selectMenuHandler(4)}><span>TOMMY JEANS</span></button>
+                    <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={() => selectMenuHandler(5)}><span>SHOES</span></button>
+                    <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={() => selectMenuHandler(6)}><span>GOLF</span></button>
+                </Styles.NewCategory>
+            )
+        },
+        {
+            tabTitle: (
+                <button type="button" className={activeIndex === 1 ? 'on' : ''} onClick={() => tabClickHandler(1)}>
+                    <span>CATEGORY</span>
+                </button>
+            ),
+            tabCont: (
+                <Styles.NewCategory className='tabWrap'>
+                    <button type="button" className={currentTab === 0 ? 'on' : ''} onClick={() => selectMenuHandler(0)}><span>ALL</span></button>
+                    <button type="button" className={currentTab === 1 ? 'on' : ''} onClick={() => selectMenuHandler(1)}><span>여성</span></button>
+                    <button type="button" className={currentTab === 2 ? 'on' : ''} onClick={() => selectMenuHandler(2)}><span>남성</span></button>
+                    <button type="button" className={currentTab === 4 ? 'on' : ''} onClick={() => selectMenuHandler(4)}><span>키즈</span></button>
+                    <button type="button" className={currentTab === 5 ? 'on' : ''} onClick={() => selectMenuHandler(5)}><span>잡화</span></button>
+                    <button type="button" className={currentTab === 6 ? 'on' : ''} onClick={() => selectMenuHandler(6)}><span>골프</span></button>
+                </Styles.NewCategory>
+            )
         }
+    ];
+    const tabClickHandler = (index) => {
+        setActiveIndex(index)
+    }
     const tabContents = {
         0: <All swiperParams={swiperNewInParams} />,
         1: <Women swiperParams={swiperNewInParams} />,
@@ -99,7 +118,7 @@ function NewIn() {
                         </div>
                     </Styles.NewTitle>
                     <Styles.NewTab>
-                        {tabContArr.map((section, index)=>{
+                        {tabContArr.map((section, index) => {
                             return section.tabTitle
                         })}
                     </Styles.NewTab>
@@ -108,13 +127,13 @@ function NewIn() {
                         <div className="slide-container">
                             {tabContents[currentTab]}
                             <div className="slide-nav">
-                            <button className="slide-nav-prev button-disabled newIn">
-                                <span className="offscreen"></span>
-                            </button>
-                            <button className="slide-nav-next newIn">
-                                <span className="offscreen"></span>
-                            </button>
-                        </div>
+                                <button className="slide-nav-prev button-disabled newIn">
+                                    <span className="offscreen"></span>
+                                </button>
+                                <button className="slide-nav-next newIn">
+                                    <span className="offscreen"></span>
+                                </button>
+                            </div>
                         </div>
                     </Styles.NewContent>
                 </Styles.Container>
@@ -153,42 +172,42 @@ function All({ swiperParams }) {
 function Men({ swiperParams }) {
     const menData = [...NewInMenData];
     return (
-        <ItemLayout items={menData} params={swiperParams}/>
+        <ItemLayout items={menData} params={swiperParams} />
     )
 }
 
 function Women({ swiperParams }) {
     const womenData = [...NewInWomenData];
     return (
-        <ItemLayout items={womenData} params={swiperParams}/>
+        <ItemLayout items={womenData} params={swiperParams} />
     )
 }
 
 function Jeans({ swiperParams }) {
     const jeansData = [...NewInJeansData];
     return (
-        <ItemLayout items={jeansData} params={swiperParams}/>
+        <ItemLayout items={jeansData} params={swiperParams} />
     )
 }
 
 function Shoes({ swiperParams }) {
     const shoesData = [...NewInShoesData];
     return (
-        <ItemLayout items={shoesData} params={swiperParams}/>
+        <ItemLayout items={shoesData} params={swiperParams} />
     )
 }
 
 function Golf({ swiperParams }) {
     const golfData = [...NewInGolfData];
     return (
-        <ItemLayout items={golfData} params={swiperParams}/>
+        <ItemLayout items={golfData} params={swiperParams} />
     )
 }
 
 function Kids({ swiperParams }) {
     const kidsData = [...NewInKidsData];
     return (
-        <ItemLayout items={kidsData} params={swiperParams}/>
+        <ItemLayout items={kidsData} params={swiperParams} />
     )
 }
 

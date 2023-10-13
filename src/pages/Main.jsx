@@ -1,31 +1,35 @@
-import React from 'react';
+import React from 'react'
 
-import * as Styles from './MainStyle';
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import PopUpBanner from '../components/PopUpBanner/PopUpBanner'
 
-import Banner from './Banner';
-import MainCategory from './MainCategory';
-import Category from './Category';
-import Campaign from './Campaign';
-import Promotion from './Promotion';
-import Insta from './Insta';
-import Review from './Review';
-import Coupon from './Coupon';
-import Focus from './Focus';
+import Banner from '../components/Main/Banner';
+import MainCategory from '../components/Main/MainCategory';
+import Category from '../components/Main/Category';
+import Campaign from '../components/Main/Campaign';
+import Promotion from '../components/Main/Promotion';
+import Insta from '../components/Main/Insta';
+import Review from '../components/Main/Review';
+import Coupon from '../components/Main/Coupon';
+import Focus from '../components/Main/Focus';
 
 
 //상세페이지 구현 필요한 컴포넌트들
-import NewIn from './NewIn';
-import Md from './Md';
-import Ranking from './Ranking';
-import Issue from './Issue';
-import Magazine from './Magazine';
+import NewIn from '../components/Main/NewIn';
+import Md from '../components/Main/Md';
+import Ranking from '../components/Main/Ranking';
+import Issue from '../components/Main/Issue';
+import Magazine from '../components/Main/Magazine';
 
+import * as Styles from '../components/Main/MainStyle';
 
-function Main() {
-
-    return (
-        <>
-            <Styles.MainContainer>
+export default function Main() {
+  return (
+    <>
+      <PopUpBanner />
+      <Header />
+      <Styles.MainContainer>
                 {/* 메인배너 */}
                 <Banner />
                 {/* 첫번째 섹션 */}
@@ -60,9 +64,9 @@ function Main() {
                     <button type="button" className="top"><span>TOP</span></button>
                 </Styles.FixedBtn>
             </Styles.MainContainer >
-        </>
-    );
-}
+      <Footer />
+    </>
+  )
+};
 
-export default Main;
 

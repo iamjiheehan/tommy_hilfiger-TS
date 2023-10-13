@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react';
 
 import { useDispatch } from "react-redux";
-import setData from "../../dataSlice";
-
 import * as Styles from './MainStyle';
 
 import NewInMenData from '../../data/NewIn/men';
@@ -21,22 +19,6 @@ import { Navigation } from 'swiper/modules';
 
 
 function NewIn() {
-
-    const dispatch = useDispatch();
-
-    // Send the data to the store
-    useEffect(() => {
-        const allData = {
-            men: NewInMenData,
-            women: NewInWomenData,
-            golf: NewInGolfData,
-            kids: NewInKidsData,
-            tommyJeans: NewInJeansData,
-            shoes: NewInShoesData,
-        };
-
-        dispatch(setData(allData));
-    }, [dispatch]);
 
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
     const [activeIndex, setActiveIndex] = useState(0);

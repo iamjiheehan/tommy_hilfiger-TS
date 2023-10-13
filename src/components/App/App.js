@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import HomePage from '../../pages/HomePage';
 import Product from '../../pages/Product';
+import Main from '../../pages/Main';
 import Cart from '../../pages/Cart';
 
 import { GlobalStyle } from '../../GlobalStyle';
@@ -20,7 +20,7 @@ function App() {
         </React.Fragment>
       </ThemeProvider>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Main />} />
         {/* <Route path="/product/:productId" element={<Product />} /> */}
         <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart/>}/>

@@ -33,7 +33,7 @@ function SubHeader() {
                     {/* <header className='fixed'> */}
                     <div className="inner">
                         <div className="wrap">
-                            <h1 className="logo"><a href="/main">H FASHION</a></h1>
+                            <h1 className="logo"><a href="/">H FASHION</a></h1>
                             <nav className="util">
                                 <button className="btn-search"><span>버튼</span></button>
                                 <span><a href="#!">로그인</a></span>

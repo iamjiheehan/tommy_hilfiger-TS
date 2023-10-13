@@ -1,7 +1,6 @@
 // eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 
-import { useDispatch } from "react-redux";
 import * as Styles from './MainStyle';
 
 import NewInMenData from '../../data/NewIn/men';
@@ -15,10 +14,17 @@ import useRandomData from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ItemLayout from './ItemLayout';
+
 import { Navigation } from 'swiper/modules';
 
+import { useDispatch } from "react-redux";
+import { setProducts } from '../../productSlice';
 
 function NewIn() {
+    const productData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
+
+    const dispatch = useDispatch();
+    dispatch(setProducts(productData));
 
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
     const [activeIndex, setActiveIndex] = useState(0);

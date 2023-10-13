@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 
 import * as Styles from './ProductMainStyle'
 
+import { selectSelectedProduct } from '../redux/productSlice';
+import { useSelector } from 'react-redux';
+
 export default function ProductMain() {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
@@ -36,8 +39,9 @@ export default function ProductMain() {
             e.preventDefault();
             document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
         });
-    
     }
+
+    const selectedProduct = useSelector(selectSelectedProduct);
 
     return (
         <>
@@ -94,6 +98,7 @@ export default function ProductMain() {
                                 </span>
                             </p>
                             <p className="item-name">뉴욕 가먼트다이 덕다운 푸퍼</p>
+                            <p className="item-name">{selectedProduct.name}</p>
                             <div className="item-price">
                                 <p className="price"><span>579,000</span></p>
                                 <p className="coupon">

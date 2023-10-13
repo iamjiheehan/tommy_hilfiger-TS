@@ -20,9 +20,9 @@ function App() {
         </React.Fragment>
       </ThemeProvider>
       <Routes>
-        <Route path="/" element={<Main />} />
-        {/* <Route path="/product/:productId" element={<Product />} /> */}
-        <Route path="/product" element={<Product />} />
+        <Route exact path="/" element={<Main />} />
+        <Route path="/product/:productId" element={<Product />} />
+        {/* <Route path="/product" element={<Product />} /> */}
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </>

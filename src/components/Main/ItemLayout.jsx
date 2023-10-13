@@ -7,9 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation} from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 
-
-
-
 function ItemLayout({ items, params }) {
 
     const [swiper, setSwiper] = useState(null);
@@ -23,7 +20,7 @@ function ItemLayout({ items, params }) {
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>
-                    <figure className="item-box">
+                    <figure className="item-box" >
                         <div className="item-img">
                             <div className="img-box">
                                 <a href="#!">

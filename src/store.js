@@ -1,5 +1,7 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
+import productReducer from "./productSlice";
+
 // User slice
 const user = createSlice({
     name: "user",
@@ -72,7 +74,9 @@ const rootReducer = {
 // 유저와 카트 슬라이스를 하나의 Redux 스토어로 결합
 // combineReducers 대신 rootReducer를 사용하여 스토어 설정
 const store = configureStore({
-    reducer: rootReducer,
+    reducer: {
+        product: productReducer,
+    }
 });
 
 export default store;

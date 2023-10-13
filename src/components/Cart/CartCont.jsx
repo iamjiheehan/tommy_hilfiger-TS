@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-// import store, {changeName, increase} from './store.js'
+
 import { addCount, decreaseCount, deleteItem, sortName } from "../../store.js";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";

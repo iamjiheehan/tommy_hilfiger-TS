@@ -180,6 +180,10 @@ export const GnbWrap = styled.div`
         padding: 0 10px;
         letter-spacing: 0;
     }
+
+    .header-main-gnb .on {
+        font-weight: bold;
+    }
 `;
 
 export const NewCategory = styled.div`

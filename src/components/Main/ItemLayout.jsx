@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation} from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+
 
 
 function ItemLayout({ items, params }) {

@@ -22,7 +22,7 @@ function ItemLayout({ items, params }) {
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>
-                    <Link key={index} to={`/product/${index}/detail`}>
+                    <Link to={`/product/${item.id}/detail`}>
                         <figure className="item-box" >
                             <div className="item-img">
                                 <div className="img-box">

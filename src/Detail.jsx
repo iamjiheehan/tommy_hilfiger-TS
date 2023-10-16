@@ -4,19 +4,22 @@ import { useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 import { Link, useHistory, useParams } from "react-router-dom";
 
-export default function Detail(props) {
-    
-    let selproduct = props.shoes.find((x) => x.id === id);
-    let dispatch = useDispatch();
-
+export default function Detail({ shoes }) {
     let { id } = useParams();
+    let selproduct = shoes.find((x) => x.id === id);
+    let dispatch = useDispatch();
     let history = useHistory();
+
+    if (!selproduct) {
+        // Handle the case where the selected product is not found.
+        return <div>Product not found.</div>;
+    }
 
     return (
         <>
             <div className="row">
                 <div className="col-md-6">
-                    <img src={"/" + selproduct.imgUrl} width="80%" />
+                    <img src={"/" + selproduct.imgUrl} width="80%" alt={selproduct.title} />
                 </div>
                 <div className="col-md-6">
                     <h4 className="pt-5">{selproduct.title}</h4>
@@ -40,8 +43,7 @@ export default function Detail(props) {
                     </Button>
                     <Link to="/cart">
                         <Button variant="outline-success">
-                            {" "}
-                            주문상품 확인하기{" "}
+                            주문상품 확인하기
                         </Button>
                     </Link>
                     <button className='btn btn-danger' onClick={ () => {
@@ -51,5 +53,4 @@ export default function Detail(props) {
             </div>
         </>
     )
-
 }

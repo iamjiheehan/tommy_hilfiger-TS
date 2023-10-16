@@ -9,8 +9,11 @@ import SwiperCore from 'swiper/core';
 
 import { Link } from 'react-router-dom';
 
+import { useParams } from 'react-router-dom';
+
 function ItemLayout({ items, params }) {
 
+    let { id } = useParams();
     const [swiper, setSwiper] = useState(null);
 
     SwiperCore.use([Navigation]);
@@ -22,7 +25,7 @@ function ItemLayout({ items, params }) {
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={index}>
-                    <Link to={`/product/${item.id}/detail`}>
+                    <Link to={`/product/${item.id}/detail`} state={{item:item}}>
                         <figure className="item-box" >
                             <div className="item-img">
                                 <div className="img-box">

@@ -1,22 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 
-import { Link } from 'react-router-dom';
-
-import { useParams } from 'react-router-dom';
+import { Link, useNavigate , useParams } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../store";
 
 function ItemLayout({ items, params }) {
 
-    let { id } = useParams();
     const [swiper, setSwiper] = useState(null);
 
     SwiperCore.use([Navigation]);
+
+    let { id } = useParams();
+    let selproduct = items.find((x) => x.id === id);
+    let dispatch = useDispatch();
+    const navigate = useNavigate();
 
     return (
         <Swiper
@@ -24,8 +29,19 @@ function ItemLayout({ items, params }) {
             ref={setSwiper}
         >
             {items.map((item, index) => (
-                <SwiperSlide className="swiper-item" key={index}>
-                    <Link to={`/product/${item.id}/detail`} state={{item:item}}>
+                <SwiperSlide className="swiper-item" key={index}
+                    onClick={() => {
+                        dispatch(
+                            addItem({
+                                id: selproduct.id,
+                                imgurl: selproduct.imgUrl.replace("img/", ""),
+                                name: selproduct.title,
+                                count: 1,
+                            })
+                        );
+                    }}
+                >
+                    <Link to={`/product/${item.id}`} state={{ item }}>
                         <figure className="item-box" >
                             <div className="item-img">
                                 <div className="img-box">
@@ -56,7 +72,7 @@ function ItemLayout({ items, params }) {
                     </Link>
                 </SwiperSlide>
             ))}
-            
+
         </Swiper>
     );
 }

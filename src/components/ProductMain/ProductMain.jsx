@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 
 import * as Styles from './ProductMainStyle'
+import { useLocation } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 
 export default function ProductMain() {
     //  사이즈 모달창1
@@ -29,15 +32,17 @@ export default function ProductMain() {
 
     //탭 클릭시 스크롤 이동
     const btnArr = document.querySelectorAll('button[id^="tab"]');
-    
-    for(let i = 0; i < btnArr.length; i++){
-    
-        btnArr[i].addEventListener('click',function(e){
+
+    for (let i = 0; i < btnArr.length; i++) {
+
+        btnArr[i].addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
         });
-    
     }
+
+    const location = useLocation();
+    const { item } = location.state || {};
 
     return (
         <>
@@ -94,6 +99,7 @@ export default function ProductMain() {
                                 </span>
                             </p>
                             <p className="item-name">뉴욕 가먼트다이 덕다운 푸퍼</p>
+                            <p className="item-name">새 정보 {item.name}</p>
                             <div className="item-price">
                                 <p className="price"><span>579,000</span></p>
                                 <p className="coupon">
@@ -170,17 +176,21 @@ export default function ProductMain() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="btn-box">
-                                    <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
-                                        <span>장바구니</span>
-                                    </button>
-                                    <button name="btnBuynow" type="button" className="btn-buy btn-type">
-                                        <span>
-                                            <input type="hidden" />
-                                            바로구매
-                                        </span>
-                                    </button>
-                                </div>
+                                <Link to="/cart"> {/* Use Link to navigate to the "cart" component */}
+                                    <div className="btn-box">
+
+                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                            <span>장바구니</span>
+                                        </button>
+                                        <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                            <span>
+                                                <input type="hidden" />
+                                                바로구매
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                </Link>
                             </Styles.ViewOption>
                             <Styles.InfoBot className="info-bot">
                                 <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
@@ -407,7 +417,7 @@ export default function ProductMain() {
                                     <h3 className="sec-title">상품 Q&A</h3>
                                     <div className="review-list">
                                         <div className="head">
-                                            <p className="txt" style={{ float : "left" }}>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="#!"> 고객센터 1:1문의</a>를 이용하여 주시기 바랍니다.</p>
+                                            <p className="txt" style={{ float: "left" }}>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="#!"> 고객센터 1:1문의</a>를 이용하여 주시기 바랍니다.</p>
                                             <button type="button" className="btn-black"><span>리뷰작성</span></button>
                                         </div>
                                         <div id="reviewNodata" className="nodata">

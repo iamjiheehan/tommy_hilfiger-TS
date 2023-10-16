@@ -1,7 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-import productReducer from "./productSlice";
-
 // User slice
 const user = createSlice({
     name: "user",
@@ -64,20 +62,30 @@ const cart = createSlice({
 export const { addCount, decreaseCount, addItem, deleteItem, sortName } =
     cart.actions;
 
-// User and Cart slices combined into a single Redux store
+
+// 세부 정보 슬라이스 (제품 세부 정보 관리용)
+const detail = createSlice({
+    name: "detail",
+    initialState: {},
+    reducers: {
+        setDetail(state, action) {
+            // 액션 페이로드를 기반으로 스토어에 제품 세부 정보를 설정
+            return action.payload;
+        },
+    },
+});
+
+export const { setDetail } = detail.actions;
+
+// 모든 리듀서를 하나의 루트 리듀서로 결합
 const rootReducer = {
     user: user.reducer,
     cart: cart.reducer,
+    detail: detail.reducer,
 };
 
-// 한국어 주석 추가:
-// 유저와 카트 슬라이스를 하나의 Redux 스토어로 결합
-// combineReducers 대신 rootReducer를 사용하여 스토어 설정
 const store = configureStore({
-    reducer: {
-        product: productReducer,
-        
-    }
+    reducer: rootReducer,
 });
 
 export default store;

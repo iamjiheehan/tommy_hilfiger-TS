@@ -6,28 +6,20 @@ import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 import { Link, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../store";
+import { addItem, setDetail } from "../../store";
 
 function ItemLayout({ items, params }) {
     const [swiper, setSwiper] = useState(null);
     SwiperCore.use([Navigation]);
 
-    let { id } = useParams();
-    let dispatch = useDispatch();
+    const dispatch = useDispatch();
 
+    dispatch(setDetail({items}));
+    
     const handleItemClick = (item) => {
         if (item) {
-            dispatch(
-                addItem({
-                    id: item.id,
-                    img: item.img,
-                    name: item.name,
-                    brand: item.brand,
-                    price: item.price,
-                    regular: item.regular,
-                    count: 1,
-                })
-            );
+            dispatch(setDetail(item)); // Dispatch the entire item object to the Redux store
+            dispatch(addItem(item)); // Dispatch the item to the cart
         }
     };
 

@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import * as Styles from './ProductMainStyle'
 import { useLocation } from 'react-router-dom';
 
+import { setDetail } from '../../store'
+
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function ProductMain() {
     //  사이즈 모달창1
@@ -41,14 +44,13 @@ export default function ProductMain() {
         });
     }
 
-    const location = useLocation();
-    const { item } = location.state || {};
+    // const location = useLocation();
+    const item = useSelector((state) => state.detail);
 
-    useState(()=>{
-        // console.log("Item image URL in Detail component:", item.img);
-        console.log(item.img);
-    })
-
+    useEffect(() => {
+        console.log(item);
+    }, [item]);
+    
     return (
         <>
             <Styles.Container id='productMain'>

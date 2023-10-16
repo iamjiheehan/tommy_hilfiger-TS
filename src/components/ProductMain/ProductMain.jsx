@@ -45,7 +45,8 @@ export default function ProductMain() {
     const { item } = location.state || {};
 
     useState(()=>{
-        console.log("Item image URL in Detail component:", item.img);
+        // console.log("Item image URL in Detail component:", item.img);
+        console.log(item.img);
     })
 
     return (

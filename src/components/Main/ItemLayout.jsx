@@ -13,7 +13,6 @@ function ItemLayout({ items, params }) {
     SwiperCore.use([Navigation]);
 
     let { id } = useParams();
-    let selproduct = items.find((x) => x.id === id);
     let dispatch = useDispatch();
 
     const handleItemClick = (item) => {
@@ -23,6 +22,9 @@ function ItemLayout({ items, params }) {
                     id: item.id,
                     img: item.img,
                     name: item.name,
+                    brand: item.brand,
+                    price: item.price,
+                    regular: item.regular,
                     count: 1,
                 })
             );

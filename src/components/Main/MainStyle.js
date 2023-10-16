@@ -1096,7 +1096,7 @@ export const IssueContent = styled.div`
         color: var(--themeTextColor);
         font-size: 34px;
         font-weight: 900;
-        line-height: 44px;
+        line-height: 50px;
     }
 
     .season-info-wrap .season-text-box .season-subtitle {

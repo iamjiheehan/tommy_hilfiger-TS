@@ -45,9 +45,11 @@ export default function ProductMain() {
 
     const SET_PRODUCT_DETAIL = 'SET_PRODUCT_DETAIL';
 
+    // const [ related, setRelated ] = useState();
+
     useEffect(() => {
         dispatch({ type: SET_PRODUCT_DETAIL, payload: item });
-        console.log(item, item.img, typeof item.img);
+        console.log(item, typeof item);
     }, [item]);
 
 

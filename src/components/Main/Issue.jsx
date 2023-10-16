@@ -48,55 +48,53 @@ function Issue() {
                             >
                                 {data.map((item, index) => (
                                     <SwiperSlide className="swiper-item" key={index}>
-                                        <Link to={`/product/${item.id}/detail`}>
-                                            <div className="season-visual-wrap">
-                                                <a href="#!" className="season-visual-box">
-                                                    <img src={process.env.PUBLIC_URL + item.season.img} alt={item.season.img} />
+                                        <div className="season-visual-wrap">
+                                            <a href="#!" className="season-visual-box">
+                                                <img src={process.env.PUBLIC_URL + item.season.img} alt={item.season.img} />
+                                            </a>
+                                        </div>
+                                        <div className="season-info-wrap">
+                                            <div className="season-text-box">
+                                                <p className="season-title">
+                                                    {item.season.title}</p>
+                                                <p className="season-subtitle">
+                                                    {item.season.subtitle}</p>
+                                                <a href="#!" className="btn-season-more">
+                                                    <span className="text">{item.season.text}</span>
                                                 </a>
                                             </div>
-                                            <div className="season-info-wrap">
-                                                <div className="season-text-box">
-                                                    <p className="season-title">
-                                                        {item.season.title}</p>
-                                                    <p className="season-subtitle">
-                                                        {item.season.subtitle}</p>
-                                                    <a href="#!" className="btn-season-more">
-                                                        <span className="text">{item.season.text}</span>
-                                                    </a>
-                                                </div>
-                                                <ul className="product-list">
-                                                    {item.product.map((product, productIndex) => (
-                                                        <li key={productIndex}>
-                                                            <figure className="item-box">
-                                                                <div className="item-img">
-                                                                    <div className="img-box">
-                                                                        <a href="#!">
-                                                                            <div className="img"><img src={process.env.PUBLIC_URL + product.img} alt={product.name} /></div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <button type="button" className="btn-like"><span></span></button>
-                                                                </div>
-                                                                <figcaption className="item-info">
+                                            <ul className="product-list">
+                                                {item.product.map((product, productIndex) => (
+                                                    <li key={productIndex}>
+                                                        <figure className="item-box">
+                                                            <div className="item-img">
+                                                                <div className="img-box">
                                                                     <a href="#!">
-                                                                        <div className="item-brand">{product.brand}</div>
-                                                                        <div className="item-name">{product.name}</div>
-                                                                        <div className="item-opt">
-                                                                            <span className="item-price">
-                                                                                <div className="item-price">
-                                                                                    <span className="price">{product.price}</span>
-                                                                                    <del className="regular">{product.regular}</del>
-                                                                                    <span className="percent">{product.percent}</span>
-                                                                                </div>
-                                                                            </span>
-                                                                        </div>
+                                                                        <div className="img"><img src={process.env.PUBLIC_URL + product.img} alt={product.name} /></div>
                                                                     </a>
-                                                                </figcaption>
-                                                            </figure>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </Link>
+                                                                </div>
+                                                                <button type="button" className="btn-like"><span></span></button>
+                                                            </div>
+                                                            <figcaption className="item-info">
+                                                                <a href="#!">
+                                                                    <div className="item-brand">{product.brand}</div>
+                                                                    <div className="item-name">{product.name}</div>
+                                                                    <div className="item-opt">
+                                                                        <span className="item-price">
+                                                                            <div className="item-price">
+                                                                                <span className="price">{product.price}</span>
+                                                                                <del className="regular">{product.regular}</del>
+                                                                                <span className="percent">{product.percent}</span>
+                                                                            </div>
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </SwiperSlide>
                                 ))}
                             </Swiper>

@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper/core';
-import { Link, useParams } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItem, setDetail } from "../../store";
 

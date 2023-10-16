@@ -7,6 +7,9 @@ import share from "../../assets/images/icon-share-sub.png";
 import colorChip from "../../assets/images/colorChip-sub.jpg";
 import select from "../../assets/images/select.png";
 
+import arrowNext from "../../assets/images/arrowNext.png";
+import arrowPrev from "../../assets/images/arrowPrev.png";
+
 export const Container = styled.div`
     background-color: #fff;
     /* height: 500px; */
@@ -14,6 +17,66 @@ export const Container = styled.div`
     max-width: 1920px;
     padding: 130px 80px 160px;
     margin: 0 auto;
+
+
+
+    /* 스와이퍼 설정 */
+
+    .swiper-container {
+        position: relative;
+    }
+
+    .swiper-slide {
+        width: 50%;
+        flex: 0 0 auto;
+        flex-shrink: 0 !important;
+    }
+
+    .slide-nav .slide-nav-prev {
+        left: 0px;
+        width: 71px;
+        height: 102px;
+        margin-top: -51px;
+        opacity: 1;
+        background-image: url(${arrowPrev});
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .slide-nav .slide-nav-next {
+        right: 0px;
+        width: 71px;
+        height: 102px;
+        margin-top: -51px;
+        opacity: 1;
+        background-image: url(${arrowNext});
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .slide-nav {
+        position: absolute;
+        top: 50%; 
+    }
+
+    .swiper-pagination {
+        margin: 25px 0 0;
+        text-align: center;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #c2935f;
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background: #eee;
+        border-radius: 50%;
+        font-size: 0;
+        vertical-align: 6px;
+    }
 
     input[type="radio"],
     input[type="checkbox"],
@@ -36,6 +99,10 @@ export const Container = styled.div`
         font-size: inherit;
     }
 
+    .top-left{
+        display: table-cell;
+        position: relative;
+    }
 
     .breadcrumb-wrap {
         height: 40px;
@@ -98,12 +165,7 @@ export const Container = styled.div`
         position: relative;
     }
 
-    .swiper-slide {
-        width: 50%;
-        flex: 0 0 auto;
 
-        flex-shrink: 0 !important;
-    }
 `;
 
 export const TopRight = styled.div`

@@ -72,10 +72,12 @@ export default function ProductMain() {
             nextEl: '.detail-next',
         },
         pagination:{
+            el : '.swiper-pagination',
             clickable: true
         },
         modules:{Navigation, Pagination}
     }
+
     return (
         <>
             <Styles.Container id='productMain'>
@@ -148,6 +150,8 @@ export default function ProductMain() {
                                             <span className="offscreen"></span>
                                         </button>
                                     </div>
+                                    <div class="swiper-pagination"></div>
+
                                     {/* <div className="swiper-wrapper">
                                         <div className="swiper-slide">
                                             {item.img && (

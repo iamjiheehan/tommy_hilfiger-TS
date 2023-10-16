@@ -157,6 +157,7 @@ function Campaign() {
                                 >
                                     {imgData.map((item, index) => (
                                         <SwiperSlide
+                                            key={index}
                                             className={`swiper-item ${index === activeSlideIndex ? 'on' : ''}`}
                                         // className='swiper-item'
                                         >

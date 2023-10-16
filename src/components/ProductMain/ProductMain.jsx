@@ -44,6 +44,10 @@ export default function ProductMain() {
     const location = useLocation();
     const { item } = location.state || {};
 
+    useState(()=>{
+        console.log(item, typeof item, item.img);
+    })
+
     return (
         <>
             <Styles.Container id='productMain'>
@@ -52,7 +56,7 @@ export default function ProductMain() {
                         <li className="bc-home"><a href="/">HOME</a></li>
                         <li>
                             <a href="#!">
-                                TOMMY HILFIGER MEN</a>
+                                {item.brand}</a>
                         </li>
                         <li className="">
                             <a href="#!">
@@ -73,7 +77,7 @@ export default function ProductMain() {
                                 <div className="swiper-container">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_4_ORGINL_1695373248443.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
+                                            <img src={item.img} alt={item.name} />
                                         </div>
                                         <div className="swiper-slide">
                                             <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_5_ORGINL_1695373248599.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
@@ -90,21 +94,20 @@ export default function ProductMain() {
                             </div>
                             <p className="item-brand">
                                 <a href="#!">
-                                    TOMMY HELFIGER MEN
+                                    {item.brand}
                                 </a>
                             </p>
                             <p className="item-tag">
-                                <span className="code">T12D9QOT020MT1RBN</span>
+                                <span className="code">{item.id}</span>
                                 <span className="tag" style={{ color: "#C2935F" }}>
                                 </span>
                             </p>
-                            <p className="item-name">뉴욕 가먼트다이 덕다운 푸퍼</p>
-                            <p className="item-name">새 정보 {item.name}</p>
+                            <p className="item-name">{item.name}</p>
                             <div className="item-price">
-                                <p className="price"><span>579,000</span></p>
+                                <p className="price"><span>{item.regular}</span></p>
                                 <p className="coupon">
                                     <span className="num">
-                                        521,100</span>
+                                    {item.price}</span>
                                     <span className="txt">회원/멤버십 쿠폰가
                                         <button type="button" className="btn-tooltip">툴팁보기</button>
                                     </span>
@@ -113,7 +116,7 @@ export default function ProductMain() {
                                 </p>
                             </div>
                             <Styles.ViewOption className="view-option">
-                                <div className="row color">
+                                {/* <div className="row color">
                                     <label className="color-check">
                                         <input type="radio" />
                                         <span className="pdImage">
@@ -121,7 +124,7 @@ export default function ProductMain() {
                                     </label>
                                     <p className="txt">
                                         ARMY GREEN</p>
-                                </div>
+                                </div> */}
                                 <div className="row size">
                                     <div className="select">
                                         <button type="button" className="sel-btn" onClick={SetModal}>사이즈를 선택하세요. <span className="val"></span></button>
@@ -176,9 +179,8 @@ export default function ProductMain() {
                                         </span>
                                     </div>
                                 </div>
-                                <Link to="/cart"> {/* Use Link to navigate to the "cart" component */}
+                                <Link to="/cart">
                                     <div className="btn-box">
-
                                         <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
                                             <span>장바구니</span>
                                         </button>
@@ -189,7 +191,6 @@ export default function ProductMain() {
                                             </span>
                                         </button>
                                     </div>
-
                                 </Link>
                             </Styles.ViewOption>
                             <Styles.InfoBot className="info-bot">
@@ -552,17 +553,19 @@ export default function ProductMain() {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="btn-box">
-                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
-                                            <span>장바구니</span>
-                                        </button>
-                                        <button name="btnBuynow" type="button" className="btn-buy btn-type">
-                                            <span>
-                                                <input type="hidden" />
-                                                바로구매
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <Link to="/cart">
+                                        <div className="btn-box">
+                                            <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                                <span>장바구니</span>
+                                            </button>
+                                            <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                                <span>
+                                                    <input type="hidden" />
+                                                    바로구매
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </Link>
                                 </Styles.ViewOption>
                             </div>
                         </Styles.DetailOption>

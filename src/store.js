@@ -70,7 +70,7 @@ const detail = createSlice({
     reducers: {
         setDetail(state, action) {
             // 액션 페이로드를 기반으로 스토어에 제품 세부 정보를 설정
-            return action.payload;
+            return { ...state, ...action.payload };
         },
     },
 });

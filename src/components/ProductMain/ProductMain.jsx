@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
 import * as Styles from './ProductMainStyle'
-import { useLocation } from 'react-router-dom';
-
-import { setDetail } from '../../store'
 
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -35,9 +32,7 @@ export default function ProductMain() {
 
     //탭 클릭시 스크롤 이동
     const btnArr = document.querySelectorAll('button[id^="tab"]');
-
     for (let i = 0; i < btnArr.length; i++) {
-
         btnArr[i].addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
@@ -46,11 +41,17 @@ export default function ProductMain() {
 
     // const location = useLocation();
     const item = useSelector((state) => state.detail);
+    const dispatch = useDispatch();
+
+    const SET_PRODUCT_DETAIL = 'SET_PRODUCT_DETAIL';
 
     useEffect(() => {
-        console.log(item);
+        dispatch({ type: SET_PRODUCT_DETAIL, payload: item });
+        console.log(item, item.img, typeof item.img);
     }, [item]);
-    
+
+
+
     return (
         <>
             <Styles.Container id='productMain'>
@@ -80,10 +81,14 @@ export default function ProductMain() {
                                 <div className="swiper-container">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                            {item.img && (
+                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
+                                            )}
                                         </div>
                                         <div className="swiper-slide">
-                                            <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_5_ORGINL_1695373248599.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
+                                            {item.img && (
+                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +115,7 @@ export default function ProductMain() {
                                 <p className="price"><span>{item.regular}</span></p>
                                 <p className="coupon">
                                     <span className="num">
-                                    {item.price}</span>
+                                        {item.price}</span>
                                     <span className="txt">회원/멤버십 쿠폰가
                                         <button type="button" className="btn-tooltip">툴팁보기</button>
                                     </span>

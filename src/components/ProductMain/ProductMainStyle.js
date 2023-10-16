@@ -36,6 +36,7 @@ export const Container = styled.div`
         font-size: inherit;
     }
 
+
     .breadcrumb-wrap {
         height: 40px;
     }
@@ -101,7 +102,7 @@ export const Container = styled.div`
         width: 50%;
         flex: 0 0 auto;
 
-        flex-shrink: 1 !important;
+        flex-shrink: 0 !important;
     }
 `;
 

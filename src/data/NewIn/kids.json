@@ -6,7 +6,13 @@
         "price": "199,750",
         "regular": "235,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/001.jpg"
+        "img": "img/NewIn/Kids/001.jpg",
+        "imgSub1":"img/NewIn/Kids/002-1.jpg",
+        "imgSub2":"img/NewIn/Kids/002-2.jpg",
+        "imgSub3":"img/NewIn/Kids/002-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK002",
@@ -15,7 +21,13 @@
         "price": "199,750",
         "regular": "235,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/002.jpg"
+        "img": "img/NewIn/Kids/002.jpg",
+        "imgSub1":"img/NewIn/Kids/002-1.jpg",
+        "imgSub2":"img/NewIn/Kids/002-2.jpg",
+        "imgSub3":"img/NewIn/Kids/002-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK003",
@@ -24,7 +36,13 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/003.jpg"
+        "img": "img/NewIn/Kids/003.jpg",
+        "imgSub1":"img/NewIn/Kids/003-1.jpg",
+        "imgSub2":"img/NewIn/Kids/003-2.jpg",
+        "imgSub3":"img/NewIn/Kids/003-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK004",
@@ -33,7 +51,13 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/004.jpg"
+        "img": "img/NewIn/Kids/004.jpg",
+        "imgSub1":"img/NewIn/Kids/004-1.jpg",
+        "imgSub2":"img/NewIn/Kids/004-2.jpg",
+        "imgSub3":"img/NewIn/Kids/004-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK005",
@@ -42,7 +66,13 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/005.jpg"
+        "img": "img/NewIn/Kids/005.jpg",
+        "imgSub1":"img/NewIn/Kids/005-1.jpg",
+        "imgSub2":"img/NewIn/Kids/005-2.jpg",
+        "imgSub3":"img/NewIn/Kids/005-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK006",
@@ -51,7 +81,13 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/NewIn/Kids/006.jpg"
+        "img": "img/NewIn/Kids/006.jpg",
+        "imgSub1":"img/NewIn/Kids/006-1.jpg",
+        "imgSub2":"img/NewIn/Kids/006-2.jpg",
+        "imgSub3":"img/NewIn/Kids/006-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK007",
@@ -60,7 +96,13 @@
         "price": "267,750",
         "regular": "315,000",
         "percent": "15",
-        "img": "img/NewIn/Kids/007.jpg"
+        "img": "img/NewIn/Kids/007.jpg",
+        "imgSub1":"img/NewIn/Kids/007-1.jpg",
+        "imgSub2":"img/NewIn/Kids/007-2.jpg",
+        "imgSub3":"img/NewIn/Kids/007-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK008",
@@ -69,7 +111,13 @@
         "price": "233,750",
         "regular": "275,000",
         "percent": "15",
-        "img": "img/NewIn/Kids/008.jpg"
+        "img": "img/NewIn/Kids/008.jpg",
+        "imgSub1":"img/NewIn/Kids/008-1.jpg",
+        "imgSub2":"img/NewIn/Kids/008-2.jpg",
+        "imgSub3":"img/NewIn/Kids/008-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK009",
@@ -78,7 +126,13 @@
         "price": "267,750",
         "regular": "315,000",
         "percent": "15",
-        "img": "img/NewIn/Kids/009.jpg"
+        "img": "img/NewIn/Kids/009.jpg",
+        "imgSub1":"img/NewIn/Kids/009-1.jpg",
+        "imgSub2":"img/NewIn/Kids/009-2.jpg",
+        "imgSub3":"img/NewIn/Kids/009-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     },
     {
         "id": "NK010",
@@ -87,6 +141,12 @@
         "price": "165,750",
         "regular": "195,000",
         "percent": "15",
-        "img": "img/NewIn/Kids/010.jpg"
+        "img": "img/NewIn/Kids/010.jpg",
+        "imgSub1":"img/NewIn/Kids/010-1.jpg",
+        "imgSub2":"img/NewIn/Kids/010-2.jpg",
+        "imgSub3":"img/NewIn/Kids/010-3.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"아우터"
     }
 ]

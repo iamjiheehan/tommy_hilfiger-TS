@@ -21,7 +21,7 @@ function ItemLayout({ items, params }) {
             dispatch(
                 addItem({
                     id: item.id,
-                    img: process.env.PUBLIC_URL + item.img,
+                    img: item.img,
                     name: item.name,
                     count: 1,
                 })

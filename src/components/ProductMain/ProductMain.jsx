@@ -45,7 +45,7 @@ export default function ProductMain() {
     const { item } = location.state || {};
 
     useState(()=>{
-        console.log(item, typeof item, item.img);
+        console.log("Item image URL in Detail component:", item.img);
     })
 
     return (
@@ -77,7 +77,7 @@ export default function ProductMain() {
                                 <div className="swiper-container">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <img src={item.img} alt={item.name} />
+                                            <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
                                         </div>
                                         <div className="swiper-slide">
                                             <img src="https://cdn.hfashionmall.com/goods/THBR/23/09/22/GM0123092244419_5_ORGINL_1695373248599.jpg?RS=960x960&AR=0&CS=640x960" alt="" />
@@ -306,10 +306,10 @@ export default function ProductMain() {
                                                     겉감<br />안감: 나일론 100%
                                                     <br />충전재: 오리털 70% 깃털 30%</td>
                                             </tr>
-                                            <tr>
+                                            {/* <tr>
                                                 <th scope="row">색상</th>
                                                 <td>ARMY GREEN</td>
-                                            </tr>
+                                            </tr> */}
                                             <tr>
                                                 <th scope="row">치수</th>
                                                 <td>

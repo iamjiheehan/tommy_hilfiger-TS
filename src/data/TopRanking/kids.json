@@ -1,5 +1,6 @@
 [  
     {
+        "id": "TK001",
         "liveRank":"1",
         "dailyRank":"2",
         "weeklyRank":"3",
@@ -12,6 +13,7 @@
         "img": "img/Ranking/Kids/001.jpg"
     },
     {
+        "id": "TK002",
         "liveRank":"2",
         "dailyRank":"3",
         "weeklyRank":"4",
@@ -24,6 +26,7 @@
         "img": "img/Ranking/Kids/002.jpg"
     },
     {
+        "id": "TK003",
         "liveRank":"3",
         "dailyRank":"4",
         "weeklyRank":"5",
@@ -36,6 +39,7 @@
         "img": "img/Ranking/Kids/003.jpg"
     },
     {
+        "id": "TK004",
         "liveRank":"4",
         "dailyRank":"5",
         "weeklyRank":"6",
@@ -48,6 +52,7 @@
         "img": "img/Ranking/Kids/004.jpg"
     },
     {
+        "id": "TK005",
         "liveRank":"5",
         "dailyRank":"6",
         "weeklyRank":"7",
@@ -60,6 +65,7 @@
         "img": "img/Ranking/Kids/005.jpg"
     },
     {
+        "id": "TK006",
         "liveRank":"6",
         "dailyRank":"7",
         "weeklyRank":"8",
@@ -72,6 +78,7 @@
         "img": "img/Ranking/Kids/008.jpg"
     },
     {
+        "id": "TK007",
         "liveRank":"7",
         "dailyRank":"8",
         "weeklyRank":"9",
@@ -84,6 +91,7 @@
         "img": "img/Ranking/Kids/007.jpg"
     },
     {
+        "id": "TK008",
         "liveRank":"8",
         "dailyRank":"9",
         "weeklyRank":"10",
@@ -96,6 +104,7 @@
         "img": "img/Ranking/Kids/008.jpg"
     },
     {
+        "id": "TK009",
         "liveRank":"9",
         "dailyRank":"10",
         "weeklyRank":"1",
@@ -108,6 +117,7 @@
         "img": "img/Ranking/Kids/009.jpg"
     },
     {
+        "id": "TK010",
         "liveRank":"10",
         "dailyRank":"1",
         "weeklyRank":"2",

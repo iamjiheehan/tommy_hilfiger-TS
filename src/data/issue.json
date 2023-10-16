@@ -8,6 +8,7 @@
         },
         "product": [
             {
+                "id": "IS001",
                 "brand": "TOMMY HILFIGER MEN",
                 "name": "[DISNEY X TOMMY] 폴카 도트 베스트",
                 "img": "img/Issue/001/S001.jpg",
@@ -16,6 +17,7 @@
                 "percent": "30%"
             },
             {
+                "id": "IS002",
                 "brand": "TOMMY HILFIGER WOMEN",
                 "name": "[DISNEY X TOMMY] 폴카 도트 폴로 니트 탑",
                 "img": "img/Issue/001/S002.jpg",
@@ -24,6 +26,7 @@
                 "percent": "30%"
             },
             {
+                "id": "IS003",
                 "brand": "TOMMY HILFIGER KIDS",
                 "name": "[DISNEY X TOMMY] 체스트 후디",
                 "img": "img/Issue/001/S003.jpg",
@@ -43,6 +46,7 @@
         },
         "product": [
             {
+                "id": "IS004",
                 "brand": "TOMMY JEANS",
                 "name": "에센셜 뱃지 가디건",
                 "img": "img/Issue/002/S001.jpg",
@@ -51,6 +55,7 @@
                 "percent": "30%"
             },
             {
+                "id": "IS005",
                 "brand": "TOMMY JEANS",
                 "name": "크롭드 투웨이 집 스루 후디",
                 "img": "img/Issue/002/S002.jpg",
@@ -59,6 +64,7 @@
                 "percent": "30%"
             },
             {
+                "id": "IS006",
                 "brand": "TOMMY JEANS",
                 "name": "[EXCLUSIVE] 릴렉스 애슬래틱 플래그 스웨터",
                 "img": "img/Issue/002/S003.jpg",
@@ -78,6 +84,7 @@
         },
         "product": [
             {
+                "id": "IS007",
                 "brand": "TOMMY HILFIGER WOMEN",
                 "name": "보트넥 롱슬리브 니 드레스",
                 "img": "img/Issue/003/S001.jpg",
@@ -86,6 +93,7 @@
                 "percent": "10%"
             },
             {
+                "id": "IS008",
                 "brand": "TOMMY HILFIGER WOMEN",
                 "name": "클래식 케이블 크루넥 스웨터",
                 "img": "img/Issue/003/S002.jpg",
@@ -94,6 +102,7 @@
                 "percent": "10%"
             },
             {
+                "id": "IS009",
                 "brand": "TOMMY HILFIGER WOMEN",
                 "name": "TH 페미닌 체크 버킷햇",
                 "img": "img/Issue/003/S003.jpg",

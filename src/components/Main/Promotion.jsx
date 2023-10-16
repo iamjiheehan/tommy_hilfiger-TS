@@ -10,6 +10,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 
 function Promotion() {
     const content = [...data]
@@ -52,21 +53,23 @@ function Promotion() {
                         >
                             {content.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index} >
-                                    <a href="#!">
-                                        <div className="season-visual-wrap">
-                                            <div className="season-visual-box">
-                                                <img src={process.env.PUBLIC_URL + item.img} alt={index} />
+                                    <Link to={`/product/${item.id}/detail`}>
+                                        <a href="#!">
+                                            <div className="season-visual-wrap">
+                                                <div className="season-visual-box">
+                                                    <img src={process.env.PUBLIC_URL + item.img} alt={index} />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="season-info-wrap">
-                                            <div className="season-text-box">
-                                                <p className="season-title">
-                                                    {item.title}</p>
-                                                <p className="season-subtitle">
-                                                    {item.subtitle}</p>
+                                            <div className="season-info-wrap">
+                                                <div className="season-text-box">
+                                                    <p className="season-title">
+                                                        {item.title}</p>
+                                                    <p className="season-subtitle">
+                                                        {item.subtitle}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

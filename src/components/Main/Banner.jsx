@@ -61,52 +61,51 @@ function Banner() {
 
 
     return (
-
-        < div >
-        <section id='mainBanner'>
-            <Styles.Banner>
-                <div className='slide-container'>
-                    <Swiper
-                        className="mySwiper swiper-wrapper"
-                        onSlideChange={() => {
-                            console.log('slide change');
-                            trigger();
-                        }}
-                        // onSwiper={(swiper) => console.log(swiper)}
-                    >
-                        {data.map((item, index) => (
-                            <SwiperSlide className='swiper-item' key={index}>
-                                <Styles.Box>
-                                    <Styles.Banner className="img">
-                                        <a href="#!">
-                                            <img src={item.img} alt={item.title} />
-                                        </a>
-                                    </Styles.Banner>
-                                    <Styles.Text className="str" href="#!">
-                                        <span className="etc">
-                                            {item.etc}
-                                        </span>
-                                        <strong className="title">{item.title}</strong>
-                                        <span className="sub">{item.sub}</span>
-                                        <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
-                                    </Styles.Text>
-                                </Styles.Box>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
-                <div className="swiper-tool-wrap">
-                    <div className="swiper-tool">
-                        <div className="swiper-pagination">
-                            <span className="swiper-pagination-current">{currentSlide}</span>
-                            <span className='swiper-pagination-bar'>/</span>
-                            <span className="swiper-pagination-total">{dataLength}</span>
+        <div>
+            <section id='mainBanner'>
+                <Styles.Banner>
+                    <div className='slide-container'>
+                        <Swiper
+                            className="mySwiper swiper-wrapper"
+                            onSlideChange={() => {
+                                console.log('slide change');
+                                trigger();
+                            }}
+                            // onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            {data.map((item, index) => (
+                                <SwiperSlide className='swiper-item' key={index}>
+                                    <Styles.Box>
+                                        <Styles.Banner className="img">
+                                            <a href="#!">
+                                                <img src={item.img} alt={item.title} />
+                                            </a>
+                                        </Styles.Banner>
+                                        <Styles.Text className="str" href="#!">
+                                            <span className="etc">
+                                                {item.etc}
+                                            </span>
+                                            <strong className="title">{item.title}</strong>
+                                            <span className="sub">{item.sub}</span>
+                                            <Styles.ViewMore><span className='view-text'>VIEW MORE</span></Styles.ViewMore>
+                                        </Styles.Text>
+                                    </Styles.Box>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                    <div className="swiper-tool-wrap">
+                        <div className="swiper-tool">
+                            <div className="swiper-pagination">
+                                <span className="swiper-pagination-current">{currentSlide}</span>
+                                <span className='swiper-pagination-bar'>/</span>
+                                <span className="swiper-pagination-total">{dataLength}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Styles.Banner>
-        </section>
-        </div >
+                </Styles.Banner>
+            </section>
+        </div>
     );
 }
 

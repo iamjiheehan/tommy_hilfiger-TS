@@ -78,26 +78,24 @@ const detail = createSlice({
 
 export const { setDetail } = detail.actions;
 
-const product = createSlice({
-    name: "product",
+const products = createSlice({
+    name: "products",
     initialState: [], 
     reducers: {
         setProducts(state, action) {
-            return { ...state, ...action.payload };
+            return action.payload;
         },
     },
 });
 
-export const { setProducts } = product.actions;
-
-
+export const { setProducts } = products.actions;
 
 // 모든 리듀서를 하나의 루트 리듀서로 결합
 const rootReducer = {
     user: user.reducer,
     cart: cart.reducer,
     detail: detail.reducer,
-    product: detail.reducer
+    products: products.reducer
 };
 
 const store = configureStore({

@@ -4,7 +4,7 @@ import * as Styles from './ProductMainStyle'
 
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setDetail } from '../../store';
+import { setDetail, setProducts } from '../../store';
 
 export default function ProductMain() {
     //  사이즈 모달창1
@@ -39,16 +39,18 @@ export default function ProductMain() {
             document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
         });
     }
-  // Redux 상태 관리
-    const item = useSelector((state) => state.detail);  // Redux 스토어에서 상품 세부 정보 가져오기
+
+    // Redux 상태 관리
+    const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
+    const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
     const dispatch = useDispatch();
 
-    // 컴포넌트가 마운트될 때 상품 세부 정보를 가져옴
+    // 컴포넌트가 마운트될 때 제품 세부 정보와 제품 목록을 가져옵니다
     useEffect(() => {
-        // 상품 데이터를 가져와서 액션을 통해 Redux 스토어 업데이트
-        // 예: const itemData = 상품데이터를가져오는로직();
-        // 액션을 사용하여 상품 데이터를 Redux 스토어에 업데이트
+        // 액션을 사용하여 제품 항목을 가져오고 설정합니다.
+        dispatch(setProducts()); // 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setDetail(item));
+        console.log(products.length, Array.isArray(products), item);
     }, [dispatch]);
 
 
@@ -122,15 +124,7 @@ export default function ProductMain() {
                                 </p>
                             </div>
                             <Styles.ViewOption className="view-option">
-                                {/* <div className="row color">
-                                    <label className="color-check">
-                                        <input type="radio" />
-                                        <span className="pdImage">
-                                            ARMY GREEN</span>
-                                    </label>
-                                    <p className="txt">
-                                        ARMY GREEN</p>
-                                </div> */}
+
                                 <div className="row size">
                                     <div className="select">
                                         <button type="button" className="sel-btn" onClick={SetModal}>사이즈를 선택하세요. <span className="val"></span></button>

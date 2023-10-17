@@ -8,20 +8,21 @@ import SwiperCore from 'swiper/core';
 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItem, setDetail } from "../../store";
+import { addItem, setDetail, setProducts } from "../../store";
 
 function ItemLayout({ items, params }) {
+
     const [swiper, setSwiper] = useState(null);
     SwiperCore.use([Navigation]);
-
     const dispatch = useDispatch();
 
-    dispatch(setDetail({items}));
-    
+
     const handleItemClick = (item) => {
         if (item) {
-            dispatch(setDetail(item)); // Dispatch the entire item object to the Redux store
-            dispatch(addItem(item)); // Dispatch the item to the cart
+            dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냅니다
+            dispatch(addItem(item)); // 항목을 장바구니에 추가합니다
+            dispatch(setProducts(items));// 항목 배열 전체를 'product' 슬라이스에 보냅니다
+            console.log(items);
         }
     };
 

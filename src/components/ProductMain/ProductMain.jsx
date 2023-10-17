@@ -5,13 +5,6 @@ import * as Styles from './ProductMainStyle'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import SwiperCore from 'swiper/core';
-
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 export default function ProductMain() {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
@@ -58,26 +51,6 @@ export default function ProductMain() {
         dispatch({ type: SET_PRODUCT_DETAIL, payload: item });
         console.log(item, typeof item);
     }, [item]);
-
-    const [swiper, setSwiper] = useState(null);
-
-    SwiperCore.use([Navigation]);
-
-    const swiperInstaParams = {
-        className:"swiper-wrapper mySwiper",
-        slidesPerView:2,
-        spaceBetween:0,
-        navigation:{
-            prevEl: '.detail-prev',
-            nextEl: '.detail-next',
-        },
-        pagination:{
-            el : '.swiper-pagination',
-            clickable: true
-        },
-        modules:{Navigation, Pagination}
-    }
-
     return (
         <>
             <Styles.Container id='productMain'>
@@ -105,53 +78,16 @@ export default function ProductMain() {
                         <div className="top-left">
                             <div className="left-swiper">
                                 <div className="swiper-container">
-                                    <Swiper
-                                        {...swiperInstaParams}
-                                        ref={setSwiper}
-                                    >
-                                        <SwiperSlide className="swiper-item">
-                                            <button type="button" className="btn-popup" value="1">
-                                                {item.img && (
-                                                    <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
-                                                )}
-                                            </button>
-                                        </SwiperSlide>
-                                        <SwiperSlide className="swiper-item">
-                                            <button type="button" className="btn-popup" value="2">
-                                                {item.imgSub1 && (
-                                                    <img src={`${process.env.PUBLIC_URL}/${item.imgSub1}`} alt={item.name} />
-                                                )}
-                                            </button>
-                                        </SwiperSlide>
-                                        <SwiperSlide className="swiper-item">
-                                            <button type="button" className="btn-popup" value="3">
-                                                {item.imgSub2 && (
-                                                    <img src={`${process.env.PUBLIC_URL}/${item.imgSub2}`} alt={item.name} />
-                                                )}
-                                            </button>
-                                        </SwiperSlide>
-                                        <SwiperSlide className="swiper-item">
-                                            <button type="button" className="btn-popup" value="4">
-                                                {item.imgSub3 && (
-                                                    <img src={`${process.env.PUBLIC_URL}/${item.imgSub3}`} alt={item.name} />
-                                                )}
-                                            </button>
-                                        </SwiperSlide>
-                                    </Swiper>
-                                    <div className="slide-nav">
-                                        <button
-                                            className="slide-nav-prev detail-prev button-disabled"
-                                        >
-                                            <span className="offscreen"></span>
-                                        </button>
-                                        <button
-                                            className="slide-nav-next detail-next"
-                                        >
-                                            <span className="offscreen"></span>
-                                        </button>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-
+                                    <button type="button" className="btn-popup" value="1">
+                                        {item.img && (
+                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
+                                        )}
+                                    </button>
+                                    <button type="button" className="btn-popup" value="2">
+                                        {item.imgSub1 && (
+                                            <img src={`${process.env.PUBLIC_URL}/${item.imgSub1}`} alt={item.name} />
+                                        )}
+                                    </button>
                                     {/* <div className="swiper-wrapper">
                                         <div className="swiper-slide">
                                             {item.img && (

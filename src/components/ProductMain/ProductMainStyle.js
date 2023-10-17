@@ -18,66 +18,6 @@ export const Container = styled.div`
     padding: 130px 80px 160px;
     margin: 0 auto;
 
-
-
-    /* 스와이퍼 설정 */
-
-    .swiper-container {
-        position: relative;
-    }
-
-    .swiper-slide {
-        width: 50%;
-        flex: 0 0 auto;
-        flex-shrink: 0 !important;
-    }
-
-    .slide-nav .slide-nav-prev {
-        left: 0px;
-        width: 71px;
-        height: 102px;
-        margin-top: -51px;
-        opacity: 1;
-        background-image: url(${arrowPrev});
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .slide-nav .slide-nav-next {
-        right: 0px;
-        width: 71px;
-        height: 102px;
-        margin-top: -51px;
-        opacity: 1;
-        background-image: url(${arrowNext});
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .slide-nav {
-        position: absolute;
-        top: 50%; 
-    }
-
-    .swiper-pagination {
-        margin: 25px 0 0;
-        text-align: center;
-    }
-
-    .swiper-pagination .swiper-pagination-bullet-active {
-        opacity: 1;
-        background: #c2935f;
-    }
-    .swiper-pagination .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        margin: 0 5px;
-        background: #eee;
-        border-radius: 50%;
-        font-size: 0;
-        vertical-align: 6px;
-    }
-
     input[type="radio"],
     input[type="checkbox"],
     input[type="submit"],

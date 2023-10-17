@@ -31,6 +31,13 @@ export default function ProductMain() {
         setTab(index);
     }
 
+        //  장바구니 팝업창
+    const [popUp, setPopUp] = useState(false);
+    function ActivePop() {
+        setPopUp(!popUp);
+        console.log("닫기버튼눌림ㅋ",popUp);
+    }
+
     //탭 클릭시 스크롤 이동
     const btnArr = document.querySelectorAll('button[id^="tab"]');
     for (let i = 0; i < btnArr.length; i++) {
@@ -178,9 +185,8 @@ export default function ProductMain() {
                                         </span>
                                     </div>
                                 </div>
-                                <Link to="/cart">
                                     <div className="btn-box">
-                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
                                             <span>장바구니</span>
                                         </button>
                                         <button name="btnBuynow" type="button" className="btn-buy btn-type">
@@ -190,7 +196,7 @@ export default function ProductMain() {
                                             </span>
                                         </button>
                                     </div>
-                                </Link>
+
                             </Styles.ViewOption>
                             <Styles.InfoBot className="info-bot">
                                 <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
@@ -534,23 +540,43 @@ export default function ProductMain() {
                                             </span>
                                         </div>
                                     </div>
-                                    <Link to="/cart">
-                                        <div className="btn-box">
-                                            <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
-                                                <span>장바구니</span>
-                                            </button>
-                                            <button name="btnBuynow" type="button" className="btn-buy btn-type">
-                                                <span>
-                                                    <input type="hidden" />
-                                                    바로구매
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </Link>
+                                    <div className="btn-box">
+                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
+                                            <span>장바구니</span>
+                                        </button>
+                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}> 
+                                            <span>
+                                                <input type="hidden" />
+                                                바로구매
+                                            </span>
+                                        </button>
+                                    </div>
                                 </Styles.ViewOption>
                             </div>
                         </Styles.DetailOption>
                     </Styles.ViewDetails>
+                    {popUp && (
+                        <Styles.LayerPopup>
+                            <div className="layer-wrap">
+                                <div className="layer-header">
+                                    <h2 className="layer-title">장바구니 담기 완료</h2>
+                                </div>
+                                <div className="layer-container">
+                                    <div className="layer-content layer-shopping-bag">
+                                        <p className="txt">해당 상품이 장바구니에 담겼습니다.<br />장바구니로 이동하시겠습니까? </p>
+                                        <div className="btn-box">
+                                                <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
+                                                <Link to="/cart">
+                                                    <button type="button" className="btn-buy btn-type"><span>장바구니 보기</span></button>
+                                                </Link>
+                                        </div>
+                                        <section className="item-slide"></section>
+                                    </div>
+                                </div>
+                                <button type="button" className="btn-layer-close" onClick={ActivePop}>닫기</button>
+                            </div>
+                        </Styles.LayerPopup>
+                    )}
                 </div>
             </Styles.Container >
         </>

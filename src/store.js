@@ -19,11 +19,7 @@ export const { changeName, increase } = user.actions;
 // Cart slice
 const cart = createSlice({
     name: "cart",
-    initialState: [
-        { id: 0, imgurl: "shoes1.jpg", name: "White and Black", count: 2 },
-        { id: 1, imgurl: "shoes2.jpg", name: "Red Knit", count: 1 },
-        { id: 2, imgurl: "shoes3.jpg", name: "Grey Yordan", count: 1 },
-    ],
+    initialState: [{ id: 0, imgurl: "shoes1.jpg", name: "White and Black", count: 2 }],
     reducers: {
         addCount(state, action) {
             let num = state.findIndex((a) => a.id === action.payload);

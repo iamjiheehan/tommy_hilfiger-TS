@@ -7,12 +7,10 @@ import share from "../../assets/images/icon-share-sub.png";
 import colorChip from "../../assets/images/colorChip-sub.jpg";
 import select from "../../assets/images/select.png";
 
-import arrowNext from "../../assets/images/arrowNext.png";
-import arrowPrev from "../../assets/images/arrowPrev.png";
+import btnClose from "../../assets/images/btn_layer_close.png";
 
 export const Container = styled.div`
     background-color: #fff;
-    /* height: 500px; */
     min-width: 1280px;
     max-width: 1920px;
     padding: 130px 80px 160px;
@@ -977,5 +975,131 @@ export const DetailOption = styled.div`
 
         position: sticky;
         top: 90px;
+    }
+`;
+
+export const LayerPopup = styled.div`
+
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 1336px;
+    text-align: center;
+    z-index: 103;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        min-height: calc(100vh + 1px);
+        vertical-align: middle;
+    }
+
+    .layer-wrap {
+        position: relative;
+        display: inline-block;
+        width: 529px;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 12px;
+        text-align: left;
+        vertical-align: middle;
+        outline: none;
+    }
+
+    .layer-header {
+        position: relative;
+        margin-bottom: 50px;
+        padding: 40px 40px 0;
+
+        .layer-title {
+            height: 100%;
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.25px;
+        }
+    }
+
+    .layer-container {
+        padding: 0 40px 40px;
+        font-size: 14px;
+        color: #666;
+        word-break: break-all;
+    }
+
+    .btn-layer-close {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 19px;
+        height: 19px;
+        font-size: 0;
+        text-indent: -999px;
+        background: url(${btnClose}) no-repeat 50% 50%;
+    }
+
+    .btn-box {
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .layer-shopping-bag .txt {
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+        line-height: 23px;
+    }
+    
+
+    .layer-shopping-bag .item-slide {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .btn-basket{
+        color: #fff !important;
+        background: #c2935f;
+    }
+
+    .btn-buy {
+        color: #fff !important;
+        background: #333;
+    }
+
+    .btn-type {
+        display: inline-block;
+        position: relative;
+        padding: 0 19px;
+        font-size: 13px;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: top;
+        margin-left: 10px;
+        min-width: 210px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        border-radius: 6px;
     }
 `;

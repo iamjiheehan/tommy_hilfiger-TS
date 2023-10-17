@@ -77,7 +77,7 @@ export default function ProductMain() {
                     <div className="view-top">
                         <div className="top-left">
                             <div className="left-swiper">
-                                <div className="swiper-container">
+                                <div className="img-container">
                                     <button type="button" className="btn-popup" value="1">
                                         {item.img && (
                                             <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
@@ -232,8 +232,8 @@ export default function ProductMain() {
                     {/* 추천 아이템 리스트 */}
                     <Styles.ViewList className="view-list">
                         <div className="tab-wrap">
-                            <button type="button" className={listTab === 0 ? "on" : ""} onClick={() => ActiveListTab(0)}><span>모델 착용 상품</span></button>
-                            <button type="button" className={listTab === 1 ? "on" : ""} onClick={() => ActiveListTab(1)}><span>이 상품을 본 고객이 구매한 상품</span></button>
+                            <button type="button" className={listTab === 0 ? "on" : ""} onClick={() => ActiveListTab(0)}><span>이 상품을 본 고객이 구매한 상품</span></button>
+                            <button type="button" className={listTab === 1 ? "on" : ""} onClick={() => ActiveListTab(1)}><span>모델 착용 상품</span></button>
                         </div>
                         <div className="tab-content">
                             <div className="swiper-container product-list">

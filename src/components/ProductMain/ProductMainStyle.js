@@ -44,6 +44,14 @@ export const Container = styled.div`
         position: relative;
     }
 
+    .img-container {
+        display: flex;
+    }
+
+    .img-container .btn-popup {
+        width: 50%;
+    }
+
     .breadcrumb-wrap {
         height: 40px;
     }
@@ -511,6 +519,10 @@ export const ViewList = styled.div`
         color: #000;
     }
 
+    .item-box {
+        margin-right: 1rem;
+    }
+
     .item-brand {
         margin: 0 0 4px;
         font-size: 13px;
@@ -563,8 +575,9 @@ export const ViewList = styled.div`
     .btn-like span {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -0.5rem;
+        left: 2rem;
+        right: 0;
         display: block;
         width: 23px;
         height: 21px;
@@ -587,6 +600,10 @@ export const ViewList = styled.div`
         vertical-align: top;
 
         flex-shrink: 1 !important;
+    }
+
+    .item-box {
+        margin-right : 1.rem;
     }
 `;
 

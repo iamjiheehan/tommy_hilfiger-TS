@@ -72,6 +72,8 @@ function Banner() {
                                 trigger();
                             }}
                             // onSwiper={(swiper) => console.log(swiper)}
+                            autoplay={{ delay: 1000, disableOnInteraction: false }}
+                            loop={true}
                         >
                             {data.map((item, index) => (
                                 <SwiperSlide className='swiper-item' key={index}>

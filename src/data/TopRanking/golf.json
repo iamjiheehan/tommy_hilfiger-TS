@@ -10,7 +10,11 @@
         "price": "74,340",
         "regular": "118,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/001.jpg"
+        "img": "img/Ranking/Golf/001.jpg",
+        "imgSub":"img/Ranking/Golf/001-1.jpg",
+        "category": "골프",
+        "gender":"골프 악세서리",
+        "style":"벨트"
     },
     {
         "id": "TG002",
@@ -23,7 +27,11 @@
         "price": "53,100",
         "regular": "59,000",
         "percent": "10%",
-        "img": "img/Ranking/Golf/002.jpg"
+        "img": "img/Ranking/Golf/002.jpg",
+        "imgSub":"img/Ranking/Golf/002-1.jpg",
+        "category": "골프",
+        "gender":"골프 악세서리",
+        "style":"기타 용품"
     },
     {
         "id": "TG003",
@@ -32,11 +40,15 @@
         "weeklyRank":"5",
         "monthlyRank":"6",
         "brand": "TOMMY HILFIGER GOLF",
-        "name": "로고 자카드 카라 셔츠",
-        "price": "150,570",
-        "regular": "239,000",
-        "percent": "37%",
-        "img": "img/Ranking/Golf/003.jpg"
+        "name": "마스코트 카운터",
+        "price": "49,000",
+        "regular": "44,100",
+        "percent": "10%",
+        "img": "img/Ranking/Golf/003.jpg",
+        "imgSub":"img/Ranking/Golf/003-1.jpg",
+        "category": "골프",
+        "gender":"골프 악세서리",
+        "style":"기타 용품"
     },
     {
         "id": "TG004",
@@ -49,7 +61,11 @@
         "price": "163,170",
         "regular": "259,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/004.jpg"
+        "img": "img/Ranking/Golf/004.jpg",
+        "imgSub":"img/Ranking/Golf/004-1.jpg",
+        "category": "골프",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TG005",
@@ -62,7 +78,11 @@
         "price": "125,370",
         "regular": "199,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/005.jpg"
+        "img": "img/Ranking/Golf/005.jpg",
+        "imgSub":"img/Ranking/Golf/005-1.jpg",
+        "category": "골프",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TG006",
@@ -75,7 +95,11 @@
         "price": "137,970",
         "regular": "219,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/006.jpg"
+        "img": "img/Ranking/Golf/006.jpg",
+        "imgSub":"img/Ranking/Golf/006-1.jpg",
+        "category": "골프",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TG007",
@@ -88,7 +112,11 @@
         "price": "68,040",
         "regular": "108,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/007.jpg"
+        "img": "img/Ranking/Golf/007.jpg",
+        "imgSub":"img/Ranking/Golf/007-1.jpg",
+        "category": "골프",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TG008",
@@ -97,11 +125,15 @@
         "weeklyRank":"10",
         "monthlyRank":"1",
         "brand": "TOMMY HILFIGER GOLF",
-        "name": "라거 스트라이프 크루넥 니트",
-        "price": "175,770",
-        "regular": "279,000",
-        "percent": "37%",
-        "img": "img/Ranking/Golf/008.jpg"
+        "name": "모크넥 이너 티셔츠",
+        "price": "159,000",
+        "regular": "143,100",
+        "percent": "10%",
+        "img": "img/Ranking/Golf/008.jpg",
+        "imgSub":"img/Ranking/Golf/008-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"티셔츠"
     },
     {
         "id": "TG009",
@@ -114,7 +146,11 @@
         "price": "74,340",
         "regular": "118,000",
         "percent": "37%",
-        "img": "img/Ranking/Golf/009.jpg"
+        "img": "img/Ranking/Golf/009.jpg",
+        "imgSub":"img/Ranking/Golf/009-1.jpg",
+        "category": "골프",
+        "gender":"골프 악세사리",
+        "style":"벨트"
     },
     {
         "id": "TG010",
@@ -123,10 +159,14 @@
         "weeklyRank":"2",
         "monthlyRank":"3",
         "brand": "TOMMY HILFIGER GOLF",
-        "name": "캐주얼 믹스 벨트 부츠",
-        "price": "251,100",
-        "regular": "279,000",
+        "name": "레이디스 니 삭스",
+        "price": "28,000",
+        "regular": "25,200",
         "percent": "10%",
-        "img": "img/Ranking/Golf/010.jpg"
+        "img": "img/Ranking/Golf/010.jpg",
+        "imgSub":"img/Ranking/Golf/010-1.jpg",
+        "category": "골프",
+        "gender":"골프 악세서리",
+        "style":"양말"
     }
 ]

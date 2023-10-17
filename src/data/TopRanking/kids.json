@@ -10,7 +10,11 @@
         "price": "36,000",
         "regular": "72,000",
         "percent": "50%",
-        "img": "img/Ranking/Kids/001.jpg"
+        "img": "img/Ranking/Kids/001.jpg",
+        "imgSub":"img/Ranking/Kids/001-1.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"티셔츠"
     },
     {
         "id": "TK002",
@@ -23,7 +27,11 @@
         "price": "57,500",
         "regular": "115,000",
         "percent": "50%",
-        "img": "img/Ranking/Kids/002.jpg"
+        "img": "img/Ranking/Kids/002.jpg",
+        "imgSub":"img/Ranking/Kids/002-1.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"티셔츠"
     },
     {
         "id": "TK003",
@@ -36,7 +44,11 @@
         "price": "49,300",
         "regular": "58,000",
         "percent": "15%",
-        "img": "img/Ranking/Kids/003.jpg"
+        "img": "img/Ranking/Kids/003.jpg",
+        "imgSub":"img/Ranking/Kids/003-1.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"티셔츠"
     },
     {
         "id": "TK004",
@@ -45,11 +57,15 @@
         "weeklyRank":"6",
         "monthlyRank":"7",
         "brand": "TOMMY HILFIGER KIDS",
-        "name": "카라 퀼티드 자켓",
+        "name": "논카라 퀼티드 자켓",
         "price": "116,025",
         "regular": "195,000",
         "percent": "41%",
-        "img": "img/Ranking/Kids/004.jpg"
+        "img": "img/Ranking/Kids/004.jpg",
+        "imgSub":"img/Ranking/Kids/004-1.jpg",
+        "category": "키즈",
+        "gender":"여야",
+        "style":"아우터"
     },
     {
         "id": "TK005",
@@ -62,33 +78,45 @@
         "price": "52,500",
         "regular": "105,000",
         "percent": "50%",
-        "img": "img/Ranking/Kids/005.jpg"
+        "img": "img/Ranking/Kids/005.jpg",
+        "imgSub":"img/Ranking/Kids/005-1.jpg",
+        "category": "키즈",
+        "gender":"남아",
+        "style":"티셔츠"
+    },    
+    {
+        "id": "TK005",
+        "liveRank":"5",
+        "dailyRank":"6",
+        "weeklyRank":"7",
+        "monthlyRank":"8",
+        "brand": "TOMMY HILFIGER KIDS",
+        "name": "퀼티드 패디드 자켓",
+        "price": "52,500",
+        "regular": "105,000",
+        "percent": "50%",
+        "img": "img/Ranking/Kids/006.jpg",
+        "imgSub":"img/Ranking/Kids/006-1.jpg",
+        "category": "키즈",
+        "gender":"남아",
+        "style":"아우터"
     },
     {
-        "id": "TK006",
-        "liveRank":"6",
-        "dailyRank":"7",
-        "weeklyRank":"8",
-        "monthlyRank":"9",
+        "id": "TK005",
+        "liveRank":"5",
+        "dailyRank":"6",
+        "weeklyRank":"7",
+        "monthlyRank":"8",
         "brand": "TOMMY HILFIGER KIDS",
         "name": "퀼티드 자켓",
-        "price": "165,750",
-        "regular": "195,000",
-        "percent": "15%",
-        "img": "img/Ranking/Kids/008.jpg"
-    },
-    {
-        "id": "TK007",
-        "liveRank":"7",
-        "dailyRank":"8",
-        "weeklyRank":"9",
-        "monthlyRank":"10",
-        "brand": "TOMMY HILFIGER KIDS",
-        "name": "오리지널 크루넥 롱슬리브 티셔츠",
-        "price": "32,300",
-        "regular": "38,000",
-        "percent": "15%",
-        "img": "img/Ranking/Kids/007.jpg"
+        "price": "52,500",
+        "regular": "105,000",
+        "percent": "50%",
+        "img": "img/Ranking/Kids/007.jpg",
+        "imgSub":"img/Ranking/Kids/007-1.jpg",
+        "category": "키즈",
+        "gender":"여아",
+        "style":"아우터"
     },
     {
         "id": "TK008",
@@ -101,7 +129,11 @@
         "price": "165,750",
         "regular": "195,000",
         "percent": "15%",
-        "img": "img/Ranking/Kids/008.jpg"
+        "img": "img/Ranking/Kids/008.jpg",
+        "imgSub":"img/Ranking/Kids/008-1.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"티셔츠"
     },
     {
         "id": "TK009",
@@ -114,7 +146,11 @@
         "price": "66,300",
         "regular": "78,000",
         "percent": "15%",
-        "img": "img/Ranking/Kids/009.jpg"
+        "img": "img/Ranking/Kids/009.jpg",
+        "imgSub":"img/Ranking/Kids/009-1.jpg",
+        "category": "키즈",
+        "gender":"공용",
+        "style":"스웨터"
     },
     {
         "id": "TK010",
@@ -127,6 +163,10 @@
         "price": "32,725",
         "regular": "55,000",
         "percent": "41%",
-        "img": "img/Ranking/Kids/010.jpg"
+        "img": "img/Ranking/Kids/010.jpg",
+        "imgSub":"img/Ranking/Kids/010-1.jpg",
+        "category": "키즈",
+        "gender":"여아",
+        "style":"티셔츠"
     }
 ]

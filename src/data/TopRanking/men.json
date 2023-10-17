@@ -6,11 +6,15 @@
         "weeklyRank":"3",
         "monthlyRank":"4",
         "brand": "TOMMY HILFIGER MEN",
-        "name": "소프트쉘 봄버 자켓",
+        "name": "패딩 봄버 자켓",
         "price": "199,500",
         "regular": "399,000",
         "percent": "50%",
-        "img": "img/Ranking/Men/001.jpg"
+        "img": "img/Ranking/Men/001.jpg",
+        "imgSub":"img/Ranking/Men/001-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"재킷"
     },
     {
         "id": "TM002",
@@ -19,11 +23,15 @@
         "weeklyRank":"4",
         "monthlyRank":"5",
         "brand": "TOMMY HILFIGER MEN",
-        "name": "슬리브 스트라이프 가디건",
-        "price": "209,300",
-        "regular": "299,000",
-        "percent": "50%",
-        "img": "img/Ranking/Men/002.jpg"
+        "name": "세미 오버 숏다운 점퍼",
+        "price": "1,150,000",
+        "regular": "1,092,500",
+        "percent": "30%",
+        "img": "img/Ranking/Men/002.jpg",
+        "imgSub":"img/Ranking/Men/002-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"다운/패딩"
     },
     {
         "id": "TM003",
@@ -36,7 +44,11 @@
         "price": "74,970",
         "regular": "119,000",
         "percent": "37%",
-        "img": "img/Ranking/Men/003.jpg"
+        "img": "img/Ranking/Men/003.jpg",
+        "imgSub":"img/Ranking/Men/009-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TM004",
@@ -45,11 +57,15 @@
         "weeklyRank":"6",
         "monthlyRank":"7",
         "brand": "TOMMY HILFIGER MEN",
-        "name": "슬리브 스트라이프 가디건",
+        "name": "마이크로 코드 헨리넥 티셔츠",
         "price": "149,500",
         "regular": "299,000",
         "percent": "50%",
-        "img": "img/Ranking/Men/004.jpg"
+        "img": "img/Ranking/Men/004.jpg",
+        "imgSub":"img/Ranking/Men/004-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"티셔츠"
     },
     {
         "id": "TM005",
@@ -62,7 +78,11 @@
         "price": "84,500",
         "regular": "169,000",
         "percent": "50%",
-        "img": "img/Ranking/Men/005.jpg"
+        "img": "img/Ranking/Men/005.jpg",
+        "imgSub":"img/Ranking/Men/005-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"가디건"
     },
     {
         "id": "TM006",
@@ -75,7 +95,11 @@
         "price": "107,460",
         "regular": "199,000",
         "percent": "46%",
-        "img": "img/Ranking/Men/006.jpg"
+        "img": "img/Ranking/Men/006.jpg",
+        "imgSub":"img/Ranking/Men/009-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"피케"
     },
     {
         "id": "TM007",
@@ -88,7 +112,11 @@
         "price": "109,500",
         "regular": "219,000",
         "percent": "50%",
-        "img": "img/Ranking/Men/007.jpg"
+        "img": "img/Ranking/Men/007.jpg",
+        "imgSub":"img/Ranking/Men/007-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"피케"
     },
     {
         "id": "TM008",
@@ -97,11 +125,15 @@
         "weeklyRank":"10",
         "monthlyRank":"1",
         "brand": "TOMMY HILFIGER MEN",
-        "name": "코튼 실크 캐시미어 집업 니트",
+        "name": "코튼 실크 캐시미어 모크넥 스웨터",
         "price": "172,260",
         "regular": "319,000",
         "percent": "46%",
-        "img": "img/Ranking/Men/008.jpg"
+        "img": "img/Ranking/Men/008.jpg",
+        "imgSub":"img/Ranking/Men/008-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"스웨터"
     },
     {
         "id": "TM009",
@@ -114,7 +146,11 @@
         "price": "48,060",
         "regular": "89,000",
         "percent": "46%",
-        "img": "img/Ranking/Men/009.jpg"
+        "img": "img/Ranking/Men/009.jpg",
+        "imgSub":"img/Ranking/Men/009-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"가디건"
     },
     {
         "id": "TM010",
@@ -127,6 +163,10 @@
         "price": "305,100",
         "regular": "339,000",
         "percent": "10%",
-        "img": "img/Ranking/Men/010.jpg"
+        "img": "img/Ranking/Men/010.jpg",
+        "imgSub":"img/Ranking/Men/010-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"집업"
     }
 ]

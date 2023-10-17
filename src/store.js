@@ -70,6 +70,7 @@ const detail = createSlice({
     reducers: {
         setDetail(state, action) {
             // 액션 페이로드를 기반으로 스토어에 제품 세부 정보를 설정
+            //payload 객체는 상태를 업데이트하는 데 사용됨
             return { ...state, ...action.payload };
         },
     },
@@ -77,11 +78,26 @@ const detail = createSlice({
 
 export const { setDetail } = detail.actions;
 
+const product = createSlice({
+    name: "product",
+    initialState: [], 
+    reducers: {
+        setProducts(state, action) {
+            return { ...state, ...action.payload };
+        },
+    },
+});
+
+export const { setProducts } = product.actions;
+
+
+
 // 모든 리듀서를 하나의 루트 리듀서로 결합
 const rootReducer = {
     user: user.reducer,
     cart: cart.reducer,
     detail: detail.reducer,
+    product: detail.reducer
 };
 
 const store = configureStore({

@@ -10,7 +10,11 @@
         "price": "106,470",
         "regular": "169,000",
         "percent": "37%",
-        "img": "img/Ranking/Shoes/001.jpg"
+        "img": "img/Ranking/Shoes/001.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS002",
@@ -23,7 +27,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/002.jpg"
+        "img": "img/Ranking/Shoes/002.jpg",
+        "imgSub":"img/Ranking/Shoes/002-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"부츠"
     },
     {
         "id": "TS003",
@@ -36,7 +44,11 @@
         "price": "179,100",
         "regular": "199,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/003.jpg"
+        "img": "img/Ranking/Shoes/003.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS004",
@@ -49,7 +61,11 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/004.jpg"
+        "img": "img/Ranking/Shoes/004.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS005",
@@ -62,7 +78,11 @@
         "price": "49,680",
         "regular": "69,000",
         "percent": "28%",
-        "img": "img/Ranking/Shoes/005.jpg"
+        "img": "img/Ranking/Shoes/005.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"샌들/슬리퍼"
     },
     {
         "id": "TS006",
@@ -75,7 +95,11 @@
         "price": "136,890",
         "regular": "169,000",
         "percent": "19%",
-        "img": "img/Ranking/Shoes/006.jpg"
+        "img": "img/Ranking/Shoes/006.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS007",
@@ -88,7 +112,11 @@
         "price": "143,100",
         "regular": "159,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/007.jpg"
+        "img": "img/Ranking/Shoes/007.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS008",
@@ -101,7 +129,11 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/008.jpg"
+        "img": "img/Ranking/Shoes/008.jpg",
+        "imgSub":"img/Ranking/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS009",
@@ -114,7 +146,11 @@
         "price": "43,470",
         "regular": "69,000",
         "percent": "37%",
-        "img": "img/Ranking/Shoes/009.jpg"
+        "img": "img/Ranking/Shoes/009.jpg",
+        "imgSub":"img/Ranking/Shoes/009-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "TS010",
@@ -127,6 +163,10 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/Ranking/Shoes/010.jpg"
+        "img": "img/Ranking/Shoes/010.jpg",
+        "imgSub":"img/Ranking/Shoes/010-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"운동화/스니커즈/슬립온"
     }
 ]

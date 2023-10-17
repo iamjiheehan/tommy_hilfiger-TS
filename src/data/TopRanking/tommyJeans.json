@@ -10,7 +10,11 @@
         "price": "26,000",
         "regular": "52,000",
         "percent": "50%",
-        "img": "img/Ranking/Jeans/001.jpg"
+        "img": "img/Ranking/Jeans/001.jpg",
+        "imgSub":"img/Ranking/Jeans/001-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT002",
@@ -23,7 +27,11 @@
         "price": "151,300",
         "regular": "178,000",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/002.jpg"
+        "img": "img/Ranking/Jeans/002.jpg",
+        "imgSub":"img/Ranking/Jeans/002-1.jpg",
+        "category": "스웨터",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT003",
@@ -36,7 +44,11 @@
         "price": "151,300",
         "regular": "178,000",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/003.jpg"
+        "img": "img/Ranking/Jeans/003.jpg",
+        "imgSub":"img/Ranking/Jeans/003-1.jpg",
+        "category": "스웨터",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT004",
@@ -49,7 +61,11 @@
         "price": "83,300",
         "regular": "98,000",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/004.jpg"
+        "img": "img/Ranking/Jeans/004.jpg",
+        "imgSub":"img/Ranking/Jeans/004-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT005",
@@ -62,7 +78,11 @@
         "price": "26,000",
         "regular": "52,000",
         "percent": "50%",
-        "img": "img/Ranking/Jeans/005.jpg"
+        "img": "img/Ranking/Jeans/005.jpg",
+        "imgSub":"img/Ranking/Jeans/005-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT006",
@@ -75,7 +95,11 @@
         "price": "89,000",
         "regular": "178,000",
         "percent": "50%",
-        "img": "img/Ranking/Jeans/006.jpg"
+        "img": "img/Ranking/Jeans/006.jpg",
+        "imgSub":"img/Ranking/Jeans/006-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"긴팔"
     },
     {
         "id": "TT007",
@@ -84,11 +108,15 @@
         "weeklyRank":"9",
         "monthlyRank":"10",
         "brand": "TOMMY JEANS",
-        "name": "바시티 로고 티셔츠",
+        "name": "바시티 로고 후드티",
         "price": "40,460",
         "regular": "68,000",
         "percent": "41%",
-        "img": "img/Ranking/Jeans/007.jpg"
+        "img": "img/Ranking/Jeans/007.jpg",
+        "imgSub":"img/Ranking/Jeans/007-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"후드티"
     },
     {
         "id": "TT008",
@@ -101,7 +129,11 @@
         "price": "49,300",
         "regular": "58,000",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/008.jpg"
+        "img": "img/Ranking/Jeans/008.jpg",
+        "imgSub":"img/Ranking/Jeans/008-1.jpg",
+        "category": "티셔츠",
+        "gender":"남성",
+        "style":"긴팔"
     },
     {
         "id": "TT009",
@@ -114,7 +146,11 @@
         "price": "236,300",
         "regular": "278,000",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/009.jpg"
+        "img": "img/Ranking/Jeans/009.jpg",
+        "imgSub":"img/Ranking/Jeans/009-1.jpg",
+        "category": "티셔츠",
+        "gender":"남성",
+        "style":"팬츠"
     },
     {
         "id": "TT010",
@@ -127,6 +163,10 @@
         "price": "278,800",
         "regular": "328,800",
         "percent": "15%",
-        "img": "img/Ranking/Jeans/010.jpg"
+        "img": "img/Ranking/Jeans/010.jpg",
+        "imgSub":"img/Ranking/Jeans/010-1.jpg",
+        "category": "티셔츠",
+        "gender":"여성",
+        "style":"팬츠"
     }
 ]

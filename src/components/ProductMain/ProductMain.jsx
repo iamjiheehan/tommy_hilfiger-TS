@@ -88,7 +88,7 @@ export default function ProductMain() {
                                     </button>
                                     <button type="button" className="btn-popup" value="2">
                                         {item.imgSub && (
-                                            <img src={`${process.env.PUBLIC_URL}/${item.imgSub1}`} alt={item.name} />
+                                            <img src={`${process.env.PUBLIC_URL}/${item.imgSub}`} alt={item.name} />
                                         )}
                                     </button>
                                 </div>

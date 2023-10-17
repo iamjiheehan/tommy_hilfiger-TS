@@ -4,6 +4,7 @@ import * as Styles from './ProductMainStyle'
 
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { setDetail } from '../../store';
 
 export default function ProductMain() {
     //  사이즈 모달창1
@@ -38,19 +39,19 @@ export default function ProductMain() {
             document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
         });
     }
-
-    // const location = useLocation();
-    const item = useSelector((state) => state.detail);
+  // Redux 상태 관리
+    const item = useSelector((state) => state.detail);  // Redux 스토어에서 상품 세부 정보 가져오기
     const dispatch = useDispatch();
 
-    const SET_PRODUCT_DETAIL = 'SET_PRODUCT_DETAIL';
-
-    // const [ related, setRelated ] = useState();
-
+    // 컴포넌트가 마운트될 때 상품 세부 정보를 가져옴
     useEffect(() => {
-        dispatch({ type: SET_PRODUCT_DETAIL, payload: item });
-        console.log(item, typeof item);
-    }, [item]);
+        // 상품 데이터를 가져와서 액션을 통해 Redux 스토어 업데이트
+        // 예: const itemData = 상품데이터를가져오는로직();
+        // 액션을 사용하여 상품 데이터를 Redux 스토어에 업데이트
+        dispatch(setDetail(item));
+    }, [dispatch]);
+
+
     return (
         <>
             <Styles.Container id='productMain'>
@@ -88,18 +89,6 @@ export default function ProductMain() {
                                             <img src={`${process.env.PUBLIC_URL}/${item.imgSub1}`} alt={item.name} />
                                         )}
                                     </button>
-                                    {/* <div className="swiper-wrapper">
-                                        <div className="swiper-slide">
-                                            {item.img && (
-                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
-                                            )}
-                                        </div>
-                                        <div className="swiper-slide">
-                                            {item.img && (
-                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
-                                            )}
-                                        </div>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>

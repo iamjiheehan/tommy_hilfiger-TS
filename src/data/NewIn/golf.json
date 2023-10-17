@@ -6,7 +6,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/001.jpg"
+        "img": "img/NewIn/Golf/001.jpg",
+        "imgSub":"img/NewIn/Golf/001-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"팬츠"
     },
     {
         "id": "NG002",
@@ -15,7 +19,11 @@
         "price": "287,100",
         "regular": "319,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/002.jpg"
+        "img": "img/NewIn/Golf/002.jpg",
+        "imgSub":"img/NewIn/Golf/002-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"스커트"
     },
     {
         "id": "NG003",
@@ -24,7 +32,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/003.jpg"
+        "img": "img/NewIn/Golf/003.jpg",
+        "imgSub":"img/NewIn/Golf/003-1.jpg",
+        "category": "골프",
+        "gender":"공용",
+        "style":"팬츠"
     },
     {
         "id": "NG004",
@@ -33,16 +45,24 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/004.jpg"
+        "img": "img/NewIn/Golf/004.jpg",
+        "imgSub":"img/NewIn/Golf/004-1.jpg",
+        "category": "골프",
+        "gender":"공용",
+        "style":"팬츠"
     },
     {
         "id": "NG005",
         "brand": "TOMMY HILFIGER GOLF",
-        "name": "원 턱 테이퍼드 팬츠",
-        "price": "269,100",
-        "regular": "299,000",
+        "name": "베이직 테이퍼드 트라우저",
+        "price": "259,000",
+        "regular": "233,100",
         "percent": "10%",
-        "img": "img/NewIn/Golf/005.jpg"
+        "img": "img/NewIn/Golf/005.jpg",
+        "imgSub":"img/NewIn/Golf/005-1.jpg",
+        "category": "골프",
+        "gender":"공용",
+        "style":"팬츠"
     },
     {
         "id": "NG006",
@@ -51,7 +71,11 @@
         "price": "377,100",
         "regular": "419,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/006.jpg"
+        "img": "img/NewIn/Golf/006.jpg",
+        "imgSub":"img/NewIn/Golf/006-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"아우터"
     },
     {
         "id": "NG007",
@@ -60,7 +84,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/007.jpg"
+        "img": "img/NewIn/Golf/007.jpg",
+        "imgSub":"img/NewIn/Golf/007-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"팬츠"
     },
     {
         "id": "NG008",
@@ -69,6 +97,10 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Golf/008.jpg"
+        "img": "img/NewIn/Golf/008.jpg",
+        "imgSub":"img/NewIn/Golf/008-1.jpg",
+        "category": "골프",
+        "gender":"여성",
+        "style":"팬츠"
     }
 ]

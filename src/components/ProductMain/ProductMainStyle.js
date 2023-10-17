@@ -93,7 +93,7 @@ export const Container = styled.div`
         content: "";
         display: inline-block;
         position: absolute;
-        top: 3px;
+        top: 5px;
         left: 0;
         width: 5px;
         height: 9px;
@@ -404,6 +404,10 @@ export const ViewOption = styled.div`
                 color: #666;
                 font-size: 14px;
             }
+        }
+
+        label:hover span{
+            color: #000;
         }
     }
 

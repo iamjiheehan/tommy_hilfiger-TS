@@ -124,7 +124,6 @@ export default function ProductMain() {
                                 </p>
                             </div>
                             <Styles.ViewOption className="view-option">
-
                                 <div className="row size">
                                     <div className="select">
                                         <button type="button" className="sel-btn" onClick={SetModal}>사이즈를 선택하세요. <span className="val"></span></button>
@@ -221,54 +220,36 @@ export default function ProductMain() {
                         <div className="tab-content">
                             <div className="swiper-container product-list">
                                 <ul className="swiper-wrapper">
-                                    <li className="swiper-slide">
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <img src="https://cdn.hfashionmall.com/goods/THBR/23/07/18/GM0123071817764_1_ORGINL_1689666172845.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레이트핏 단톤 블랙 데님 팬츠" />
-                                                    </a>
-                                                </div>
-                                                <button type="button" className="btn-like">
-                                                    <span>좋아요</span>
-                                                </button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">TOMMY HILFIGER MEN</div>
-                                                    <div className="item-name">스트레이트핏 단톤 블랙 데님 팬츠</div>
-                                                    <div className="item-price">
-                                                        <span className="price">199,000</span>
+                                    {products.slice(0, 5).map((product) => (
+                                        <li className="swiper-slide" key={product.id}>
+                                            <figure className="item-box">
+                                                <div className="item-img">
+                                                    <div className="img-box">
+                                                        <a href="#!">
+                                                            {item.img && (
+                                                                <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
+                                                            )}
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li className="swiper-slide">
-                                        <figure className="item-box">
-                                            <div className="item-img">
-                                                <div className="img-box">
-                                                    <a href="#!">
-                                                        <img src="https://cdn.hfashionmall.com/goods/THBR/23/07/18/GM0123071817764_1_ORGINL_1689666172845.jpg?RS=600x600&amp;AR=0&amp;CS=400x600" alt="스트레이트핏 단톤 블랙 데님 팬츠" />
-                                                    </a>
+                                                    <button type="button" className="btn-like">
+                                                        <span>좋아요</span>
+                                                    </button>
                                                 </div>
-                                                <button type="button" className="btn-like">
-                                                    <span>좋아요</span>
-                                                </button>
-                                            </div>
-                                            <figcaption className="item-info">
-                                                <a href="#!">
-                                                    <div className="item-brand">TOMMY HILFIGER MEN</div>
-                                                    <div className="item-name">스트레이트핏 단톤 블랙 데님 팬츠</div>
-                                                    <div className="item-price">
-                                                        <span className="price">199,000</span>
-                                                    </div>
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
+                                                <figcaption className="item-info">
+                                                    <a href="#!">
+                                                        <div className="item-brand">{product.brand}</div>
+                                                        <div className="item-name">{product.name}</div>
+                                                        <div className="item-price">
+                                                            <span className="price">{product.price}</span>
+                                                        </div>
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
+
                         </div>
                     </Styles.ViewList>
                     <Styles.ViewDetails className="view-detail">

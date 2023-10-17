@@ -6,7 +6,11 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/001.jpg"
+        "img": "img/NewIn/Women/001.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "하의",
+        "gender":"여성",
+        "style":"팬츠"
     },
     {
         "id": "NW002",
@@ -15,7 +19,11 @@
         "price": "436,500",
         "regular": "485,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/002.jpg"
+        "img": "img/NewIn/Women/002.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"아우터"
     },
     {
         "id": "NW003",
@@ -24,7 +32,11 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/003.jpg"
+        "img": "img/NewIn/Women/003.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "하의",
+        "gender":"여성",
+        "style":"팬츠"
     },
     {
         "id": "NW004",
@@ -33,7 +45,11 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/004.jpg"
+        "img": "img/NewIn/Women/004.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"아우터"
     },
     {
         "id": "NW005",
@@ -42,7 +58,11 @@
         "price": "233,100",
         "regular": "259,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/005.jpg"
+        "img": "img/NewIn/Women/005.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"아우터"
     },
     {
         "id": "NW006",
@@ -51,7 +71,11 @@
         "price": "193,500",
         "regular": "215,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/006.jpg"
+        "img": "img/NewIn/Women/006.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"셔츠"
     },
     {
         "id": "NW007",
@@ -60,7 +84,11 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/007.jpg"
+        "img": "img/NewIn/Women/007.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"셔츠"
     },
     {
         "id": "NW008",
@@ -69,7 +97,11 @@
         "price": "247,500",
         "regular": "275,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/008.jpg"
+        "img": "img/NewIn/Women/008.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"아우터",
+        "style":"셔츠"
     }
     ,
     {
@@ -79,7 +111,11 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/009.jpg"
+        "img": "img/NewIn/Women/009.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"스웨터"
     },
     {
         "id": "NW010",
@@ -88,6 +124,10 @@
         "price": "211,500",
         "regular": "235,000",
         "percent": "10%",
-        "img": "img/NewIn/Women/010.jpg"
+        "img": "img/NewIn/Women/010.jpg",
+        "imgSub":"img/NewIn/Women/003-1.jpg",
+        "category": "상의",
+        "gender":"여성",
+        "style":"스웨터"
     }
 ]

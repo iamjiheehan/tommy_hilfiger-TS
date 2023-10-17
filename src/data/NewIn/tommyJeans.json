@@ -2,20 +2,28 @@
     {
         "id": "NT001",
         "brand": "TOMMY JEANS",
-        "name": "[ALASKA] 크롭 푸퍼",
-        "price": "304,300",
-        "regular": "358,000",
-        "percent": "15%",
-        "img": "img/NewIn/Jeans/001.jpg"
+        "name": "퀄티드 라이트 덕 다운 재킷",
+        "price": "208,600",
+        "regular": "298,000",
+        "percent": "30%",
+        "img": "img/NewIn/Jeans/001.jpg",
+        "imgSub":"img/NewIn/Jeans/001-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"패딩"
     },
     {
         "id": "NT002",
         "brand": "TOMMY JEANS",
-        "name": "[ALASKA] 크롭 푸퍼",
-        "price": "304,300",
-        "regular": "358,000",
+        "name": "케이블 집업",
+        "price": "248,000",
+        "regular": "210,800",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/002.jpg"
+        "img": "img/NewIn/Jeans/002.jpg",
+        "imgSub":"img/NewIn/Jeans/002-1.jpg",
+        "category": "니트/스웨터",
+        "gender":"여성",
+        "style":"가디건"
     },
     {
         "id": "NT003",
@@ -24,7 +32,11 @@
         "price": "304,300",
         "regular": "358,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/003.jpg"
+        "img": "img/NewIn/Jeans/003.jpg",
+        "imgSub":"img/NewIn/Jeans/003-1.jpg",
+        "category": "아우터",
+        "gender":"여성",
+        "style":"패딩"
     },
     {
         "id": "NT004",
@@ -33,16 +45,24 @@
         "price": "159,800",
         "regular": "188,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/004.jpg"
+        "img": "img/NewIn/Jeans/004.jpg",
+        "imgSub":"img/NewIn/Jeans/004-1.jpg",
+        "category": "팬츠",
+        "gender":"여성",
+        "style":"데님"
     },
     {
         "id": "NT005",
         "brand": "TOMMY JEANS",
-        "name": "소피 플레어핏 미드블루 데님",
-        "price": "168,300",
-        "regular": "198,000",
+        "name": "슬릿 니트 조거 팬츠",
+        "price": "318,000",
+        "regular": "302,100",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/005.jpg"
+        "img": "img/NewIn/Jeans/005.jpg",
+        "imgSub":"img/NewIn/Jeans/005-1.jpg",
+        "category": "팬츠",
+        "gender":"여성",
+        "style":"긴바지"
     },
     {
         "id": "NT006",
@@ -51,7 +71,11 @@
         "price": "287,300",
         "regular": "338,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/006.jpg"
+        "img": "img/NewIn/Jeans/006.jpg",
+        "imgSub":"img/NewIn/Jeans/006-1.jpg",
+        "category": "아우터",
+        "gender":"여성",
+        "style":"코트"
     },
     {
         "id": "NT007",
@@ -60,7 +84,11 @@
         "price": "236,300",
         "regular": "278,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/007.jpg"
+        "img": "img/NewIn/Jeans/007.jpg",
+        "imgSub":"img/NewIn/Jeans/007-1.jpg",
+        "category": "아우터",
+        "gender":"여성",
+        "style":"다운/패딩"
     },
     {
         "id": "NT008",
@@ -69,7 +97,11 @@
         "price": "253,300",
         "regular": "298,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/008.jpg"
+        "img": "img/NewIn/Jeans/008.jpg",
+        "imgSub":"img/NewIn/Jeans/008-1.jpg",
+        "category": "데님",
+        "gender":"남성",
+        "style":"자켓"
     },
     {
         "id": "NT009",
@@ -78,7 +110,11 @@
         "price": "278,800",
         "regular": "328,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/009.jpg"
+        "img": "img/NewIn/Jeans/009.jpg",
+        "imgSub":"img/NewIn/Jeans/009-1.jpg",
+        "category": "니트/스웨터",
+        "gender":"여성",
+        "style":"크루넥"
     },
     {
         "id": "NT010",
@@ -87,6 +123,10 @@
         "price": "312,800",
         "regular": "368,000",
         "percent": "15%",
-        "img": "img/NewIn/Jeans/010.jpg"
+        "img": "img/NewIn/Jeans/010.jpg",
+        "imgSub":"img/NewIn/Jeans/010-1.jpg",
+        "category": "아우터",
+        "gender":"남성",
+        "style":"재킷"
     }
 ]

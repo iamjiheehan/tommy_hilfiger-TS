@@ -6,7 +6,11 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/001.jpg"
+        "img": "img/NewIn/Shoes/001.jpg",
+        "imgSub":"img/NewIn/Shoes/001-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "NS002",
@@ -15,7 +19,11 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/002.jpg"
+        "img": "img/NewIn/Shoes/002.jpg",
+        "imgSub":"img/NewIn/Shoes/002-1.jpg",
+        "category": "신발",
+        "gender":"남성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "NS003",
@@ -24,7 +32,11 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/003.jpg"
+        "img": "img/NewIn/Shoes/003.jpg",
+        "imgSub":"img/NewIn/Shoes/003-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "NS004",
@@ -33,7 +45,11 @@
         "price": "152,100",
         "regular": "169,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/004.jpg"
+        "img": "img/NewIn/Shoes/004.jpg",
+        "imgSub":"img/NewIn/Shoes/004-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"운동화/스니커즈/슬립온"
     },
     {
         "id": "NS005",
@@ -42,7 +58,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/005.jpg"
+        "img": "img/NewIn/Shoes/005.jpg",
+        "imgSub":"img/NewIn/Shoes/005-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     },
     {
         "id": "NS006",
@@ -51,7 +71,11 @@
         "price": "161,100",
         "regular": "179,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/006.jpg"
+        "img": "img/NewIn/Shoes/006.jpg",
+        "imgSub":"img/NewIn/Shoes/006-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     },
     {
         "id": "NS007",
@@ -60,7 +84,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/007.jpg"
+        "img": "img/NewIn/Shoes/007.jpg",
+        "imgSub":"img/NewIn/Shoes/007-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     },
     {
         "id": "NS008",
@@ -69,7 +97,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/008.jpg"
+        "img": "img/NewIn/Shoes/008.jpg",
+        "imgSub":"img/NewIn/Shoes/008-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     },
     {
         "id": "NS009",
@@ -78,7 +110,11 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/009.jpg"
+        "img": "img/NewIn/Shoes/009.jpg",
+        "imgSub":"img/NewIn/Shoes/009-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     },
     {
         "id": "NS010",
@@ -87,6 +123,10 @@
         "price": "269,100",
         "regular": "299,000",
         "percent": "10%",
-        "img": "img/NewIn/Shoes/010.jpg"
+        "img": "img/NewIn/Shoes/010.jpg",
+        "imgSub":"img/NewIn/Shoes/010-1.jpg",
+        "category": "신발",
+        "gender":"여성",
+        "style":"부츠"
     }
 ]

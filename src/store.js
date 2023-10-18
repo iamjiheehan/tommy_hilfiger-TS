@@ -52,26 +52,24 @@ const cart = createSlice({
     reducers: {
         reset: () => ({ items: [] }),
 
-        // AddCount reducer
         addCount: (state, action) => {
-            const updatedItems = state.items.map((item) => {
-                if (item.id === action.payload) {
-                    return { ...item, count: item.count + 1 };
-                }
-                return item;
-            });
-            state.items = updatedItems;
+            const item = state.items.find((item) => item.id === action.payload);
+            if (item) {
+                item.count++;
+                item.finalPrice = (
+                    parseFloat(item.price.replace(/,/g, "")) * item.count
+                ).toLocaleString();
+            }
         },
 
-        // MinusCount reducer
         minusCount: (state, action) => {
-            const updatedItems = state.items.map((item) => {
-                if (item.id === action.payload && item.count > 1) {
-                    return { ...item, count: item.count - 1 };
-                }
-                return item;
-            });
-            state.items = updatedItems;
+            const item = state.items.find((item) => item.id === action.payload);
+            if (item && item.count > 1) {
+                item.count--;
+                item.finalPrice = (
+                    parseFloat(item.price.replace(/,/g, "")) * item.count
+                ).toLocaleString();
+            }
         },
 
         addItem: (state, action) => {
@@ -80,35 +78,35 @@ const cart = createSlice({
             );
             if (item) {
                 item.count++;
+                item.finalPrice = (
+                    parseFloat(item.price.replace(/,/g, "")) * item.count
+                ).toLocaleString();
             } else {
-                state.items.push({ ...action.payload, count: 1 });
+                state.items.push({
+                    ...action.payload,
+                    count: 1,
+                    finalPrice: action.payload.price,
+                });
             }
         },
 
         deleteItem: (state, action) => {
-            const index = state.items.findIndex(
-                (item) => item.id === action.payload
+            state.items = state.items.filter(
+                (item) => item.id !== action.payload
             );
-            if (index !== -1) {
-                state.items.splice(index, 1);
-            }
         },
 
         sortName: (state, action) => {
             state.items.sort((a, b) => (a.name > b.name ? 1 : -1));
         },
 
-        // 아이템 변경 시 최종 가격을 다시 계산하고 업데이트
-        // 아이템 변경 시 최종 가격을 다시 계산하고 업데이트
         calculateFinalPrice: (state) => {
-            const totalPrice = state.items.reduce((total, item) => {
-                return (
-                    total +
+            // Calculate final price for each item
+            state.items.forEach((item) => {
+                item.finalPrice = (
                     parseFloat(item.price.replace(/,/g, "")) * item.count
-                );
-            }, 0);
-            // Format the totalPrice with commas for thousands
-            state.finalPrice = totalPrice.toLocaleString(); // Converts to a string with comma separators
+                ).toLocaleString();
+            });
         },
     },
 });

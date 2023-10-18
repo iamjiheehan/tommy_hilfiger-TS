@@ -29,7 +29,6 @@ function Cart() {
     }
 
 
-
     return (
         <>
             <Styles.CartWrap id="cartWrap">
@@ -125,7 +124,7 @@ function Cart() {
                                             </Button>
                                         </td>
                                         <td style={textVerticalAlign} className="cell-price item-opt">
-                                            {finalPrice} 원
+                                            {item.finalPrice} 원 {/* Display item's finalPrice */}
                                         </td>
                                         <td style={textVerticalAlign} className="cell-btn item-opt">
                                             <button type="button" className="btn-buy-small"><span>바로구매</span></button>
@@ -145,36 +144,33 @@ function Cart() {
                     </div>
                     <div className="tbl-btn">
                         <button type="button" className="btn-del-m"><span>선택삭제</span></button>
-                        <button type="button" className="btn-del-m"><span>품절삭제</span></button>
                     </div>
                     <Styles.FinalPrice>
-                        {items.map((item) => (
-                            <div className="inner">
-                                <span className="price">
-                                    <span className="txt">상품금액</span>
-                                    <span id="totalGodAmt" className="num">
-                                        {finalPrice}
-                                    </span> 원
-                                </span>
-                                <span className="symbol-plus">+</span>
-                                <span className="price">
-                                    <span className="txt">배송비</span>
-                                    <span id="totalDlvAmt" className="num">0</span> 원
-                                </span>
-                                <span className="symbol-minus">-</span>
-                                <span className="price sale">
-                                    <span className="txt">총 할인금액</span>
-                                    <span id="totalDcAmt" className="num">0</span> 원
-                                </span>
-                                <span className="symbol-eq">=</span>
-                                <span className="price total">
-                                    <span className="txt">결제금액</span>
-                                    <span id="totalOrdAmt" className="num">
-                                        {finalPrice}
-                                    </span>원
-                                </span>
-                            </div>
-                        ))}
+                        <div className="inner">
+                            <span className="price">
+                                <span className="txt">상품금액</span>
+                                <span id="totalGodAmt" className="num">
+                                    {finalPrice}
+                                </span> 원
+                            </span>
+                            <span className="symbol-plus">+</span>
+                            <span className="price">
+                                <span className="txt">배송비</span>
+                                <span id="totalDlvAmt" className="num">0</span> 원
+                            </span>
+                            <span className="symbol-minus">-</span>
+                            <span className="price sale">
+                                <span className="txt">총 할인금액</span>
+                                <span id="totalDcAmt" className="num">0</span> 원
+                            </span>
+                            <span className="symbol-eq">=</span>
+                            <span className="price total">
+                                <span className="txt">결제금액</span>
+                                <span id="totalOrdAmt" className="num">
+                                    {finalPrice}
+                                </span>원
+                            </span>
+                        </div>
                     </Styles.FinalPrice>
                     <Styles.BtnBox>
                         <div className="btn-box">

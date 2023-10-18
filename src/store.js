@@ -1,20 +1,20 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 // User slice
-const user = createSlice({
-    name: "user",
-    initialState: { name: "kim", age: 20 },
-    reducers: {
-        changeName(state) {
-            state.name = "park";
-        },
-        increase(state, action) {
-            state.age += action.payload;
-        },
-    },
-});
+// const user = createSlice({
+//     name: "user",
+//     initialState: { name: "kim", age: 20 },
+//     reducers: {
+//         changeName(state) {
+//             state.name = "park";
+//         },
+//         increase(state, action) {
+//             state.age += action.payload;
+//         },
+//     },
+// });
 
-export const { changeName, increase } = user.actions;
+// export const { changeName, increase } = user.actions;
 
 // Cart slice
 const cart = createSlice({
@@ -88,7 +88,7 @@ export const { setProducts } = products.actions;
 
 // 모든 리듀서를 하나의 루트 리듀서로 결합
 const rootReducer = {
-    user: user.reducer,
+    // user: user.reducer,
     cart: cart.reducer,
     detail: detail.reducer,
     products: products.reducer

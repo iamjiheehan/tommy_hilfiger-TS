@@ -28,7 +28,7 @@ export const Header = styled.div`
 
     .inner {
         position: absolute;
-        z-index: 100;
+        z-index: 999;
         left: 0;
         width: 100%;
         min-width: 1280px;

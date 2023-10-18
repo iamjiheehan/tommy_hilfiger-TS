@@ -79,7 +79,7 @@ export const Container = styled.div`
         font-size: 13px;
         font-weight: 300;
     }
-    .breadcrumb-wrap .breadcrumb li.active {
+    .breadcrumb-wrap .breadcrumb li.on {
         color: #000 !important;
     }
     .breadcrumb-wrap .breadcrumb li + li {

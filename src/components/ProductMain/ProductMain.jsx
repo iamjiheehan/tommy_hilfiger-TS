@@ -86,7 +86,7 @@ export default function ProductMain() {
                             <a href="#!">
                                 {item.gender}</a>
                         </li>
-                        <li className="active">
+                        <li className="on">
                             {item.category}</li>
                     </ol>
                 </div>

@@ -32,7 +32,7 @@ function Cart() {
     return (
         <>
             <Styles.CartWrap id="cartWrap">
-                <div class="breadcrumb-wrap">
+                <div className="breadcrumb-wrap">
                     <ol className="breadcrumb">
                         <li className="bc-home"><a href="/"><span>HOME</span></a></li>
                         <li className="active">장바구니</li>
@@ -91,7 +91,7 @@ function Cart() {
                                                         )}
                                                     </div>
                                                     <div>
-                                                        <div class="item-state">[입점 판매 상품]</div>
+                                                        <div className="item-state">[입점 판매 상품]</div>
                                                         <p className="item-text">{item.brand}</p>
                                                         <p className="item-text">{item.name}</p>
                                                         <p className="item-text btn-link">옵션변경</p>
@@ -127,7 +127,7 @@ function Cart() {
                                             {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
                                         </td>
                                         <td style={textVerticalAlign} className="cell-btn item-opt">
-                                            <button type="button" class="btn-buy-small"><span>바로구매</span></button>
+                                            <button type="button" className="btn-buy-small"><span>바로구매</span></button>
                                             <Button
                                                 onClick={() => {
                                                     dispatch(deleteItem(item.id));
@@ -142,7 +142,7 @@ function Cart() {
                             </tbody>
                         </Table>
                     </div>
-                    <div class="tbl-btn">
+                    <div className="tbl-btn">
                         <button type="button" className="btn-del-m"><span>선택삭제</span></button>
                         <button type="button" className="btn-del-m"><span>품절삭제</span></button>
                     </div>
@@ -184,7 +184,7 @@ function Cart() {
                             <li>장바구니에 담긴 상품은 30일 동안 보관됩니다. 30일이 지난 상품은 자동 삭제됩니다.</li>
                             <li>장바구니에 최대 50개까지 상품 보관이 가능하며, 실제 구매 시에는 가격이나 혜택이 변동될 수 있습니다.</li>
                             <li>장바구니에 담은 상품이 판매종료가 되었을 경우 자동 삭제 됩니다.</li>
-                            <li>입점 판매 상품은 장바구니에서 [입점 판매 상품]으로 표시됩니다.<button type="button" class="point-link">입점 판매 상품 안내 보기</button></li>
+                            <li>입점 판매 상품은 장바구니에서 [입점 판매 상품]으로 표시됩니다.<button type="button" className="point-link">입점 판매 상품 안내 보기</button></li>
                         </ul>
                     </Styles.BtnBox>
                 </Styles.CartCont>

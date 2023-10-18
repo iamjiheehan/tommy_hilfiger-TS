@@ -3,8 +3,11 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 // Cart slice
 const cart = createSlice({
     name: "cart",
-    initialState: { items: [] }, // Initial state as an object with an 'items' array
+    initialState: { items: [
+    ] },
     reducers: {
+        reset: () => ({ items: [] }),
+
         addCount: (state, action) => {
             const item = state.items.find((item) => item.id === action.payload);
             if (item) {
@@ -25,7 +28,7 @@ const cart = createSlice({
                 item.count++;
             } else {
                 state.items.push({ ...action.payload, count: 1 });
-            }
+            } 
         },
 
         deleteItem: (state, action) => {
@@ -38,6 +41,7 @@ const cart = createSlice({
         sortName: (state, action) => {
             state.items.sort((a, b) => (a.name > b.name ? 1 : -1));
         },
+
     },
 });
 

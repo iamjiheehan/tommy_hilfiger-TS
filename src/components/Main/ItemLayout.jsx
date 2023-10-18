@@ -8,7 +8,7 @@ import SwiperCore from 'swiper/core';
 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItem, setDetail, setProducts } from "../../store";
+import { setDetail, setProducts } from "../../store";
 
 function ItemLayout({ items, params }) {
 
@@ -20,7 +20,6 @@ function ItemLayout({ items, params }) {
     const handleItemClick = (item) => {
         if (item) {
             dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
-            dispatch(addItem(item)); // 항목을 장바구니에 추가
             dispatch(setProducts(items));// 항목 배열 전체를 'product' 슬라이스에 보냄
             console.log(items);
         }

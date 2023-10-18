@@ -1,56 +1,35 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-// User slice
-// const user = createSlice({
-//     name: "user",
-//     initialState: { name: "kim", age: 20 },
-//     reducers: {
-//         changeName(state) {
-//             state.name = "park";
-//         },
-//         increase(state, action) {
-//             state.age += action.payload;
-//         },
-//     },
-// });
-
-// export const { changeName, increase } = user.actions;
-
 // Cart slice
 const cart = createSlice({
     name: "cart",
-    // initialState: { items: [] }, // 카트 아이템을 담는 배열
-    initialState: [], // 카트 아이템을 담는 배열
+    initialState: { items: [] }, // Initial state as an object with an 'items' array
     reducers: {
         addCount: (state, action) => {
-            const item = state.items.find((a) => a.id === action.payload);
+            const item = state.items.find((item) => item.id === action.payload);
             if (item) {
                 item.count++;
             }
         },
 
-        decreaseCount: (state, action) => {
-            const item = state.items.find((a) => a.id === action.payload);
-            if (item) {
-                if (item.count > 0) {
-                    item.count--;
-                } else {
-                    alert("상품이 더 이상 없습니다.");
-                }
+        minusCount: (state, action) => {
+            const item = state.items.find((item) => item.id === action.payload);
+            if (item && item.count > 1) {
+                item.count--;
             }
         },
 
         addItem: (state, action) => {
-            const item = state.items.find((a) => a.id === action.payload.id);
+            const item = state.items.find((item) => item.id === action.payload.id);
             if (item) {
                 item.count++;
             } else {
-                state.items.push(action.payload);
+                state.items.push({ ...action.payload, count: 1 });
             }
         },
 
         deleteItem: (state, action) => {
-            const index = state.items.findIndex((a) => a.id === action.payload);
+            const index = state.items.findIndex((item) => item.id === action.payload);
             if (index !== -1) {
                 state.items.splice(index, 1);
             }
@@ -62,13 +41,8 @@ const cart = createSlice({
     },
 });
 
-export const { addCount, decreaseCount, addItem, deleteItem, sortName } = cart.actions;
 
-// 총 수량을 계산하는 선택자(selector) 추가
-export const selectCartTotalQuantity = (state) =>
-    state.cart.items.reduce((total, item) => total + item.count, 0);
-
-
+export const { addItem, minusCount, addCount, deleteItem, sortName } = cart.actions;
 
 // 세부 정보 슬라이스 (제품 세부 정보 관리용)
 const detail = createSlice({
@@ -87,7 +61,7 @@ export const { setDetail } = detail.actions;
 
 const products = createSlice({
     name: "products",
-    initialState: [], 
+    initialState: [],
     reducers: {
         setProducts(state, action) {
             return action.payload;
@@ -102,7 +76,7 @@ const rootReducer = {
     // user: user.reducer,
     cart: cart.reducer,
     detail: detail.reducer,
-    products: products.reducer
+    products: products.reducer,
 };
 
 const store = configureStore({

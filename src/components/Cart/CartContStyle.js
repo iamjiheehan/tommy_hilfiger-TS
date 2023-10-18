@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import checkbox from "../../assets/images/checkbox.png";
+import optIcon from "../../assets/images/icon_link_arrow2.png";
+import boxIcon from "../../assets/images/icon_link2.png";
 
 export const CartWrap = styled.div`
     background-color: #fff;
@@ -128,7 +130,6 @@ export const CartCont = styled.div`
         text-align: center;
     }
 
-
     .order-tbl [class*="cell-"] {
         display: table-cell;
         vertical-align: middle;
@@ -193,4 +194,82 @@ export const CartCont = styled.div`
         /* padding-right: 160px; */
         border-bottom: 1px solid #eee;
     }
+
+    .first {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+
+        .item-state {
+            color: #c2935f;
+            margin: 0 0 10px;
+        }
+    }
+
+    .item-img {
+        width: 86px;
+        height: 129px;
+    }
+
+    .item-text {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 300;
+        margin: 0 0 10px;
+        word-break: break-all;
+        font-weight: 300;
+
+        color: #000 !important;
+        font-size: 14px;
+    }
+
+    .item-opt {
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: 300;
+    }
+
+    /* 옵션변경 뒤 아이콘 */
+
+    .btn-link {
+        display: inline-block;
+        position: relative;
+        padding-right: 14px;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    .btn-link::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 24.5rem;
+        width: 6px;
+        height: 11px;
+        margin-top: -5px;
+        background: url(${optIcon}) no-repeat 0 0;
+    }
+
+    /* 상품사은품 증정 아이콘 */
+    .item-link {
+        margin-top: 15px;
+
+        display: inline-block;
+        margin-right: 18px;
+        padding-left: 30px;
+        color: #000;
+        background: url(${boxIcon}) no-repeat 0 50%;
+        background-position: top left;
+        .item-text {
+            margin-bottom: 0;
+        }
+    
+    }
+
 `;

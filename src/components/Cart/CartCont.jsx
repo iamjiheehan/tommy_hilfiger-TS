@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { addCount, decreaseCount, deleteItem, addItem } from "../../store.js"; // 불필요한 'sortName' 및 'cart' import 제거
+import { addCount, minusCount, deleteItem } from "../../store.js"; // Removed unnecessary 'sortName' import
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -8,23 +8,13 @@ import * as Styles from "./CartContStyle.js";
 import { useEffect } from "react";
 
 function Cart() {
-    const item = useSelector((state) => state.cart); // Redux 스토어로부터 장바구니 아이템 가져오기
+    const items = useSelector((state) => state.cart.items); // Redux 스토어로부터 장바구니 아이템 가져오기
     const dispatch = useDispatch();
-    
 
-    const cartItems = useSelector((state) => state.cart.items);
-    const selectedItem = useSelector((state) => state.detail);
+    useEffect(() => {
+        console.log("카트로 넘어온 아이템은", items);
+    });
 
-    useEffect(() =>{
-        console.log(cartItems,selectedItem);
-});
-
-    const smallProductStyle = {
-        border: "1px solid #ddd",
-        width: "100px",
-        height: "80px",
-        cursor: "pointer",
-    };
 
     const textVerticalAlign = {
         verticalAlign: "middle",
@@ -67,7 +57,7 @@ function Cart() {
                                 </tr>
                             </thead>
                             <tbody className="body">
-                                {/* {cartItems.map((item) => ( */}
+                                {items.map((item) => (
                                     <tr key={item.id}>
                                         <td className="cell-check">
                                             <label className="check-skin only">
@@ -77,21 +67,34 @@ function Cart() {
                                         </td>
                                         <td className="cell-info">
                                             <Link to={`/detail/${item.id}`}>
-                                                <img
-                                                    src={`img/${item.imgurl}`}
-                                                    style={smallProductStyle}
-                                                    alt={`img/${item.name}`}
-                                                />
-                                                {item.name}
+                                                <div className="first">
+                                                    <div>
+                                                        {item.img && (
+                                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`}
+                                                                alt={item.name}
+                                                                className="item-img"
+                                                            />
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                        <div class="item-state">[입점 판매 상품]</div>
+                                                        <p className="item-text">{item.brand}</p>
+                                                        <p className="item-text">{item.name}</p>
+                                                        <p className="item-text btn-link">옵션변경</p>
+                                                        <div className="item-link">
+                                                            <p className="item-text">상품사은품 증정</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </Link>
                                         </td>
-                                        <td style={textVerticalAlign} className="cell-amt">
+                                        <td style={textVerticalAlign} className="cell-amt item-opt">
                                             {item.count}
                                         </td>
-                                        <td style={textVerticalAlign} className="cell-price">
-                                            {item.price}
+                                        <td style={textVerticalAlign} className="cell-price item-opt">
+                                            {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
                                         </td>
-                                        <td style={textVerticalAlign} className="cell-btn">
+                                        <td style={textVerticalAlign} className="cell-btn item-opt">
                                             <Button
                                                 onClick={() => {
                                                     dispatch(addCount(item.id));
@@ -103,7 +106,7 @@ function Cart() {
                                             </Button>
                                             <Button
                                                 onClick={() => {
-                                                    dispatch(decreaseCount(item.id));
+                                                    dispatch(minusCount(item.id));
                                                 }}
                                                 variant="outline-warning"
                                                 style={{ marginRight: "10px" }}
@@ -120,7 +123,7 @@ function Cart() {
                                             </Button>
                                         </td>
                                     </tr>
-                                {/* ))} */}
+                                ))}
                             </tbody>
                         </Table>
                     </div>

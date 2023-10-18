@@ -51,9 +51,10 @@ export default function ProductMain() {
     const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
     const dispatch = useDispatch();
 
-    function SendToCart(item){
+    function SendToCart(item) {
+        console.log("Item to add to the cart:", item);
         dispatch(addItem(item));
-        ActivePop();
+        // ActivePop();
     }
 
     // 컴포넌트가 마운트될 때 제품 세부 정보와 제품 목록을 가져옵니다
@@ -61,6 +62,7 @@ export default function ProductMain() {
         // 액션을 사용하여 제품 항목을 가져오고 설정합니다.
         dispatch(setProducts()); // 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setDetail(item));
+        dispatch(addItem(item));
         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은",item);
     }, [dispatch]);
 

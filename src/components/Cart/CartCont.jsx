@@ -73,7 +73,7 @@ function Cart() {
                             </thead>
                             <tbody className="body">
                                 {items.map((item) => (
-                                    <tr key={item.id}>
+                                    <tr key={item.id} className="row">
                                         <td className="cell-check">
                                             <label className="check-skin only">
                                                 <input type="checkbox" className="allChk" />

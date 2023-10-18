@@ -95,12 +95,24 @@ export const CartCont = styled.div`
         display: table;
         width: 100%;
         table-layout: fixed;
-        padding: 30px 0;
+        /* padding: 30px 0; */
     }
     .order-tbl {
         border-top: 1px solid #000;
     }
-
+    .order-tbl .row {
+        padding: 30px 0;
+    }
+    .order-tbl .row ~ .row {
+        border-top: 1px solid #eee;
+    }
+    .order-tbl .row,
+    .order-tbl .inner,
+    .order-tbl .info-row {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
     .tab-wrap {
         position: relative;
         width: 100%;

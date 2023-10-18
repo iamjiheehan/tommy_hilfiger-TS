@@ -3,6 +3,8 @@ import styled from "styled-components";
 import checkbox from "../../assets/images/checkbox.png";
 import optIcon from "../../assets/images/icon_link_arrow2.png";
 import boxIcon from "../../assets/images/icon_link2.png";
+import closeBtn from "../../assets/images/btn_del2.png";
+
 
 export const CartWrap = styled.div`
     background-color: #fff;
@@ -128,6 +130,27 @@ export const CartCont = styled.div`
         position: relative;
         width: 180px;
         text-align: center;
+
+        .btn-buy-small {
+            min-width: 90px;
+            height: 30px;
+            padding: 0 10px;
+            line-height: 28px;
+            font-size: 12px;
+            border-radius: 2px;
+            color: #fff !important;
+            background: #333;
+        }
+
+        .btn-del {
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: 0;
+            right: 34px;
+            background: url(${closeBtn}) no-repeat;
+            font-size: 0;
+        }
     }
 
     .order-tbl [class*="cell-"] {

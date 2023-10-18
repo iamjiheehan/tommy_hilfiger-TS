@@ -89,35 +89,36 @@ function Cart() {
                                             </Link>
                                         </td>
                                         <td style={textVerticalAlign} className="cell-amt item-opt">
-                                            {item.count}
-                                        </td>
-                                        <td style={textVerticalAlign} className="cell-price item-opt">
-                                            {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
-                                        </td>
-                                        <td style={textVerticalAlign} className="cell-btn item-opt">
                                             <Button
                                                 onClick={() => {
                                                     dispatch(addCount(item.id));
                                                 }}
                                                 variant="outline-success"
-                                                style={{ marginRight: "10px" }}
+                                                style={{ marginRight: "1rem" }}
                                             >
                                                 +
                                             </Button>
+                                            {item.count}
                                             <Button
                                                 onClick={() => {
                                                     dispatch(minusCount(item.id));
                                                 }}
                                                 variant="outline-warning"
-                                                style={{ marginRight: "10px" }}
+                                                style={{ marginLeft: "1rem" }}
                                             >
                                                 -
                                             </Button>
+                                        </td>
+                                        <td style={textVerticalAlign} className="cell-price item-opt">
+                                            {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
+                                        </td>
+                                        <td style={textVerticalAlign} className="cell-btn item-opt">
+                                            <button type="button" class="btn-buy-small"><span>바로구매</span></button>
                                             <Button
                                                 onClick={() => {
                                                     dispatch(deleteItem(item.id));
                                                 }}
-                                                variant="outline-danger"
+                                                className="btn-del"
                                             >
                                                 상품삭제
                                             </Button>

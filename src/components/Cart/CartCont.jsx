@@ -47,8 +47,7 @@ function Cart() {
                             </li>
                         </ul>
                     </div>
-                    <div className="order-tbl type-cart">
-                        {/* head */}
+                    {/* <div className="order-tbl type-cart">
                         <div className="head">
                             <div className="cell-check">
                                 <label className="check-skin only">
@@ -60,83 +59,79 @@ function Cart() {
                             <div className="cell-btn">선택</div>
                             <div className="cell-dlv">배송정보</div>
                         </div>
-                        {/* body */}
-                    </div>
-                    <Table>
-                        <thead>
-                            <tr>
-                                <th>id</th>
-                                <th>상품이미지</th>
-                                <th>상품명</th>
-                                <th>수량</th>
-                                <th>변경하기</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {state.cart.map((a, i) => (
-                                <tr key={i}>
-                                    <td style={textverticalAlign}>
-                                        {state.cart[i].id + 1}
-                                    </td>
-
-                                    <td>
-                                        <Link to={`/detail/${state.cart[i].id}`}>
-                                            <img
-                                                src={`img/${state.cart[i].imgurl}`}
-                                                style={smallProdcuctStyle}
-                                            />
-                                        </Link>
-                                    </td>
-                                    <td style={textverticalAlign}>
-                                        {state.cart[i].name}
-                                    </td>
-                                    <td style={textverticalAlign}>
-                                        {state.cart[i].count}
-                                    </td>
-                                    <td style={textverticalAlign}>
-                                        <Button
-                                            onClick={() => {
-                                                dispatch(addCount(state.cart[i].id));
-                                            }}
-                                            variant="outline-success"
-                                            style={{ marginRight: "10px" }}
-                                        >
-                                            +
-                                        </Button>
-
-                                        <Button
-                                            onClick={() => {
-                                                dispatch(
-                                                    decreaseCount(state.cart[i].id)
-                                                );
-                                            }}
-                                            variant="outline-warning"
-                                            style={{ marginRight: "10px" }}
-                                        >
-                                            -
-                                        </Button>
-
-                                        <Button
-                                            onClick={() => {
-                                                dispatch(deleteItem(state.cart[i].id));
-                                            }}
-                                            variant="outline-danger"
-                                        >
-                                            상품삭제
-                                        </Button>
-                                    </td>
+                    </div> */}
+                    <div className="body">
+                        <Table className="order-tbl type-cart">
+                            <thead>
+                                <tr className="head">
+                                    <th className="cell-check">
+                                        <label className="check-skin only">
+                                            <input type="checkbox" className="allChk" /><span>전체 선택</span>
+                                        </label>
+                                    </th>
+                                    <th className="cell-info">상품정보</th>
+                                    <th className="cell-amt">상품수량</th>
+                                    <th className="cell-price">상품금액</th>
+                                    <th className="cell-btn">선택</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </Table>
-                    <Button
-                        variant="outline-primary"
-                        onClick={() => {
-                            dispatch(sortName(state.cart.Name));
-                        }}
-                    >
-                        이름순정렬
-                    </Button>{" "}
+                            </thead>
+                            <tbody className="body">
+                                {/* {state.cart.map((a, i) => (
+                                    <tr key={i}>
+                                        <td style={{ ...textverticalAlign, textAlign: "right" }}>
+                                            {state.cart[i].count}
+                                        </td>
+                                        <td>
+                                            <Link to={`/detail/${state.cart[i].id}`}>
+                                                <img
+                                                    src={`img/${state.cart[i].imgurl}`}
+                                                    style={smallProdcuctStyle}
+                                                />
+                                            </Link>
+                                        </td>
+                                        <td style={textverticalAlign}>
+                                            {state.cart[i].name}
+                                        </td>
+                                        <td style={textverticalAlign}>
+                                            {state.cart[i].count}
+                                        </td>
+                                        <td style={textverticalAlign}>
+                                            <Button
+                                                onClick={() => {
+                                                    dispatch(addCount(state.cart[i].id));
+                                                }}
+                                                variant="outline-success"
+                                                style={{ marginRight: "10px" }}
+                                            >
+                                                +
+                                            </Button>
+
+                                            <Button
+                                                onClick={() => {
+                                                    dispatch(
+                                                        decreaseCount(state.cart[i].id)
+                                                    );
+                                                }}
+                                                variant="outline-warning"
+                                                style={{ marginRight: "10px" }}
+                                            >
+                                                -
+                                            </Button>
+
+                                            <Button
+                                                onClick={() => {
+                                                    dispatch(deleteItem(state.cart[i].id));
+                                                }}
+                                                variant="outline-danger"
+                                            >
+                                                상품삭제
+                                            </Button>
+                                        </td>
+                                    </tr>
+                                ))} */}
+                            </tbody>
+                        </Table>
+                    </div>
                 </Styles.CartCont>
             </Styles.CartWrap>
         </>

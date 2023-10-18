@@ -16,6 +16,10 @@ export const CartWrap = styled.div`
         font-weight: 500;
         text-align: center;
     }
+
+    table {
+        display: inline-block !important;
+    }
 `;
 
 export const CartCont = styled.div`
@@ -93,9 +97,30 @@ export const CartCont = styled.div`
         text-align: center;
     }
 
-    .cell-dlv {
+    /* 상품정보 */
+    .cell-info {
+        width: 620px;
+    }
+
+    /* 상품수량 */
+    .cell-amt {
         width: 160px;
     }
+
+    /* 상품금액 */
+    .cell-price {
+        position: relative;
+        text-align: center;
+        width: 180px;
+    }
+
+    /* 선택 */
+    .cell-btn {
+        position: relative;
+        width: 180px;
+        text-align: center;
+    }
+
 
     .order-tbl [class*="cell-"] {
         display: table-cell;
@@ -152,5 +177,13 @@ export const CartCont = styled.div`
 
     .check-skin input:checked + span:before {
         background-position: 0 -22px;
+    }
+
+    /* --------------------------------body ----------------------------------*/
+
+    .body {
+        position: relative;
+        /* padding-right: 160px; */
+        border-bottom: 1px solid #eee;
     }
 `;

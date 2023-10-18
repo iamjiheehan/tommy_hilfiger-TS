@@ -46,7 +46,7 @@ function Cart() {
                             </li>
                         </ul>
                     </div>
-                    <div className="body">
+                    <div>
                         <Table className="order-tbl type-cart">
                             <thead>
                                 <tr className="head">
@@ -134,6 +134,49 @@ function Cart() {
                             </tbody>
                         </Table>
                     </div>
+                    <div class="tbl-btn">
+                        <button type="button" className="btn-del-m"><span>선택삭제</span></button>
+                        <button type="button" className="btn-del-m"><span>품절삭제</span></button>
+                    </div>
+                    <Styles.FinalPrice>
+                        {items.map((item) => (
+                            <div className="inner">
+                                <span className="price">
+                                    <span className="txt">상품금액</span>
+                                    <span id="totalGodAmt" className="num">938,000</span> 원
+                                </span>
+                                <span className="symbol-plus">+</span>
+                                <span className="price">
+                                    <span className="txt">배송비</span>
+                                    <span id="totalDlvAmt" className="num">0</span> 원
+                                </span>
+                                <span className="symbol-minus">-</span>
+                                <span className="price sale">
+                                    <span className="txt">총 할인금액</span>
+                                    <span id="totalDcAmt" className="num">0</span> 원
+                                </span>
+                                <span className="symbol-eq">=</span>
+                                <span className="price total">
+                                    <span className="txt">결제금액</span>
+                                    <span id="totalOrdAmt" className="num">
+                                        {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
+                                    </span>
+                                </span>
+                            </div>
+                        ))}
+                    </Styles.FinalPrice>
+                    <Styles.BtnBox>
+                        <div className="btn-box">
+                            <a href="#!" className="btn-type4-lg">쇼핑 계속하기</a>
+                            <a href="#!" className="btn-type2-lg">선택상품 주문하기</a>
+                        </div>
+                        <ul className="txt-list">
+                            <li>장바구니에 담긴 상품은 30일 동안 보관됩니다. 30일이 지난 상품은 자동 삭제됩니다.</li>
+                            <li>장바구니에 최대 50개까지 상품 보관이 가능하며, 실제 구매 시에는 가격이나 혜택이 변동될 수 있습니다.</li>
+                            <li>장바구니에 담은 상품이 판매종료가 되었을 경우 자동 삭제 됩니다.</li>
+                            <li>입점 판매 상품은 장바구니에서 [입점 판매 상품]으로 표시됩니다.<button type="button" class="point-link">입점 판매 상품 안내 보기</button></li>
+                        </ul>
+                    </Styles.BtnBox>
                 </Styles.CartCont>
             </Styles.CartWrap>
         </>

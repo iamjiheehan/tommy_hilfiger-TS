@@ -5,6 +5,7 @@ import optIcon from "../../assets/images/icon_link_arrow2.png";
 import boxIcon from "../../assets/images/icon_link2.png";
 import closeBtn from "../../assets/images/btn_del2.png";
 import icon_breadcrumb from "../../assets/images/icon_breadcrumb.png";
+import icon_arr4 from "../../assets/images/icon_link_arrow4.png";
 
 export const CartWrap = styled.div`
     background-color: #fff;
@@ -351,5 +352,256 @@ export const CartCont = styled.div`
         .item-text {
             margin-bottom: 0;
         }
+    }
+
+    /* 선택삭제, 품절삭제 버튼 */
+
+    .btn-del-m {
+        margin-right: 2px;
+        min-width: 90px;
+        height: 40px;
+        padding: 0 20px;
+        line-height: 38px;
+        color: #000 !important;
+        background: #eee;
+        font-size: 13px !important;
+        font-weight: 300;
+        vertical-align: top;
+    }
+`;
+
+export const FinalPrice = styled.div`
+    margin: 80px 0 0;
+    position: relative;
+
+    .inner {
+        padding: 70px 0;
+        background: #f8f3f0;
+        border-top: 1px solid #000;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .inner > span {
+        display: inline-block;
+        text-align: left;
+    }
+    .symbol-plus {
+        vertical-align: 36px;
+    }
+
+    [class*="symbol"] {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: 0 50px;
+        font-size: 0;
+    }
+    .symbol-minus {
+        vertical-align: middle;
+    }
+
+    [class*="symbol"] {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: 0 50px;
+        font-size: 0;
+    }
+
+    .symbol-eq {
+        height: 13px;
+        vertical-align: 30px;
+        margin-left: 80px;
+    }
+
+    .symbol-eq:before,
+    .symbol-eq:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 1px;
+        background: #000;
+    }
+
+    .price .txt {
+        display: block;
+        margin: 0 0 10px;
+        color: #000;
+    }
+
+    .price .num {
+        font-size: 28px;
+    }
+
+    .price.sale .num {
+        color: #c2935f;
+    }
+
+    .symbol-minus:before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        background: #000;
+    }
+
+    .symbol-eq:before,
+    .symbol-eq:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 1px;
+        background: #000;
+    }
+
+    .symbol-plus {
+        vertical-align: 36px;
+    }
+
+    .symbol-plus:before,
+    .symbol-plus:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 30px;
+        background: #000;
+    }
+
+    .symbol-plus:after {
+        transform: rotate(90deg);
+    }
+
+    .symbol-eq {
+        height: 13px;
+        vertical-align: 30px;
+        margin-left: 80px;
+
+        &::after {
+            top: 100%;
+        }
+    }
+
+    .price.total .num,
+    .price.total .etc {
+        font-size: 28px;
+    }
+`;
+
+export const BtnBox = styled.div`
+    .btn-box {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 50px;
+        gap: 1rem;
+    }
+
+    .btn-box [class$="-lg"],
+    .btn-box [class$="-xlg"] {
+        min-width: 210px;
+    }
+
+    btn-box [class*="btn-type"] + [class*="btn-type"] {
+        margin-left: 10px;
+    }
+
+    a:active,
+    a:hover,
+    a:link,
+    a:visited {
+        text-decoration: none;
+    }
+
+    [class*="btn-type2"] {
+        color: #fff !important;
+        background: #c2935f;
+    }
+
+    [class*="btn-type4"] {
+        color: #fff !important;
+        background: #333;
+    }
+    [class*="btn-type"] {
+        display: inline-block;
+        position: relative;
+        padding: 0 19px;
+        font-size: 13px;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .btn-type4-lg {
+        min-width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .btn-type2-lg {
+        min-width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    /* 텍스트박스 */
+
+    .btn-box + .txt-list {
+        margin-top: 80px;
+    }
+    .txt-list > li {
+        position: relative;
+        padding-left: 11px;
+        color: #666;
+        font-size: 13px;
+        line-height: 1.6;
+        word-break: break-all;
+    }
+
+    .txt-list > li + li {
+        margin-top: 7px;
+    }
+
+    .txt-list > li::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: #666;
+    }
+
+    .txt-list .point-link {
+        margin-left: 16px;
+    }
+
+    .point-link {
+        display: inline-block;
+        padding-right: 16px;
+        color: #c2935f;
+        background: url(${icon_arr4}) no-repeat 100% 50%;
+        border-bottom: 1px solid;
+        font-size: 13px !important;
+        font-weight: 300;
     }
 `;

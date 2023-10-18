@@ -18,6 +18,7 @@ const cart = createSlice({
                 gender: "여성",
                 style: "가디건",
                 count: 1,
+                finalPrice: "210,000",
             },
             {
                 id: "NT003",
@@ -32,6 +33,7 @@ const cart = createSlice({
                 gender: "여성",
                 style: "패딩",
                 count: 1,
+                finalPrice: "304,300",
             },
             {
                 id: "NT004",
@@ -46,6 +48,8 @@ const cart = createSlice({
                 gender: "여성",
                 style: "데님",
                 count: 1,
+                finalPrice: "159,800",
+
             },
         ],
     },

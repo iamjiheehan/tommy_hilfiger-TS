@@ -24,6 +24,12 @@ function Cart() {
     return (
         <>
             <Styles.CartWrap id="cartWrap">
+                <div class="breadcrumb-wrap">
+                    <ol className="breadcrumb">
+                        <li className="bc-home"><a href="/"><span>HOME</span></a></li>
+                        <li className="active">장바구니</li>
+                    </ol>
+                </div>
                 <h3 className="page-title">장바구니</h3>
                 <Styles.CartCont>
                     <div className="tab-wrap">

@@ -4,7 +4,7 @@ import checkbox from "../../assets/images/checkbox.png";
 import optIcon from "../../assets/images/icon_link_arrow2.png";
 import boxIcon from "../../assets/images/icon_link2.png";
 import closeBtn from "../../assets/images/btn_del2.png";
-
+import icon_breadcrumb from "../../assets/images/icon_breadcrumb.png";
 
 export const CartWrap = styled.div`
     background-color: #fff;
@@ -12,6 +12,65 @@ export const CartWrap = styled.div`
     max-width: 1920px;
     padding: 130px 80px 160px;
     margin: 0 auto;
+
+    ol {
+        list-style: none;
+    }
+
+    .breadcrumb-wrap {
+        width: 100%;
+        height: 40px;
+
+        span,
+        .active {
+            color: #999;
+            font-size: 14px;
+        }
+        .breadcrumb li + li {
+            margin-left: 12px;
+            padding-left: 19px;
+        }
+
+        .breadcrumb {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            min-width: 1280px;
+            max-width: 1920px;
+            height: 100%;
+            padding: 0 80px;
+            margin: 0 auto;
+
+            .bc-home {
+                position: relative;
+                min-height: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .breadcrumb li {
+            position: relative;
+        }
+
+        .breadcrumb li + li:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 5px;
+            height: 9px;
+            background: url(${icon_breadcrumb}) no-repeat 0 0;
+            vertical-align: top;
+        }
+    }
 
     .page-title {
         margin: 40px 0 40px;
@@ -268,7 +327,7 @@ export const CartCont = styled.div`
     }
 
     .btn-link::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -292,7 +351,5 @@ export const CartCont = styled.div`
         .item-text {
             margin-bottom: 0;
         }
-    
     }
-
 `;

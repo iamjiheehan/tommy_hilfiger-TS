@@ -570,9 +570,9 @@ export default function ProductMain() {
                                     <div className="layer-content layer-shopping-bag">
                                         <p className="txt">해당 상품이 장바구니에 담겼습니다.<br />장바구니로 이동하시겠습니까? </p>
                                         <div className="btn-box">
-                                                <button type="button" className="btn-basket btn-type" onClick={() => SendToCart(item)}><span>계속 쇼핑하기</span></button>
+                                                <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
                                                 <Link to="/cart">
-                                                    <button type="button" className="btn-buy btn-type"><span>장바구니 보기</span></button>
+                                                    <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item)}><span>장바구니 보기</span></button>
                                                 </Link>
                                         </div>
                                         <section className="item-slide"></section>

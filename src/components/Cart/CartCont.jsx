@@ -21,11 +21,13 @@ function Cart() {
         textAlign: "center",
     };
 
-        //탭 활성화 
-        const [tab, setTab] = useState(0);
-        function ActiveTab(index) {
-            setTab(index);
-        }
+    //탭 활성화 
+    const [tab, setTab] = useState(0);
+    function ActiveTab(index) {
+        setTab(index);
+    }
+
+
 
     return (
         <>
@@ -149,7 +151,9 @@ function Cart() {
                             <div className="inner">
                                 <span className="price">
                                     <span className="txt">상품금액</span>
-                                    <span id="totalGodAmt" className="num">938,000</span> 원
+                                    <span id="totalGodAmt" className="num">
+                                        {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
+                                    </span> 원
                                 </span>
                                 <span className="symbol-plus">+</span>
                                 <span className="price">

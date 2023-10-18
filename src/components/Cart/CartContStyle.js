@@ -46,7 +46,7 @@ export const CartWrap = styled.div`
             min-width: 1280px;
             max-width: 1920px;
             height: 100%;
-            padding: 0 80px;
+            /* padding: 0 80px; */
             margin: 0 auto;
 
             .bc-home {
@@ -325,6 +325,7 @@ export const CartCont = styled.div`
         padding-right: 14px;
         font-size: 14px;
         vertical-align: top;
+        width: 63px;
     }
 
     .btn-link::before {
@@ -332,8 +333,8 @@ export const CartCont = styled.div`
         display: inline-block;
         position: absolute;
         top: 50%;
-        right: 24.5rem;
-        width: 6px;
+        right: 0;
+        width: 6px !important;
         height: 11px;
         margin-top: -5px;
         background: url(${optIcon}) no-repeat 0 0;
@@ -343,7 +344,7 @@ export const CartCont = styled.div`
     .item-link {
         margin-top: 15px;
 
-        display: inline-block;
+        /* display: inline-block; */
         margin-right: 18px;
         padding-left: 30px;
         color: #000;

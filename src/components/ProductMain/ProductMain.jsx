@@ -189,7 +189,7 @@ export default function ProductMain() {
                                         <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
                                             <span>장바구니</span>
                                         </button>
-                                        <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}>
                                             <span>
                                                 <input type="hidden" />
                                                 바로구매

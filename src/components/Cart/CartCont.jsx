@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { addCount, minusCount, deleteItem } from "../../store.js"; // Removed unnecessary 'sortName' import
+import { addCount, minusCount, deleteItem, calculateFinalPrice } from "../../store.js"; // Removed unnecessary 'sortName' import
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -10,11 +10,12 @@ import { useEffect, useState } from "react";
 function Cart() {
     const items = useSelector((state) => state.cart.items); // Redux 스토어로부터 장바구니 아이템 가져오기
     const dispatch = useDispatch();
+    const finalPrice = useSelector((state) => state.cart.finalPrice);
 
     useEffect(() => {
-        console.log("카트로 넘어온 아이템은", items);
-    });
-
+        // 최종 가격을 계산하는 액션을 디스패치
+        dispatch(calculateFinalPrice());
+    }, [dispatch, items]);
 
     const textVerticalAlign = {
         verticalAlign: "middle",
@@ -124,7 +125,7 @@ function Cart() {
                                             </Button>
                                         </td>
                                         <td style={textVerticalAlign} className="cell-price item-opt">
-                                            {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
+                                            {finalPrice} 원
                                         </td>
                                         <td style={textVerticalAlign} className="cell-btn item-opt">
                                             <button type="button" className="btn-buy-small"><span>바로구매</span></button>
@@ -152,7 +153,7 @@ function Cart() {
                                 <span className="price">
                                     <span className="txt">상품금액</span>
                                     <span id="totalGodAmt" className="num">
-                                        {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
+                                        {finalPrice}
                                     </span> 원
                                 </span>
                                 <span className="symbol-plus">+</span>
@@ -169,8 +170,8 @@ function Cart() {
                                 <span className="price total">
                                     <span className="txt">결제금액</span>
                                     <span id="totalOrdAmt" className="num">
-                                        {(parseFloat(item.price.replace(/,/g, '')) * item.count).toLocaleString()} 원
-                                    </span>
+                                        {finalPrice}
+                                    </span>원
                                 </span>
                             </div>
                         ))}

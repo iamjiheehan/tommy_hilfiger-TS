@@ -26,6 +26,13 @@ export const CartCont = styled.div`
     span {
         font-size: inherit;
     }
+
+    .order-tbl .body {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        padding: 30px 0;
+    }
     .order-tbl {
         border-top: 1px solid #000;
     }

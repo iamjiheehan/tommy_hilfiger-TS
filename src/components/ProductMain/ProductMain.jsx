@@ -4,7 +4,7 @@ import * as Styles from './ProductMainStyle'
 
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setDetail, setProducts } from '../../store';
+import { setDetail, setProducts, addItem } from '../../store';
 
 export default function ProductMain() {
     //  사이즈 모달창1
@@ -35,7 +35,6 @@ export default function ProductMain() {
     const [popUp, setPopUp] = useState(false);
     function ActivePop() {
         setPopUp(!popUp);
-        console.log("닫기버튼눌림ㅋ",popUp);
     }
 
     //탭 클릭시 스크롤 이동
@@ -52,12 +51,17 @@ export default function ProductMain() {
     const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
     const dispatch = useDispatch();
 
+    function SendToCart(item){
+        dispatch(addItem(item));
+        ActivePop();
+    }
+
     // 컴포넌트가 마운트될 때 제품 세부 정보와 제품 목록을 가져옵니다
     useEffect(() => {
         // 액션을 사용하여 제품 항목을 가져오고 설정합니다.
         dispatch(setProducts()); // 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setDetail(item));
-        console.log(products.length, Array.isArray(products), item);
+        console.log(products.length, Array.isArray(products), "현재 선택된 아이템은",item);
     }, [dispatch]);
 
 
@@ -196,7 +200,6 @@ export default function ProductMain() {
                                             </span>
                                         </button>
                                     </div>
-
                             </Styles.ViewOption>
                             <Styles.InfoBot className="info-bot">
                                 <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
@@ -565,7 +568,7 @@ export default function ProductMain() {
                                     <div className="layer-content layer-shopping-bag">
                                         <p className="txt">해당 상품이 장바구니에 담겼습니다.<br />장바구니로 이동하시겠습니까? </p>
                                         <div className="btn-box">
-                                                <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
+                                                <button type="button" className="btn-basket btn-type" onClick={() => SendToCart(item)}><span>계속 쇼핑하기</span></button>
                                                 <Link to="/cart">
                                                     <button type="button" className="btn-buy btn-type"><span>장바구니 보기</span></button>
                                                 </Link>

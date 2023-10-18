@@ -19,44 +19,55 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 // Cart slice
 const cart = createSlice({
     name: "cart",
-    initialState: [{ id: 0, imgurl: "shoes1.jpg", name: "White and Black", count: 2 }],
+    // initialState: { items: [] }, // 카트 아이템을 담는 배열
+    initialState: [], // 카트 아이템을 담는 배열
     reducers: {
-        addCount(state, action) {
-            let num = state.findIndex((a) => a.id === action.payload);
-            state[num].count++;
-        },
-
-        decreaseCount(state, action) {
-            let num = state.findIndex((a) => a.id === action.payload);
-            if (state[num].count > 0) {
-                state[num].count--;
-            } else if (state[num].count === 0) {
-                alert("상품이 더 이상 없습니다.");
+        addCount: (state, action) => {
+            const item = state.items.find((a) => a.id === action.payload);
+            if (item) {
+                item.count++;
             }
         },
 
-        addItem(state, action) {
-            let num = state.findIndex((a) => a.id === action.payload.id);
-            if (num !== -1) {
-                state[num].count++;
+        decreaseCount: (state, action) => {
+            const item = state.items.find((a) => a.id === action.payload);
+            if (item) {
+                if (item.count > 0) {
+                    item.count--;
+                } else {
+                    alert("상품이 더 이상 없습니다.");
+                }
+            }
+        },
+
+        addItem: (state, action) => {
+            const item = state.items.find((a) => a.id === action.payload.id);
+            if (item) {
+                item.count++;
             } else {
-                state.push(action.payload);
+                state.items.push(action.payload);
             }
         },
 
-        deleteItem(state, action) {
-            let num = state.findIndex((a) => a.id === action.payload);
-            state.splice(num, 1);
+        deleteItem: (state, action) => {
+            const index = state.items.findIndex((a) => a.id === action.payload);
+            if (index !== -1) {
+                state.items.splice(index, 1);
+            }
         },
 
-        sortName(state, action) {
-            state.sort((a, b) => (a.name > b.name ? 1 : -1));
+        sortName: (state, action) => {
+            state.items.sort((a, b) => (a.name > b.name ? 1 : -1));
         },
     },
 });
 
-export const { addCount, decreaseCount, addItem, deleteItem, sortName } =
-    cart.actions;
+export const { addCount, decreaseCount, addItem, deleteItem, sortName } = cart.actions;
+
+// 총 수량을 계산하는 선택자(selector) 추가
+export const selectCartTotalQuantity = (state) =>
+    state.cart.items.reduce((total, item) => total + item.count, 0);
+
 
 
 // 세부 정보 슬라이스 (제품 세부 정보 관리용)

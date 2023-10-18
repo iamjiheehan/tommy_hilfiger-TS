@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import * as Styles from "./CartContStyle.js";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Cart() {
     const items = useSelector((state) => state.cart.items); // Redux 스토어로부터 장바구니 아이템 가져오기
@@ -21,6 +21,12 @@ function Cart() {
         textAlign: "center",
     };
 
+        //탭 활성화 
+        const [tab, setTab] = useState(0);
+        function ActiveTab(index) {
+            setTab(index);
+        }
+
     return (
         <>
             <Styles.CartWrap id="cartWrap">
@@ -34,12 +40,12 @@ function Cart() {
                 <Styles.CartCont>
                     <div className="tab-wrap">
                         <ul className="tabs tab-btn">
-                            <li className="on">
+                            <li className={tab === 0 ? "on" : ""} onClick={() => ActiveTab(0)}>
                                 <button type="button">
                                     <span className="gnrlCartCnt">택배(1)</span>
                                 </button>
                             </li>
-                            <li>
+                            <li className={tab === 1 ? "on" : ""} onClick={() => ActiveTab(1)}>
                                 <button type="button">
                                     <span className="pkupCartCnt">매장수령(0)</span>
                                 </button>

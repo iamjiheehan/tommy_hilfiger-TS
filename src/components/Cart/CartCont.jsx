@@ -124,7 +124,7 @@ function Cart() {
                                             </Button>
                                         </td>
                                         <td style={textVerticalAlign} className="cell-price item-opt">
-                                            {item.finalPrice} 원 {/* Display item's finalPrice */}
+                                            {item.finalPrice} 원 {/* 각 상품의 finalPrice 표시 */}
                                         </td>
                                         <td style={textVerticalAlign} className="cell-btn item-opt">
                                             <button type="button" className="btn-buy-small"><span>바로구매</span></button>
@@ -150,7 +150,10 @@ function Cart() {
                             <span className="price">
                                 <span className="txt">상품금액</span>
                                 <span id="totalGodAmt" className="num">
-                                    {finalPrice}
+                                    {/* 각 항목의 finalPrice 합산 */}
+                                    {items.reduce((total, item) => {
+                                        return total + parseFloat(item.finalPrice.replace(/,/g, ''));
+                                    }, 0).toLocaleString()}
                                 </span> 원
                             </span>
                             <span className="symbol-plus">+</span>
@@ -167,8 +170,11 @@ function Cart() {
                             <span className="price total">
                                 <span className="txt">결제금액</span>
                                 <span id="totalOrdAmt" className="num">
-                                    {finalPrice}
-                                </span>원
+                                    {/* 같은 값 사용, 각 항목의 finalPrice 합산 */}
+                                    {items.reduce((total, item) => {
+                                        return total + parseFloat(item.finalPrice.replace(/,/g, ''));
+                                    }, 0).toLocaleString()}원
+                                </span>
                             </span>
                         </div>
                     </Styles.FinalPrice>

@@ -57,18 +57,30 @@ export default function ProductMain() {
         // ActivePop();
     }
 
+    
+    // useEffect(() => {
+    //     // window.scrollTo(0, 0);
+    
+    //     // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
+    //     dispatch(setProducts());
+    //     // item이 아직 설정되지 않았을 때만 setDetail을 호출
+    //     if (item) {
+    //         dispatch(setDetail(item));
+    //         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
+    //     }
+    // }, []);
+    
+
+    
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
     
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setProducts());
         // item이 아직 설정되지 않았을 때만 setDetail을 호출
-        if (item) {
-            dispatch(setDetail(item));
-            console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
-        }
+        dispatch(setDetail(item));
+        console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
     }, []);
-    
 
     return (
         <>

@@ -8,16 +8,18 @@ import Cart from "../../pages/Cart";
 
 function App() {
     return (
-        <ThemeProvider theme={{ fontFamily: "Helvetica Neue" }}>
-            <GlobalStyle />
-            <div className="App">
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/product/:productId" element={<Product />} />
-                    <Route path="/cart" element={<Cart />} />
-                </Routes>
-            </div>
-        </ThemeProvider>
+        <>
+            <ThemeProvider theme={{ fontFamily: "Helvetica Neue" }}>
+                <GlobalStyle />
+                <div className="App">
+                    <Routes>
+                        <Route path="/" element={<Main />} />
+                        <Route path="/product/:productId" element={<Product />} />
+                        <Route path="/cart" element={<Cart />} />
+                    </Routes>
+                </div>
+            </ThemeProvider>
+        </>
     );
 }
 

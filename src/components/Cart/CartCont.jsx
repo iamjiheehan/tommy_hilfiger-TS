@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 function Cart() {
     const items = useSelector((state) => state.cart.items); // Redux 스토어로부터 장바구니 아이템 가져오기
     const dispatch = useDispatch();
-    const finalPrice = useSelector((state) => state.cart.finalPrice);
 
     useEffect(() => {
         if (!items.length) {
@@ -96,7 +95,6 @@ function Cart() {
         });
         setCheckboxes(initialCheckboxes);
     };
-
 
 
     return (

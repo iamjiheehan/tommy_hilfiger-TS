@@ -59,13 +59,13 @@ export default function ProductMain() {
 
     // 컴포넌트가 마운트될 때 제품 세부 정보와 제품 목록을 가져옴
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0);//화면이동시 가장 위로가도록 설정
         // 액션을 사용하여 제품 항목을 가져오고 설정
         dispatch(setProducts()); // 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setDetail(item));
         // dispatch(addItem(item));
         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은",item);
-    }, [dispatch]);
+    }, []);
 
 
     return (

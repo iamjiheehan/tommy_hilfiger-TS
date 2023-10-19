@@ -54,7 +54,7 @@ const cart = createSlice({
         ],
     },
     reducers: {
-        reset: () => ({ items: [] }),
+        // reset: () => ({ items: [] }),
 
         addCount: (state, action) => {
             const item = state.items.find((item) => item.id === action.payload);

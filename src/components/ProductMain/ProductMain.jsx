@@ -237,7 +237,7 @@ export default function ProductMain() {
                                             <figure className="item-box">
                                                 <div className="item-img">
                                                     <div className="img-box">
-                                                        <a href="#!">
+                                                        <a href="/">
                                                             {item.img && (
                                                                 <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
                                                             )}
@@ -248,7 +248,7 @@ export default function ProductMain() {
                                                     </button>
                                                 </div>
                                                 <figcaption className="item-info">
-                                                    <a href="#!">
+                                                    <a href="/">
                                                         <div className="item-brand">{product.brand}</div>
                                                         <div className="item-name">{product.name}</div>
                                                         <div className="item-price">

@@ -19,7 +19,7 @@ function Cart() {
         // 최종 가격을 계산하는 액션을 디스패치
         dispatch(calculateFinalPrice());
     }, [dispatch, items]);
-    
+
 
     const textVerticalAlign = {
         verticalAlign: "middle",
@@ -32,6 +32,36 @@ function Cart() {
         setTab(index);
     }
 
+    // 체크박스 전체선택/해제 구현
+    const [selectAll, setSelectAll] = useState(false);
+
+    const handleAllCheck = () => {
+        const updatedCheckboxes = { ...checkboxes };
+        for (const key in updatedCheckboxes) {
+            updatedCheckboxes[key] = !selectAll;
+        }
+        setCheckboxes(updatedCheckboxes);
+        setSelectAll(!selectAll);
+    };
+
+
+    const [checkboxes, setCheckboxes] = useState({});
+
+    useEffect(() => {
+        // items를 기반으로 checkboxes 상태를 초기화
+        //items 배열이 변경될 때마다 checkboxes 상태를 초기화
+        const initialCheckboxes = {};
+        items.forEach((item) => {
+            initialCheckboxes[item.id] = false;
+        });
+        setCheckboxes(initialCheckboxes);
+    }, [items]);
+
+    const handleSingleCheck = (id) => {
+        const updatedCheckboxes = { ...checkboxes };
+        updatedCheckboxes[id] = !updatedCheckboxes[id];
+        setCheckboxes(updatedCheckboxes);
+    };
 
     return (
         <>
@@ -64,7 +94,12 @@ function Cart() {
                                 <tr className="head">
                                     <th className="cell-check">
                                         <label className="check-skin only">
-                                            <input type="checkbox" className="allChk" />
+                                            <input
+                                                type="checkbox"
+                                                className="allChk"
+                                                checked={Object.values(checkboxes).every((value) => value)}
+                                                onChange={handleAllCheck}
+                                            />
                                             <span>전체 선택</span>
                                         </label>
                                     </th>
@@ -79,12 +114,17 @@ function Cart() {
                                     <div className="nodata">
                                         <p className="txt-nodata">장바구니에 담긴 상품이 없습니다.</p>
                                     </div>
-                                ): (
+                                ) : (
                                     items.map((item) => (
                                         <tr key={item.id} className="row">
                                             <td className="cell-check">
                                                 <label className="check-skin only">
-                                                    <input type="checkbox" className="allChk" />
+                                                    <input 
+                                                        type="checkbox" 
+                                                        className="allChk" 
+                                                        checked={checkboxes[item.id]}
+                                                        onChange={() => handleSingleCheck(item.id)}
+                                                    />
                                                     <span>전체 선택</span>
                                                 </label>
                                             </td>

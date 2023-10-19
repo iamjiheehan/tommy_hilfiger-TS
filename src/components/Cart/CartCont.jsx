@@ -81,7 +81,7 @@ function Cart() {
                                             </label>
                                         </td>
                                         <td className="cell-info">
-                                            <Link to={`/detail/${item.id}`}>
+                                            <Link to={`/product/${item.id}`}>
                                                 <div className="first">
                                                     <div>
                                                         {item.img && (

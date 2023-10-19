@@ -57,11 +57,47 @@ function Cart() {
         setCheckboxes(initialCheckboxes);
     }, [items]);
 
+    const [selectedItems, setSelectedItems] = useState([]);
+
+
     const handleSingleCheck = (id) => {
+        const updatedSelectedItems = [...selectedItems];
+
+        if (checkboxes[id]) {
+            // 확인란이 선택된 경우, 선택한 항목을 selectedItems에서 제거
+            const index = updatedSelectedItems.indexOf(id);
+            if (index !== -1) {
+                updatedSelectedItems.splice(index, 1);
+            }
+        } else {
+            // 확인란이 선택 해제된 경우, 항목을 selectedItems에 추가
+            updatedSelectedItems.push(id);
+        }
+
+        setSelectedItems(updatedSelectedItems);
+
+        // 확인란 상태를 업데이트
         const updatedCheckboxes = { ...checkboxes };
         updatedCheckboxes[id] = !updatedCheckboxes[id];
         setCheckboxes(updatedCheckboxes);
     };
+
+    const handleDeleteSelected = () => {
+        // 선택한 항목을 삭제하는 액션을 디스패치합니다.
+        selectedItems.forEach((itemId) => {
+            dispatch(deleteItem(itemId));
+        });
+
+        // 선택한 항목을 지우고 확인란을 재설정합니다.
+        setSelectedItems([]);
+        const initialCheckboxes = {};
+        items.forEach((item) => {
+            initialCheckboxes[item.id] = false;
+        });
+        setCheckboxes(initialCheckboxes);
+    };
+
+
 
     return (
         <>
@@ -119,9 +155,9 @@ function Cart() {
                                         <tr key={item.id} className="row">
                                             <td className="cell-check">
                                                 <label className="check-skin only">
-                                                    <input 
-                                                        type="checkbox" 
-                                                        className="allChk" 
+                                                    <input
+                                                        type="checkbox"
+                                                        className="allChk"
                                                         checked={checkboxes[item.id]}
                                                         onChange={() => handleSingleCheck(item.id)}
                                                     />
@@ -193,7 +229,7 @@ function Cart() {
                         </Table>
                     </div>
                     <div className="tbl-btn">
-                        <button type="button" className="btn-del-m"><span>선택삭제</span></button>
+                        <button type="button" onClick={handleDeleteSelected} className="btn-del-m"><span>선택삭제</span></button>
                     </div>
                     <Styles.FinalPrice>
                         <div className="inner">

@@ -58,7 +58,7 @@ export default function ProductMain() {
     }
 
     useEffect(() => {
-        window.scrollTo(0, 0); // 화면이동시 가장 위로가도록 설정
+        // window.scrollTo(0, 0);
     
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setProducts());
@@ -236,29 +236,31 @@ export default function ProductMain() {
                                 <ul className="swiper-wrapper">
                                     {products.slice(0, 5).map((product) => (
                                         <li className="swiper-slide" key={product.id}>
-                                            <figure className="item-box">
-                                                <div className="item-img">
-                                                    <div className="img-box">
-                                                        <a href="/">
-                                                            {item.img && (
-                                                                <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
-                                                            )}
-                                                        </a>
-                                                    </div>
-                                                    <button type="button" className="btn-like">
-                                                        <span>좋아요</span>
-                                                    </button>
-                                                </div>
-                                                <figcaption className="item-info">
-                                                    <a href="/">
-                                                        <div className="item-brand">{product.brand}</div>
-                                                        <div className="item-name">{product.name}</div>
-                                                        <div className="item-price">
-                                                            <span className="price">{product.price}</span>
+                                            <Link to={`/product/${product.id}`}>
+                                                <figure className="item-box">
+                                                    <div className="item-img">
+                                                        <div className="img-box">
+                                                            <a href="/">
+                                                                {product.img && (
+                                                                    <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
+                                                                )}
+                                                            </a>
                                                         </div>
-                                                    </a>
-                                                </figcaption>
-                                            </figure>
+                                                        <button type="button" className="btn-like">
+                                                            <span>좋아요</span>
+                                                        </button>
+                                                    </div>
+                                                    <figcaption className="item-info">
+                                                        <a href="/">
+                                                            <div className="item-brand">{product.brand}</div>
+                                                            <div className="item-name">{product.name}</div>
+                                                            <div className="item-price">
+                                                                <span className="price">{product.price}</span>
+                                                            </div>
+                                                        </a>
+                                                    </figcaption>
+                                                </figure>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

@@ -265,7 +265,7 @@ function Cart() {
                     </Styles.FinalPrice>
                     <Styles.BtnBox>
                         <div className="btn-box">
-                            <a href="#!" className="btn-type4-lg">쇼핑 계속하기</a>
+                            <a href="/" className="btn-type4-lg">쇼핑 계속하기</a>
                             <a href="#!" className="btn-type2-lg">선택상품 주문하기</a>
                         </div>
                         <ul className="txt-list">

@@ -13,10 +13,13 @@ function Cart() {
     const finalPrice = useSelector((state) => state.cart.finalPrice);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        if (!items.length) {
+            window.scrollTo(0, 0);
+        }
         // 최종 가격을 계산하는 액션을 디스패치
         dispatch(calculateFinalPrice());
     }, [dispatch, items]);
+    
 
     const textVerticalAlign = {
         verticalAlign: "middle",

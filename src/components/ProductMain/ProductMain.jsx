@@ -82,6 +82,15 @@ export default function ProductMain() {
         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
     }, []);
 
+
+    const handleItemClick = (item) => {
+        if (item) {
+            dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
+            dispatch(setProducts(products));// 항목 배열 전체를 'product' 슬라이스에 보냄
+        }
+    };
+
+
     return (
         <>
             <Styles.Container id='productMain'>
@@ -248,31 +257,33 @@ export default function ProductMain() {
                                 <ul className="swiper-wrapper">
                                     {products.slice(0, 5).map((product) => (
                                         <li className="swiper-slide" key={product.id}>
-                                            <Link to={`/product/${product.id}`}>
-                                                <figure className="item-box">
-                                                    <div className="item-img">
-                                                        <div className="img-box">
-                                                            <a href="/">
-                                                                {product.img && (
-                                                                    <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
-                                                                )}
-                                                            </a>
-                                                        </div>
-                                                        <button type="button" className="btn-like">
-                                                            <span>좋아요</span>
-                                                        </button>
-                                                    </div>
-                                                    <figcaption className="item-info">
-                                                        <a href="/">
-                                                            <div className="item-brand">{product.brand}</div>
-                                                            <div className="item-name">{product.name}</div>
-                                                            <div className="item-price">
-                                                                <span className="price">{product.price}</span>
+                                            <div onClick={() => handleItemClick(product)}>
+                                                <Link to={`/product/${product.id}`} state={{ product }}>
+                                                    <figure className="item-box">
+                                                        <div className="item-img">
+                                                            <div className="img-box">
+                                                                <a href="/">
+                                                                    {product.img && (
+                                                                        <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} />
+                                                                    )}
+                                                                </a>
                                                             </div>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                            </Link>
+                                                            <button type="button" className="btn-like">
+                                                                <span>좋아요</span>
+                                                            </button>
+                                                        </div>
+                                                        <figcaption className="item-info">
+                                                            <a href="/">
+                                                                <div className="item-brand">{product.brand}</div>
+                                                                <div className="item-name">{product.name}</div>
+                                                                <div className="item-price">
+                                                                    <span className="price">{product.price}</span>
+                                                                </div>
+                                                            </a>
+                                                        </figcaption>
+                                                    </figure>
+                                                </Link>
+                                            </div>
                                         </li>
                                     ))}
                                 </ul>

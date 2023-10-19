@@ -6,6 +6,8 @@ import boxIcon from "../../assets/images/icon_link2.png";
 import closeBtn from "../../assets/images/btn_del2.png";
 import icon_breadcrumb from "../../assets/images/icon_breadcrumb.png";
 import icon_arr4 from "../../assets/images/icon_link_arrow4.png";
+import nodata from "../../assets/images/icon_nodata.png";
+
 
 export const CartWrap = styled.div`
     background-color: #fff;
@@ -288,6 +290,24 @@ export const CartCont = styled.div`
         position: relative;
         /* padding-right: 160px; */
         border-bottom: 1px solid #eee;
+    }
+
+    .nodata .txt-nodata {
+        font-size: 16px;
+        color: #000;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+
+    .nodata .txt-nodata::before {
+        content: '';
+        display: block;
+        width: 54px;
+        height: 64px;
+        margin: 0 auto 30px;
+        background: url(${nodata}) no-repeat 0 0;
+        vertical-align: top;
     }
 
     .first {

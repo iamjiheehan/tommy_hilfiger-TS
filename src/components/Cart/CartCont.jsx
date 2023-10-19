@@ -75,74 +75,80 @@ function Cart() {
                                 </tr>
                             </thead>
                             <tbody className="body">
-                                {items.map((item) => (
-                                    <tr key={item.id} className="row">
-                                        <td className="cell-check">
-                                            <label className="check-skin only">
-                                                <input type="checkbox" className="allChk" />
-                                                <span>전체 선택</span>
-                                            </label>
-                                        </td>
-                                        <td className="cell-info">
-                                            <Link to={`/product/${item.id}`}>
-                                                <div className="first">
-                                                    <div>
-                                                        {item.img && (
-                                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`}
-                                                                alt={item.name}
-                                                                className="item-img"
-                                                            />
-                                                        )}
-                                                    </div>
-                                                    <div>
-                                                        <div className="item-state">[입점 판매 상품]</div>
-                                                        <p className="item-text">{item.brand}</p>
-                                                        <p className="item-text">{item.name}</p>
-                                                        <p className="item-text btn-link">옵션변경</p>
-                                                        <div className="item-link">
-                                                            <p className="item-text">상품사은품 증정</p>
+                                {items.length === 0 ? (
+                                    <div className="nodata">
+                                        <p className="txt-nodata">장바구니에 담긴 상품이 없습니다.</p>
+                                    </div>
+                                ): (
+                                    items.map((item) => (
+                                        <tr key={item.id} className="row">
+                                            <td className="cell-check">
+                                                <label className="check-skin only">
+                                                    <input type="checkbox" className="allChk" />
+                                                    <span>전체 선택</span>
+                                                </label>
+                                            </td>
+                                            <td className="cell-info">
+                                                <Link to={`/product/${item.id}`}>
+                                                    <div className="first">
+                                                        <div>
+                                                            {item.img && (
+                                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`}
+                                                                    alt={item.name}
+                                                                    className="item-img"
+                                                                />
+                                                            )}
+                                                        </div>
+                                                        <div>
+                                                            <div className="item-state">[입점 판매 상품]</div>
+                                                            <p className="item-text">{item.brand}</p>
+                                                            <p className="item-text">{item.name}</p>
+                                                            <p className="item-text btn-link">옵션변경</p>
+                                                            <div className="item-link">
+                                                                <p className="item-text">상품사은품 증정</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </Link>
-                                        </td>
-                                        <td style={textVerticalAlign} className="cell-amt item-opt">
-                                            <Button
-                                                onClick={() => {
-                                                    dispatch(addCount(item.id));
-                                                }}
-                                                variant="outline-success"
-                                                style={{ marginRight: "1rem" }}
-                                            >
-                                                +
-                                            </Button>
-                                            {item.count}
-                                            <Button
-                                                onClick={() => {
-                                                    dispatch(minusCount(item.id));
-                                                }}
-                                                variant="outline-warning"
-                                                style={{ marginLeft: "1rem" }}
-                                            >
-                                                -
-                                            </Button>
-                                        </td>
-                                        <td style={textVerticalAlign} className="cell-price item-opt">
-                                            {item.finalPrice} 원 {/* 각 상품의 finalPrice 표시 */}
-                                        </td>
-                                        <td style={textVerticalAlign} className="cell-btn item-opt">
-                                            <button type="button" className="btn-buy-small"><span>바로구매</span></button>
-                                            <Button
-                                                onClick={() => {
-                                                    dispatch(deleteItem(item.id));
-                                                }}
-                                                className="btn-del"
-                                            >
-                                                상품삭제
-                                            </Button>
-                                        </td>
-                                    </tr>
-                                ))}
+                                                </Link>
+                                            </td>
+                                            <td style={textVerticalAlign} className="cell-amt item-opt">
+                                                <Button
+                                                    onClick={() => {
+                                                        dispatch(addCount(item.id));
+                                                    }}
+                                                    variant="outline-success"
+                                                    style={{ marginRight: "1rem" }}
+                                                >
+                                                    +
+                                                </Button>
+                                                {item.count}
+                                                <Button
+                                                    onClick={() => {
+                                                        dispatch(minusCount(item.id));
+                                                    }}
+                                                    variant="outline-warning"
+                                                    style={{ marginLeft: "1rem" }}
+                                                >
+                                                    -
+                                                </Button>
+                                            </td>
+                                            <td style={textVerticalAlign} className="cell-price item-opt">
+                                                {item.finalPrice} 원 {/* 각 상품의 finalPrice 표시 */}
+                                            </td>
+                                            <td style={textVerticalAlign} className="cell-btn item-opt">
+                                                <button type="button" className="btn-buy-small"><span>바로구매</span></button>
+                                                <Button
+                                                    onClick={() => {
+                                                        dispatch(deleteItem(item.id));
+                                                    }}
+                                                    className="btn-del"
+                                                >
+                                                    상품삭제
+                                                </Button>
+                                            </td>
+                                        </tr>
+                                    ))
+                                )}
                             </tbody>
                         </Table>
                     </div>

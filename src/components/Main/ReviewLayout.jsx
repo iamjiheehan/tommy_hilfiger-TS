@@ -36,7 +36,7 @@ function ReviewLayout({ items, params }) {
         >
             {items.map((item, index) => (
                 <SwiperSlide key={item.id} className="swiper-item"> {/* Add a unique key here */}
-                    <Link to={`/product/${item.id}/detail`}>
+                    <Link to={`/product/${item.id}`}>
                         <figure className="item-box">
                             <div className="item-img top">
                                 <div className="img-box">

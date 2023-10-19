@@ -58,7 +58,7 @@ export default function ProductMain() {
     }
 
     useEffect(() => {
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setProducts());

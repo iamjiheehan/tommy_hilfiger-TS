@@ -19,7 +19,6 @@ export default function useRandomData(allData) {
         
         const limitedData = shuffledData.slice(0, 10);
         // 갯수 열개로 제한
-
         setRandomData(limitedData);
     }, []);
 

@@ -57,7 +57,7 @@ function Promotion() {
                                         <a href="#!">
                                             <div className="season-visual-wrap">
                                                 <div className="season-visual-box">
-                                                    <img src={process.env.PUBLIC_URL + item.img} alt={index} />
+                                                    <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={index} />
                                                 </div>
                                             </div>
                                             <div className="season-info-wrap">

@@ -22,6 +22,7 @@ function ItemLayout({ items, params }) {
             dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
             dispatch(setProducts(items));// 항목 배열 전체를 'product' 슬라이스에 보냄
             console.log(items);
+            window.scrollTo(0, 0);
         }
     };
     return (
@@ -35,7 +36,7 @@ function ItemLayout({ items, params }) {
                                     <div className="img-box">
                                         <a href="#!">
                                             <div className="img">
-                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
                                             </div>
                                         </a>
                                     </div>

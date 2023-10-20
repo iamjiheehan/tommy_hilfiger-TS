@@ -46,7 +46,7 @@ function ItemLayout({ items }) {
                                     <div className="img-box">
                                         <a href="#!">
                                             <div className="img">
-                                                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
                                             </div>
                                         </a>
                                     </div>

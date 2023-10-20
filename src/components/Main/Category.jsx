@@ -51,7 +51,7 @@ function Category() {
                                 {content.map((item, index) => (
                                     <SwiperSlide className="swiper-item" key={index}>
                                         <a href="#!" className="link-item">
-                                            <img src={process.env.PUBLIC_URL + item.img} alt={index} />
+                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={index} />
                                             <span className="text">{item.title}</span>
                                         </a>
                                     </SwiperSlide>

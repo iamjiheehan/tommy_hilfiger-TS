@@ -166,7 +166,7 @@ function Campaign() {
                                                     <span className="text">TOMMY JEANS</span>
                                                 </div>
                                                 <div className="img-wrap">
-                                                    <img src={process.env.PUBLIC_URL + item} alt={index} className="swiper-lazy" />
+                                                    <img src={`${process.env.PUBLIC_URL}/${item}`} alt={index} className="swiper-lazy" />
                                                 </div>
                                             </a>
                                         </SwiperSlide>

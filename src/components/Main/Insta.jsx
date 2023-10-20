@@ -53,7 +53,7 @@ function Insta() {
                             {imgData.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index}>
                                     <button type="button" className="btn-popup" value="1">
-                                        <img src={process.env.PUBLIC_URL + item} alt={index} />
+                                        <img src={`${process.env.PUBLIC_URL}/${item}`} alt={index} />
                                     </button>
                                 </SwiperSlide>
                             ))}

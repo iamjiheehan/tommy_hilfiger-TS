@@ -54,7 +54,7 @@ function Focus() {
                                                     <div className="item-img">
                                                         <div className="img-box">
                                                             <a href="#!">
-                                                                <img src={process.env.PUBLIC_URL + item} alt={index}  />
+                                                                <img src={`${process.env.PUBLIC_URL}/${item}`} alt={index}  />
                                                             </a>
                                                         </div>
                                                     </div>

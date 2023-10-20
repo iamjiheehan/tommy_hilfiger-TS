@@ -80,7 +80,7 @@ function Banner() {
                                     <Styles.Box>
                                         <Styles.Banner className="img">
                                             <a href="#!">
-                                                <img src={item.img} alt={item.title} />
+                                                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                             </a>
                                         </Styles.Banner>
                                         <Styles.Text className="str" href="#!">

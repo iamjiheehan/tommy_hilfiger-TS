@@ -31,7 +31,7 @@ function MainCategory() {
                                 {data.people.map((item, index) => (
                                     <li className="brand-line-item" key={index}>
                                         <a href="#!" className="link-item">
-                                            <img src={item.img} alt={item.title} />
+                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                             <span className="text">{item.title}</span>
                                         </a>
                                     </li>
@@ -41,7 +41,7 @@ function MainCategory() {
                                 {data.icon.map((item, index) => (
                                     <li className="brand-line-item" key={index}>
                                         <a href="#!" className="link-item">
-                                            <img src={item.img} alt={item.title} />
+                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                             <span className="text">{item.title}</span>
                                         </a>
                                     </li>

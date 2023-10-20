@@ -50,7 +50,7 @@ function Issue() {
                                     <SwiperSlide className="swiper-item" key={index}>
                                         <div className="season-visual-wrap">
                                             <a href="#!" className="season-visual-box">
-                                                <img src={process.env.PUBLIC_URL + item.season.img} alt={item.season.img} />
+                                                <img src={`${process.env.PUBLIC_URL}/${item.season.img}`} alt={item.season.img} />
                                             </a>
                                         </div>
                                         <div className="season-info-wrap">
@@ -70,7 +70,7 @@ function Issue() {
                                                             <div className="item-img">
                                                                 <div className="img-box">
                                                                     <a href="#!">
-                                                                        <div className="img"><img src={process.env.PUBLIC_URL + product.img} alt={product.name} /></div>
+                                                                        <div className="img"><img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} /></div>
                                                                     </a>
                                                                 </div>
                                                                 <button type="button" className="btn-like"><span></span></button>

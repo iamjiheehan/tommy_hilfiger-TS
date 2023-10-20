@@ -41,7 +41,7 @@ function ReviewLayout({ items, params }) {
                             <div className="item-img top">
                                 <div className="img-box">
                                     <a href="#!">
-                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
+                                        <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
                                     </a>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ function ReviewLayout({ items, params }) {
                                     <figure className="item-box">
                                         <span className="item-img">
                                             <a href="#!">
-                                                <img src={process.env.PUBLIC_URL + item.brandimg} alt={item.name} />
+                                                <img src={`${process.env.PUBLIC_URL}/${item.brandimg}`} alt={item.name} />
                                             </a>
                                         </span>
                                         <figcaption className="item-info">

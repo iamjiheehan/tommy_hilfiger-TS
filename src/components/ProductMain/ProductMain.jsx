@@ -73,7 +73,6 @@ export default function ProductMain() {
 
     
     useEffect(() => {
-        // window.scrollTo(0, 0);
     
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setProducts());
@@ -84,10 +83,11 @@ export default function ProductMain() {
 
 
     const handleItemClick = (item) => {
+        window.scrollTo(0, 0);
+
         if (item) {
             dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
             dispatch(setProducts(products));// 항목 배열 전체를 'product' 슬라이스에 보냄
-            window.scrollTo(0, 0);
         }
     };
 

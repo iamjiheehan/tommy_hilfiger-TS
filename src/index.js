@@ -14,7 +14,7 @@ import store from "./store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <BrowserRouter basename='/tommy_hilfiger-JS'>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <React.StrictMode>
                 <Provider store={store}>
                     <App />

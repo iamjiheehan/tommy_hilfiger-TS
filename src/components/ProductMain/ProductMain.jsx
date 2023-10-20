@@ -87,6 +87,7 @@ export default function ProductMain() {
         if (item) {
             dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
             dispatch(setProducts(products));// 항목 배열 전체를 'product' 슬라이스에 보냄
+            window.scrollTo(0, 0);
         }
     };
 
@@ -94,25 +95,27 @@ export default function ProductMain() {
     return (
         <>
             <Styles.Container id='productMain'>
-                <div className="breadcrumb-wrap">
-                    <ol className="breadcrumb">
-                        <li className="bc-home"><a href="/">HOME</a></li>
-                        <li>
-                            <a href="#!">
-                                {item.brand}</a>
-                        </li>
-                        <li className="">
-                            <a href="#!">
-                                {item.category}</a>
-                        </li>
-                        <li className="">
-                            <a href="#!">
-                                {item.gender}</a>
-                        </li>
-                        <li className="on">
-                            {item.category}</li>
-                    </ol>
-                </div>
+                <Link to={`/`}>
+                    <div className="breadcrumb-wrap">
+                        <ol className="breadcrumb">
+                            <li className="bc-home"><a href="/">HOME</a></li>
+                            <li>
+                                <a href="#!">
+                                    {item.brand}</a>
+                            </li>
+                            <li className="">
+                                <a href="#!">
+                                    {item.category}</a>
+                            </li>
+                            <li className="">
+                                <a href="#!">
+                                    {item.gender}</a>
+                            </li>
+                            <li className="on">
+                                {item.category}</li>
+                        </ol>
+                    </div>
+                </Link>
                 <div className="responsive-wrap">
                     <div className="view-top">
                         <div className="top-left">

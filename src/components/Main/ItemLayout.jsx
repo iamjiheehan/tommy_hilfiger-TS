@@ -24,7 +24,6 @@ function ItemLayout({ items, params }) {
             console.log(items);
         }
     };
-
     return (
         <Swiper {...params} ref={setSwiper}>
             {items.map((item) => (

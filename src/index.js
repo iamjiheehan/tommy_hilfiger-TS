@@ -14,13 +14,13 @@ import store from "./store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <React.StrictMode>
-                <Provider store={store}>
+        <Provider store={store}>
+            <BrowserRouter basename='/tommy_hilfiger-JS/'>
+                <React.StrictMode>
                     <App />
-                </Provider>
-            </React.StrictMode>
-        </BrowserRouter>
+                </React.StrictMode>
+            </BrowserRouter>
+        </Provider>
     </>
 );
 

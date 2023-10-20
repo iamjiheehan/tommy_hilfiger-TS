@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tommy_hilfiger/static/css/main.4001579e.css",
-    "main.js": "/tommy_hilfiger/static/js/main.c0fb2bc5.js",
-    "static/js/787.ee019caa.chunk.js": "/tommy_hilfiger/static/js/787.ee019caa.chunk.js",
-    "static/media/KoPubWorld Dotum Medium.ttf": "/tommy_hilfiger/static/media/KoPubWorld Dotum Medium.d4663cd37ec26b26240e.ttf",
-    "static/media/img_video_thumb_h.png": "/tommy_hilfiger/static/media/img_video_thumb_h.7a9b9eed89d2eaeb836c.png",
-    "static/media/mdPickBanner.jpg": "/tommy_hilfiger/static/media/mdPickBanner.81505f188cf6e27d8244.jpg",
-    "static/media/checkbox.png": "/tommy_hilfiger/static/media/checkbox.be910076fc86105c6c2c.png",
-    "index.html": "/tommy_hilfiger/index.html",
-    "static/media/btn_topban_close.svg": "/tommy_hilfiger/static/media/btn_topban_close.aea67f77669238838422bcf7a318b7bb.svg",
-    "static/media/ico_arrow_link.svg": "/tommy_hilfiger/static/media/ico_arrow_link.05db1f5f0d3e712e5cffaa59269be133.svg",
-    "static/media/icon_search_br.svg": "/tommy_hilfiger/static/media/icon_search_br.e52b1ba645b0d30d92f58c1ac4fa9f24.svg",
-    "main.4001579e.css.map": "/tommy_hilfiger/static/css/main.4001579e.css.map",
-    "main.c0fb2bc5.js.map": "/tommy_hilfiger/static/js/main.c0fb2bc5.js.map",
-    "787.ee019caa.chunk.js.map": "/tommy_hilfiger/static/js/787.ee019caa.chunk.js.map"
+    "main.css": "/TommyHilfiger_JS/static/css/main.6e3b77e6.css",
+    "main.js": "/TommyHilfiger_JS/static/js/main.c02f6e5c.js",
+    "static/js/787.ee019caa.chunk.js": "/TommyHilfiger_JS/static/js/787.ee019caa.chunk.js",
+    "static/media/KoPubWorld Dotum Medium.ttf": "/TommyHilfiger_JS/static/media/KoPubWorld Dotum Medium.d4663cd37ec26b26240e.ttf",
+    "static/media/img_video_thumb_h.png": "/TommyHilfiger_JS/static/media/img_video_thumb_h.7a9b9eed89d2eaeb836c.png",
+    "static/media/mdPickBanner.jpg": "/TommyHilfiger_JS/static/media/mdPickBanner.81505f188cf6e27d8244.jpg",
+    "static/media/checkbox.png": "/TommyHilfiger_JS/static/media/checkbox.be910076fc86105c6c2c.png",
+    "index.html": "/TommyHilfiger_JS/index.html",
+    "static/media/btn_topban_close.svg": "/TommyHilfiger_JS/static/media/btn_topban_close.aea67f77669238838422bcf7a318b7bb.svg",
+    "static/media/ico_arrow_link.svg": "/TommyHilfiger_JS/static/media/ico_arrow_link.05db1f5f0d3e712e5cffaa59269be133.svg",
+    "static/media/icon_search_br.svg": "/TommyHilfiger_JS/static/media/icon_search_br.e52b1ba645b0d30d92f58c1ac4fa9f24.svg",
+    "main.6e3b77e6.css.map": "/TommyHilfiger_JS/static/css/main.6e3b77e6.css.map",
+    "main.c02f6e5c.js.map": "/TommyHilfiger_JS/static/js/main.c02f6e5c.js.map",
+    "787.ee019caa.chunk.js.map": "/TommyHilfiger_JS/static/js/787.ee019caa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4001579e.css",
-    "static/js/main.c0fb2bc5.js"
+    "static/css/main.6e3b77e6.css",
+    "static/js/main.c02f6e5c.js"
   ]
 }

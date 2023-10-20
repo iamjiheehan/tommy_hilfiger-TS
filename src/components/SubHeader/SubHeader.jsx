@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import * as Styles from '../SubHeader/SubHeaderStyle'
+import { Link } from 'react-router-dom';
 
 function SubHeader() {
     useEffect(() => {
@@ -33,7 +34,11 @@ function SubHeader() {
                     {/* <header className='fixed'> */}
                     <div className="inner">
                         <div className="wrap">
-                            <h1 className="logo"><a href="/">H FASHION</a></h1>
+                            <h1 className="logo">
+                                <Link to={`/`}>
+                                    <a href="/">H FASHION</a>
+                                </Link>
+                                </h1>
                             <nav className="util">
                                 <button className="btn-search"><span>버튼</span></button>
                                 <span><a href="#!">로그인</a></span>
@@ -41,14 +46,6 @@ function SubHeader() {
                                 <span><a href="#!">마이페이지</a></span>
                                 <span><a href="#!">장바구니</a></span>
                             </nav>
-                            {/* <div>
-                                <div className="btns">
-                                    <a href="/">홈</a>
-                                    <button type="button" className="btn-menu"></button>
-                                </div>
-                                <h2 className="logo">
-                                </h2>
-                            </div> */}
                             <div className='clear'></div>
                         </div>
                         <div className="search">

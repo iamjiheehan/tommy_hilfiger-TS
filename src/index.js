@@ -14,12 +14,12 @@ import store from "./store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <BrowserRouter>
-            {/* <React.StrictMode> */}
+        <BrowserRouter basename='/tommy_hilfiger'>
+            <React.StrictMode>
                 <Provider store={store}>
                     <App />
                 </Provider>
-            {/* </React.StrictMode> */}
+            </React.StrictMode>
         </BrowserRouter>
     </>
 );

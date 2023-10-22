@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Product from "../../pages/Product";
 import Main from "../../pages/Main";
 import Cart from "../../pages/Cart";
-
+import Men from "../../pages/Men";
 
 function App() {
     
@@ -22,6 +22,7 @@ function App() {
                                 element={<Product />}
                             />
                             <Route path="/cart" element={<Cart />} />
+                            <Route path="/men" element={<Men />} />
                         </Routes>
                     </div>
                 </ThemeProvider>

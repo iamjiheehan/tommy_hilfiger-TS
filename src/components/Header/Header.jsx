@@ -73,6 +73,12 @@ function Header() {
         console.log("tabId는 " + tabId);
     };
     
+
+        //  장바구니 팝업창
+        const [popUp, setPopUp] = useState(false);
+        function ActivePop() {
+            setPopUp(!popUp);
+        }
     
     return (
         <>
@@ -81,13 +87,15 @@ function Header() {
                     <div className="inner">
                         <Styles.MainFlex>
                             <div className="header-new-logo">
-                                <Styles.Link href="#!">H FASHION</Styles.Link>
+                                <Styles.Link href="#!"><Link to={`/`}>H FASHION</Link></Styles.Link>
                             </div>
                             <Styles.Absolute>
                                 <h2 className="header-logo">
-                                    <a href="#!">
-                                        <img src={logo} alt="TOMMY HILFIGER" />
-                                    </a>
+                                    <Link to={`/`}>
+                                        <a href="#!">
+                                            <img src={logo} alt="TOMMY HILFIGER" />
+                                        </a>
+                                    </Link>
                                 </h2>
                             </Styles.Absolute>
                             <div className="header-util">

@@ -71,7 +71,7 @@ function ReviewLayout({ items, params }) {
                                 <div className="review-info">
                                     <div className="rating-option-box">
                                         <span className="review-rating"><span className="ico">{startRender(item, index)}</span></span>
-                                        <span className="prd-option"><span></span> / <span></span></span>
+                                        {/* <span className="prd-option"><span></span> / <span></span></span> */}
                                     </div>
                                     <p className="review-desc">{item.description}
                                     </p>

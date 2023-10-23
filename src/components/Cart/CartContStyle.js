@@ -29,9 +29,11 @@ export const CartWrap = styled.div`
             color: #999;
             font-size: 14px;
         }
-        .breadcrumb li {
+        .breadcrumb li.active{
             margin-left: 12px;
             padding-left: 19px;
+            position: relative;
+
         }
 
         .breadcrumb {
@@ -56,10 +58,6 @@ export const CartWrap = styled.div`
                 min-height: 14px;
                 font-weight: 300;
             }
-        }
-
-        .breadcrumb li {
-            position: relative;
         }
 
         .breadcrumb .active:before {

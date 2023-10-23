@@ -89,9 +89,11 @@ export const Container = styled.div`
         font-size: 13px;
         font-weight: 300;
     }
+
     .breadcrumb-wrap .breadcrumb li.on {
         color: #000 !important;
     }
+
     .breadcrumb-wrap .breadcrumb li + li {
         margin-left: 12px;
         padding-left: 19px;
@@ -302,7 +304,6 @@ export const ViewOption = styled.div`
             left: 0;
             padding-top: 16px;
             border-radius: 50%;
-            font-family: "돋움", "noto";
             font-size: 11px;
             color: #666;
             text-align: center;

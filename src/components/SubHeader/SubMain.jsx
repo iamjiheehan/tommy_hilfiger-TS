@@ -9,6 +9,10 @@ import NewInKidsData from '../../data/NewIn/kids';
 import NewInJeansData from '../../data/NewIn/tommyJeans';
 import NewInShoesData from '../../data/NewIn/shoes';
 
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../store';
+
 export default function SubMain({ tabId }) {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
@@ -22,12 +26,6 @@ export default function SubMain({ tabId }) {
         setShowSize(!showSize);
     }
 
-    //관련상품탭 활성화 
-    const [listTab, setListTab] = useState(0);
-    function ActiveListTab(index) {
-        setListTab(index);
-    }
-
     //탭 활성화 
     const [tab, setTab] = useState(0);
     function ActiveTab(index) {
@@ -38,6 +36,7 @@ export default function SubMain({ tabId }) {
     const [popUp, setPopUp] = useState(false);
     function ActivePop() {
         setPopUp(!popUp);
+        console.log(item);
     }
 
     //탭 클릭시 스크롤 이동
@@ -67,21 +66,32 @@ export default function SubMain({ tabId }) {
         ...NewInShoesData,
     ];
 
-    const [items, setItems] = useState([]);
+    const [products, setProducts] = useState([]);
+    const [item, setItem] = useState();
 
     useEffect(() => {
         console.log("SubMain 컴포넌트에서 받은 tabID 값: " + tabId);
         // tabId와 일치하는 아이템만 필터링
         const filteredItems = productData.filter(item => item.id === tabId);
-        setItems(filteredItems);
+        setProducts(filteredItems);
+        setItem(filteredItems[0]);
         console.log("일치하는 아이템들:", filteredItems);
     }, [tabId]);
 
+    // Redux 상태 관리
+
+    const dispatch = useDispatch();
+
+    function SendToCart(items) {
+        console.log("Item to add to the cart:", items);
+        dispatch(addItem(items));
+        // ActivePop();
+    }
 
     return (
         <>
             <Styles.Container id='productMain'>
-                {items.map(item => (
+                {products.map(item => (
                     <div key={item.id}>
                         <h1 className='subtitle'>{item.brand}</h1>
                         <div className="view-top">
@@ -183,10 +193,10 @@ export default function SubMain({ tabId }) {
                                         </div>
                                     </div>
                                     <div className="btn-box">
-                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type">
+                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
                                             <span>장바구니</span>
                                         </button>
-                                        <button name="btnBuynow" type="button" className="btn-buy btn-type">
+                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}>
                                             <span>
                                                 <input type="hidden" />
                                                 바로구매
@@ -250,6 +260,10 @@ export default function SubMain({ tabId }) {
                                                 겉감<br />안감: 나일론 100%
                                                 <br />충전재: 오리털 70% 깃털 30%</td>
                                         </tr>
+                                        {/* <tr>
+                                                <th scope="row">색상</th>
+                                                <td>ARMY GREEN</td>
+                                            </tr> */}
                                         <tr>
                                             <th scope="row">치수</th>
                                             <td>
@@ -371,80 +385,70 @@ export default function SubMain({ tabId }) {
                                 <div className='detail-table'>
                                     <table>
                                         <caption>배송/교환/반품</caption>
-                                        <colgroup>
-                                            <col style={{ width: "180px", textAlign: "left" }} />
-                                        </colgroup>
+                                        <colgroup><col style={{ width: "180px", textAlign: "left" }} /></colgroup>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">배송기간</th>
                                                 <td>
-                                                    - 상품의 배송비는 공급업체의 정책에 따라 다르오며 공휴일 및 휴일은 배송이 불가합니다.
-                                                    - 상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요기간이 달라집니다.
-                                                    - 동일 브랜드의 상품이라도 상품별 출고일시가 달라 각각 배송될 수 있습니다.
-                                                    - 일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.
-                                                    - 도서 산간 지역은 별도의 배송비와 반품비가 추가될 수 있습니다.
+                                                    - 상품의 배송비는 공급업체의 정책에 따라 다르오며 공휴일 및 휴일은 배송이 불가합니다.- 상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요기간이 달라집니다.- 동일 브랜드의 상품이라도 상품별 출고일시가 달라 각각 배송될 수 있습니다.- 일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.- 도서 산간 지역은 별도의 배송비와 반품비가 추가될 수 있습니다.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">반품배송비</th>
-                                                <td>
-                                                    <ul className="txt-list">
-                                                        <li>전체 반품 시 : 5,000원</li>
-                                                        <li>부분 반품 시 : 2,500원 (단, 부분 반품 후 결제금액이 3만원 미만인 경우 5,000원)
-                                                        </li>
-                                                    </ul>
-                                                    * 반품비는 브랜드/입점사별로 상이할 수 있습니다.
-                                                    * 도서산간 지역은 추가 배송비가 부과됩니다.
-                                                </td>
+                                                <ul className="txt-list">
+                                                    <li>전체 반품 시 : 5,000원</li>
+                                                    <li>부분 반품 시 : 2,500원 (단, 부분 반품 후 결제금액이 3만원 미만인 경우 5,000원)
+                                                        <br /> * 반품비는 브랜드/입점사별로 상이할 수 있습니다.
+                                                        <br /> * 도서산간 지역은 추가 배송비가 부과됩니다.</li>
+                                                </ul>
                                             </tr>
                                             <tr>
                                                 <th scope="row">교환배송비</th>
                                                 <td>
                                                     <ul className="txt-list">
-                                                        <li>5,000원 (교환상품 배송비 + 2,500원)</li>
+                                                        <li>5,000원 (교환상품 배송비 + 2,500원)
+                                                            <br />* 교환배송비는 브랜드/입점사별로 상이할 수 있습니다.</li>
                                                     </ul>
-                                                    * 교환배송비는 브랜드/입점사별로 상이할 수 있습니다.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">교환/반품 유의사항</th>
                                                 <td>
                                                     - 상품 수령일로부터 7일 이내 반품/환불 가능합니다.
-                                                    - 상품하자 이외 사이즈, 색상교환 등 단순 변심에 의한 교환/반품 택배비 고객부담으로 왕복택배비가 발생합니다.
-                                                    - 고객 부주의로 상품이 훼손, 변경된 경우 반품 / 교환이 불가능 합니다.
-                                                    - 주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.
-                                                    - 임의반품은 불가하오니 반드시 고객센터나 MY Page&gt; 주문취소/교환/반품 신청을 통해서 신청접수를 하시기 바랍니다.
-                                                    - 특정브랜드의 상품설명에 별도로 기입된 교환/반품/AS기준이 우선합니다.
+                                                    <br /> - 상품하자 이외 사이즈, 색상교환 등 단순 변심에 의한 교환/반품 택배비 고객부담으로 왕복택배비가 발생합니다.
+                                                    <br /> - 고객 부주의로 상품이 훼손, 변경된 경우 반품 / 교환이 불가능 합니다.
+                                                    <br /> - 주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.
+                                                    <br /> - 임의반품은 불가하오니 반드시 고객센터나 MY Page&gt; 주문취소/교환/반품 신청을 통해서 신청접수를 하시기 바랍니다.
+                                                    <br /> - 특정브랜드의 상품설명에 별도로 기입된 교환/반품/AS기준이 우선합니다.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">교환 안내</th>
                                                 <td>
                                                     교환 가능 기간
-                                                    교환 신청은 배송 완료 후 7일 내 가능합니다.
-
-                                                    교환 불가 상품
-                                                    단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
-                                                    쥬얼리와 언더웨어 상품은 착용 이후 교환 및 반품이 불가합니다.
-                                                    맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
+                                                    <br /> 교환 신청은 배송 완료 후 7일 내 가능합니다.
+                                                    <br />
+                                                    <br /> 교환 불가 상품
+                                                    <br /> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
+                                                    <br /> 쥬얼리와 언더웨어 상품은 착용 이후 교환 및 반품이 불가합니다.
+                                                    <br /> 맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">반품안내</th>
                                                 <td>
                                                     반품 가능 기간
-                                                    반품 신청은 배송 완료 후 7일 내 가능합니다.
-
-                                                    반품 불가 상품
-                                                    단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
-                                                    쥬얼리와 언더웨어 상품은 착용 이후, 교환 및 반품이 불가합니다.
-                                                    맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
-                                                    상품박스, 별도 부속물등이 정상적인 상태에서 반품진행이 원활하게 진행될 수 있습니다.
+                                                    <br />반품 신청은 배송 완료 후 7일 내 가능합니다.
+                                                    <br />
+                                                    <br /> 반품 불가 상품
+                                                    <br /> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 (세탁 또는 착용 후 외출하신 경우) 교환 및 반품이 불가합니다.
+                                                    <br /> 쥬얼리와 언더웨어 상품은 착용 이후, 교환 및 반품이 불가합니다.
+                                                    <br /> 맞춤제작의 경우 제작이 시작된 이후에는 취소,교환 및 반품이 불가합니다.
+                                                    <br /> 상품박스, 별도 부속물등이 정상적인 상태에서 반품진행이 원활하게 진행될 수 있습니다.
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-
                                 </div>
                             </Styles.DetailReview>
                         </Styles.DetailTable>
@@ -518,6 +522,28 @@ export default function SubMain({ tabId }) {
                         </div>
                     </Styles.DetailOption>
                 </Styles.ViewDetails>
+                {popUp && (
+                    <Styles.LayerPopup>
+                        <div className="layer-wrap">
+                            <div className="layer-header">
+                                <h2 className="layer-title">장바구니 담기 완료</h2>
+                            </div>
+                            <div className="layer-container">
+                                <div className="layer-content layer-shopping-bag">
+                                    <p className="txt">해당 상품이 장바구니에 담겼습니다.<br />장바구니로 이동하시겠습니까? </p>
+                                    <div className="btn-box">
+                                        <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
+                                        <Link to="/cart">
+                                            <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item)}><span>장바구니 보기</span></button>
+                                        </Link>
+                                    </div>
+                                    <section className="item-slide"></section>
+                                </div>
+                            </div>
+                            <button type="button" className="btn-layer-close" onClick={ActivePop}>닫기</button>
+                        </div>
+                    </Styles.LayerPopup>
+                )}
             </Styles.Container>
         </>
     );

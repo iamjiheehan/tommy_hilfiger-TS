@@ -43,7 +43,6 @@ function Cart() {
         setSelectAll(!selectAll);
     };
 
-
     const [checkboxes, setCheckboxes] = useState({});
 
     useEffect(() => {
@@ -82,12 +81,12 @@ function Cart() {
     };
 
     const handleDeleteSelected = () => {
-        // 선택한 항목을 삭제하는 액션을 디스패치합니다.
+        // 선택한 항목을 삭제하는 액션을 디스패치.
         selectedItems.forEach((itemId) => {
             dispatch(deleteItem(itemId));
         });
 
-        // 선택한 항목을 지우고 확인란을 재설정합니다.
+        // 선택한 항목을 지우고 확인란을 재설정
         setSelectedItems([]);
         const initialCheckboxes = {};
         items.forEach((item) => {

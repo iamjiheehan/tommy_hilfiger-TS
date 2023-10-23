@@ -29,7 +29,6 @@ function Campaign() {
         modules: { Navigation },
         loop: true,
         allowTouchMove: false,
-        lazy: true,
     }
 
     // useEffect(() => {

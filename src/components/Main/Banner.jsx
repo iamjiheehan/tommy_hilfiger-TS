@@ -5,8 +5,11 @@ import * as Styles from './MainStyle';
 import data from '../../data/banner.json'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import SwiperCore from 'swiper/core';
 
 import "swiper/css";
+SwiperCore.use([ Autoplay]);
 
 function Banner() {
 
@@ -72,7 +75,7 @@ function Banner() {
                                 trigger();
                             }}
                             // onSwiper={(swiper) => console.log(swiper)}
-                            autoplay={{ delay: 1000, disableOnInteraction: false }}
+                            autoplay={{ delay: 2000, disableOnInteraction: true }}
                             loop={true}
                         >
                             {data.map((item, index) => (

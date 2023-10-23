@@ -8,6 +8,8 @@ import star from "../../assets/images/tommy_rating_star_back.png";
 import fixedIco from "../../assets/images/icon_stickey.png";
 
 export const Banner = styled.div`
+
+
     position: relative;
     min-height: 599px;
     max-height: 750px;
@@ -18,6 +20,8 @@ export const Banner = styled.div`
     max-width: 1920px;
     margin: 0 auto;
 
+    
+
     img {
         width: auto;
     }
@@ -25,16 +29,20 @@ export const Banner = styled.div`
     .slide-container {
         overflow: hidden;
         position: relative;
+
     }
 
     .slide-container .swiper-wrapper {
         display: flex;
+        transition-duration: 3s !important;
+
     }
     .slide-container .swiper-wrapper .swiper-item {
         flex-shrink: 0;
         overflow: hidden;
         white-space: nowrap;
         font-size: 0;
+
     }
 
     .swiper-tool-wrap {

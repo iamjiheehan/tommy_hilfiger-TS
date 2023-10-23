@@ -31,20 +31,27 @@ export default function ProductMain() {
         setTab(index);
     }
 
-        //  장바구니 팝업창
+    //  장바구니 팝업창
     const [popUp, setPopUp] = useState(false);
     function ActivePop() {
         setPopUp(!popUp);
     }
 
-    //탭 클릭시 스크롤 이동
+    // 탭 클릭시 스크롤 이동
     const btnArr = document.querySelectorAll('button[id^="tab"]');
     for (let i = 0; i < btnArr.length; i++) {
         btnArr[i].addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector('.tab' + (i + 1)).scrollIntoView(true);
+            const targetElement = document.querySelector('.tab' + (i + 1));
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // 부드러운 스크롤
+                    block: 'center' // 뷰포트 내에서 요소를 중앙에 위치시킵니다
+                });
+            }
         });
     }
+
 
     // Redux 상태 관리
     const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
@@ -57,10 +64,10 @@ export default function ProductMain() {
         // ActivePop();
     }
 
-    
+
     // useEffect(() => {
     //     // window.scrollTo(0, 0);
-    
+
     //     // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
     //     dispatch(setProducts());
     //     // item이 아직 설정되지 않았을 때만 setDetail을 호출
@@ -69,11 +76,11 @@ export default function ProductMain() {
     //         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
     //     }
     // }, []);
-    
 
-    
+
+
     useEffect(() => {
-    
+
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         dispatch(setProducts());
         // item이 아직 설정되지 않았을 때만 setDetail을 호출
@@ -218,17 +225,17 @@ export default function ProductMain() {
                                         </span>
                                     </div>
                                 </div>
-                                    <div className="btn-box">
-                                        <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
-                                            <span>장바구니</span>
-                                        </button>
-                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}>
-                                            <span>
-                                                <input type="hidden" />
-                                                바로구매
-                                            </span>
-                                        </button>
-                                    </div>
+                                <div className="btn-box">
+                                    <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
+                                        <span>장바구니</span>
+                                    </button>
+                                    <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}>
+                                        <span>
+                                            <input type="hidden" />
+                                            바로구매
+                                        </span>
+                                    </button>
+                                </div>
                             </Styles.ViewOption>
                             <Styles.InfoBot className="info-bot">
                                 <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
@@ -579,7 +586,7 @@ export default function ProductMain() {
                                         <button name="btnShoppingBag" type="button" className="btn-basket btn-type" onClick={ActivePop}>
                                             <span>장바구니</span>
                                         </button>
-                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}> 
+                                        <button name="btnBuynow" type="button" className="btn-buy btn-type" onClick={ActivePop}>
                                             <span>
                                                 <input type="hidden" />
                                                 바로구매
@@ -600,10 +607,10 @@ export default function ProductMain() {
                                     <div className="layer-content layer-shopping-bag">
                                         <p className="txt">해당 상품이 장바구니에 담겼습니다.<br />장바구니로 이동하시겠습니까? </p>
                                         <div className="btn-box">
-                                                <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
-                                                <Link to="/cart">
-                                                    <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item)}><span>장바구니 보기</span></button>
-                                                </Link>
+                                            <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
+                                            <Link to="/cart">
+                                                <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item)}><span>장바구니 보기</span></button>
+                                            </Link>
                                         </div>
                                         <section className="item-slide"></section>
                                     </div>

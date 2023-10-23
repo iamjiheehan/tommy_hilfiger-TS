@@ -25,6 +25,7 @@ export default function SubMain({ tabId }) {
         ...NewInJeansData,
         ...NewInShoesData,
     ];
+    
     const [items, setItems] = useState([]);
 
     useEffect(() => {

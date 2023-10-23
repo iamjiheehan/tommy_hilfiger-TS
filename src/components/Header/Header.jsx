@@ -60,11 +60,8 @@ function Header() {
     const navigate = useNavigate();
 
     const handleTabChange = (index, tabId) => {
-        // 클릭한 탭에 대해 즉시 클래스를 업데이트
-        const tabs = document.querySelectorAll('.header-main-gnb li');
-        tabs.forEach((tabElement, tabIndex) => {
-            tabElement.classList.toggle("on", index === tabIndex);
-        });
+        // 먼저 탭 상태를 업데이트합니다.
+        ActiveTab(index);
     
         if (index === 0) {
             // 'Main' 탭의 특수한 경우, 루트 경로로 이동
@@ -75,6 +72,7 @@ function Header() {
         }
         console.log("tabId는 " + tabId);
     };
+    
     
     return (
         <>

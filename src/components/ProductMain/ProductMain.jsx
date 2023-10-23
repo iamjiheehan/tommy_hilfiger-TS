@@ -291,7 +291,6 @@ export default function ProductMain() {
                                     ))}
                                 </ul>
                             </div>
-
                         </div>
                     </Styles.ViewList>
                     <Styles.ViewDetails className="view-detail">

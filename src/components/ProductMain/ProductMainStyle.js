@@ -10,6 +10,16 @@ import select from "../../assets/images/select.png";
 import btnClose from "../../assets/images/btn_layer_close.png";
 
 export const Container = styled.div`
+    .subtitle {
+        color: var(--themeTextColor);
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        margin: 0 0 80px;
+        text-align: center;
+    }
+
     background-color: #fff;
     min-width: 1280px;
     max-width: 1920px;

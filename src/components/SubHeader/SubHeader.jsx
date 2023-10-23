@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import * as Styles from '../SubHeader/SubHeaderStyle'
+import * as Styles from './SubHeaderStyle'
 import { Link } from 'react-router-dom';
 
 function SubHeader() {

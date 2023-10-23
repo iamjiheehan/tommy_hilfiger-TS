@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import SubMain from '../components/SubMain/SubMain';
+import SubMain from '../components/SubHeader/SubMain';
 
 import { useParams } from 'react-router-dom';
 
@@ -17,7 +17,6 @@ export default function Sub() {
     return (
         <>
             <Header />
-            <h2>야</h2>
             <SubMain tabId={tabId}/>
             <Footer />
         </>

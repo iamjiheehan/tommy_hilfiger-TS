@@ -59,15 +59,23 @@ function Header() {
 
     const navigate = useNavigate();
 
-    // 탭 변경 및 새로운 경로로 이동하는 함수
     const handleTabChange = (index, tabId) => {
-        ActiveTab(index); // 탭 상태 업데이트
-        navigate(`/sub/${tabId}`); // 업데이트된 tabId로 새 경로로 이동
-        console.log("tabId는" + tabId);
-    }
-
-
-
+        // 클릭한 탭에 대해 즉시 클래스를 업데이트
+        const tabs = document.querySelectorAll('.header-main-gnb li');
+        tabs.forEach((tabElement, tabIndex) => {
+            tabElement.classList.toggle("on", index === tabIndex);
+        });
+    
+        if (index === 0) {
+            // 'Main' 탭의 특수한 경우, 루트 경로로 이동
+            navigate("/");
+        } else {
+            // 다른 탭의 경우, 'tabId'가 포함된 적절한 경로로 이동
+            navigate(`/sub/${tabId}`);
+        }
+        console.log("tabId는 " + tabId);
+    };
+    
     return (
         <>
             <Styles.Header>
@@ -107,7 +115,7 @@ function Header() {
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className={tab === 0 ? "on" : ""} onClick={() => handleTabChange(0, "NM003")}>
+                                    <li className={tab === 0 ? "on" : ""} onClick={() => handleTabChange(0)}>
                                         <Link to="/">MAIN</Link>
                                     </li>
                                     <li className={tab === 1 ? "on" : ""} onClick={() => handleTabChange(1, "NM003")}>
@@ -129,7 +137,6 @@ function Header() {
                                         <Link to="/sub/NG003">GOLF</Link>
                                     </li>
                                 </ul>
-
                             </div>
                         </Styles.GnbWrap>
                     </div>

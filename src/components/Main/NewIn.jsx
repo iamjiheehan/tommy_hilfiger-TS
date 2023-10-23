@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import * as Styles from './MainStyle';
 

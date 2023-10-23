@@ -49,21 +49,24 @@ function Header() {
     }, []);
 
 
-    //탭 활성화 
+    // 탭 상태 관리
     const [tab, setTab] = useState(0);
+
+    // 탭 활성화 함수
     function ActiveTab(index) {
         setTab(index);
     }
 
-    
     const navigate = useNavigate();
 
-    const handleTabChange = (tabId) => {
-        // URL을 변경하고 tabId를 매개변수로 전달
-        navigate(`/sub/${tabId}`);
-        console.log(tabId);
+    // 탭 변경 및 새로운 경로로 이동하는 함수
+    const handleTabChange = (index, tabId) => {
+        ActiveTab(index); // 탭 상태 업데이트
+        navigate(`/sub/${tabId}`); // 업데이트된 tabId로 새 경로로 이동
+        console.log("tabId는" + tabId);
     }
-    
+
+
 
     return (
         <>
@@ -104,32 +107,29 @@ function Header() {
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className={tab === 0 ? "on" : ""} onClick={() => ActiveTab(0)}>
-                                        <Link to={`/`}>
-                                            <a href="#!">MAIN</a>
-                                        </Link>
+                                    <li className={tab === 0 ? "on" : ""} onClick={() => handleTabChange(0, "NM003")}>
+                                        <Link to="/">MAIN</Link>
                                     </li>
-                                    <li className={tab === 1 ? "on" : ""} onClick={() => { ActiveTab(1); handleTabChange("NM003"); }}>
-                                        <Link to={`/sub/:tabId`}>
-                                            <a href="#!">MEN</a>
-                                        </Link>
+                                    <li className={tab === 1 ? "on" : ""} onClick={() => handleTabChange(1, "NM003")}>
+                                        <Link to="/sub/NM003">MEN</Link>
                                     </li>
-                                    <li className={tab === 2 ? "on" : ""} onClick={() => { ActiveTab(2); handleTabChange("NW003"); }}>
-                                        <a href="#!">WOMEN</a>
+                                    <li className={tab === 2 ? "on" : ""} onClick={() => handleTabChange(2, "NW003")}>
+                                        <Link to="/sub/NW003">WOMEN</Link>
                                     </li>
-                                    <li className={tab === 3 ? "on" : ""} onClick={() => { ActiveTab(3); handleTabChange("NT003"); }}>
-                                        <a href="#!">TOMMY JEANS</a>
+                                    <li className={tab === 3 ? "on" : ""} onClick={() => handleTabChange(3, "NT003")}>
+                                        <Link to="/sub/NT003">TOMMY JEANS</Link>
                                     </li>
-                                    <li className={tab === 4 ? "on" : ""} onClick={() => { ActiveTab(4); handleTabChange("NK003"); }}>
-                                        <a href="#!">KIDS</a>
+                                    <li className={tab === 4 ? "on" : ""} onClick={() => handleTabChange(4, "NK003")}>
+                                        <Link to="/sub/NK003">KIDS</Link>
                                     </li>
-                                    <li className={tab === 5 ? "on" : ""} onClick={() => { ActiveTab(5); handleTabChange("NS003"); }}>
-                                        <a href="#!">SHOES</a>
+                                    <li className={tab === 5 ? "on" : ""} onClick={() => handleTabChange(5, "NS003")}>
+                                        <Link to="/sub/NS003">SHOES</Link>
                                     </li>
-                                    <li className={tab === 6 ? "on" : ""} onClick={() => { ActiveTab(6); handleTabChange("NG003"); }}>
-                                        <a href="#!">GOLF</a>
+                                    <li className={tab === 6 ? "on" : ""} onClick={() => handleTabChange(6, "NG003")}>
+                                        <Link to="/sub/NG003">GOLF</Link>
                                     </li>
                                 </ul>
+
                             </div>
                         </Styles.GnbWrap>
                     </div>

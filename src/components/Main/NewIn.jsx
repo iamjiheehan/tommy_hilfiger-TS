@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -24,7 +24,13 @@ function NewIn() {
     const productData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
 
     const dispatch = useDispatch();
-    dispatch(setProducts(productData));
+
+    useEffect(()=>{
+        dispatch(setProducts(productData));
+    })
+
+    // 에러해결참고:
+    // https://velog.io/@pon06188/Warning-Cannot-update-a-component-A-while-rendering-a-different-component-B.-To-locate-the-bad-setState-call-inside-B-follow-the-stack-trace-as-described-in-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0
 
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
     const [activeIndex, setActiveIndex] = useState(0);

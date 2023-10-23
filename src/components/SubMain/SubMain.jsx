@@ -2,8 +2,19 @@ import React, { useEffect } from 'react'
 
 import * as Styles from './SubMainStyles';
 
-export default function MenMain() {
+import { useLocation } from 'react-router-dom';
 
+
+export default function SubMain() {
+
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const tabId = params.get("tab")
+
+    useEffect(() =>{
+        console.log(tabId);
+    })
+    
     return (
         <>
             <Styles.SubContainer>

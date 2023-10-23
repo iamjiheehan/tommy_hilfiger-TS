@@ -5,7 +5,9 @@ import { ThemeProvider } from "styled-components";
 import Product from "../../pages/Product";
 import Main from "../../pages/Main";
 import Cart from "../../pages/Cart";
-import Men from "../../pages/Men";
+import Sub from "../../pages/Sub";
+
+
 
 function App() {
     
@@ -22,13 +24,7 @@ function App() {
                                 element={<Product />}
                             />
                             <Route path="/cart" element={<Cart />} />
-                            <Route path="/men" element={<Men />} />
-                            <Route path="/product/NM003" element={<Product />} />
-                            <Route path="/product/NW003" element={<Product />} />
-                            <Route path="/product/NT003" element={<Product />} />
-                            <Route path="/product/NK003" element={<Product />} />
-                            <Route path="/product/NS003" element={<Product />} />
-                            <Route path="/product/NG003" element={<Product />} />
+                            <Route path="/sub/:tabId" element={<Sub />} />
                         </Routes> 
                     </div>
                 </ThemeProvider>

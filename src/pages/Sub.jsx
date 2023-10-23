@@ -2,15 +2,14 @@ import React from 'react'
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import MenMain from '../components/SubMain/Men';
+import SubMain from '../components/SubMain/SubMain';
 
-
-export default function Main() {
+export default function Sub() {
 
     return (
         <>
             <Header />
-            <MenMain />
+            <SubMain />
             <Footer />
         </>
     )

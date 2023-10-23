@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import * as Styles from './HeaderStyle';
 // 이미지 임포트
 import logo from '../../assets/images/header_logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Header() {
 
@@ -49,6 +49,22 @@ function Header() {
     }, []);
 
 
+    //탭 활성화 
+    const [tab, setTab] = useState(0);
+    function ActiveTab(index) {
+        setTab(index);
+    }
+
+    
+    const navigate = useNavigate();
+
+    const handleTabChange = (tabId) => {
+        // URL을 변경하고 tabId를 매개변수로 전달
+        navigate(`/sub/${tabId}`);
+        console.log(tabId);
+    }
+    
+
     return (
         <>
             <Styles.Header>
@@ -88,27 +104,30 @@ function Header() {
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className="on" >
-                                        <a href="#!">
-                                            MAIN</a>
+                                    <li className={tab === 0 ? "on" : ""} onClick={() => ActiveTab(0)}>
+                                        <Link to={`/`}>
+                                            <a href="#!">MAIN</a>
+                                        </Link>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NM003">MEN</Link>
+                                    <li className={tab === 1 ? "on" : ""} onClick={() => { ActiveTab(1); handleTabChange("NM003"); }}>
+                                        <Link to={`/sub/:tabId`}>
+                                            <a href="#!">MEN</a>
+                                        </Link>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NW003">WOMEN</Link>
+                                    <li className={tab === 2 ? "on" : ""} onClick={() => { ActiveTab(2); handleTabChange("NW003"); }}>
+                                        <a href="#!">WOMEN</a>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NT003">TOMMY JEANS</Link>
+                                    <li className={tab === 3 ? "on" : ""} onClick={() => { ActiveTab(3); handleTabChange("NT003"); }}>
+                                        <a href="#!">TOMMY JEANS</a>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NK003">KIDS</Link>
+                                    <li className={tab === 4 ? "on" : ""} onClick={() => { ActiveTab(4); handleTabChange("NK003"); }}>
+                                        <a href="#!">KIDS</a>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NS003">SHOES</Link>
+                                    <li className={tab === 5 ? "on" : ""} onClick={() => { ActiveTab(5); handleTabChange("NS003"); }}>
+                                        <a href="#!">SHOES</a>
                                     </li>
-                                    <li className="">
-                                        <Link to="/product/NG003">GOLF</Link>
+                                    <li className={tab === 6 ? "on" : ""} onClick={() => { ActiveTab(6); handleTabChange("NG003"); }}>
+                                        <a href="#!">GOLF</a>
                                     </li>
                                 </ul>
                             </div>

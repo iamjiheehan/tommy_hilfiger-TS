@@ -23,7 +23,13 @@ function App() {
                             />
                             <Route path="/cart" element={<Cart />} />
                             <Route path="/men" element={<Men />} />
-                        </Routes>
+                            <Route path="/product/NM003" element={<Product />} />
+                            <Route path="/product/NW003" element={<Product />} />
+                            <Route path="/product/NT003" element={<Product />} />
+                            <Route path="/product/NK003" element={<Product />} />
+                            <Route path="/product/NS003" element={<Product />} />
+                            <Route path="/product/NG003" element={<Product />} />
+                        </Routes> 
                     </div>
                 </ThemeProvider>
             </BrowserRouter>

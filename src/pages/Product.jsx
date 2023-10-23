@@ -8,7 +8,7 @@ export default function Product() {
 
     useEffect(() => {
         window.scrollTo(0, 0); // 화면이동시 가장 위로가도록 설정
-    })
+    },[]);
 
     return (
         <>

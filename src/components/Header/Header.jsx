@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import * as Styles from './HeaderStyle';
 // 이미지 임포트
 import logo from '../../assets/images/header_logo.png'
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -48,12 +49,6 @@ function Header() {
     }, []);
 
 
-    //탭 활성화 
-    const [tab, setTab] = useState(0);
-    function ActiveTab(index) {
-        setTab(index);
-    }
-
     return (
         <>
             <Styles.Header>
@@ -93,32 +88,27 @@ function Header() {
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className={tab === 0 ? "on" : ""} onClick={() => ActiveTab(0)}>
-                                        <a href="#!">MAIN</a>
-                                    </li>
-                                    <li className={tab === 1 ? "on" : ""} onClick={() => ActiveTab(1)}>
-                                        <a href="!">
-                                            MEN</a>
-                                    </li>
-                                    <li className={tab === 2 ? "on" : ""} onClick={() => ActiveTab(2)}>
+                                    <li className="on" >
                                         <a href="#!">
-                                            WOMEN</a>
+                                            MAIN</a>
                                     </li>
-                                    <li className={tab === 3 ? "on" : ""} onClick={() => ActiveTab(3)}>
-                                        <a href="#!">
-                                            TOMMY JEANS</a>
+                                    <li className="">
+                                        <Link to="/product/NM003">MEN</Link>
                                     </li>
-                                    <li className={tab === 4 ? "on" : ""} onClick={() => ActiveTab(4)}>
-                                        <a href="#!">
-                                            KIDS</a>
+                                    <li className="">
+                                        <Link to="/product/NW003">WOMEN</Link>
                                     </li>
-                                    <li className={tab === 5 ? "on" : ""} onClick={() => ActiveTab(5)}>
-                                        <a href="#!">
-                                            SHOES</a>
+                                    <li className="">
+                                        <Link to="/product/NT003">TOMMY JEANS</Link>
                                     </li>
-                                    <li className={tab === 6 ? "on" : ""} onClick={() => ActiveTab(6)}>
-                                        <a href="#!">
-                                            GOLF</a>
+                                    <li className="">
+                                        <Link to="/product/NK003">KIDS</Link>
+                                    </li>
+                                    <li className="">
+                                        <Link to="/product/NS003">SHOES</Link>
+                                    </li>
+                                    <li className="">
+                                        <Link to="/product/NG003">GOLF</Link>
                                     </li>
                                 </ul>
                             </div>

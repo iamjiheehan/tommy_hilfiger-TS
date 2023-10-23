@@ -39,7 +39,7 @@ function ItemLayout({ items }) {
         >
             {items.map((item, index) => (
                 <SwiperSlide className="swiper-item" key={item.id}>
-                    <div onClick={handleItemClick(item)}>
+                    <div onClick={() => handleItemClick(item)}>
                         <Link to={`/product/${item.id}`} state={{ item }}>
                             <figure className="item-box">
                                 <div className="item-img">

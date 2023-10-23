@@ -24,7 +24,7 @@ function Header() {
     const handleBrandMouseLeave = () => {
         setBrandActive(false);
     };
-    
+
     useEffect(() => {
         const target = document.querySelector('header');
 
@@ -45,7 +45,14 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); 
+    }, []);
+
+
+    //탭 활성화 
+    const [tab, setTab] = useState(0);
+    function ActiveTab(index) {
+        setTab(index);
+    }
 
     return (
         <>
@@ -79,37 +86,37 @@ function Header() {
                                     onMouseEnter={handleCateMouseEnter}
                                     onMouseLeave={handleCateMouseLeave}
                                 ><span>카테고리</span></button>
-                                <button className='btn-list' marginright="0" type="button" 
+                                <button className='btn-list' marginright="0" type="button"
                                     onMouseEnter={handleBrandMouseEnter}
                                     onMouseLeave={handleBrandMouseLeave}
                                 ><span>브랜드</span></button>
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className="on">
+                                    <li className={tab === 0 ? "on" : ""} onClick={() => ActiveTab(0)}>
                                         <a href="#!">MAIN</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 1 ? "on" : ""} onClick={() => ActiveTab(1)}>
                                         <a href="!">
                                             MEN</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 2 ? "on" : ""} onClick={() => ActiveTab(2)}>
                                         <a href="#!">
                                             WOMEN</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 3 ? "on" : ""} onClick={() => ActiveTab(3)}>
                                         <a href="#!">
                                             TOMMY JEANS</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 4 ? "on" : ""} onClick={() => ActiveTab(4)}>
                                         <a href="#!">
                                             KIDS</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 5 ? "on" : ""} onClick={() => ActiveTab(5)}>
                                         <a href="#!">
                                             SHOES</a>
                                     </li>
-                                    <li className="">
+                                    <li className={tab === 6 ? "on" : ""} onClick={() => ActiveTab(6)}>
                                         <a href="#!">
                                             GOLF</a>
                                     </li>
@@ -120,8 +127,8 @@ function Header() {
                     <Styles.NewCategory>
                         {cateActive && (
                             <div className="gnb-new-box"
-                            onMouseEnter={handleCateMouseEnter}
-                            onMouseLeave={handleCateMouseLeave}>
+                                onMouseEnter={handleCateMouseEnter}
+                                onMouseLeave={handleCateMouseLeave}>
                                 <div className="menu-contents">
                                     <div className="brand-cate-wrap">
                                         <ul className="brand-cate-list">
@@ -352,8 +359,8 @@ function Header() {
                     <Styles.NewBrand>
                         {brandActive && (
                             <div className="gnb-new-box"
-                            onMouseEnter={handleBrandMouseEnter}
-                            onMouseLeave={handleBrandMouseLeave}
+                                onMouseEnter={handleBrandMouseEnter}
+                                onMouseLeave={handleBrandMouseLeave}
                             >
                                 <div className="menu-contents">
                                     <Styles.BrandLine>

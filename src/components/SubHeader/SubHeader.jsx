@@ -36,7 +36,7 @@ function SubHeader() {
                         <div className="wrap">
                             <h1 className="logo">
                                 <Link to={`/`}>
-                                    <a href="/">H FASHION</a>
+                                    <a href="#!">H FASHION</a>
                                 </Link>
                                 </h1>
                             <nav className="util">

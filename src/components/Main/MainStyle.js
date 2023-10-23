@@ -20,7 +20,6 @@ export const Banner = styled.div`
     max-width: 1920px;
     margin: 0 auto;
 
-    
 
     img {
         width: auto;

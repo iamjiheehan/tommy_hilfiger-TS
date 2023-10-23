@@ -102,8 +102,12 @@ function Cart() {
             <Styles.CartWrap id="cartWrap">
                 <div className="breadcrumb-wrap">
                     <ol className="breadcrumb">
-                        <li className="bc-home"><a href="/"><span>HOME</span></a></li>
-                        <li className="active">장바구니</li>
+                        <Link to={`/`}>
+                            <li className="bc-home"><a href="/"><span>HOME</span></a></li>
+                        </Link>
+                        <Link to={`/`}>
+                            <li className="active">장바구니</li>
+                        </Link>
                     </ol>
                 </div>
                 <h3 className="page-title">장바구니</h3>

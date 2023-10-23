@@ -29,7 +29,7 @@ export const CartWrap = styled.div`
             color: #999;
             font-size: 14px;
         }
-        .breadcrumb li + li {
+        .breadcrumb li {
             margin-left: 12px;
             padding-left: 19px;
         }
@@ -62,7 +62,7 @@ export const CartWrap = styled.div`
             position: relative;
         }
 
-        .breadcrumb li + li:before {
+        .breadcrumb .active:before {
             content: "";
             display: inline-block;
             position: absolute;

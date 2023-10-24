@@ -11,9 +11,26 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 
+interface IssueDataItem {
+    season: {
+      img: string;
+      title: string;
+      subtitle: string;
+      text: string;
+    };
+    product: {
+      img: string;
+      brand: string;
+      name: string;
+      price: string;
+      regular: string;
+      percent: string;
+    }[];
+  }
+
 function Issue() {
 
-    const data = [...IssueData];
+     const data: IssueDataItem[] = [...IssueData];
 
     SwiperCore.use([Navigation]);
 
@@ -29,8 +46,8 @@ function Issue() {
         },
         modules:[Navigation, Mousewheel, Keyboard]
     }
-
     const swiperRef = useRef(null);
+
 
 
     return (

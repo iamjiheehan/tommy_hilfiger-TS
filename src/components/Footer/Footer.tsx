@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 
 import * as Styles from './FooterStyle';
 
-
 function Footer() {
-
-    const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
+    const [isOpen, setMenu] = useState<boolean>(false); // 메뉴의 초기값을 false로 설정
 
     const toggleMenu = () => {
-        setMenu(isOpen => !isOpen); // on,off 개념 boolean
+        setMenu((prevIsOpen) => !prevIsOpen); // on,off 개념 boolean
     }
 
     return (

@@ -13,7 +13,21 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../store';
 
-export default function SubMain({ tabId }) {
+interface ProductItem {
+    id: number;
+    price:number;
+    brand: string;
+    name: string;
+    regular: string;
+    img: string;
+    imgSub: string;
+}
+
+interface TabProps {
+    tabId: number;
+}
+
+export default function SubMain({ tabId }: TabProps): JSX.Element {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
     function SetModal() {
@@ -27,8 +41,8 @@ export default function SubMain({ tabId }) {
     }
 
     //탭 활성화 
-    const [tab, setTab] = useState(0);
-    function ActiveTab(index) {
+    const [tab, setTab] = useState<number>(0);
+    function ActiveTab(index: number) {
         setTab(index);
     }
 
@@ -66,8 +80,8 @@ export default function SubMain({ tabId }) {
         ...NewInShoesData,
     ];
 
-    const [products, setProducts] = useState([]);
-    const [item, setItem] = useState();
+    const [products, setProducts] = useState<ProductItem[]>([]);
+    const [item, setItem] = useState<ProductItem | undefined>();
 
     useEffect(() => {
         console.log("SubMain 컴포넌트에서 받은 tabID 값: " + tabId);
@@ -82,7 +96,7 @@ export default function SubMain({ tabId }) {
 
     const dispatch = useDispatch();
 
-    function SendToCart(items) {
+    function SendToCart(items: ProductItem) {
         console.log("Item to add to the cart:", items);
         dispatch(addItem(items));
         // ActivePop();
@@ -534,7 +548,7 @@ export default function SubMain({ tabId }) {
                                     <div className="btn-box">
                                         <button type="button" className="btn-basket btn-type" onClick={ActivePop}><span>계속 쇼핑하기</span></button>
                                         <Link to="/cart">
-                                            <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item)}><span>장바구니 보기</span></button>
+                                            <button type="button" className="btn-buy btn-type" onClick={() => SendToCart(item!)}><span>장바구니 보기</span></button>
                                         </Link>
                                     </div>
                                     <section className="item-slide"></section>

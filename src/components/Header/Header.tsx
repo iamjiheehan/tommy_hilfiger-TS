@@ -5,6 +5,11 @@ import * as Styles from './HeaderStyle';
 import logo from '../../assets/images/header_logo.png'
 import { Link, useNavigate } from 'react-router-dom';
 
+
+type CustomButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    tabtype: string;
+};
+
 function Header() {
 
     const [cateActive, setCateActive] = useState(false);
@@ -33,13 +38,13 @@ function Header() {
             const scrollValue = window.scrollY;
 
             if (scrollValue >= 77) {
-                target.classList.add('fixed');
+                target?.classList.add('fixed');
             } else {
-                target.classList.remove('fixed');
+                target?.classList.remove('fixed');
             }
         };
 
-        // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너를 추가합니다.
+        // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너를 추가.
         window.addEventListener('scroll', handleScroll);
 
         // 컴포넌트가 언마운트될 때 이벤트 리스너를 정리하여 메모리 누수를 방지
@@ -50,16 +55,16 @@ function Header() {
 
 
     // 탭 상태 관리
-    const [tab, setTab] = useState(0);
+    const [tab, setTab] = useState<number>(0);
 
     // 탭 활성화 함수
-    function ActiveTab(index) {
+    function ActiveTab(index: number) {
         setTab(index);
     }
 
     const navigate = useNavigate();
 
-    const handleTabChange = (index, tabId) => {
+    const handleTabChange = (index: number, tabId: string) => {
         // 먼저 탭 상태를 업데이트합니다.
         ActiveTab(index);
     
@@ -75,7 +80,7 @@ function Header() {
     
 
         //  장바구니 팝업창
-        const [popUp, setPopUp] = useState(false);
+        const [popUp, setPopUp] = useState<boolean>(false);
         function ActivePop() {
             setPopUp(!popUp);
         }
@@ -108,20 +113,22 @@ function Header() {
                         </Styles.MainFlex>
                         <Styles.GnbWrap className="header-gnb">
                             <Styles.BtnWrap >
-                                <button
+                                <Styles.CustomBtn
                                     className='btn-list'
                                     type="button"
                                     onMouseEnter={handleCateMouseEnter}
                                     onMouseLeave={handleCateMouseLeave}
-                                ><span>카테고리</span></button>
-                                <button className='btn-list' marginright="0" type="button"
+                                ><span>카테고리</span></Styles.CustomBtn>
+                                <Styles.CustomBtn className='btn-list' 
+                                    marginright="0"
+                                    type="button"
                                     onMouseEnter={handleBrandMouseEnter}
                                     onMouseLeave={handleBrandMouseLeave}
-                                ><span>브랜드</span></button>
+                                ><span>브랜드</span></Styles.CustomBtn>
                             </Styles.BtnWrap>
                             <div className='header-main-gnb'>
                                 <ul>
-                                    <li className={tab === 0 ? "on" : ""} onClick={() => handleTabChange(0)}>
+                                    <li className={tab === 0 ? "on" : ""} onClick={() => handleTabChange(0, "")}>
                                         <Link to="/">MAIN</Link>
                                     </li>
                                     <li className={tab === 1 ? "on" : ""} onClick={() => handleTabChange(1, "NM003")}>
@@ -430,36 +437,36 @@ function Header() {
                                         <div className="brand-search-cont">
                                             <div className="btnTab">
                                                 <div className="btn btn-all" id="searchTabList">
-                                                    <button type="button" tabtype="MY" id="searchMyBrnd"><span>MY</span></button>
-                                                    <button type="button" tabtype="ALL" id="searchTotalBrnd" className="on"><span>전체</span></button>
+                                                    <button type="button" id="searchMyBrnd"><span>MY</span></button>
+                                                    <button type="button" id="searchTotalBrnd" className="on"><span>전체</span></button>
                                                 </div>
                                                 <div className="btn btn-alphabet" id="searchAlphabetList">
-                                                    <button type="button" tabtype="A"><span>A</span></button>
-                                                    <button type="button" tabtype="B"><span>B</span></button>
-                                                    <button type="button" tabtype="C"><span>C</span></button>
-                                                    <button type="button" tabtype="D"><span>D</span></button>
-                                                    <button type="button" tabtype="E"><span>E</span></button>
-                                                    <button type="button" tabtype="F"><span>F</span></button>
-                                                    <button type="button" tabtype="G"><span>G</span></button>
-                                                    <button type="button" tabtype="H"><span>H</span></button>
-                                                    <button type="button" tabtype="I"><span>I</span></button>
-                                                    <button type="button" tabtype="J"><span>J</span></button>
-                                                    <button type="button" tabtype="K"><span>K</span></button>
-                                                    <button type="button" tabtype="L"><span>L</span></button>
-                                                    <button type="button" tabtype="M"><span>M</span></button>
-                                                    <button type="button" tabtype="N"><span>N</span></button>
-                                                    <button type="button" tabtype="O"><span>O</span></button>
-                                                    <button type="button" tabtype="P"><span>P</span></button>
-                                                    <button type="button" tabtype="R"><span>R</span></button>
-                                                    <button type="button" tabtype="S"><span>S</span></button>
-                                                    <button type="button" tabtype="T"><span>T</span></button>
-                                                    <button type="button" tabtype="U"><span>U</span></button>
-                                                    <button type="button" tabtype="V"><span>V</span></button>
-                                                    <button type="button" tabtype="W"><span>W</span></button>
-                                                    <button type="button" tabtype="X"><span>X</span></button>
-                                                    <button type="button" tabtype="Y"><span>Y</span></button>
-                                                    <button type="button" tabtype="Z"><span>Z</span></button>
-                                                    <button type="button" tabtype="ETC"><span>0~9</span></button>
+                                                    <button type="button"><span>A</span></button>
+                                                    <button type="button"><span>B</span></button>
+                                                    <button type="button"><span>C</span></button>
+                                                    <button type="button"><span>D</span></button>
+                                                    <button type="button"><span>E</span></button>
+                                                    <button type="button"><span>F</span></button>
+                                                    <button type="button"><span>G</span></button>
+                                                    <button type="button"><span>H</span></button>
+                                                    <button type="button"><span>I</span></button>
+                                                    <button type="button"><span>J</span></button>
+                                                    <button type="button"><span>K</span></button>
+                                                    <button type="button"><span>L</span></button>
+                                                    <button type="button"><span>M</span></button>
+                                                    <button type="button"><span>N</span></button>
+                                                    <button type="button"><span>O</span></button>
+                                                    <button type="button"><span>P</span></button>
+                                                    <button type="button"><span>R</span></button>
+                                                    <button type="button"><span>S</span></button>
+                                                    <button type="button"><span>T</span></button>
+                                                    <button type="button"><span>U</span></button>
+                                                    <button type="button"><span>V</span></button>
+                                                    <button type="button"><span>W</span></button>
+                                                    <button type="button"><span>X</span></button>
+                                                    <button type="button"><span>Y</span></button>
+                                                    <button type="button"><span>Z</span></button>
+                                                    <button type="button"><span>0~9</span></button>
                                                 </div>
                                             </div>
                                             <div className="list-container">

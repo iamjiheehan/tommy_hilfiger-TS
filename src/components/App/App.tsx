@@ -7,10 +7,7 @@ import Main from "../../pages/Main";
 import Cart from "../../pages/Cart";
 import Sub from "../../pages/Sub";
 
-
-
-function App() {
-    
+function App(): JSX.Element {
     return (
         <>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -18,14 +15,14 @@ function App() {
                     <GlobalStyle />
                     <div className="App">
                         <Routes>
-                            <Route exact={true} path="/" element={<Main />} />
+                            <Route path="/" element={<Main />} />
                             <Route
                                 path="/product/:productId"
                                 element={<Product />}
                             />
                             <Route path="/cart" element={<Cart />} />
                             <Route path="/sub/:tabId" element={<Sub />} />
-                        </Routes> 
+                        </Routes>
                     </div>
                 </ThemeProvider>
             </BrowserRouter>

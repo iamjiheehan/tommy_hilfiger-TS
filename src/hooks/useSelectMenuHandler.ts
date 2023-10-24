@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-export function useSelectMenuHandler(initialTab = 0) {
-    const [currentTab, setCurrentTab] = useState(initialTab);
+export function useSelectMenuHandler(initialTab: number = 0) {
+    const [currentTab, setCurrentTab] = useState<number>(initialTab);
 
-    const selectMenuHandler = (index) => {
+    const selectMenuHandler = (index: number) => {
         setCurrentTab(index);
         console.log(`현재 활성화 된 탭은 ${index}`);
     }

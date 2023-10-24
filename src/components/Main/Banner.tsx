@@ -9,6 +9,7 @@ import { Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 
 import "swiper/css";
+
 SwiperCore.use([ Autoplay]);
 
 function Banner() {
@@ -18,7 +19,7 @@ function Banner() {
 
     // console.log(dataLength);
 
-    const [currentSlide, setCurrentSlide] = useState(1);
+    const [currentSlide, setCurrentSlide] = useState<number>(1);
 
     const trigger = () => {
         setCurrentSlide((prevSlide) => {
@@ -53,6 +54,7 @@ function Banner() {
     //         console.log(currentSlide);
     //     }
     // }
+
     // 기존의 trigger 함수가 작동하지 않았던
     // 이유는 index 변수를 올바르게 업데이트하지 않았기 때문. 
     // trigger 함수 내에서 매번 함수가 호출될 때 index를 0으로 선언했는데, 
@@ -78,7 +80,7 @@ function Banner() {
                             autoplay={{ delay: 2000, disableOnInteraction: true }}
                             loop={true}
                         >
-                            {data.map((item, index) => (
+                            {data.map((item: { etc: string; title: string; sub: string; img: string; }, index: number) => (
                                 <SwiperSlide className='swiper-item' key={index}>
                                     <Styles.Box>
                                         <Styles.Banner className="img">
@@ -86,7 +88,7 @@ function Banner() {
                                                 <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                             </a>
                                         </Styles.Banner>
-                                        <Styles.Text className="str" href="#!">
+                                        <Styles.Text className="str">
                                             <span className="etc">
                                                 {item.etc}
                                             </span>

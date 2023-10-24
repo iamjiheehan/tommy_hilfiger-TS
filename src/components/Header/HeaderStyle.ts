@@ -8,7 +8,7 @@ export const Header = styled.div`
     display: block;
     position: relative;
     list-style: none;
-    background-color: #FFF !important;
+    background-color: #fff !important;
     position: relative;
     z-index: 9999;
     .fixed {
@@ -16,14 +16,13 @@ export const Header = styled.div`
         top: -90px;
         min-width: 1280px;
         width: 100%;
-        background-color: #FFF !important;
+        background-color: #fff !important;
 
         & .header-gnb {
             padding-bottom: 30px !important;
         }
     }
 `;
-
 
 export const Link = styled.a`
     display: inline-block;
@@ -68,28 +67,21 @@ export const Absolute = styled.div`
     }
 `;
 
-export const BtnWrap = styled.div`
-    position: absolute;
-    /* left: 80px; */
+export const CustomBtn = styled.button<{ marginright?: string }>`
+    cursor: pointer;
 
-    span {
-        font-size: 15px;
-        font-weight: 400;
-        color: #00174f;
+    background: transparent;
+    display: inline-block;
+    padding-bottom: 16px;
+    margin-right: ${(props) => props.marginright || "30px"};
+
+    position: relative;
+
+    &:hover span {
+        font-weight: bold;
     }
 
-    .btn-list {
-        cursor: pointer;
-
-        background: transparent;
-        display: inline-block;
-        padding-bottom: 16px;
-        margin-right: ${(props) => props.marginright || "30px"};
-
-        position: relative;
-    }
-
-    .btn-list:hover::after {
+    &:hover::after {
         content: "";
         display: block;
         width: 100%;
@@ -101,9 +93,16 @@ export const BtnWrap = styled.div`
         /* top: 1px; */
     }
 
-    .btn-list:hover span{
-        font-weight: bold;
+    span {
+        font-size: 15px;
+        font-weight: 400;
+        color: #00174f;
     }
+`;
+
+export const BtnWrap = styled.div`
+    position: absolute;
+    /* left: 80px; */
 `;
 
 export const MainFlex = styled.div`
@@ -192,7 +191,6 @@ export const NewCategory = styled.div`
     right: 0;
     background: #fff;
     z-index: 10;
-
 
     .gnb-new-box {
         min-width: 1366px;
@@ -330,7 +328,6 @@ export const BrandSearch = styled.div`
             background: #f7f7f7;
         }
     }
-
 
     .brand-search-header {
         width: 690px;

@@ -1,35 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import * as Styles from './SubHeaderStyle'
-import { Link } from 'react-router-dom';
+import * as Styles from "./SubHeaderStyle";
+import { Link } from "react-router-dom";
 
-function SubHeader() {
+function SubHeader(): JSX.Element {
+    
     useEffect(() => {
-        const target = document.querySelector('header');
+        const target: HTMLElement | null = document.querySelector("header");
 
         const handleScroll = () => {
             const scrollValue = window.scrollY;
 
-            if (scrollValue >= 77) {
-                target.classList.add('fixed');
-            } else {
-                target.classList.remove('fixed');
+            if (target !== null) {
+                if (scrollValue >= 77) {
+                    target.classList.add("fixed");
+                } else {
+                    target.classList.remove("fixed");
+                }
             }
         };
 
         // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너를 추가합니다.
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         // 컴포넌트가 언마운트될 때 이벤트 리스너를 정리하여 메모리 누수를 방지
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
-    }, []); 
-
+    }, []);
 
     return (
         <>
-            <Styles.Header id='subheader'>
+            <Styles.Header id="subheader">
                 <header>
                     {/* <header className='fixed'> */}
                     <div className="inner">
@@ -38,15 +40,25 @@ function SubHeader() {
                                 <Link to={`/`}>
                                     <a href="#!">H FASHION</a>
                                 </Link>
-                                </h1>
+                            </h1>
                             <nav className="util">
-                                <button className="btn-search"><span>버튼</span></button>
-                                <span><a href="#!">로그인</a></span>
-                                <span><a href="#!">회원가입</a></span>
-                                <span><a href="#!">마이페이지</a></span>
-                                <span><a href="#!">장바구니</a></span>
+                                <button className="btn-search">
+                                    <span>버튼</span>
+                                </button>
+                                <span>
+                                    <a href="#!">로그인</a>
+                                </span>
+                                <span>
+                                    <a href="#!">회원가입</a>
+                                </span>
+                                <span>
+                                    <a href="#!">마이페이지</a>
+                                </span>
+                                <span>
+                                    <a href="#!">장바구니</a>
+                                </span>
                             </nav>
-                            <div className='clear'></div>
+                            <div className="clear"></div>
                         </div>
                         <div className="search">
                             <div className="inner">
@@ -54,29 +66,45 @@ function SubHeader() {
                                     <legend>검색</legend>
                                     <div className="search-field">
                                         <div className="input-box">
-                                            <input type="text" title="검색어 입력" className="inp-reset" autoComplete="off" />
+                                            <input
+                                                type="text"
+                                                title="검색어 입력"
+                                                className="inp-reset"
+                                                autoComplete="off"
+                                            />
                                             <div className="etc">
-                                                <button type="button" className="btn-clear"><span>지우기</span></button>
+                                                <button
+                                                    type="button"
+                                                    className="btn-clear"
+                                                >
+                                                    <span>지우기</span>
+                                                </button>
                                             </div>
                                         </div>
-                                        <button type="button" className="btn-search"><span>검색</span></button>
+                                        <button
+                                            type="button"
+                                            className="btn-search"
+                                        >
+                                            <span>검색</span>
+                                        </button>
                                     </div>
                                 </fieldset>
                                 <div className="keyword-wrap">
-                                    <div className="keyword-related">
-                                    </div>
+                                    <div className="keyword-related"></div>
                                     <div className="keyword-list-wrap">
-                                        <section className="keyword-recent">
-                                        </section>
+                                        <section className="keyword-recent"></section>
                                         <section className="keyword-hot">
-                                            <h2 className="title">인기검색어</h2>
-                                            <ul className="list">
-                                            </ul>
+                                            <h2 className="title">
+                                                인기검색어
+                                            </h2>
+                                            <ul className="list"></ul>
                                         </section>
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" className="btn-close">닫기</button>
+                            <button type="button" className="btn-close">
+                                닫기
+                            </button>
                         </div>
                         {/* <div className='clear'></div> */}
                         <div id="gnb">
@@ -84,8 +112,7 @@ function SubHeader() {
                                 <Styles.GnbMenu className="gnb-menu">
                                     <div className="gnb-category">
                                         <a href="#!">
-                                            <span>
-                                                여성</span>
+                                            <span>여성</span>
                                         </a>
                                         <div className="depth2">
                                             <div className="depth2-inner">
@@ -94,72 +121,91 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">여성 메인</a>
+                                                                <a href="#!">
+                                                                    여성 메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    EXCLUSIVE</a>
+                                                                    EXCLUSIVE
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    티셔츠</a>
+                                                                    티셔츠
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    아우터</a>
+                                                                    아우터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    데님</a>
+                                                                    데님
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    원피스</a>
+                                                                    원피스
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    가방</a>
+                                                                    가방
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    수영복</a>
+                                                                    수영복
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    스포츠웨어</a>
+                                                                    스포츠웨어
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    니트/스웨터</a>
+                                                                    니트/스웨터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    셔츠/블라우스</a>
+                                                                    셔츠/블라우스
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    팬츠</a>
+                                                                    팬츠
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    언더웨어</a>
+                                                                    언더웨어
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    스커트</a>
+                                                                    스커트
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    신발</a>
+                                                                    신발
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    악세서리</a>
+                                                                    악세서리
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -178,68 +224,86 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">남성 메인</a>
+                                                                <a href="#!">
+                                                                    남성 메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    EXCLUSIVE</a>
+                                                                    EXCLUSIVE
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    셔츠</a>
+                                                                    셔츠
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    아우터</a>
+                                                                    아우터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    데님</a>
+                                                                    데님
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    언더웨어</a>
+                                                                    언더웨어
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    신발</a>
+                                                                    신발
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    악세서리</a>
+                                                                    악세서리
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    티셔츠</a>
+                                                                    티셔츠
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    니트/스웨터</a>
+                                                                    니트/스웨터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    팬츠</a>
+                                                                    팬츠
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    수트정장</a>
+                                                                    수트정장
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    가방</a>
+                                                                    가방
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    수영복</a>
+                                                                    수영복
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    스포츠웨어</a>
+                                                                    스포츠웨어
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -248,7 +312,7 @@ function SubHeader() {
                                         </div>
                                     </div>
                                     <div className="gnb-category">
-                                        <a href="#!" >
+                                        <a href="#!">
                                             <span>키즈</span>
                                         </a>
                                         <div className="depth2">
@@ -258,24 +322,31 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">키즈 메인</a>
+                                                                <a href="#!">
+                                                                    키즈 메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    EXCLUSIVE</a>
+                                                                    EXCLUSIVE
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여아</a>
+                                                                    여아
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남아</a>
+                                                                    남아
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -294,48 +365,61 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">잡화 메인</a>
+                                                                <a href="#!">
+                                                                    잡화 메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    EXCLUSIVE</a>
+                                                                    EXCLUSIVE
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성신발</a>
+                                                                    여성신발
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성패션잡화</a>
+                                                                    여성패션잡화
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성가방</a>
+                                                                    남성가방
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    키즈패션잡화</a>
+                                                                    키즈패션잡화
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    모자</a>
+                                                                    모자
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성가방</a>
+                                                                    여성가방
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성신발</a>
+                                                                    남성신발
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성패션잡화</a>
+                                                                    남성패션잡화
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -354,40 +438,52 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">라이프스타일 메인</a>
+                                                                <a href="#!">
+                                                                    라이프스타일
+                                                                    메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    홈/리빙</a>
+                                                                    홈/리빙
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    키친</a>
+                                                                    키친
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    펫</a>
+                                                                    펫
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    등산</a>
+                                                                    등산
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    데스크/가전/토이</a>
+                                                                    데스크/가전/토이
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    뷰티</a>
+                                                                    뷰티
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    캠핑</a>
+                                                                    캠핑
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -406,52 +502,67 @@ function SubHeader() {
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">골프 메인</a>
+                                                                <a href="#!">
+                                                                    골프 메인
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성 아우터</a>
+                                                                    남성 아우터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성 하의</a>
+                                                                    남성 하의
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성 아우터</a>
+                                                                    여성 아우터
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성 하의</a>
+                                                                    여성 하의
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    골프 악세서리</a>
+                                                                    골프
+                                                                    악세서리
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul className="depth2-menu-list01">
                                                             <li>
-                                                                <a href="#!">전체상품</a>
+                                                                <a href="#!">
+                                                                    전체상품
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성 상의</a>
+                                                                    남성 상의
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    남성 골프화</a>
+                                                                    남성 골프화
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성 상의</a>
+                                                                    여성 상의
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    여성 골프화</a>
+                                                                    여성 골프화
+                                                                </a>
                                                             </li>
                                                             <li>
                                                                 <a href="#!">
-                                                                    골프 가방</a>
+                                                                    골프 가방
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -469,13 +580,41 @@ function SubHeader() {
                                                     <li className="depth2-menu-main">
                                                         <h3>카테고리</h3>
                                                         <ul className="depth2-menu-list01">
-                                                            <li><a href="#!">전체 메인</a></li>
-                                                            <li><a href="#!" >여성</a></li>
-                                                            <li><a href="#!" >남성</a></li>
-                                                            <li><a href="#!" >키즈</a></li>
-                                                            <li><a href="#!" >잡화</a></li>
-                                                            <li><a href="#!" >라이프스타일</a></li>
-                                                            <li><a href="#!" >골프</a></li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    전체 메인
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    여성
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    남성
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    키즈
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    잡화
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    라이프스타일
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#!">
+                                                                    골프
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -495,42 +634,34 @@ function SubHeader() {
                                 </Styles.GnbMenu>
                                 <Styles.GnbEtc className="gnb-etc">
                                     <li>
-                                        <a href="#!">
-                                            브랜드</a>
+                                        <a href="#!">브랜드</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            매거진</a>
+                                        <a href="#!">매거진</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            신상품</a>
+                                        <a href="#!">신상품</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            베스트</a>
+                                        <a href="#!">베스트</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            기획전</a>
+                                        <a href="#!">기획전</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            이벤트</a>
+                                        <a href="#!">이벤트</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            라이브</a>
+                                        <a href="#!">라이브</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            리뷰플러스</a>
+                                        <a href="#!">리뷰플러스</a>
                                     </li>
                                 </Styles.GnbEtc>
                             </div>
                         </div>
                     </div>
-                    <div className='clear'></div>
+                    <div className="clear"></div>
                 </header>
             </Styles.Header>
         </>

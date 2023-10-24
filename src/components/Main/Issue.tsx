@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import * as Styles from './MainStyle';
 import IssueData from '../../data/issue.json';
 
@@ -15,8 +15,6 @@ function Issue() {
 
     const data = [...IssueData];
 
-    const [swiper, setSwiper] = useState(null);
-
     SwiperCore.use([Navigation]);
 
     const swiperParams = {
@@ -29,8 +27,11 @@ function Issue() {
         pagination:{
             clickable: true
         },
-        modules:{Navigation, Mousewheel, Keyboard}
+        modules:[Navigation, Mousewheel, Keyboard]
     }
+
+    const swiperRef = useRef(null);
+
 
     return (
         <div>
@@ -44,7 +45,7 @@ function Issue() {
                             <Swiper
                                 className="swiper-wrapper mySwiper"
                                 {...swiperParams}
-                                ref={setSwiper}
+                                ref={swiperRef}
                             >
                                 {data.map((item, index) => (
                                     <SwiperSlide className="swiper-item" key={index}>

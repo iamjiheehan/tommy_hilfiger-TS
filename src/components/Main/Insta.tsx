@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import data from '../../data/insta.json';
 import SwiperCore from 'swiper/core';
@@ -15,8 +15,6 @@ function Insta() {
 
     const imgData = data[0].img;
 
-    const [swiper, setSwiper] = useState(null);
-
     SwiperCore.use([Navigation]);
 
     const swiperInstaParams = {
@@ -30,8 +28,10 @@ function Insta() {
         pagination:{
             clickable: true
         },
-        modules:{Navigation}
+        modules:[Navigation]
     }
+
+    const swiperRef = useRef(null);
 
     return (
         <div>
@@ -48,12 +48,12 @@ function Insta() {
                     <div className="slide-container insta">
                         <Swiper
                             {...swiperInstaParams}
-                            ref={setSwiper}
+                            ref={swiperRef}
                             >
                             {imgData.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index}>
                                     <button type="button" className="btn-popup" value="1">
-                                        <img src={`${process.env.PUBLIC_URL}/${item}`} alt={index} />
+                                        <img src={`${process.env.PUBLIC_URL}/${item}`} alt={String(index)} />
                                     </button>
                                 </SwiperSlide>
                             ))}

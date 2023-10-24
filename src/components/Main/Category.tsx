@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -17,8 +17,6 @@ function Category() {
 
     const content = [...data];
 
-    const [swiper, setSwiper] = useState(null);
-
     SwiperCore.use([Navigation]);
 
     const swiperParams = {
@@ -31,9 +29,11 @@ function Category() {
         pagination:{
             clickable: true
         },
-        modules:{Navigation, Mousewheel, Keyboard}
+        modules:[Navigation, Mousewheel, Keyboard]
     }
 
+    const swiperRef = useRef(null);
+    
     return (
         <div>
             <section id='category'>
@@ -45,13 +45,13 @@ function Category() {
                         <div className="slide-container">
                             <Swiper
                                 {...swiperParams}
-                                ref={setSwiper}
+                                ref={swiperRef}
                                 className="swiper-wrapper mySwiper"
                                 >
                                 {content.map((item, index) => (
                                     <SwiperSlide className="swiper-item" key={index}>
                                         <a href="#!" className="link-item">
-                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={index} />
+                                            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={String(index)} />
                                             <span className="text">{item.title}</span>
                                         </a>
                                     </SwiperSlide>

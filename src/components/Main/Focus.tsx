@@ -54,7 +54,7 @@ function Focus() {
                                                     <div className="item-img">
                                                         <div className="img-box">
                                                             <a href="#!">
-                                                                <img src={`${process.env.PUBLIC_URL}/${item}`} alt={index}  />
+                                                                <img src={`${process.env.PUBLIC_URL}/${item}`} alt={String(index)}  />
                                                             </a>
                                                         </div>
                                                     </div>
@@ -77,7 +77,6 @@ function Focus() {
                                     </div>
                                     <iframe
                                         className="vod-box"
-                                        allowFullScreen="1"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         title="TOMMY JEANS 23 FALL CAMPAIGN"
                                         width="100%"

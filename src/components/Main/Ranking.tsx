@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 
 import * as Styles from './MainStyle';
 
-import MenData from '../../data/TopRanking/men';
-import WomenData from '../../data/TopRanking/women';
-import GolfData from '../../data/TopRanking/golf';
-import KidsData from '../../data/TopRanking/kids';
-import JeansData from '../../data/TopRanking/tommyJeans';
-import ShoesData from '../../data/TopRanking/shoes';
+import MenData from '../../data/TopRanking/men.json';
+import WomenData from '../../data/TopRanking/women.json';
+import GolfData from '../../data/TopRanking/golf.json';
+import KidsData from '../../data/TopRanking/kids.json';
+import JeansData from '../../data/TopRanking/tommyJeans.json';
+import ShoesData from '../../data/TopRanking/shoes.json';
 
-import useRandomData from '../../hooks/useRandomize';
+import { useRandomData } from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import { Navigation } from 'swiper/modules';
-import ItemLayout from './ItemRankingLayout';
+import { ItemRankingLayout, Item } from './ItemRankingLayout';
 
 function Ranking() {
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);
 
     const [activeTab, setActiveTab] = useState('실시간');
 
-    const handleTabClick = (tabName) => {
+    const handleTabClick = (tabName:string) => {
         setActiveTab(tabName);
         console.log(tabName, activeTab);
     };
@@ -53,14 +53,15 @@ function Ranking() {
         ...ShoesData,
     ];
 
-    const sortData = (data, sortBy) => [...data].sort(sortBy);
+    const sortData = (data: Item[], sortBy: (a: Item, b: Item) => number) => [...data].sort(sortBy);
 
-    const sortByLiveRank = (a, b) => parseInt(a.liveRank) - parseInt(b.liveRank);
-    const sortByDailyRank = (a, b) => parseInt(a.dailyRank) - parseInt(b.dailyRank);
-    const sortByWeeklyRank = (a, b) => parseInt(a.weeklyRank) - parseInt(b.weeklyRank);
-    const sortByMonthlyRank = (a, b) => parseInt(a.monthlyRank) - parseInt(b.monthlyRank);
+    const sortByLiveRank = (a: Item, b: Item) => a.liveRank - b.liveRank;
+    const sortByDailyRank = (a: Item, b: Item) => a.dailyRank - b.dailyRank;
+    const sortByWeeklyRank = (a: Item, b: Item) => a.weeklyRank - b.weeklyRank;
+    const sortByMonthlyRank = (a: Item, b: Item) => a.monthlyRank - b.monthlyRank;
+    
 
-    const tabContents = {
+    const tabContents: Record<number, React.ReactNode> = {
         0: <All items={allData} swiperParams={swiperRankingparams} />,
         1: (
             <Men
@@ -83,7 +84,6 @@ function Ranking() {
             />
         ),
         3: (
-
             <Jeans
                 items={sortData(JeansData, selectedRankingField === 'liveRank' ? sortByLiveRank :
                     selectedRankingField === 'dailyRank' ? sortByDailyRank :
@@ -104,7 +104,6 @@ function Ranking() {
             />
         ),
         5: (
-
             <Shoes
                 items={sortData(ShoesData, selectedRankingField === 'liveRank' ? sortByLiveRank :
                     selectedRankingField === 'dailyRank' ? sortByDailyRank :
@@ -121,7 +120,7 @@ function Ranking() {
                         selectedRankingField === 'weeklyRank' ? sortByWeeklyRank :
                             sortByMonthlyRank
                 )}
-                params={swiperRankingparams}
+                swiperParams={swiperRankingparams}
             />
         ),
     }
@@ -142,7 +141,6 @@ function Ranking() {
     const handleMonthlyRankClick = () => {
         setSelectedRankingField('monthlyRank');
     };
-
 
     return (
         <div>
@@ -232,42 +230,42 @@ export default Ranking;
 function All({ items, swiperParams}) {
     const randomData = useRandomData(items);
     return (
-        <ItemLayout items={randomData} params={swiperParams}/>
+        <ItemRankingLayout items={randomData} params={swiperParams}/>
     )
 }
 
 function Men({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }
 
 function Women({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }
 
 function Jeans({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }
 
 function Shoes({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }
 
 function Golf({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }
 
 function Kids({ items, swiperParams }) {
     return (
-        <ItemLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={items} params={swiperParams} />
     )
 }

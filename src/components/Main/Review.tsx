@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useEffect, useState} from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -7,10 +7,9 @@ import WomenData from '../../data/Review/women.json';
 import KidsData from '../../data/Review/kids.json';
 import JeansData from '../../data/Review/tommyJeans.json';
 
-import {useRandomData }from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
-import ReviewLayout from './ReviewLayout';
+import { ReviewLayout , Item } from './ReviewLayout';
 
 import SwiperCore from 'swiper/core';
 
@@ -39,7 +38,7 @@ function Review() {
         modules: { Navigation }
     }
 
-    const tabContents = {
+    const tabContents: Record<number, React.ReactNode> = {
         0: <All swiperParams={swiperReviewParams}/>,
         1: <Best swiperParams={swiperReviewParams}/>,
         2: <Jeans swiperParams={swiperReviewParams}/>,
@@ -90,7 +89,26 @@ function Review() {
 
 export default Review;
 
-function All({swiperParams}) {
+// 탭 컨텐츠 프로퍼티 타입 정의
+interface TabContentProps {
+    swiperParams: Record<string, any>;
+}
+
+export function useRandomData(allData: Item[]): Item[] {
+    const [randomData, setRandomData] = useState<Item[]>([]);
+
+    useEffect(() => {
+        const shuffledData = [...allData].sort(() => Math.random() - 0.5);
+        const limitedData = shuffledData.slice(0, 10);
+        // 갯수 열개로 제한
+        setRandomData(limitedData);
+    }, []);
+
+    return randomData;
+}
+
+
+function All({swiperParams}:TabContentProps) {
 
     const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
@@ -100,7 +118,7 @@ function All({swiperParams}) {
     )
 }
 
-function Best({swiperParams}) {
+function Best({swiperParams}:TabContentProps) {
 
     const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
     const randomData = useRandomData(allData);
@@ -110,28 +128,28 @@ function Best({swiperParams}) {
     )
 }
 
-function Men({swiperParams}) {
+function Men({swiperParams}:TabContentProps) {
     const menData = [...MenData];
     return (
         <ReviewLayout items={menData} params={swiperParams} />
     )
 }
 
-function Women({swiperParams}) {
+function Women({swiperParams}:TabContentProps) {
     const womenData = [...WomenData];
     return (
         <ReviewLayout items={womenData} params={swiperParams} />
     )
 }
 
-function Jeans({swiperParams}) {
+function Jeans({swiperParams}:TabContentProps) {
     const jeansData = [...JeansData];
     return (
         <ReviewLayout items={jeansData} params={swiperParams} />
     )
 }
 
-function Kids({swiperParams}) {
+function Kids({swiperParams}:TabContentProps) {
     const kidsData = [...KidsData];
     return (
         <ReviewLayout items={kidsData} params={swiperParams} />

@@ -23,7 +23,7 @@ import Magazine from '../components/Main/Magazine';
 
 import * as Styles from '../components/Main/MainStyle';
 
-export default function Main(): JSX.Element {
+export default function Main() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // 화면이동시 가장 위로가도록 설정

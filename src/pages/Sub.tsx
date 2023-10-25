@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import SubMain from '../components/SubHeader/SubMain';
+import SubMain from '../components/Sub/SubMain';
 
 import { useParams } from 'react-router-dom';
 

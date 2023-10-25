@@ -10,17 +10,13 @@ import 'swiper/css/navigation';
 import { FaStar } from 'react-icons/fa';
 // 상품 항목의 타입 정의
 
-type Item = {
+export interface Item {
     id: string;
     brand: string;
     name: string;
     img: string;
     price: string;
     percent: string;
-    imgSub: string;
-    category: string;
-    gender: string;
-    style: string;
     description: string;
     regular: string;
     brandimg: string;
@@ -31,14 +27,13 @@ type Item = {
 // ItemLayout 컴포넌트의 props 타입 정의
 interface ItemReviewLayouttProps {
     items: Item[]; // 상품 항목 배열
-    params: Record<string, any>;
+    params: any;
 }
 
-function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
+export function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
 
     const swiperRef = useRef(null);
     
-
     const startRender = (item: Item, index :number) => {
         const result = [];
         for (let i = 0; i < item.rating; i++) {
@@ -53,7 +48,6 @@ function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
         }
         return result;
     }
-
 
 
     return (
@@ -111,5 +105,3 @@ function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
         </Swiper>
     );
 }
-
-export default ReviewLayout;

@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react';
 
 import * as Styles from '../ProductMain/ProductMainStyle';
 
-import NewInMenData from '../../data/NewIn/men';
-import NewInWomenData from '../../data/NewIn/women';
-import NewInGolfData from '../../data/NewIn/golf';
-import NewInKidsData from '../../data/NewIn/kids';
-import NewInJeansData from '../../data/NewIn/tommyJeans';
-import NewInShoesData from '../../data/NewIn/shoes';
+import NewInMenData from '../../data/NewIn/men.json';
+import NewInWomenData from '../../data/NewIn/women.json';
+import NewInGolfData from '../../data/NewIn/golf.json';
+import NewInKidsData from '../../data/NewIn/kids.json';
+import NewInJeansData from '../../data/NewIn/tommyJeans.json';
+import NewInShoesData from '../../data/NewIn/shoes.json';
 
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../store';
 
 interface ProductItem {
-    id: number;
-    price:number;
+    id: string;
+    price:string;
     brand: string;
     name: string;
     regular: string;
@@ -24,7 +24,7 @@ interface ProductItem {
 }
 
 interface TabProps {
-    tabId: number;
+    tabId: string;
 }
 
 export default function SubMain({ tabId }: TabProps): JSX.Element {

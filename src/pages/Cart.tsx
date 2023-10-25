@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 
-import SubHeader from '../components/SubHeader/SubHeader';
+import SubHeader from '../components/Sub/SubHeader';
 import CartCont from '../components/Cart/CartCont';
 import Footer from '../components/Footer/Footer';
 
 import * as Styles from '../components/Main/MainStyle';
 
-export default function Cart(): JSX.Element {
+export default function Cart(){
     
     useEffect(() => {
         window.scrollTo(0, 0); // 화면이동시 가장 위로가도록 설정

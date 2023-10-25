@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import SubHeader from '../components/SubHeader/SubHeader';
+import SubHeader from '../components/Sub/SubHeader';
 import ProductMain from '../components/ProductMain/ProductMain';
 import Footer from '../components/Footer/Footer';
 import * as Styles from '../components/Main/MainStyle';

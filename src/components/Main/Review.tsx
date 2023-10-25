@@ -3,11 +3,11 @@ import React from 'react';
 import * as Styles from './MainStyle';
 
 import MenData from '../../data/Review/men.json'
-import WomenData from '../../data/Review/women';
-import KidsData from '../../data/Review/kids';
-import JeansData from '../../data/Review/tommyJeans';
+import WomenData from '../../data/Review/women.json';
+import KidsData from '../../data/Review/kids.json';
+import JeansData from '../../data/Review/tommyJeans.json';
 
-import useRandomData from '../../hooks/useRandomize';
+import {useRandomData }from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ReviewLayout from './ReviewLayout';

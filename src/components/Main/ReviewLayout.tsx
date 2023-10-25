@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
@@ -8,11 +8,38 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { FaStar } from 'react-icons/fa';
+// 상품 항목의 타입 정의
 
-function ReviewLayout({ items, params }) {
-    const [swiper, setSwiper] = useState(null);
+type Item = {
+    id: string;
+    brand: string;
+    name: string;
+    img: string;
+    price: string;
+    percent: string;
+    imgSub: string;
+    category: string;
+    gender: string;
+    style: string;
+    description: string;
+    regular: string;
+    brandimg: string;
+    rating: number;
+};
 
-    const startRender = (item, index) => {
+
+// ItemLayout 컴포넌트의 props 타입 정의
+interface ItemReviewLayouttProps {
+    items: Item[]; // 상품 항목 배열
+    params: Record<string, any>;
+}
+
+function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
+
+    const swiperRef = useRef(null);
+    
+
+    const startRender = (item: Item, index :number) => {
         const result = [];
         for (let i = 0; i < item.rating; i++) {
             const uniqueKey = `${index}-${item.id}-${i}`;
@@ -32,7 +59,7 @@ function ReviewLayout({ items, params }) {
     return (
         <Swiper
             {...params}
-            ref={setSwiper}
+            ref={swiperRef}
         >
             {items.map((item, index) => (
                 <SwiperSlide key={item.id} className="swiper-item"> {/* Add a unique key here */}

@@ -1,7 +1,7 @@
 //Randomize Json data
 import { useEffect, useState } from "react";
 
-interface DataItem {
+export interface DataItem {
     id: string;
     brand: string;
     name: string;
@@ -15,7 +15,7 @@ interface DataItem {
     style: string;
 }
 
-export default function useRandomData(allData: DataItem[]): DataItem[] {
+export function useRandomData(allData: DataItem[]): DataItem[] {
     const [randomData, setRandomData] = useState<DataItem[]>([]);
 
     useEffect(() => {

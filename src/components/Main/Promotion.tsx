@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import * as Styles from './MainStyle';
 
 import data from '../../data/promotion.json'
@@ -12,10 +12,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 
-function Promotion() {
-    const content = [...data]
+interface Item {
+    id :number;
+    img: string;
+    subtitle: string;
+    title: string;
+}
 
-    const [swiper, setSwiper] = useState(null);
+
+function Promotion() {
+
+    const content: Item[] = [...data];
+    // const content= [...data];
+    // const [swiper, setSwiper] = useState(null);
+    const swiperRef = useRef(null);
 
     SwiperCore.use([Navigation]);
 
@@ -29,7 +39,7 @@ function Promotion() {
         pagination: {
             clickable: true
         },
-        modules: { Navigation }
+        modules:  [Navigation] 
     }
 
 
@@ -48,7 +58,7 @@ function Promotion() {
                     <div className="slide-container season">
                         <Swiper
                             className="swiper-wrapper mySwiper"
-                            ref={setSwiper}
+                            ref={swiperRef}
                             {...swiperPromoParams}
                         >
                             {content.map((item, index) => (
@@ -57,7 +67,7 @@ function Promotion() {
                                         <a href="#!">
                                             <div className="season-visual-wrap">
                                                 <div className="season-visual-box">
-                                                    <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={index} />
+                                                    <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                                 </div>
                                             </div>
                                             <div className="season-info-wrap">

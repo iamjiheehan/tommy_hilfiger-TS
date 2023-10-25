@@ -48,7 +48,9 @@
         "img": "img/MdsPick/Kids/004.jpg",
         "imgSub":"img/MdsPick/Kids/004-1.jpg",
         "category": "키즈",
-        "gender":"자켓"
+        "gender":"공용",
+        "style":"자켓"
+
     },
     {
         "id": "MK005",

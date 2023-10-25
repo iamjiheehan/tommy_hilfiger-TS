@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import data from '../../data/insta.json';
 import SwiperCore from 'swiper/core';

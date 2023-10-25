@@ -26,7 +26,6 @@ function Magazine() {
                                     </div>
                                     <iframe
                                         className="vod-box"
-                                        allowFullScreen="1"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         title="TOMMY HILFIGER 23FALL STORY"
                                         width="100%"

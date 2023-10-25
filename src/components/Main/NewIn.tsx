@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 
 import * as Styles from './MainStyle';
 
-import NewInMenData from '../../data/NewIn/men';
-import NewInWomenData from '../../data/NewIn/women';
-import NewInGolfData from '../../data/NewIn/golf';
-import NewInKidsData from '../../data/NewIn/kids';
-import NewInJeansData from '../../data/NewIn/tommyJeans';
-import NewInShoesData from '../../data/NewIn/shoes';
+import NewInMenData from '../../data/NewIn/men.json';
+import NewInWomenData from '../../data/NewIn/women.json';
+import NewInGolfData from '../../data/NewIn/golf.jsonmen.json';
+import NewInKidsData from '../../data/NewIn/kids.jsonmen.json';
+import NewInJeansData from '../../data/NewIn/tommyJeans.jsonmen.json';
+import NewInShoesData from '../../data/NewIn/shoes.jsonmen.json';
 
-import useRandomData from '../../hooks/useRandomize';
+import { useRandomData } from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import ItemLayout from './ItemLayout';
@@ -18,7 +18,12 @@ import ItemLayout from './ItemLayout';
 import { Navigation } from 'swiper/modules';
 
 import { useDispatch } from "react-redux";
-import { setProducts } from '../../productSlice';
+import { setProducts } from '../../store';
+
+// 탭 컨텐츠 프로퍼티 타입 정의
+interface TabContentProps {
+    swiperParams: Record<string, any>;
+}
 
 function NewIn() {
     const productData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
@@ -46,7 +51,7 @@ function NewIn() {
         pagination: {
             clickable: true
         },
-        modules: { Navigation }
+        modules: [Navigation] 
     }
 
     const tabContArr = [
@@ -86,10 +91,10 @@ function NewIn() {
             )
         }
     ];
-    const tabClickHandler = (index) => {
+    const tabClickHandler= (index:number ) => {
         setActiveIndex(index)
     }
-    const tabContents = {
+    const tabContents: Record<number, React.ReactNode> = {
         0: <All swiperParams={swiperNewInParams} />,
         1: <Women swiperParams={swiperNewInParams} />,
         2: <Men swiperParams={swiperNewInParams} />,
@@ -136,7 +141,7 @@ function NewIn() {
     );
 }
 
-function All({ swiperParams }) {
+function All({ swiperParams }:TabContentProps) {
 
     const allData = [...NewInMenData, ...NewInWomenData, ...NewInGolfData, ...NewInKidsData, ...NewInJeansData, ...NewInShoesData];
     const randomData = useRandomData(allData);
@@ -163,42 +168,42 @@ function All({ swiperParams }) {
     )
 }
 
-function Men({ swiperParams }) {
+function Men({ swiperParams }:TabContentProps) {
     const menData = [...NewInMenData];
     return (
         <ItemLayout items={menData} params={swiperParams} />
     )
 }
 
-function Women({ swiperParams }) {
+function Women({ swiperParams }:TabContentProps) {
     const womenData = [...NewInWomenData];
     return (
         <ItemLayout items={womenData} params={swiperParams} />
     )
 }
 
-function Jeans({ swiperParams }) {
+function Jeans({ swiperParams }:TabContentProps) {
     const jeansData = [...NewInJeansData];
     return (
         <ItemLayout items={jeansData} params={swiperParams} />
     )
 }
 
-function Shoes({ swiperParams }) {
+function Shoes({ swiperParams }:TabContentProps) {
     const shoesData = [...NewInShoesData];
     return (
         <ItemLayout items={shoesData} params={swiperParams} />
     )
 }
 
-function Golf({ swiperParams }) {
+function Golf({ swiperParams }:TabContentProps) {
     const golfData = [...NewInGolfData];
     return (
         <ItemLayout items={golfData} params={swiperParams} />
     )
 }
 
-function Kids({ swiperParams }) {
+function Kids({ swiperParams }:TabContentProps) {
     const kidsData = [...NewInKidsData];
     return (
         <ItemLayout items={kidsData} params={swiperParams} />

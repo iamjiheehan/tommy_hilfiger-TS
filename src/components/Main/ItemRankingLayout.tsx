@@ -11,11 +11,36 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setDetail, setProducts } from "../../store";
 
-function ItemLayout({ items }) {
+// 상품 항목의 타입 정의
+export interface Item {
+    id: string;
+    brand: string;
+    name: string;
+    img: string;
+    price: string;
+    regular: string;
+    percent: string;
+    liveRank: number;
+    dailyRank: number;
+    weeklyRank: number;
+    monthlyRank: number;
+    imgSub: string;
+    category: string;
+    gender: string;
+    style: string;
+}
+
+// ItemLayout 컴포넌트의 props 타입 정의
+interface ItemRankingLayouttProps {
+    items: Item[]; // 상품 항목 배열
+    params: Record<string, any>;
+}
+
+export function ItemRankingLayout({ items }: ItemRankingLayouttProps) {
 
     const dispatch = useDispatch();
 
-    const handleItemClick = (item) => {
+    const handleItemClick = (item : Item) => {
         if (item) {
             dispatch(setDetail(item)); // 선택한 항목을 'detail' 슬라이스에 보냄
             dispatch(setProducts(items));// 항목 배열 전체를 'product' 슬라이스에 보냄
@@ -85,4 +110,4 @@ function ItemLayout({ items }) {
     );
 }
 
-export default ItemLayout;
+

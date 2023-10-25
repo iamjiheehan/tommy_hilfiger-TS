@@ -714,8 +714,11 @@ export const BrandTab = styled.div`
         }
     }
 `;
+interface BrandContentProps {
+    active: boolean;
+}
 
-export const BrandContent = styled.div`
+export const BrandContent = styled.div<BrandContentProps>`
     width: 100%;
     font-size: 0;
     text-align: center;

@@ -8,13 +8,18 @@ const fonts = {
     SourceCodePro: "SourceCodePro",
 };
 
-export const GlobalStyle = createGlobalStyle`
+type GlobalStyleProps = {
+    color?: string;
+    background?: string;
+
+}
+
+export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     * {
         font-family: ${fonts.KoPubWorld}, arial, sans-serif;
         font-size: medium;
         margin: 0;
         padding: 0;
-
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         color: inherit;

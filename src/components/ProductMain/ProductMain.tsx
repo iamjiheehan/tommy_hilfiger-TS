@@ -6,6 +6,23 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDetail, setProducts, addItem } from '../../store';
 
+type ProductType = {
+    id : string | number;
+    brand : string;
+    name : string;
+    img : string;
+    imgSub : string;
+    price : string;
+    category :string;
+    gender : string;
+    regular : string;
+}
+
+type ProductArrType = {
+    products: ProductType[];
+    detail: ProductType;
+}
+
 export default function ProductMain() {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
@@ -21,13 +38,13 @@ export default function ProductMain() {
 
     //관련상품탭 활성화 
     const [listTab, setListTab] = useState(0);
-    function ActiveListTab(index) {
+    function ActiveListTab(index:number) {
         setListTab(index);
     }
 
     //탭 활성화 
     const [tab, setTab] = useState(0);
-    function ActiveTab(index) {
+    function ActiveTab(index:number) {
         setTab(index);
     }
 
@@ -54,11 +71,11 @@ export default function ProductMain() {
 
 
     // Redux 상태 관리
-    const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
-    const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
+    const item = useSelector((state:ProductArrType) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
+    const products = useSelector((state:ProductArrType) => state.products); // Redux 스토어에서 제품 목록 가져오기
     const dispatch = useDispatch();
 
-    function SendToCart(item) {
+    function SendToCart(item:ProductType) {
         console.log("Item to add to the cart:", item);
         dispatch(addItem(item));
         // ActivePop();
@@ -82,14 +99,14 @@ export default function ProductMain() {
     useEffect(() => {
 
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
-        dispatch(setProducts());
+        // dispatch(setProducts());
         // item이 아직 설정되지 않았을 때만 setDetail을 호출
         dispatch(setDetail(item));
         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
     }, []);
 
 
-    const handleItemClick = (item) => {
+    const handleItemClick = (item:ProductType) => {
         window.scrollTo(0, 0);
 
         if (item) {
@@ -108,18 +125,18 @@ export default function ProductMain() {
                             <li className="bc-home"><a href="/">HOME</a></li>
                             <li>
                                 <a href="#!">
-                                    {item.brand}</a>
+                                    {item?.brand}</a>
                             </li>
                             <li className="">
                                 <a href="#!">
-                                    {item.category}</a>
+                                    {item?.category}</a>
                             </li>
                             <li className="">
                                 <a href="#!">
-                                    {item.gender}</a>
+                                    {item?.gender}</a>
                             </li>
                             <li className="on">
-                                {item.category}</li>
+                                {item?.category}</li>
                         </ol>
                     </div>
                 </Link>
@@ -265,7 +282,7 @@ export default function ProductMain() {
                         <div className="tab-content">
                             <div className="swiper-container product-list">
                                 <ul className="swiper-wrapper">
-                                    {products.slice(0, 5).map((product) => (
+                                    {products.slice(0, 5).map((product:ProductType) => (
                                         <li className="swiper-slide" key={product.id}>
                                             <div onClick={() => handleItemClick(product)}>
                                                 <Link to={`/product/${product.id}`} state={{ product }}>

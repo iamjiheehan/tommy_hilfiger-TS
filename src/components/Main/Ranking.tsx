@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -9,7 +9,6 @@ import KidsData from '../../data/TopRanking/kids.json';
 import JeansData from '../../data/TopRanking/tommyJeans.json';
 import ShoesData from '../../data/TopRanking/shoes.json';
 
-import { useRandomData } from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';
 
 import { Navigation } from 'swiper/modules';
@@ -227,45 +226,74 @@ function Ranking() {
 
 export default Ranking;
 
-function All({ items, swiperParams}) {
-    const randomData = useRandomData(items);
+// 탭 컨텐츠 프로퍼티 타입 정의
+interface TabContentProps {
+    swiperParams: Record<string, any>;
+    items : Item[];
+}
+
+export function useRandomData(allData: Item[]): Item[] {
+    const [randomData, setRandomData] = useState<Item[]>([]);
+
+    useEffect(() => {
+        const shuffledData = [...allData].sort(() => Math.random() - 0.5);
+        const limitedData = shuffledData.slice(0, 10);
+        // 갯수 열개로 제한
+        setRandomData(limitedData);
+    }, []);
+
+    return randomData;
+}
+
+function All({swiperParams}:TabContentProps) {
+
+    const allData = [...MenData, ...WomenData, ...KidsData, ...JeansData];
+    const randomData = useRandomData(allData);
+
     return (
         <ItemRankingLayout items={randomData} params={swiperParams}/>
     )
 }
 
-function Men({ items, swiperParams }) {
+function Men({ swiperParams }:TabContentProps) {
+    const menData = [...MenData];
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={menData} params={swiperParams} />
     )
 }
 
-function Women({ items, swiperParams }) {
+function Women({ swiperParams }:TabContentProps) {
+    const womenData = [...WomenData];
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={womenData} params={swiperParams} />
     )
 }
 
-function Jeans({ items, swiperParams }) {
+function Jeans({ swiperParams }:TabContentProps) {
+    const jeansData = [...JeansData];
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={jeansData} params={swiperParams} />
     )
 }
 
-function Shoes({ items, swiperParams }) {
+function Shoes({ swiperParams }:TabContentProps) {
+    const shoesData = [...ShoesData];
+
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={shoesData} params={swiperParams} />
     )
 }
 
-function Golf({ items, swiperParams }) {
+function Golf({ swiperParams }:TabContentProps) {
+    const golfData = [...GolfData];
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={golfData} params={swiperParams} />
     )
 }
 
-function Kids({ items, swiperParams }) {
+function Kids({ swiperParams }:TabContentProps) {
+    const kidsData = [...KidsData];
     return (
-        <ItemRankingLayout items={items} params={swiperParams} />
+        <ItemRankingLayout items={kidsData} params={swiperParams} />
     )
 }

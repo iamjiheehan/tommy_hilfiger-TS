@@ -5,11 +5,6 @@ import * as Styles from './HeaderStyle';
 import logo from '../../assets/images/header_logo.png'
 import { Link, useNavigate } from 'react-router-dom';
 
-
-type CustomButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    tabtype: string;
-};
-
 function Header() {
 
     const [cateActive, setCateActive] = useState(false);
@@ -77,13 +72,6 @@ function Header() {
         }
         console.log("tabId는 " + tabId);
     };
-    
-
-        //  장바구니 팝업창
-        const [popUp, setPopUp] = useState<boolean>(false);
-        function ActivePop() {
-            setPopUp(!popUp);
-        }
     
     return (
         <>

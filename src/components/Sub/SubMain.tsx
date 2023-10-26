@@ -53,7 +53,6 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
         console.log(item);
     }
 
-    //탭 클릭시 스크롤 이동
     // 탭 클릭시 스크롤 이동
     const btnArr = document.querySelectorAll('button[id^="tab"]');
     for (let i = 0; i < btnArr.length; i++) {
@@ -69,7 +68,6 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
         });
     }
 
-
     // 모든 제품 데이터를 하나의 배열로 병합
     const productData = [
         ...NewInMenData,
@@ -84,7 +82,8 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
     const [item, setItem] = useState<ProductItem | undefined>();
 
     useEffect(() => {
-        console.log("SubMain 컴포넌트에서 받은 tabID 값: " + tabId);
+        // console.log("SubMain 컴포넌트에서 받은 tabID 값: " + tabId);
+        
         // tabId와 일치하는 아이템만 필터링
         const filteredItems = productData.filter(item => item.id === tabId);
         setProducts(filteredItems);

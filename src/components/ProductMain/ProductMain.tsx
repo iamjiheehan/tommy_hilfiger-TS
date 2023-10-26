@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDetail, setProducts, addItem } from '../../store';
 
+import NewInMenData from '../../data/NewIn/men.json';
+import NewInWomenData from '../../data/NewIn/women.json';
+import NewInGolfData from '../../data/NewIn/golf.json';
+import NewInKidsData from '../../data/NewIn/kids.json';
+import NewInJeansData from '../../data/NewIn/tommyJeans.json';
+import NewInShoesData from '../../data/NewIn/shoes.json';
+
 type ProductType = {
     id : string | number;
     brand : string;
@@ -24,7 +31,11 @@ type ProductArrType = {
     detail: ProductType;
 }
 
-export default function ProductMain() {
+interface TabProps {
+    productId?: string;
+}
+
+export default function ProductMain({ productId }: TabProps) {
     //  사이즈 모달창1
     const [show, setShow] = useState(false);
     function SetModal() {
@@ -95,9 +106,19 @@ export default function ProductMain() {
     //     }
     // }, []);
 
+    // 모든 제품 데이터를 하나의 배열로 병합
+    const paramsData = [
+        ...NewInMenData,
+        ...NewInWomenData,
+        ...NewInGolfData,
+        ...NewInKidsData,
+        ...NewInJeansData,
+        ...NewInShoesData,
+    ];
 
 
     useEffect(() => {
+        console.log("Sub에서 받은 productId값 " + productId);
 
         // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
         // dispatch(setProducts());
@@ -105,7 +126,6 @@ export default function ProductMain() {
         dispatch(setDetail(item));
         console.log(products.length, Array.isArray(products), "현재 선택된 아이템은", item);
     }, []);
-
 
     const handleItemClick = (item:ProductType) => {
         window.scrollTo(0, 0);
@@ -116,6 +136,17 @@ export default function ProductMain() {
         }
     };
 
+    useEffect(() => {
+        // productId가 변경될 때, 해당 ID에 해당하는 상품을 찾아서 상세 정보로 설정합니다.
+        if (productId) {
+            const selectedItem = paramsData.find(item => item.id === productId);
+            if (selectedItem) {
+                dispatch(setDetail(selectedItem));
+            }
+        }
+    }, [productId]);
+    
+    
 
     return (
         <>

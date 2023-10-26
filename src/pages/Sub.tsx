@@ -15,7 +15,7 @@ export default function Sub() {
     const { tabId = '' } = useParams();
     useEffect(() => {
         window.scrollTo(0, 0);
-        console.log("Sub에서 받은 tabID값 " + tabId);
+        // console.log("Sub페이지에서 보내는 " + tabId);
     }, [tabId]);
 
     const handleScrollToTop = () => {

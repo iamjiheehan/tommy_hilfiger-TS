@@ -5,7 +5,7 @@ import MenData from "../../data/MdsPick/men.json";
 import WomenData from "../../data/MdsPick/women.json";
 import KidsData from "../../data/MdsPick/kids.json";
 import JeansData from "../../data/MdsPick/tommyJeans.json";
-import ShoesData from "../../data/MdsPick/shoe.json";
+import ShoesData from "../../data/MdsPick/shoes.json";
 import { useRandomData , DataItem } from "../../hooks/useRandomize";
 import { useSelectMenuHandler} from "../../hooks/useSelectMenuHandler";
 import { Navigation } from "swiper/modules";

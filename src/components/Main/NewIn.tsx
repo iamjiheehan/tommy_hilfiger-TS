@@ -5,10 +5,10 @@ import * as Styles from './MainStyle';
 
 import NewInMenData from '../../data/NewIn/men.json';
 import NewInWomenData from '../../data/NewIn/women.json';
-import NewInGolfData from '../../data/NewIn/golf.jsonmen.json';
-import NewInKidsData from '../../data/NewIn/kids.jsonmen.json';
-import NewInJeansData from '../../data/NewIn/tommyJeans.jsonmen.json';
-import NewInShoesData from '../../data/NewIn/shoes.jsonmen.json';
+import NewInGolfData from '../../data/NewIn/golf.json';
+import NewInKidsData from '../../data/NewIn/kids.json';
+import NewInJeansData from '../../data/NewIn/tommyJeans.json';
+import NewInShoesData from '../../data/NewIn/shoes.json';
 
 import { useRandomData } from '../../hooks/useRandomize';
 import { useSelectMenuHandler } from '../../hooks/useSelectMenuHandler';

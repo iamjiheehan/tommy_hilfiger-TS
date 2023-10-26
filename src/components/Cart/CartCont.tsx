@@ -26,23 +26,29 @@ type TextAlign = "left" | "center" | "right" | "justify" | "initial" | "inherit"
 
 // Redux 스토어 상태의 타입 정의
 interface CartState {
-    items: CartItem[];
+    cart: {
+        items: CartItem[];
+    };
 }
 
-export default function Cart(): JSX.Element {
+export default function Cart() {
     // Redux 스토어에서 장바구니 아이템을 가져오기 위한 useSelector 사용
-    const items = useSelector((state: CartState) => state.items);
+    const items = useSelector((state: CartState) => state.cart.items);
     const dispatch = useDispatch();
+    
+    // useEffect(() => {
+
+    //     // 장바구니가 비어있을 때 페이지 상단으로 스크롤
+    //     if (items && items.length === 0) {
+    //         window.scrollTo(0, 0);
+    //     }
+    //     // 최종 가격을 계산하는 액션 디스패치
+    //     dispatch(calculateFinalPrice());
+    // }, [dispatch, items]);
 
     useEffect(() => {
-        // 장바구니가 비어있을 때 페이지 상단으로 스크롤
-        if (!items.length) {
-            window.scrollTo(0, 0);
-        }
-        // 최종 가격을 계산하는 액션 디스패치
-        dispatch(calculateFinalPrice());
-    }, [dispatch, items]);
-
+        console.log(items);
+    })
     // 텍스트 정렬 스타일
     const textVerticalAlign = {
         verticalAlign: "middle",
@@ -66,17 +72,19 @@ export default function Cart(): JSX.Element {
         setSelectAll(!selectAll);
     };
 
-    // 개별 확인란 상태 및 함수 정의
-    const [checkboxes, setCheckboxes] = useState<{ [id: number]: boolean }>({});
+// 개별 확인란 상태 및 함수 정의
+const [checkboxes, setCheckboxes] = useState<{ [id: number]: boolean }>({});
 
-    useEffect(() => {
-        // 장바구니 아이템 배열을 기반으로 확인란 상태 초기화
+useEffect(() => {
+    // 장바구니 아이템 배열을 기반으로 확인란 상태 초기화
+    if (items) {
         const initialCheckboxes: { [id: number]: boolean } = {};
         items.forEach((item) => {
             initialCheckboxes[item.id] = false;
         });
         setCheckboxes(initialCheckboxes);
-    }, [items]);
+    }
+}, [items]);
 
     // 선택된 항목을 추적하기 위한 상태 정의
     const [selectedItems, setSelectedItems] = useState<number[]>([]);
@@ -181,15 +189,14 @@ export default function Cart(): JSX.Element {
                                 </tr>
                             </thead>
                             <tbody className="body">
-                                {/* {items.length === 0 ? ( */}
-                                {(items || []).length === 0 ? (
+                                {items?.length === 0 ? (
                                     <div className="nodata">
                                         <p className="txt-nodata">
                                             장바구니에 담긴 상품이 없습니다.
                                         </p>
                                     </div>
                                 ) : (
-                                    items.map((item) => (
+                                    items?.map((item) => (
                                         <tr key={item.id} className="row">
                                             <td className="cell-check">
                                                 <label className="check-skin only">
@@ -328,7 +335,7 @@ export default function Cart(): JSX.Element {
                                 <span className="txt">상품금액</span>
                                 <span id="totalGodAmt" className="num">
                                     {/* 각 항목의 finalPrice 합산 */}
-                                    {items
+                                    {/* {items
                                         .reduce((total, item) => {
                                             return (
                                                 total +
@@ -340,7 +347,7 @@ export default function Cart(): JSX.Element {
                                                 )
                                             );
                                         }, 0)
-                                        .toLocaleString()}
+                                        .toLocaleString()} */}
                                 </span>{" "}
                                 원
                             </span>
@@ -366,7 +373,7 @@ export default function Cart(): JSX.Element {
                                 <span id="totalOrdAmt" className="num">
                                     {/* 같은 값 사용, 각 항목의 finalPrice 합산 */}
                                     {/* https://velog.io/@loocia1910/%EB%B0%B0%EC%97%B4-reduce-%ED%95%A8%EC%88%98-JavaScript 참고 */}
-                                    {items
+                                    {/* {items
                                         .reduce((total, item) => {
                                             return (
                                                 total +
@@ -378,7 +385,7 @@ export default function Cart(): JSX.Element {
                                                 )
                                             );
                                         }, 0)
-                                        .toLocaleString()}
+                                        .toLocaleString()} */}
                                     원
                                 </span>
                             </span>

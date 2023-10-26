@@ -114,7 +114,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
     .active {
         display: block !important;
-        z-index: 999;
+        z-index: 900;
     }
 
     .clear {

@@ -714,11 +714,8 @@ export const BrandTab = styled.div`
         }
     }
 `;
-interface BrandContentProps {
-    active: boolean;
-}
 
-export const BrandContent = styled.div<BrandContentProps>`
+export const BrandContent = styled.div`
     width: 100%;
     font-size: 0;
     text-align: center;
@@ -726,8 +723,11 @@ export const BrandContent = styled.div<BrandContentProps>`
     margin-top: 30px;
 
     display: flex;
-    /* flex-direction: column; */
-    flex-direction: ${(props) => (props.active ? "column" : "column-reverse")};
+    flex-direction: column-reverse !important;
+
+    &.on {
+        flex-direction: column !important;
+    } 
 
     ul {
         display: inline-block;

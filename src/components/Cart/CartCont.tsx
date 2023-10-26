@@ -181,7 +181,8 @@ export default function Cart(): JSX.Element {
                                 </tr>
                             </thead>
                             <tbody className="body">
-                                {items.length === 0 ? (
+                                {/* {items.length === 0 ? ( */}
+                                {(items || []).length === 0 ? (
                                     <div className="nodata">
                                         <p className="txt-nodata">
                                             장바구니에 담긴 상품이 없습니다.

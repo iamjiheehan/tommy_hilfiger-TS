@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import * as Styles from './MainStyle';
 
@@ -12,11 +12,42 @@ import SwiperCore from 'swiper/core';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useNavigate } from 'react-router-dom';
+
+
+import MenData from '../../data/NewIn/men.json';
+import WomenData from '../../data/NewIn/women.json';
+import KidsData from '../../data/NewIn/kids.json';
+import JeansData from '../../data/NewIn/tommyJeans.json';
+import ShoesData from '../../data/NewIn/shoes.json';
+
+// 상품 항목의 타입 정의
+export interface Item {
+    id : string;
+    brand : string;
+    name : string;
+    img : string;
+    imgSub : string;
+    price : string;
+    category :string;
+    gender : string;
+    regular : string;
+    style : string;
+}
 
 function Category() {
 
-    const content = [...data];
+    //배열에 아이템 순서대로 담기
+    const dataArr: Item[] = [MenData[0], WomenData[0], WomenData[1], MenData[1], ShoesData[6], KidsData[0], KidsData[1], JeansData[0]];
 
+    const idArray = dataArr.map(item => item.id);
+    const [idbasket, setIdbasket] = useState(idArray);
+
+    useEffect(()=>{
+        console.log(idbasket);
+    },[idbasket])
+
+    const content = [...data];
     SwiperCore.use([Navigation]);
 
     const swiperParams = {
@@ -34,6 +65,15 @@ function Category() {
 
     const swiperRef = useRef(null);
     
+    const navigate = useNavigate();
+    
+    const handleSlideClick = (index: number) => {
+        if (index < idArray.length) {
+            const productId = idArray[index];
+            navigate(`/product/${productId}`);
+        }
+    };
+    
     return (
         <div>
             <section id='category'>
@@ -49,7 +89,10 @@ function Category() {
                                 className="swiper-wrapper mySwiper"
                                 >
                                 {content.map((item, index) => (
-                                    <SwiperSlide className="swiper-item" key={index}>
+                                    <SwiperSlide className="swiper-item" 
+                                    key={index} 
+                                    onClick={() => handleSlideClick(index)}
+                                    >
                                         <a href="#!" className="link-item">
                                             <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={String(index)} />
                                             <span className="text">{item.title}</span>

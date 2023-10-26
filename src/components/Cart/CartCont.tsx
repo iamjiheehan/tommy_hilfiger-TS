@@ -335,7 +335,7 @@ useEffect(() => {
                                 <span className="txt">상품금액</span>
                                 <span id="totalGodAmt" className="num">
                                     {/* 각 항목의 finalPrice 합산 */}
-                                    {/* {items
+                                    {items
                                         .reduce((total, item) => {
                                             return (
                                                 total +
@@ -347,7 +347,7 @@ useEffect(() => {
                                                 )
                                             );
                                         }, 0)
-                                        .toLocaleString()} */}
+                                        .toLocaleString()}
                                 </span>{" "}
                                 원
                             </span>
@@ -373,7 +373,7 @@ useEffect(() => {
                                 <span id="totalOrdAmt" className="num">
                                     {/* 같은 값 사용, 각 항목의 finalPrice 합산 */}
                                     {/* https://velog.io/@loocia1910/%EB%B0%B0%EC%97%B4-reduce-%ED%95%A8%EC%88%98-JavaScript 참고 */}
-                                    {/* {items
+                                    {items
                                         .reduce((total, item) => {
                                             return (
                                                 total +
@@ -385,7 +385,7 @@ useEffect(() => {
                                                 )
                                             );
                                         }, 0)
-                                        .toLocaleString()} */}
+                                        .toLocaleString()}
                                     원
                                 </span>
                             </span>

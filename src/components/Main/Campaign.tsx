@@ -151,11 +151,11 @@ function Campaign() {
                                 <Swiper
                                     {...swiperCampaignParams}
                                     ref={setSwiper}
-                                    onSwiper={(swiperInstance) => {
+                                    onSwiper={(swiperInstance:any) => {
                                         // Swiper instance 상태관리 함수에 저장
                                         setSwiper(swiperInstance);
                                     }}
-                                    onSlideChange={(swiper) => {
+                                    onSlideChange={(swiper:any) => {
                                         setActiveSlideIndex(swiper.realIndex);
                                     }}
                                     modules={[Navigation]}

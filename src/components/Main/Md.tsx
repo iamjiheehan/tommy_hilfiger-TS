@@ -18,7 +18,6 @@ interface TabContentProps {
 //Record는 TypeScript에서 사용되는 타입
 //객체의 키-값 쌍을 포함하는 객체를 나타낸다.
 
-
 function Md() {
     // 현재 탭 상태와 탭 선택 핸들러를 관리
     const { currentTab, selectMenuHandler } = useSelectMenuHandler(0);

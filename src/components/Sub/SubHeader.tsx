@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import * as Styles from "./SubHeaderStyle";
 import { Link } from "react-router-dom";
 
-function SubHeader(): JSX.Element {
+function SubHeader() {
     
     useEffect(() => {
         const target: HTMLElement | null = document.querySelector("header");

@@ -14,14 +14,13 @@ export default function Sub() {
     // const { tabId } = useParams(); // 올바르게 tabId를 추출
     const { tabId = '' } = useParams();
     useEffect(() => {
+        window.scrollTo(0, 0);
         console.log("Sub에서 받은 tabID값 " + tabId);
     }, [tabId]);
-
 
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);
     };
-
 
     return (
         <>

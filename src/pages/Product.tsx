@@ -11,6 +11,7 @@ export default function Product() {
         window.scrollTo(0, 0);
     }, []);
 
+
     // 맨 위로 스크롤하는 함수
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);

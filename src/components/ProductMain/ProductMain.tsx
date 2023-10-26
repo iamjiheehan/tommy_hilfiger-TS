@@ -16,6 +16,7 @@ type ProductType = {
     category :string;
     gender : string;
     regular : string;
+    style : string;
 }
 
 type ProductArrType = {
@@ -136,7 +137,7 @@ export default function ProductMain() {
                                     {item?.gender}</a>
                             </li>
                             <li className="on">
-                                {item?.category}</li>
+                                {item?.style}</li>
                         </ol>
                     </div>
                 </Link>

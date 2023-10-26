@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import * as Styles from "./MainStyle";
 import IssueData from "../../data/issue.json";
 
@@ -9,7 +9,26 @@ import SwiperCore from "swiper/core";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Link } from "react-router-dom";
+
+import MenData from '../../data/NewIn/men.json';
+import WomenData from '../../data/NewIn/women.json';
+import KidsData from '../../data/NewIn/kids.json';
+import JeansData from '../../data/NewIn/tommyJeans.json';
+import ShoesData from '../../data/NewIn/shoes.json';
+import { useNavigate } from "react-router-dom";
+
+export interface Item {
+    id: string;
+    brand: string;
+    name: string;
+    img: string;
+    imgSub: string;
+    price: string;
+    category: string;
+    gender: string;
+    regular: string;
+    style: string;
+}
 
 interface IssueDataItem {
     season: {
@@ -18,6 +37,7 @@ interface IssueDataItem {
         subtitle: string;
         text: string;
     };
+
     product: {
         img: string;
         brand: string;
@@ -29,6 +49,25 @@ interface IssueDataItem {
 }
 
 function Issue() {
+    //배열에 아이템 순서대로 담기
+    const dataArr: Item[] = [MenData[7], WomenData[2], KidsData[1], KidsData[5], ShoesData[6], KidsData[0], ShoesData[1], JeansData[0]];
+
+    const idArray = dataArr.map(item => item.id);
+    const [idbasket, setIdbasket] = useState(idArray);
+
+    useEffect(()=>{
+        console.log(idbasket);
+    },[idbasket])
+
+    const navigate = useNavigate();
+    
+    const handleSlideClick = (index: number) => {
+        if (index < idArray.length) {
+            const productId = idArray[index];
+            navigate(`/product/${productId}`);
+        }
+    };
+
     const data: IssueDataItem[] = [...IssueData];
 
     SwiperCore.use([Navigation]);
@@ -65,6 +104,7 @@ function Issue() {
                                     <SwiperSlide
                                         className="swiper-item"
                                         key={index}
+                                        onClick={() => handleSlideClick(index)}
                                     >
                                         <div className="season-visual-wrap">
                                             <a
@@ -97,7 +137,9 @@ function Issue() {
                                             <ul className="product-list">
                                                 {item.product.map(
                                                     (product, productIndex) => (
-                                                        <li key={productIndex}>
+                                                        <li key={productIndex}
+                                                        onClick={() => handleSlideClick(index)}
+                                                        >
                                                             <figure className="item-box">
                                                                 <div className="item-img">
                                                                     <div className="img-box">

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState, useEffect } from 'react';
 import * as Styles from './MainStyle';
 
 import data from '../../data/promotion.json'
@@ -10,7 +10,25 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+import MenData from '../../data/NewIn/men.json';
+import WomenData from '../../data/NewIn/women.json';
+import KidsData from '../../data/NewIn/kids.json';
+
+// 상품 항목의 타입 정의
+export interface DataType {
+    id : string;
+    brand : string;
+    name : string;
+    img : string;
+    imgSub : string;
+    price : string;
+    category :string;
+    gender : string;
+    regular : string;
+    style : string;
+}
 
 interface Item {
     id :number;
@@ -22,9 +40,26 @@ interface Item {
 
 function Promotion() {
 
+        //배열에 아이템 순서대로 담기
+        const dataArr: DataType[] = [MenData[9], WomenData[0], WomenData[1], WomenData[3], KidsData[0]];
+
+        const idArray = dataArr.map(item => item.id);
+        const [idbasket, setIdbasket] = useState(idArray);
+    
+        useEffect(()=>{
+            console.log(idbasket);
+        },[idbasket])
+        const navigate = useNavigate();
+    
+        const handleSlideClick = (index: number) => {
+            if (index < idArray.length) {
+                const productId = idArray[index];
+                navigate(`/product/${productId}`);
+            }
+        };
+        
     const content: Item[] = [...data];
-    // const content= [...data];
-    // const [swiper, setSwiper] = useState(null);
+
     const swiperRef = useRef(null);
 
     SwiperCore.use([Navigation]);
@@ -63,7 +98,9 @@ function Promotion() {
                         >
                             {content.map((item, index) => (
                                 <SwiperSlide className="swiper-item" key={index} >
-                                    <Link to={`/product/${item.id}/detail`}>
+                                    <div
+                                        onClick={() => handleSlideClick(index)}
+                                    >
                                         <a href="#!">
                                             <div className="season-visual-wrap">
                                                 <div className="season-visual-box">
@@ -79,7 +116,7 @@ function Promotion() {
                                                 </div>
                                             </div>
                                         </a>
-                                    </Link>
+                                    </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

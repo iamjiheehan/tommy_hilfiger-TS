@@ -10,6 +10,7 @@ export default function Product() {
     // 페이지가 로딩될 때 화면을 맨 위로 스크롤하도록 하는 부분
     const { productId = '' } = useParams();
 
+    //useParams 훅을 사용하여 현재 URL에서 productId를 추출
     useEffect(() => {
         window.scrollTo(0, 0);
         console.log("Product페이지에서 보내는 " + productId);

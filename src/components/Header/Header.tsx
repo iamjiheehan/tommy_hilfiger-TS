@@ -80,7 +80,7 @@ function Header() {
                     <div className="inner">
                         <Styles.MainFlex>
                             <div className="header-new-logo">
-                                <Styles.Link href="#!"><Link to={`/`}>H FASHION</Link></Styles.Link>
+                            <Link to={`/`}><Styles.Link href="#!">H FASHION</Styles.Link></Link>
                             </div>
                             <Styles.Absolute>
                                 <h2 className="header-logo">
@@ -93,10 +93,10 @@ function Header() {
                             </Styles.Absolute>
                             <div className="header-util">
                                 <button type="button" className="btn-search" id="btnSearchLayer"></button>
-                                <span><a href="#!">로그인</a></span>
-                                <span><a href="#!">회원가입</a></span>
-                                <span><a href="#!">마이페이지</a></span>
-                                <span><a href="#!">장바구니</a></span>
+                                <span><Link to={'/cart'}><a href="#!">로그인</a></Link></span>
+                                <span><Link to={'/cart'}><a href="#!">회원가입</a></Link></span>
+                                <span><Link to={'/cart'}><a href="#!">마이페이지</a></Link></span>
+                                <span><Link to={'/cart'}><a href="#!">장바구니</a></Link></span>
                             </div>
                         </Styles.MainFlex>
                         <Styles.GnbWrap className="header-gnb">

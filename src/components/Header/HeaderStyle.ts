@@ -26,7 +26,7 @@ export const Header = styled.div`
 
 export const Link = styled.a`
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 16px;
     font-weight: 400;
     padding-right: 9px;

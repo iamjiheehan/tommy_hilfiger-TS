@@ -54,7 +54,7 @@ function Review() {
                     <Styles.NewTitle className="title-wrap">
                         <h2 className="title">BEST REVIEW</h2>
                         <div className="right-box">
-                            <a href="#!" className="btn-more-view type-dark-blue">
+                            <a href="javascript:void(0);" className="btn-more-view type-dark-blue">
                                 <span className="text">전체보기</span>
                                 <i className="more-arr-dark-blue"></i>
                             </a>

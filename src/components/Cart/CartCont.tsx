@@ -398,7 +398,7 @@ useEffect(() => {
                                     쇼핑 계속하기
                                 </a>
                             </Link>
-                            <a href="#!" className="btn-type2-lg">
+                            <a href="javascript:void(0);" className="btn-type2-lg">
                                 선택상품 주문하기
                             </a>
                         </div>

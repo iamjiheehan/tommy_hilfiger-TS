@@ -131,7 +131,7 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
                                     <button type="button" className="btn-share"><span></span></button>
                                 </div>
                                 <p className="item-brand">
-                                    <a href="#!">
+                                    <a href="javascript:void(0);">
                                         {item.brand}
                                     </a>
                                 </p>
@@ -218,7 +218,7 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
                                     </div>
                                 </Styles.ViewOption>
                                 <Styles.InfoBot className="info-bot">
-                                    <p className="review"><a href="#!">첫 리뷰를 남겨주세요!</a></p>
+                                    <p className="review"><a href="javascript:void(0);">첫 리뷰를 남겨주세요!</a></p>
                                     <ul className='list'>
                                         <li className='row'>
                                             <span className="title">배송비</span>
@@ -385,7 +385,7 @@ export default function SubMain({ tabId }: TabProps): JSX.Element {
                                 <h3 className="sec-title">상품 Q&A</h3>
                                 <div className="review-list">
                                     <div className="head">
-                                        <p className="txt" style={{ float: "left" }}>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="#!"> 고객센터 1:1문의</a>를 이용하여 주시기 바랍니다.</p>
+                                        <p className="txt" style={{ float: "left" }}>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="javascript:void(0);"> 고객센터 1:1문의</a>를 이용하여 주시기 바랍니다.</p>
                                         <button type="button" className="btn-black"><span>리뷰작성</span></button>
                                     </div>
                                     <div id="reviewNodata" className="nodata">

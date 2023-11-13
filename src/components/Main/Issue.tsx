@@ -108,7 +108,7 @@ function Issue() {
                                     >
                                         <div className="season-visual-wrap">
                                             <a
-                                                href="#!"
+                                                href="javascript:void(0);"
                                                 className="season-visual-box"
                                             >
                                                 <img
@@ -126,7 +126,7 @@ function Issue() {
                                                     {item.season.subtitle}
                                                 </p>
                                                 <a
-                                                    href="#!"
+                                                    href="javascript:void(0);"
                                                     className="btn-season-more"
                                                 >
                                                     <span className="text">
@@ -143,7 +143,7 @@ function Issue() {
                                                             <figure className="item-box">
                                                                 <div className="item-img">
                                                                     <div className="img-box">
-                                                                        <a href="#!">
+                                                                        <a href="javascript:void(0);">
                                                                             <div className="img">
                                                                                 <img
                                                                                     src={`${process.env.PUBLIC_URL}/${product.img}`}
@@ -162,7 +162,7 @@ function Issue() {
                                                                     </button>
                                                                 </div>
                                                                 <figcaption className="item-info">
-                                                                    <a href="#!">
+                                                                    <a href="javascript:void(0);">
                                                                         <div className="item-brand">
                                                                             {
                                                                                 product.brand

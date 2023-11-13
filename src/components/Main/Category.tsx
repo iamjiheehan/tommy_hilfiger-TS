@@ -93,7 +93,7 @@ function Category() {
                                     key={index} 
                                     onClick={() => handleSlideClick(index)}
                                     >
-                                        <a href="#!" className="link-item">
+                                        <a href="javascript:void(0);" className="link-item">
                                             <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={String(index)} />
                                             <span className="text">{item.title}</span>
                                         </a>

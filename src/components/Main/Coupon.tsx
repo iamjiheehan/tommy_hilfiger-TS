@@ -7,7 +7,7 @@ function Coupon() {
         <div>
             <section id='coupon'>
                 <Styles.CouponBanner>
-                    <a href="#!" className="link-banner">
+                    <a href="javascript:void(0);" className="link-banner">
                         <img src="https://cdn.hfashionmall.com/display/category/BDM/A08/contents/760_203151_3_KOR_20230823102444.jpg?RS=1920x1920&amp;AR=0&amp;CS=1920x180" alt="" />
                         <div className="text-box">
                             <p className="text">TOMMY 23SS SEASON OFF</p>

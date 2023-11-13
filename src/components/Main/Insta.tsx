@@ -87,7 +87,7 @@ function Insta() {
                     <Styles.NewTitle className="title-wrap">
                         <h2 className="title">INSTAGRAM</h2>
                         <div className="right-box">
-                            <a href="#!" className="btn-insta" target="_blank">
+                            <a href="javascript:void(0);" className="btn-insta" target="_blank">
                                 <span className="text">@tommyhilfiger</span>
                             </a>
                         </div>

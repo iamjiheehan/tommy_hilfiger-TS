@@ -44,7 +44,7 @@ function SubHeader() {
                         <div className="wrap">
                             <h1 className="logo">
                                 <Link to={`/`}>
-                                    <a href="#!">H FASHION</a>
+                                    <a href="javascript:void(0);">H FASHION</a>
                                 </Link>
                             </h1>
                             <nav className="util">
@@ -52,16 +52,16 @@ function SubHeader() {
                                     <span>버튼</span>
                                 </button>
                                 <span>
-                                    <a href="#!">로그인</a>
+                                    <a href="javascript:void(0);">로그인</a>
                                 </span>
                                 <span>
-                                    <a href="#!">회원가입</a>
+                                    <a href="javascript:void(0);">회원가입</a>
                                 </span>
                                 <span>
-                                    <a href="#!">마이페이지</a>
+                                    <a href="javascript:void(0);">마이페이지</a>
                                 </span>
                                 <span>
-                                    <a href="#!">장바구니</a>
+                                    <a href="javascript:void(0);">장바구니</a>
                                 </span>
                             </nav>
                             <div className="clear"></div>
@@ -116,75 +116,75 @@ function SubHeader() {
                             <div className="wrap">
                                 <Styles.GnbMenu className="gnb-menu">
                                     <div className="gnb-category" onClick={() => handleTabChange("NW003")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>여성</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NM010")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>남성</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NK003")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>키즈</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NS002")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>잡화</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NG007")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>라이프스타일</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NG004")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>골프</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NT001")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>아울렛</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NT004")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>H SHOP</span>
                                         </a>
                                     </div>
                                     <div className="gnb-category" onClick={() => handleTabChange("NS006")}>
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <span>편집샵</span>
                                         </a>
                                     </div>
                                 </Styles.GnbMenu>
                                 <Styles.GnbEtc className="gnb-etc">
-                                    <li>
-                                        <a href="#!">브랜드</a>
+                                    <li onClick={() => handleTabChange("NW003")}>
+                                        <a href="javascript:void(0);">브랜드</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">매거진</a>
+                                    <li onClick={() => handleTabChange("NM010")}>
+                                        <a href="javascript:void(0);">매거진</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">신상품</a>
+                                    <li onClick={() => handleTabChange("NS002")}>
+                                        <a href="javascript:void(0);">신상품</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">베스트</a>
+                                    <li onClick={() => handleTabChange("NS006")}>
+                                        <a href="javascript:void(0);">베스트</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">기획전</a>
+                                    <li onClick={() => handleTabChange("NG007")}>
+                                        <a href="javascript:void(0);">기획전</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">이벤트</a>
+                                    <li onClick={() => handleTabChange("NS006")}>
+                                        <a href="javascript:void(0);">이벤트</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">라이브</a>
+                                    <li onClick={() => handleTabChange("NT004")}>
+                                        <a href="javascript:void(0);">라이브</a>
                                     </li>
-                                    <li>
-                                        <a href="#!">리뷰플러스</a>
+                                    <li onClick={() => handleTabChange("NS006")}>
+                                        <a href="javascript:void(0);">리뷰플러스</a>
                                     </li>
                                 </Styles.GnbEtc>
                             </div>

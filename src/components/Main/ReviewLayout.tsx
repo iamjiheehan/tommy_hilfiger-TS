@@ -65,7 +65,7 @@ export function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
                             <figure className="item-box">
                                 <div className="item-img top">
                                     <div className="img-box">
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
                                         </a>
                                     </div>
@@ -74,12 +74,12 @@ export function ReviewLayout({ items, params }:ItemReviewLayouttProps) {
                                     <div className="review-product">
                                         <figure className="item-box">
                                             <span className="item-img">
-                                                <a href="#!">
+                                                <a href="javascript:void(0);">
                                                     <img src={`${process.env.PUBLIC_URL}/${item.brandimg}`} alt={item.name} />
                                                 </a>
                                             </span>
                                             <figcaption className="item-info">
-                                                <a href="#!">
+                                                <a href="javascript:void(0);">
                                                     <div className="item-brand">{item.brand}</div>
                                                     {/* <div className="item-name">{item.name}</div> */}
                                                     <div className="item-opt">

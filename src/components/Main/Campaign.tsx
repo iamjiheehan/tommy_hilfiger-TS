@@ -140,7 +140,7 @@ function Campaign() {
                         <Styles.NewTitle className="title-wrap">
                             <h2 className="title">CAMPAIGN</h2>
                             <div className="right-box">
-                                <a href="#!" className="btn-more-view">
+                                <a href="javascript:void(0);" className="btn-more-view">
                                     <span className="text">전체보기</span>
                                     <i className="more-arr-dark-white"></i>
                                 </a>
@@ -170,7 +170,7 @@ function Campaign() {
                                             }`}
                                             // className='swiper-item'
                                         >
-                                            <a href="#!" className="link-item">
+                                            <a href="javascript:void(0);" className="link-item">
                                                 <div className="text-wrap">
                                                     <span className="text">
                                                         TOMMY JEANS

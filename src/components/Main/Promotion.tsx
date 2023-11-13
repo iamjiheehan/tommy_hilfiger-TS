@@ -101,7 +101,7 @@ function Promotion() {
                                     <div
                                         onClick={() => handleSlideClick(index)}
                                     >
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <div className="season-visual-wrap">
                                                 <div className="season-visual-box">
                                                     <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />

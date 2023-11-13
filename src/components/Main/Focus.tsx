@@ -27,7 +27,7 @@ function Focus() {
                             <Styles.NewTitle className="title-wrap">
                                 <h2 className="title">FOCUS ON</h2>
                                 <div className="right-box">
-                                    <a href="#!" className="btn-more-view type-dark-blue">
+                                    <a href="javascript:void(0);" className="btn-more-view type-dark-blue">
                                         <span className="text">전체보기</span>
                                         <i className="more-arr-dark-white"></i>
                                     </a>
@@ -53,7 +53,7 @@ function Focus() {
                                                 <figure className="item-box">
                                                     <div className="item-img">
                                                         <div className="img-box">
-                                                            <a href="#!">
+                                                            <a href="javascript:void(0);">
                                                                 <img src={`${process.env.PUBLIC_URL}/${item}`} alt={String(index)}  />
                                                             </a>
                                                         </div>

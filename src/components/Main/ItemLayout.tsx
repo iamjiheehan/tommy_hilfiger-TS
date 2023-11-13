@@ -55,7 +55,7 @@ function ItemLayout({ items, params }: ItemLayoutProps){
                             <figure className="item-box">
                                 <div className="item-img">
                                     <div className="img-box">
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <div className="img">
                                                 <img
                                                     src={`${process.env.PUBLIC_URL}/${item.img}`}
@@ -74,7 +74,7 @@ function ItemLayout({ items, params }: ItemLayoutProps){
                                     ></button>
                                 </div>
                                 <figcaption className="item-info">
-                                    <a href="#!">
+                                    <a href="javascript:void(0);">
                                         <div className="item-brand">
                                             {item.brand}
                                         </div>

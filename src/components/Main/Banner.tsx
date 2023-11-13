@@ -84,7 +84,7 @@ function Banner() {
                                 <SwiperSlide className='swiper-item' key={index}>
                                     <Styles.Box>
                                         <Styles.Banner className="img">
-                                            <a href="#!">
+                                            <a href="javascript:void(0);">
                                                 <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.title} />
                                             </a>
                                         </Styles.Banner>

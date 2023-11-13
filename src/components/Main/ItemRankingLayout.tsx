@@ -69,7 +69,7 @@ export function ItemRankingLayout({ items }: ItemRankingLayouttProps) {
                             <figure className="item-box">
                                 <div className="item-img">
                                     <div className="img-box">
-                                        <a href="#!">
+                                        <a href="javascript:void(0);">
                                             <div className="img">
                                                 <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} />
                                             </div>
@@ -79,7 +79,7 @@ export function ItemRankingLayout({ items }: ItemRankingLayouttProps) {
                                     <button type="button" className="btn-quick"></button>
                                 </div>
                                 <figcaption className="item-info">
-                                    <a href="#!">
+                                    <a href="javascript:void(0);">
                                         <span className="item-rank">{index + 1}</span>
                                         <div className="item-brand">{item.brand}</div>
                                         <div className="item-name">{item.name}</div>
